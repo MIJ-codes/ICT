@@ -1,0 +1,493 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  showcase.tex — Every feature demonstrated                                   ║
+% ║  Inspect this to see what every box, list, table, and command looks like.    ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+
+\chapter{Feature Showcase — All Boxes}
+
+This chapter demonstrates every single environment and command from the preamble.
+Use it to inspect the output and as a copy-paste reference for your own notes.
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{All Eight Box Types}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% ─── 1. Definition Box ───────────────────────────────────────────────────────
+\begin{definitionbox}[Network Protocol]
+A \term{network protocol} is a set of rules and conventions that govern how
+data is transmitted between devices on a network. Protocols define:
+\begin{itemize}
+    \item The format and structure of messages
+    \item The sequence in which messages are sent and received
+    \item How errors are detected and corrected
+    \item How connections are established and terminated
+\end{itemize}
+\end{definitionbox}
+
+\vspace{6pt}
+
+% ─── 2. Formula Box ──────────────────────────────────────────────────────────
+\begin{formulabox}[Shannon's Channel Capacity]
+The maximum data rate of a noisy channel (Shannon--Hartley theorem):
+\[
+    C = B \log_2\!\left(1 + \frac{S}{N}\right)
+\]
+where $C$ is channel capacity in bits/s, $B$ is bandwidth in Hz,
+and $S/N$ is the signal-to-noise ratio (linear, not dB).
+
+\Note For $S/N = 0$ (pure noise), $C = 0$ regardless of bandwidth.
+\end{formulabox}
+
+\vspace{6pt}
+
+% ─── 3. Info Box ─────────────────────────────────────────────────────────────
+\begin{infobox}[Analogy: Postal System]
+Think of the OSI model layers like the postal system:
+\begin{itemize}
+    \item The \term{Application Layer} is you writing the letter.
+    \item The \term{Transport Layer} is the envelope with the address.
+    \item The \term{Network Layer} is the postal routing system.
+    \item The \term{Physical Layer} is the actual truck carrying the mail.
+\end{itemize}
+Each layer only talks to the layer directly above and below it.
+\end{infobox}
+
+\vspace{6pt}
+
+% ─── 4. Derivation Box ───────────────────────────────────────────────────────
+\begin{derivationbox}[Deriving the Propagation Delay Formula]
+Start with the definition of propagation speed $v$ along a medium:
+\[
+    v = \frac{d}{t_p}
+\]
+where $d$ is distance and $t_p$ is propagation delay. Rearranging:
+\[
+    t_p = \frac{d}{v}
+\]
+For copper wire, $v \approx 2 \times 10^8\ \unit{m/s}$ (roughly $\tfrac{2}{3}c$).
+
+For a 1\,km cable:
+\[
+    t_p = \frac{1000\ \unit{m}}{2 \times 10^8\ \unit{m/s}} = 5\ \unit{\mu s}
+\]
+\end{derivationbox}
+
+\vspace{6pt}
+
+% ─── 5. Example / Q&A Box (auto-numbered) ────────────────────────────────────
+\begin{questionanswerbox}
+\textbf{Problem:} A channel has a bandwidth of $B = 4\ \unit{kHz}$ and SNR $= 31$.
+Find the maximum channel capacity using Shannon's theorem.
+
+\medskip
+\textbf{Solution:}
+\[
+    C = B \log_2(1 + \text{SNR})
+      = 4000 \times \log_2(32)
+      = 4000 \times 5
+      = 20{,}000\ \unit{bits/s}
+      = 20\ \unit{kbps}
+\]
+\end{questionanswerbox}
+
+\vspace{4pt}
+
+\begin{questionanswerbox}
+\textbf{Problem:} Compute the Nyquist capacity for a noiseless channel with
+$B = 3\ \unit{kHz}$ and $M = 8$ signal levels.
+
+\medskip
+\textbf{Solution:}
+\[
+    C_{\text{Nyquist}} = 2B\log_2 M = 2 \times 3000 \times \log_2 8 = 18{,}000\ \unit{bps}
+\]
+\end{questionanswerbox}
+
+\vspace{6pt}
+
+% ─── 6. Alert Box ────────────────────────────────────────────────────────────
+\begin{alertbox}[Common Mistake: dB vs Linear SNR]
+Shannon's formula requires SNR as a \textbf{linear ratio}, not in decibels.
+
+\medskip
+If given $\text{SNR}_{\text{dB}} = 30\ \unit{dB}$, convert first:
+\[
+    \text{SNR}_{\text{linear}} = 10^{30/10} = 10^3 = 1000
+\]
+\Imp Never plug the dB value directly into the $\log_2$ formula.
+\end{alertbox}
+
+\vspace{6pt}
+
+% ─── 7. Summary Box ──────────────────────────────────────────────────────────
+\begin{summarybox}[Section Recap: Channel Capacity]
+\begin{itemize}
+    \item \textbf{Nyquist (noiseless):} $C = 2B\log_2 M$ — depends on signal levels
+    \item \textbf{Shannon (noisy):} $C = B\log_2(1+S/N)$ — hard theoretical limit
+    \item Increasing bandwidth $B$ always helps, but diminishing returns apply
+    \item SNR must be linear (not dB) in Shannon's formula
+\end{itemize}
+\end{summarybox}
+
+\vspace{6pt}
+
+% ─── 8. Theorem Box ──────────────────────────────────────────────────────────
+\begin{theorembox}[Nyquist's Sampling Theorem]
+If a continuous signal contains no frequency components higher than $f_{\max}$,
+then it can be completely reconstructed from samples taken at a rate of at least
+$2f_{\max}$ samples per second (the \emph{Nyquist rate}).
+Mathematically:
+\[
+    f_s \geq 2 f_{\max}
+\]
+Sampling below this rate causes \emph{aliasing} — high-frequency components fold
+back into the lower-frequency range and the signal is unrecoverable.
+\end{theorembox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{All Six Heading Levels — Section — Purple}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+This section demonstrates all heading levels so you can see every color.
+
+\subsection{Subsection — Neon magenta}
+
+Content under a subsection.
+
+\subsubsection{Subsubsection — Neon Blue}
+
+Content under a subsubsection.
+
+\paragraph{Paragraph — Warm Orange}
+
+Content under a paragraph heading.
+
+\subparagraph{Subparagraph — Mint Teal}
+
+Content under a subparagraph heading. These are the six heading levels available.
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Lists — All Nesting Levels}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Itemize — 4 Levels}
+
+\begin{itemize}
+    \item Level 1 — purple triangle ($\triangleright$)
+    \begin{itemize}
+        \item Level 2 — blue arrow ($\rightarrow$)
+        \begin{itemize}
+            \item Level 3 — orange dash (\textendash)
+            \begin{itemize}
+                \item Level 4 — teal circle ($\circ$)
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \item Another Level 1 item
+    \item Yet another Level 1 item
+\end{itemize}
+
+\subsection{Enumerate — 3 Levels}
+
+\begin{enumerate}
+    \item First item (purple arabic numerals)
+    \begin{enumerate}
+        \item Sub-item (blue letters)
+        \begin{enumerate}
+            \item Sub-sub-item (orange roman numerals)
+            \item Second roman numeral
+        \end{enumerate}
+        \item Another sub-item
+    \end{enumerate}
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\subsection{Mixed List Inside a Box}
+
+\begin{infobox}[Lists Work Inside Boxes Too]
+You can freely mix list types inside any box:
+\begin{itemize}
+    \item OSI Model layers (top to bottom):
+    \begin{enumerate}
+        \item Application
+        \item Presentation
+        \item Session
+        \item Transport
+        \item Network
+        \item Data Link
+        \item Physical
+    \end{enumerate}
+    \item Each layer adds its own header/trailer when encapsulating data.
+\end{itemize}
+\end{infobox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Longtables}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% Local table spacing example:
+% Wrap a table in braces to change row height and cell padding for that table only.
+%
+% {
+% \renewcommand{\arraystretch}{1.6}
+% \setlength{\tabcolsep}{8pt}
+%
+% \begin{longtable}{|L{3cm}|L{5cm}|}
+%     \longtableheader{2}{Local Spacing Example}{%
+%       \tblcolhdcell{Column A} & \tblcolhdcell{Column B}}
+%     Row title & Row content \\ \tblhline
+%     Another row & More content \\
+%     \tblbottomrule
+% \end{longtable}
+% }
+
+\begin{longtable}{|L{3.5cm}|C{2.5cm}|C{2cm}|L{4.5cm}|}
+    \longtableheader{4}{Common Network Protocols}{%
+      \tblcolhdcell{Protocol} & \tblcolhdcell{Layer} & \tblcolhdcell{Port} & \tblcolhdcell{Description}}
+    HTTP  & Application & 80  & Hypertext Transfer Protocol \\ \tblhline
+\evenrow
+    HTTPS & Application & 443 & HTTP over TLS/SSL \\ \tblhline
+    FTP   & Application & 21  & File Transfer Protocol \\ \tblhline
+\evenrow
+    SSH   & Application & 22  & Secure Shell \\ \tblhline
+    DNS   & Application & 53  & Domain Name System \\ \tblhline
+\evenrow
+    SMTP  & Application & 25  & Simple Mail Transfer Protocol \\ \tblhline
+    TCP   & Transport   & --- & Connection-oriented, reliable \\ \tblhline
+\evenrow
+    UDP   & Transport   & --- & Connectionless, fast \\ \tblhline
+    IP    & Network     & --- & Internet Protocol \\
+    \tblbottomrule
+    \caption{Common network protocols with layers and port numbers}
+    \label{tab:protocols}
+\end{longtable}
+
+\begin{longtable}{|L{4cm}|L{4cm}|L{4.5cm}|}
+    \longtableheader{3}{Error Detection \& Correction}{%
+      \tblcolhdcell{Error Type} & \tblcolhdcell{Detection Method} & \tblcolhdcell{Correction Method}}
+    Single-bit error   & Parity check, CRC  & Hamming code \\ \tblhline
+\evenrow
+    Burst error        & CRC, checksum      & ARQ (retransmit) \\ \tblhline
+    Packet loss        & Sequence numbers   & ARQ, FEC \\ \tblhline
+\evenrow
+    Duplicate frame    & Sequence numbers   & Discard duplicate \\ \tblhline
+    Out-of-order frame & Sequence numbers   & Reorder in buffer \\
+    \tblbottomrule
+    \caption{Error types and handling strategies}
+    \label{tab:errors}
+\end{longtable}
+
+\begin{longtable}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
+    \longtableheader{4}{OSI vs TCP/IP Model}{%
+      \tblcolhdcell{OSI Layer} & \tblcolhdcell{TCP/IP Layer} & \tblcolhdcell{PDU Name} & \tblcolhdcell{Key Devices}}
+    Application    & Application & Data    & Gateway \\ \tblhline
+\evenrow
+    Presentation   & Application & Data    & ---     \\ \tblhline
+    Session        & Application & Data    & ---     \\ \tblhline
+\evenrow
+    Transport      & Transport   & Segment & ---     \\ \tblhline
+    Network        & Internet    & Packet  & Router  \\ \tblhline
+\evenrow
+    Data Link      & Link        & Frame   & Switch  \\ \tblhline
+    Physical       & Link        & Bit     & Hub     \\
+    \tblbottomrule
+    \caption{OSI vs TCP/IP model comparison}
+    \label{tab:osivsip}
+\end{longtable}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Math Shortcuts}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\begin{formulabox}[All Math Commands from \texttt{preamble.tex}]
+
+\textbf{Derivatives:}
+\[
+    \der{f}{t} \qquad \dder{f}{t} \qquad \pder{f}{x}
+\]
+
+\textbf{Vector and matrix notation:}
+\[
+    \vv{F} = m\vv{a} \qquad \mat{A}\mat{x} = \mat{b}
+\]
+
+\textbf{Differential and units:}
+\[
+    \int_0^T f(t)\dd t \qquad v = 3 \times 10^8\unit{m/s}
+\]
+
+\textbf{Magnitude and norm:}
+\[
+    \abs{\vv{E}} = E_0 \qquad \norm{\mat{A}} = \sqrt{\sum_{ij} a_{ij}^2}
+\]
+
+\textbf{Evaluation bar:}
+\[
+    \eval{\frac{1}{2}mv^2}{0}{T} \qquad \eval{e^{st}}{t=0}{t=\infty}
+\]
+
+\textbf{Cancel (strikethrough in math):}
+\[
+    \frac{\cancel{m} \cdot a}{\cancel{m}} = a
+\]
+\end{formulabox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Inline Markers}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\Note This is a note using \texttt{\textbackslash Note}. Use it for side remarks
+and clarifications inline in your text.
+
+\medskip
+\Imp This is an important callout using \texttt{\textbackslash Imp}. Use it to
+flag things the exam will likely test.
+
+\medskip
+The command \texttt{\textbackslash term\{...\}} highlights a \term{key term}
+being introduced for the first time.
+
+\medskip
+\TODO{Replace this paragraph with a proper derivation from the textbook.}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{TikZ Block Diagram (Theme-Aware Colors)}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\begin{infobox}[Data Encapsulation Flow]
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance = 0.8cm,
+    block/.style  = {rectangle, draw=defcolor, thick, fill=defcolor!10,
+                     minimum width=4.5cm, minimum height=0.7cm,
+                     font=\small\bfseries, text=defcolor, align=center},
+    arrow/.style  = {->, thick, color=formulacolor}
+]
+    \node[block] (app)  {Application Layer};
+    \node[block] (pres) [below=of app]  {Presentation Layer};
+    \node[block] (sess) [below=of pres] {Session Layer};
+    \node[block] (trans)[below=of sess] {Transport Layer};
+    \node[block] (net)  [below=of trans]{Network Layer};
+    \node[block] (dl)   [below=of net]  {Data Link Layer};
+    \node[block] (phy)  [below=of dl]   {Physical Layer};
+
+    \draw[arrow] (app)  -- (pres);
+    \draw[arrow] (pres) -- (sess);
+    \draw[arrow] (sess) -- (trans);
+    \draw[arrow] (trans)-- (net);
+    \draw[arrow] (net)  -- (dl);
+    \draw[arrow] (dl)   -- (phy);
+
+    \node[right=1.2cm of app,  font=\footnotesize\color{darkgray}] {Data};
+    \node[right=1.2cm of trans,font=\footnotesize\color{darkgray}] {Segment};
+    \node[right=1.2cm of net,  font=\footnotesize\color{darkgray}] {Packet};
+    \node[right=1.2cm of dl,   font=\footnotesize\color{darkgray}] {Frame};
+    \node[right=1.2cm of phy,  font=\footnotesize\color{darkgray}] {Bits};
+\end{tikzpicture}
+\end{center}
+
+\end{infobox}
+
+\section{Figure Environment}
+
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.7\textwidth]{example-missing-figure.png}
+    \caption{Example figure environment using safe image loading}
+    \label{fig:showcase-figure}
+\end{figure}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{A Real Notes Page — TCP Segment Structure}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+This section shows everything working together naturally, the way you'd actually
+write notes.
+
+\begin{definitionbox}[TCP — Transmission Control Protocol]
+\term{TCP} is a connection-oriented, reliable, byte-stream transport-layer
+protocol defined in RFC 793. It guarantees:
+\begin{itemize}
+    \item Ordered delivery of bytes
+    \item Error detection via checksum
+    \item Flow control via sliding window
+    \item Congestion control (AIMD algorithm)
+\end{itemize}
+\end{definitionbox}
+
+\subsection{TCP Segment Header Fields}
+
+\begin{longtable}{|L{3.5cm}|C{2cm}|L{7cm}|}
+    \longtableheader{3}{TCP Segment Header Fields}{%
+      \tblcolhdcell{Field} & \tblcolhdcell{Size (bits)} & \tblcolhdcell{Purpose}}
+    Source Port      & 16  & Identifies the sending application \\ \tblhline
+\evenrow
+    Destination Port & 16  & Identifies the receiving application \\ \tblhline
+    Sequence Number  & 32  & Byte offset of first byte in this segment \\ \tblhline
+\evenrow
+    ACK Number       & 32  & Next expected byte from the other side \\ \tblhline
+    Header Length    & 4   & Number of 32-bit words in the header \\ \tblhline
+\evenrow
+    Control Flags    & 6   & SYN, ACK, FIN, RST, PSH, URG \\ \tblhline
+    Window Size      & 16  & Flow control: receiver's buffer space \\ \tblhline
+\evenrow
+    Checksum         & 16  & Error detection \\ \tblhline
+    Urgent Pointer   & 16  & Used when URG flag is set \\ \tblhline
+\evenrow
+    Options          & var & MSS, timestamps, SACK, window scaling \\
+    \tblbottomrule
+    \caption{TCP segment header fields}
+    \label{tab:tcpheader}
+\end{longtable}
+
+\begin{formulabox}[TCP Sequence \& ACK Numbers]
+If sender transmits segment starting at byte $n$ with $L$ bytes of data:
+\[
+    \text{Sequence Number} = n
+\]
+\[
+    \text{Expected ACK from receiver} = n + L
+\]
+The ACK number always represents the \textbf{next} byte expected, not the last
+byte received.
+\end{formulabox}
+
+\begin{alertbox}[SYN Flood Attack]
+A \term{SYN flood} exploits the TCP 3-way handshake. The attacker sends
+many SYN packets with spoofed source IPs. The server allocates resources for
+each half-open connection, eventually exhausting memory.
+
+\medskip
+\textbf{Mitigation:} SYN cookies — the server does not allocate state until
+the handshake completes.
+\end{alertbox}
+
+\begin{questionanswerbox}
+\textbf{Problem:} Host A sends a TCP segment where Seq\,=\,1000 and the data
+is 500 bytes long. What ACK number does Host B send back?
+
+\medskip
+\textbf{Solution:}
+\[
+    \text{ACK} = \text{Seq} + \text{Length} = 1000 + 500 = 1500
+\]
+Host B's ACK segment will have ACK\,=\,1500, meaning ``I received up to byte
+1499; send me byte 1500 next.''
+\end{questionanswerbox}
+
+\begin{summarybox}[TCP Key Points]
+\begin{itemize}
+    \item TCP is \textbf{connection-oriented} — 3-way handshake before data transfer
+    \item Reliability via \textbf{sequence numbers + ACKs + retransmission}
+    \item Flow control via \textbf{receiver window} (prevents buffer overflow)
+    \item Congestion control via \textbf{AIMD} (prevents network collapse)
+    \item Connection teardown uses \textbf{4-way FIN handshake}
+\end{itemize}
+\end{summarybox}
+
+\end{document}

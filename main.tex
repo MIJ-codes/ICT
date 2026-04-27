@@ -1,0 +1,47 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  main.tex — Driver File                                                      ║
+% ║  Mohammad Miadul Islam Jasim — CUET ETE 21                                   ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+%
+%  HOW TO USE:
+%  1. Change \NotesCourse and \NotesSubject below for each new course.
+%  2. Add/remove \subfile{} lines to include your chapters.
+%  3. Compile THIS file with XeLaTeX (twice for TOC to resolve).
+%     NEVER compile preamble.tex or chapter files directly.
+%
+%  FOLDER STRUCTURE:
+%    YourCourse/
+%    ├── preamble.tex          ← all packages, settings, boxes
+%    ├── main.tex              ← THIS file — compile this
+%    ├── showcase.tex          ← feature demo subfile
+%    └── Chapters/
+%        ├── Chapter_01.tex
+%        ├── Chapter_02.tex
+%        └── ...
+
+\documentclass[11pt, a4paper, openany]{book}
+
+% ─── Load the full preamble ──────────────────────────────────────────────────
+\input{preamble}
+
+% ─── Course metadata (change per course) ─────────────────────────────────────
+\renewcommand{\NotesCourse}  {ETE 301 — CCN}
+\renewcommand{\NotesSubject} {Computer Communication Networks}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+% ─── Table of Contents ───────────────────────────────────────────────────────
+\tableofcontents
+\newpage
+
+% ─── Chapters — add/remove lines as needed ───────────────────────────────────
+\subfile{Chapters/Chapter4.tex}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\end{document}
+% ═══════════════════════════════════════════════════════════════════════════════

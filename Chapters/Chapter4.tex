@@ -1,0 +1,828 @@
+% !TEX root = ../main.tex
+
+\chapter{Introduction to Web Design and HTML}
+
+\section{Core Concepts in Web Design}
+
+\begin{definitionbox}[Internet]
+    \term{Internet} is the connection of millions of computers worldwide that allows them to communicate and share information.
+\end{definitionbox}
+
+\begin{definitionbox}[World Wide Web]
+    \term{World Wide Web} is a system of sharing information over the Internet by using hypertext documents, which are linked together and can be accessed through a web browser.
+\end{definitionbox}
+
+\Note The Internet is the hardware, wires, and protocols—the global infrastructure. The World Wide Web is a service (like email or gaming) that runs on top of that infrastructure.
+
+\begin{definitionbox}[Hypertext document file]
+    A hypertext document is a type of document that contains links to other documents, allowing users to navigate between them easily. 
+    \begin{itemize}
+        \item Like images this is a file type with extension .html or .htm.
+        \item It is made by using HTML (HyperText Markup Language).
+    \end{itemize}
+\end{definitionbox}
+
+\begin{definitionbox}[Webpage]
+    A webpage is a single hypertext document or page that is displayed in a web browser. It can contain text, images, links of other webpages, and other multimedia content.
+\end{definitionbox}
+
+\begin{definitionbox}[Website]
+    A website is a collection of related webpages stored under a common domain name and connected through hyperlinks.
+\end{definitionbox}
+
+\begin{definitionbox}[Web design]
+    \term{Web design} is the process of planning, creating, arranging and presenting information on the World Wide Web. It includes the design of webpages, navigation system, content layout, links, images, and user interaction.
+\end{definitionbox}
+
+\subsection{Basic Relationship}
+
+\begin{itemize}
+    \item A webpage is one single page.
+    \item A website contains multiple related webpages.
+    \item The first or main page of a website is called the \term{homepage}.
+    \item Webpages are connected using hyperlinks.
+    \item A web browser is used to view webpages.
+\end{itemize}
+
+\begin{summarybox}[Core Idea]
+    HTML $\rightarrow$ Hypertext document files $\rightarrow$ Webpage $\xrightarrow{\text{Web Design}}$ Website $\rightarrow$ World Wide Web $\rightarrow$ Internet
+\end{summarybox}
+
+
+\subsection{Advantages of Website}
+
+\begin{itemize}
+    \item Information can be published and accessed easily.
+    \item A website can be accessed from anywhere in the world.
+    \item It is available twenty-four hours a day.
+    \item It reduces the need for physical communication.
+    \item It supports text, images, audio, video and links.
+    \item Information can be updated more easily than printed documents.
+    \item It is useful for education, business, news, communication and entertainment.
+\end{itemize}
+
+
+\section{IP Address}
+
+\begin{definitionbox}[IP Address]
+IP Address stands for Internet Protocol Address. It is a unique numerical address used to identify a device connected to a network on the internet.
+\end{definitionbox}
+
+\Note An IP address works like the digital address of a device. When sender sends data to a receiver, the receiver's IP address is used to ensure that the data reaches the correct destination.
+
+\subsection{Purpose of IP Address}
+
+\begin{itemize}
+    \item It identifies a device in a network.
+    \item It helps send data to the correct destination.
+    \item It allows communication between client and server.
+    \item It is necessary for internet-based communication.
+\end{itemize}
+
+\subsection{Types of IP Address}
+$\rightarrow$ There are two main types of IP addresses:
+\begin{itemize}
+    \item \term{IPv4}: 32-bit address, with four 8-bit octets, 1 octet = 8 bits, usually written in four decimal parts.\\
+          Example:  \texttt{11000000.10101000.00000001.00000001} $\xrightarrow{\text{in decimal}}$ \texttt{192.168.1.1}
+    \item \term{IPv6}: 128-bit address, with eight 16-bit words, usually written in hexadecimal format.\\
+          Example: \texttt{2001:0db8:85a3:0000:0000:8a2e:0370:7334}
+\end{itemize}
+
+\subsubsection{Network ID and Host ID}
+\begin{itemize}
+    \item The internet is a network of many networks.
+    \item Each network has many hosts (computers, mobiles, servers etc.) in it.
+    \item So each network and each device needs an unique identifier for communication.
+    \item This is done by dividing the IP address into two parts: Network ID and Host ID.
+        \begin{itemize}
+            \item \term{Network ID}: identifies the network the device is connected to. \\
+            Example: in \texttt{192.168.1.1}, the network ID is \texttt{192.168.1}.
+            \item \term{Host ID}: identifies the specific device inside that network. \\
+            Example: in \texttt{192.168.1.1}, the host ID is \texttt{1}.
+        \end{itemize}
+\end{itemize}
+
+\begin{questionanswerbox}
+\textbf{Q: Why is IP address required?}
+
+\medskip
+\textbf{A:}  
+IP address is required because every device in a network must be uniquely identified. It helps data packets travel from the sender to the correct receiver.
+
+\medskip
+\textbf{Conclusion:}  
+Without IP addresses, devices on the internet could not communicate properly.
+\end{questionanswerbox}
+
+
+\section{Domain Name}
+
+\begin{definitionbox}[Domain Name]
+A domain name is a human-readable name used to identify a website on the internet.
+\end{definitionbox}
+
+\Note IP addresses are difficult for humans to remember. For this reason, domain names are used instead of numeric IP addresses.
+
+\subsection{Need for Domain Name}
+
+\begin{itemize}
+    \item It makes website addresses easier to remember.
+    \item It hides the complexity of numeric IP addresses.
+    \item It gives a website a readable identity.
+    \item It helps users access websites easily.
+\end{itemize}
+
+\begin{definitionbox}[DNS]
+DNS stands for Domain Name System. It converts a domain name into its corresponding IP address.
+\end{definitionbox}
+
+\subsection{Example of Domain Name Structure}
+
+\begin{formulabox}[Domain Name Structure]
+\[
+www.example.com
+\]
+\[
+www = \text{Host Name}
+\]
+\[
+example = \text{Second Level Domain}
+\]
+\[
+.com = \text{Top Level Domain}
+\]
+\end{formulabox}
+
+\subsection{Common Top Level Domains}
+
+\begin{longtable}{|C{3cm}|L{10cm}|}
+\longtableheader{2}{Common Top Level Domains}{%
+\tblcolhdcell{Domain} & \tblcolhdcell{Used For}}
+
+.com & Commercial organizations \\ \tblhline
+.net & Network-related organizations or services \\ \tblhline
+.edu & Educational institutions \\ \tblhline
+.gov & Government organizations \\ \tblhline
+.org & Non-profit organizations \\ \tblhline
+.mil & Military organizations \\ \tblhline
+
+\tblbottomrule
+\caption{Common Top Level Domains}
+\label{tab:common-tld}
+\end{longtable}
+
+\begin{summarybox}[Domain Name vs IP Address]
+\begin{itemize}
+    \item IP Address is used by computers.
+    \item Domain Name is used by humans.
+    \item DNS connects the two by converting domain names into IP addresses.
+\end{itemize}
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{URL (Uniform Resource Locator)}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[URL]
+A URL (Uniform Resource Locator) is the complete address used to locate a resource on the internet.
+\end{definitionbox}
+
+A URL not only identifies the location of a webpage but also specifies the method used to access it.
+
+\subsection{Structure of URL}
+
+\begin{formulabox}[General Form]
+\[
+\text{URL} = \text{Protocol} + \text{Domain Name} + \text{Path}
+\]
+\[
+\text{Example: } https://www.example.com/folder/page.html
+\]
+\end{formulabox}
+
+\subsection{Components of URL}
+
+\begin{itemize}
+    \item \term{Protocol}: Defines the communication rule (e.g., HTTP, HTTPS).
+    \item \term{Domain Name}: Identifies the server.
+    \item \term{Path}: Specifies the exact location of the resource in the server.
+\end{itemize}
+
+\begin{summarybox}
+A URL uniquely identifies both the location and access method of a web resource.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Website Structure}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Website Structure]
+Website structure refers to the way webpages are organized and interconnected within a website.
+\end{definitionbox}
+
+A proper structure ensures easy navigation and better user experience.
+
+\subsection{Types of Website Structure}
+
+\subsubsection{Hierarchical Structure}
+
+\begin{itemize}
+    \item Pages are arranged like a tree.
+    \item Starts from a homepage and branches into sections.
+    \item Each section may contain sub-sections.
+    \item Easy to manage and most commonly used.
+\end{itemize}
+
+\subsubsection{Linear Structure}
+
+\begin{itemize}
+    \item Pages are connected in a sequence.
+    \item Users move step-by-step (next or previous).
+    \item Suitable for tutorials or guided content.
+\end{itemize}
+
+\subsubsection{Network Structure}
+
+\begin{itemize}
+    \item Each page is connected with many other pages.
+    \item No fixed navigation path.
+    \item Provides flexibility but may confuse users.
+\end{itemize}
+
+\subsubsection{Hybrid Structure}
+
+\begin{itemize}
+    \item Combination of multiple structures.
+    \item Uses hierarchical with linear or network links.
+    \item Most modern websites follow this model.
+\end{itemize}
+
+\begin{summarybox}
+A good website structure improves navigation, usability, and overall performance.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Types of Website}
+% ─────────────────────────────────────────
+
+\subsection{Static Website}
+
+\begin{definitionbox}[Static Website]
+A static website displays fixed content that does not change unless manually updated.
+\end{definitionbox}
+
+\begin{itemize}
+    \item Built using HTML and CSS.
+    \item Content remains the same for all users.
+    \item Faster loading speed.
+    \item Simple to develop.
+\end{itemize}
+
+\subsection{Dynamic Website}
+
+\begin{definitionbox}[Dynamic Website]
+A dynamic website generates content dynamically based on user interaction or database.
+\end{definitionbox}
+
+\begin{itemize}
+    \item Uses server-side scripting (e.g., PHP, ASP, Java).
+    \item Content can change for different users.
+    \item Supports user interaction.
+    \item More complex than static websites.
+\end{itemize}
+
+\subsection{Comparison}
+
+\begin{longtable}{|C{4cm}|C{5.5cm}|C{5.5cm}|}
+\longtableheader{3}{Static vs Dynamic Website}{%
+\tblcolhdcell{Feature} & \tblcolhdcell{Static Website} & \tblcolhdcell{Dynamic Website}}
+
+Content & Fixed & Changeable \\ \tblhline
+Update & Manual & Automatic / dynamic \\ \tblhline
+Speed & Faster & Slower \\ \tblhline
+Technology & HTML, CSS & Server-side languages \\ \tblhline
+Interaction & Not supported & Supported \\ \tblhline
+Complexity & Simple & Complex \\ \tblhline
+
+\tblbottomrule
+\caption{Comparison between Static and Dynamic Website}
+\end{longtable}
+
+\begin{summarybox}
+Static websites are simple and fast, whereas dynamic websites are flexible and interactive.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Web Browser and Search Engine}
+% ─────────────────────────────────────────
+
+\subsection{Web Browser}
+
+\begin{definitionbox}[Web Browser]
+A web browser is a software application used to access, retrieve, and display webpages.
+\end{definitionbox}
+
+\begin{itemize}
+    \item It interprets HTML and renders content visually.
+    \item It allows users to navigate between webpages.
+    \item Examples include Google Chrome, Mozilla Firefox, Microsoft Edge, Opera.
+\end{itemize}
+
+\subsection{Search Engine}
+
+\begin{definitionbox}[Search Engine]
+A search engine is a system that helps users find information on the internet by searching indexed webpages.
+\end{definitionbox}
+
+\begin{itemize}
+    \item It collects and organizes web content.
+    \item It returns relevant results based on user queries.
+    \item Examples include Google, Bing, Yahoo.
+\end{itemize}
+
+\subsection{Difference Between Browser and Search Engine}
+
+\begin{itemize}
+    \item A browser is used to open and view websites.
+    \item A search engine is used to find websites.
+\end{itemize}
+
+\begin{summarybox}
+Browser is a tool for accessing the web, while a search engine is a tool for searching information.
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{HTML (HyperText Markup Language)}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[HTML]
+HTML (HyperText Markup Language) is the standard markup language used to create and structure webpages.
+\end{definitionbox}
+
+HTML does not perform computation; it describes the structure and content of a webpage so that a browser can render it.
+
+\subsection{Key Characteristics}
+
+\begin{itemize}
+    \item Uses tags to mark content.
+    \item Works with web browsers to display pages.
+    \item Supports text, images, links, lists, tables and forms.
+    \item Platform independent (runs in any modern browser).
+\end{itemize}
+
+\subsection{Advantages of HTML}
+
+\begin{itemize}
+    \item Simple and easy to learn.
+    \item Supported by all browsers.
+    \item Integrates with CSS and JavaScript.
+    \item Lightweight and fast to load.
+\end{itemize}
+
+\subsection{Limitations of HTML}
+
+\begin{itemize}
+    \item Cannot create dynamic behavior by itself.
+    \item Limited styling without CSS.
+    \item No database interaction.
+\end{itemize}
+
+\begin{summarybox}
+HTML defines structure; CSS handles styling; JavaScript adds interactivity.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Basic Structure of an HTML Document}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[HTML Document Structure]
+An HTML document is organized using a standard structure consisting of \texttt{<!DOCTYPE>}, \texttt{<html>}, \texttt{<head>} and \texttt{<body>}.
+\end{definitionbox}
+
+\subsection{Skeleton Code}
+
+This example shows the minimum structure of a valid HTML page.
+The browser uses \texttt{<!DOCTYPE html>} to understand that the document follows HTML5 rules.
+The \texttt{head} stores page information, while the \texttt{body} stores visible content.
+
+\begin{lstlisting}[style=htmlide, caption={Basic HTML Document Structure}]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    Content goes here
+</body>
+</html>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item The \texttt{html} element contains the whole page.
+    \item The \texttt{title} appears in the browser tab.
+    \item Visible page content is written inside \texttt{body}.
+\end{itemize}
+
+\subsection{Explanation of Parts}
+
+\begin{itemize}
+    \item \texttt{<!DOCTYPE html>} declares the document type (HTML5).
+    \item \texttt{<html>} is the root element.
+    \item \texttt{<head>} contains metadata (title, links, scripts).
+    \item \texttt{<title>} sets the browser tab title.
+    \item \texttt{<body>} contains visible content.
+\end{itemize}
+
+\begin{summarybox}
+The \texttt{<head>} holds information about the page, while the \texttt{<body>} holds what users see.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{HTML Tags}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Tag]
+A tag is a keyword enclosed in angle brackets used to define elements in HTML.
+\end{definitionbox}
+
+\subsection{Types of Tags}
+
+\begin{itemize}
+    \item \term{Container (Paired) Tags}: Have opening and closing parts.  
+          Example: \texttt{<p> ... </p>}
+    \item \term{Empty (Unpaired) Tags}: Do not have a closing tag.  
+          Example: \texttt{<br>}, \texttt{<hr>}
+\end{itemize}
+
+\subsection{Examples}
+
+This example compares paired tags and empty tags.
+A paragraph uses both opening and closing tags, but \texttt{br} and \texttt{hr} are empty elements.
+
+\begin{lstlisting}[style=htmlide, caption={Paired and Empty HTML Tags}]
+<p>This is a paragraph</p>
+<br>
+<hr>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{p} is a container tag because it wraps content.
+    \item \texttt{br} creates a line break without a closing tag.
+    \item \texttt{hr} creates a horizontal line.
+\end{itemize}
+
+\begin{summarybox}
+Tags define how content is structured and displayed in a webpage.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{HTML Elements}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Element]
+An HTML element consists of a start tag, content, and an end tag.
+\end{definitionbox}
+
+\subsection{Structure of an Element}
+
+\begin{formulabox}
+\[
+\text{Element} = \text{Start Tag} + \text{Content} + \text{End Tag}
+\]
+\end{formulabox}
+
+\subsection{Example}
+
+This short example shows one complete HTML element.
+The start tag, content, and end tag together form the element.
+
+\begin{lstlisting}[style=htmlide, caption={A Complete Paragraph Element}]
+<p>Hello World</p>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item The content is written between the two tags.
+    \item The closing tag uses a slash before the tag name.
+\end{itemize}
+
+\begin{itemize}
+    \item \texttt{<p>}: Start tag
+    \item \texttt{Hello World}: Content
+    \item \texttt{</p>}: End tag
+\end{itemize}
+
+\begin{summarybox}
+Tags are the markers, while elements are the complete units formed by tags and content.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{HTML Attributes}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Attribute]
+An attribute provides additional information about an HTML element and is written inside the start tag.
+\end{definitionbox}
+
+\subsection{General Form}
+
+\begin{formulabox}
+\[
+\text{<tag attribute="value">}
+\]
+\end{formulabox}
+
+\subsection{Examples}
+
+This example shows how attributes add extra information to HTML elements.
+The \texttt{href} attribute gives a link destination, while \texttt{src} and \texttt{alt} describe an image source and fallback text.
+
+\begin{lstlisting}[style=htmlide, caption={Common HTML Attributes}]
+<a href="https://www.example.com">Visit</a>
+<img src="image.jpg" alt="Image">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item Attributes are written inside the opening tag.
+    \item Attribute values are usually written inside quotation marks.
+    \item The same element can have more than one attribute.
+\end{itemize}
+
+\subsection{Common Attributes}
+
+\begin{itemize}
+    \item \texttt{href}: defines link destination
+    \item \texttt{src}: defines image source
+    \item \texttt{alt}: alternative text for images
+    \item \texttt{title}: tooltip text
+\end{itemize}
+
+\begin{summarybox}
+Attributes modify the behavior or appearance of elements.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Text Formatting Tags}
+% ─────────────────────────────────────────
+
+\subsection{Basic Formatting}
+
+\begin{longtable}{|C{4cm}|C{6cm}|C{5cm}|}
+\longtableheader{3}{Formatting Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Purpose} & \tblcolhdcell{Example}}
+
+<b> & Bold text & \texttt{<b>Text</b>} \\ \tblhline
+<i> & Italic text & \texttt{<i>Text</i>} \\ \tblhline
+<u> & Underline text & \texttt{<u>Text</u>} \\ \tblhline
+<sup> & Superscript & \texttt{a<sup>2</sup>} \\ \tblhline
+<sub> & Subscript & \texttt{H<sub>2</sub>O} \\ \tblhline
+<br> & Line break & \texttt{Line<br>Next} \\ \tblhline
+<hr> & Horizontal line & \texttt{<hr>} \\ \tblhline
+
+\tblbottomrule
+\caption{Common HTML Formatting Tags}
+\end{longtable}
+
+\begin{summarybox}
+Formatting tags are used to control the appearance of text.
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{HTML Lists}
+% ─────────────────────────────────────────
+
+HTML provides different types of lists to organize content.
+
+\subsection{Ordered List (OL)}
+
+\begin{definitionbox}[Ordered List]
+An ordered list displays items in a numbered sequence.
+\end{definitionbox}
+
+This example creates a numbered list.
+Each list item must be written inside an \texttt{li} element.
+
+\begin{lstlisting}[style=htmlide, caption={Ordered List}]
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ol>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{ol} means ordered list.
+    \item Browsers number ordered list items automatically.
+\end{itemize}
+
+\subsection{Unordered List (UL)}
+
+\begin{definitionbox}[Unordered List]
+An unordered list displays items using bullet points.
+\end{definitionbox}
+
+This example creates a bullet list.
+It is useful when the order of items is not important.
+
+\begin{lstlisting}[style=htmlide, caption={Unordered List}]
+<ul>
+    <li>Item A</li>
+    <li>Item B</li>
+</ul>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{ul} means unordered list.
+    \item Each bullet is created by an \texttt{li} tag.
+\end{itemize}
+
+\subsection{Description List (DL)}
+
+\begin{definitionbox}[Description List]
+A description list is used to define terms and their descriptions.
+\end{definitionbox}
+
+This example creates a description list.
+It pairs a term with a short explanation.
+
+\begin{lstlisting}[style=htmlide, caption={Description List}]
+<dl>
+    <dt>HTML</dt>
+    <dd>Markup language</dd>
+</dl>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{dt} defines the term.
+    \item \texttt{dd} gives the description of that term.
+\end{itemize}
+
+\begin{summarybox}
+HTML lists help organize content in a structured and readable way.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Images in HTML}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Image Tag]
+The \texttt{<img>} tag is used to display images on a webpage.
+\end{definitionbox}
+
+\subsection{Basic Syntax}
+
+This example inserts an image into a webpage.
+The \texttt{src} attribute gives the image file path, and \texttt{alt} provides text if the image cannot load.
+
+\begin{lstlisting}[style=htmlide, caption={Basic Image Tag}]
+<img src="image.jpg" alt="Description">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{img} is an empty element.
+    \item \texttt{alt} improves accessibility and helps when the image path is wrong.
+\end{itemize}
+
+\subsection{Common Attributes}
+
+\begin{itemize}
+    \item \texttt{src}: specifies image path
+    \item \texttt{alt}: alternative text if image fails to load
+    \item \texttt{width}: image width
+    \item \texttt{height}: image height
+\end{itemize}
+
+\begin{summarybox}
+Images enhance visual presentation and improve user experience.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Hyperlinks in HTML}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Hyperlink]
+A hyperlink is a connection that allows navigation from one webpage to another.
+\end{definitionbox}
+
+\subsection{Anchor Tag}
+
+This example creates a clickable link.
+The \texttt{href} attribute stores the destination address, and the text between the tags becomes clickable.
+
+\begin{lstlisting}[style=htmlide, caption={Basic Hyperlink}]
+<a href="https://www.example.com">Visit Website</a>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item The \texttt{a} tag creates an anchor.
+    \item The link destination is controlled by \texttt{href}.
+\end{itemize}
+
+\subsection{Important Attributes}
+
+\begin{itemize}
+    \item \texttt{href}: destination URL
+    \item \texttt{target}: where to open link
+\end{itemize}
+
+\subsection{Target Values}
+
+\begin{itemize}
+    \item \texttt{\_self}: opens in same tab
+    \item \texttt{\_blank}: opens in new tab
+\end{itemize}
+
+\begin{summarybox}
+Hyperlinks are the foundation of web navigation, connecting pages together.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{HTML Tables}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Table]
+An HTML table is used to display data in rows and columns.
+\end{definitionbox}
+
+\subsection{Basic Structure}
+
+This example builds a small table using rows, header cells, and data cells.
+The first row contains headings, and the second row contains normal table data.
+
+\begin{lstlisting}[style=htmlide, caption={Basic HTML Table}]
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>20</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{tr} creates a table row.
+    \item \texttt{th} creates a heading cell.
+    \item \texttt{td} creates a normal data cell.
+\end{itemize}
+
+\subsection{Table Elements}
+
+\begin{itemize}
+    \item \texttt{<table>}: defines table
+    \item \texttt{<tr>}: table row
+    \item \texttt{<th>}: table header cell
+    \item \texttt{<td>}: table data cell
+\end{itemize}
+
+\subsection{Common Attributes}
+
+\begin{itemize}
+    \item \texttt{border}: defines border size
+    \item \texttt{cellpadding}: space inside cells
+    \item \texttt{cellspacing}: space between cells
+\end{itemize}
+
+\begin{summarybox}
+Tables are used to present structured data clearly in rows and columns.
+\end{summarybox}
+
+
+% ─────────────────────────────────────────
+\section{Final Summary of the Chapter}
+% ─────────────────────────────────────────
+
+\begin{summarybox}[Chapter Overview]
+\begin{itemize}
+    \item Web design deals with creating and structuring websites.
+    \item Websites are collections of interconnected webpages.
+    \item IP address uniquely identifies devices on a network.
+    \item Domain name provides a human-readable address.
+    \item URL specifies the location of resources.
+    \item Website structure affects navigation and usability.
+    \item HTML is used to create webpage structure.
+    \item Tags, elements, and attributes form HTML content.
+    \item Lists, images, links, and tables are essential HTML components.
+\end{itemize}
+\end{summarybox}
