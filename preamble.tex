@@ -47,7 +47,21 @@
   \setmonofont{Latin Modern Mono}
 \fi
 
-\usepackage[top=2.5cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\linespread{1.2}
+
+\usepackage[
+    top=2.0cm,
+    bottom=2cm,
+    left=1.5cm,
+    right=1.5cm,
+    headheight=24pt,
+    headsep=10pt
+]{geometry}
+
+% ─── Page breaking behaviour ─────────────────────────────────────────────────
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
 
 % ─── Math ────────────────────────────────────────────────────────────────────
 \usepackage{amsmath, amssymb, amsthm, amsfonts}
@@ -375,22 +389,22 @@
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
-% [D] TYPOGRAPHY & SECTION FORMATTING
+% [D] TYPOGRAPHY & SECTION FORMATTING  (full replacement)
 % ═══════════════════════════════════════════════════════════════════════════════
-
+ 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{3}
-
-% Chapter heading controls (chapter-opening pages only)
-\newlength{\ChapterBeforeSkip}   % space above chapter block
-\newlength{\ChapterNumTitleGap}  % space between number line and title
-\newlength{\ChapterTitleRuleGap} % space between title and horizontal rule
-\newlength{\ChapterAfterSkip}    % space below chapter block
-\setlength{\ChapterBeforeSkip}{-55pt}
+ 
+% Chapter heading controls
+\newlength{\ChapterBeforeSkip}
+\newlength{\ChapterNumTitleGap}
+\newlength{\ChapterTitleRuleGap}
+\newlength{\ChapterAfterSkip}
+\setlength{\ChapterBeforeSkip}{-30pt}   % was -55pt; safer across all page situations
 \setlength{\ChapterNumTitleGap}{0.45em}
 \setlength{\ChapterTitleRuleGap}{0.5cm}
-\setlength{\ChapterAfterSkip}{3.2ex}
-
+\setlength{\ChapterAfterSkip}{2.5ex}    % was 3.2ex
+ 
 \makeatletter
 \def\@makechapterhead#1{%
   \vspace*{\ChapterBeforeSkip}%
@@ -406,7 +420,6 @@
     \vskip \ChapterAfterSkip
   }%
 }
-
 \def\@makeschapterhead#1{%
   \vspace*{\ChapterBeforeSkip}%
   {\parindent\z@\centering\normalfont\bfseries\color{chaptercolor}%
@@ -418,34 +431,51 @@
   }%
 }
 \makeatother
+ 
+\usepackage{needspace}
 
 \titleformat{\section}
     {\normalfont\huge\bfseries\color{sectioncolor}}
     {\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\section}
+    {0pt}{2.2ex plus 0.4ex minus .2ex}{1.1ex plus .2ex}
 
 \titleformat{\subsection}
     {\normalfont\LARGE\bfseries\color{subsectioncolor}}
     {\thesubsection}{1em}{}
-\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsection}
+    {0pt}{1.8ex plus 0.3ex minus .2ex}{0.8ex plus .2ex}
 
 \titleformat{\subsubsection}
     {\normalfont\Large\bfseries\color{subsubcolor}}
     {\thesubsubsection}{1em}{}
-\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}
+    {0pt}{1.5ex plus 0.25ex minus .15ex}{0.6ex plus .15ex}
 
 \titleformat{\paragraph}
     {\normalfont\large\bfseries\color{paragraphcolor}}
     {\theparagraph}{1em}{}
-\titlespacing*{\paragraph}{0pt}{3.0ex plus 1ex minus .2ex}{1.0em}
+\titlespacing*{\paragraph}
+    {0pt}{1.2ex plus 0.2ex minus .1ex}{0.8em}
 
 \titleformat{\subparagraph}
     {\normalfont\normalsize\bfseries\color{subparagraphcolor}}
     {\thesubparagraph}{1em}{}
-\titlespacing*{\subparagraph}{0pt}{2.0ex plus 0.8ex minus .2ex}{1.0em}
+\titlespacing*{\subparagraph}
+    {0pt}{0.9ex plus 0.15ex minus .1ex}{0.7em}
 
+% Keep headings attached to the content that follows them.
+% This is the correct place for needspace — after titleformat, not inside it.
+\AtBeginDocument{%
+    \pretocmd{\section}      {\needspace{6\baselineskip}}{}{}%
+    \pretocmd{\subsection}   {\needspace{5\baselineskip}}{}{}%
+    \pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}%
+    \pretocmd{\paragraph}    {\needspace{3\baselineskip}}{}{}%
+}
+ 
 \renewcommand{\theparagraph}   {\thesubsubsection.\arabic{paragraph}}
 \renewcommand{\thesubparagraph}{\theparagraph.\arabic{subparagraph}}
+
 % ═══════════════════════════════════════════════════════════════════════════════
 % [E] HEADERS & FOOTERS
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -675,18 +705,17 @@
 % [G-1] LISTS
 % ═══════════════════════════════════════════════════════════════════════════════
 
-\setlist[itemize]  {topsep=4pt, itemsep=3pt, parsep=0pt}
-\setlist[enumerate]{topsep=4pt, itemsep=3pt, parsep=0pt}
-
+\setlist[itemize]  {topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+ 
 \setlist[itemize,1]{label=\textcolor{sectioncolor}{$\triangleright$},  leftmargin=*}
-\setlist[itemize,2]{label=\textcolor{subsubcolor}{$\rightarrow$},            leftmargin=*}
-\setlist[itemize,3]{label=\textcolor{paragraphcolor}{\textendash},   leftmargin=*}
-\setlist[itemize,4]{label=\textcolor{subparagraphcolor}{$\circ$},       leftmargin=*}
-
+\setlist[itemize,2]{label=\textcolor{subsubcolor}{$\rightarrow$},      leftmargin=*}
+\setlist[itemize,3]{label=\textcolor{paragraphcolor}{\textendash},     leftmargin=*}
+\setlist[itemize,4]{label=\textcolor{subparagraphcolor}{$\circ$},      leftmargin=*}
+ 
 \setlist[enumerate,1]{label=\textcolor{sectioncolor}{\arabic*.},       leftmargin=*}
 \setlist[enumerate,2]{label=\textcolor{subsubcolor}{(\alph*)},         leftmargin=*}
 \setlist[enumerate,3]{label=\textcolor{paragraphcolor}{\roman*.},      leftmargin=*}
-
 
 % ═══════════════════════════════════════════════════════════════════════════════
 % [G-2] LONGTABLE SYSTEM
@@ -715,16 +744,15 @@
 \setlength{\tabcolsep}{6pt}
 \setlength{\arrayrulewidth}{0.5pt}
 \setlength{\extrarowheight}{0pt}
-\setlength{\LTpre}{8pt}
-\setlength{\LTpost}{8pt}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{2pt}
 \setlength{\LTleft}{\fill}
 \setlength{\LTright}{\fill}
-% Start longtables with enough room, so they don't begin at page bottom.
-% This avoids noisy split warnings and keeps table layout stable.
+
 \AtBeginEnvironment{longtable}{%
     \arrayrulecolor{tablegrid}%
     \rowcolors{2}{white}{tablezebrarow}%
-    \needspace{0.30\textheight}%
+    \needspace{0.12\textheight}%
 }
 \AtEndEnvironment{longtable}{\rowcolors{2}{}{}}
 

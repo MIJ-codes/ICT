@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  27 APR 2026 20:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  28 APR 2026 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,9 +991,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip155
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 810.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 810.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 810.
+Package hyperref Info: Option `colorlinks' set `true' on input line 838.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 838.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 838.
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -1025,16 +1025,16 @@ LaTeX Font Info:    ... okay on input line 32.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(71.13188pt, 717.00946pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=512.14963pt
-* \textheight=717.00946pt
+* \textheight=731.23584pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-33.0119pt
+* \topmargin=-49.36449pt
 * \headheight=24.0pt
-* \headsep=19.8738pt
+* \headsep=10.0pt
 * \topskip=11.0pt
 * \footskip=27.46295pt
 * \marginparwidth=106.0pt
@@ -1104,109 +1104,149 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 8.64001pt on input line 53.
+(Font)              scaled to size 8.64001pt on input line 51.
  [1{C:/Users/miadu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 
-])
+] [2])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] (Chapters/Chapter4.tex
+ [3] (Chapters/Chapter4.tex
 Chapter 1.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Internet}}' on input line 7.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries World Wide Web}}' on input line 11.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Hypertext document file}}' on input line 17.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Webpage}}' on input line 25.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Website}}' on input line 29.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web design}}' on input line 33.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Core Idea}}' on input line 47.
-[3
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Hypertext document file}}' on input line 29.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Webpage}}' on input line 37.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Website}}' on input line 41.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web design}}' on input line 45.
+[4
 
 ]
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries IP Address}}' on input line 67.
-[4]
-contour: Using real outline for `\textcolor {examplecolor}{\textsc {\normalsize \bfseries Example~1.1}}' on input line 105.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Domain Name}}' on input line 120.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries DNS}}' on input line 135.
-contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Domain Name Structure}}' on input line 141.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Core Idea}}' on input line 59.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Website Structure}}' on input line 81.
 [5]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Domain Name vs IP Address}}' on input line 174.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries URL}}' on input line 186.
-contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries General Form}}' on input line 194.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 212.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Website Structure}}' on input line 220.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 129.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Static Website}}' on input line 139.
 [6]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 262.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Static Website}}' on input line 272.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Dynamic Website}}' on input line 173.
 [7]
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Dynamic Website}}' on input line 285.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 314.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web Browser}}' on input line 324.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Search Engine}}' on input line 336.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 248.
 [8]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 354.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML}}' on input line 361.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web Browser}}' on input line 257.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web Browsing}}' on input line 278.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Search Engine}}' on input line 292.
 [9]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 394.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML Document Structure}}' on input line 402.
+Overfull \hbox (23.7743pt too wide) in paragraph at lines 305--306
+[]\T1/cmr/m/n/10.95 Example: Google, Bing, Ya-hoo, Duck-DuckGo, Ask, Yan-dex, Baidu, Wol-fra-mAl-pha (com-pu-ta-tional information-
+ []
+
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 340.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries IP Address}}' on input line 345.
+[10]
+contour: Using real outline for `\textcolor {examplecolor}{\textsc {\normalsize \bfseries Example~1.1}}' on input line 384.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Domain Name}}' on input line 399.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries DNS}}' on input line 405.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries The Bridge}}' on input line 409.
+[11]
+contour: Using real outline for `\textcolor {infocolor}{\textsc {\normalsize \bfseries Example: Domain Structure}}' on input line 450.
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 453.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 461.
+
+[12]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web Hosting}}' on input line 511.
+[13]
+Overfull \hbox (5.32668pt too wide) in paragraph at lines 527--528
+[][]\T1/cmr/bx/n/10.95 Windows Host-ing[]\T1/cmr/m/n/10.95 : Host-ing on a Win-dows server. It is mainly used for web-sites made with ASP/ASP.NET
+ []
+
+Chapters/Chapter4.tex:576: ignored error: Infinite glue shrinkage found in box being split [14]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries URL}}' on input line 582.
+contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Structure of URL}}' on input line 596.
+contour: Using real outline for `\textcolor {infocolor}{\textsc {\normalsize \bfseries Example: URL Structure}}' on input line 609.
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 612.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 622.
+
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 634.
+[15]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Protocol}}' on input line 641.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTTP}}' on input line 659.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries FTP}}' on input line 676.
+[16]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries HTTP vs FTP}}' on input line 698.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Web Communication}}' on input line 706.
+[17]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Web Working Flow}}' on input line 752.
+Chapters/Chapter4.tex:800: ignored error: Infinite glue shrinkage found in box being split [18]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML}}' on input line 806.
+[19]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 853.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML Document Structure}}' on input line 861.
 (C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 ) (C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 412.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 871.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 413.
-
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 442.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Tag}}' on input line 450.
-[10]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 482.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Element}}' on input line 490.
-contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Formula}}' on input line 497.
-[11]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 524.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Attribute}}' on input line 532.
-contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Formula}}' on input line 539.
-[12]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 571.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 598.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Ordered List}}' on input line 609.
-[13]
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Unordered List}}' on input line 631.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Description List}}' on input line 653.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 674.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Image Tag}}' on input line 682.
-[14]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 711.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Hyperlink}}' on input line 719.
-[15]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 753.
-contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Table}}' on input line 761.
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 808.
-[16]
-contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Chapter Overview}}' on input line 816.
-) [17] (main.aux)
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 872.
+ [20]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 930.
+[21]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Tag}}' on input line 937.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 971.
+[22]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Element}}' on input line 992.
+contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Formula}}' on input line 999.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1026.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Attribute}}' on input line 1033.
+contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Formula}}' on input line 1040.
+[23]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1072.
+[24]
+Chapters/Chapter4.tex:1147: ignored error: Infinite glue shrinkage found in box being split [25]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1173.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Ordered List}}' on input line 1184.
+[26]
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Unordered List}}' on input line 1206.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Description List}}' on input line 1228.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1249.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Hyperlink}}' on input line 1256.
+[27]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1290.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Image Tag}}' on input line 1297.
+[28]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1326.
+contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Table}}' on input line 1333.
+[29]
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1380.
+contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Chapter Overview}}' on input line 1388.
+) [30] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B0C997D62F9746CF9413B775CA71B4B2;12141.
+(rerunfilecheck)             Checksum: 3D60FD45B6025F1050FB2AAFDAE7286F;19606.
  ) 
 Here is how much of TeX's memory you used:
- 37479 strings out of 467690
- 776011 string characters out of 5414972
- 1486097 words of memory out of 5000000
- 65695 multiletter control sequences out of 15000+600000
- 645142 words of font info for 77 fonts, out of 8000000 for 9000
+ 37716 strings out of 467690
+ 779862 string characters out of 5414972
+ 1490151 words of memory out of 5000000
+ 65826 multiletter control sequences out of 15000+600000
+ 654481 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,16n,145p,576b,1982s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/calligra-type1/callig15.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on main.pdf (17 pages, 546519 bytes).
+ 91i,16n,145p,576b,3254s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/calligra-type1/callig15.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1095.pfb>
+Output written on main.pdf (30 pages, 756764 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 759 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 959 PDF objects out of 1000 (max. 8388607)
+ 228 named destinations out of 1000 (max. 500000)
+ 1033 words of extra memory for PDF output out of 10000 (max. 10000000)
 
