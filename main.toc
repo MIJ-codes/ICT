@@ -6,14 +6,14 @@
 \contentsline {section}{\numberline {1.2}Website}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Website Structure}{5}{subsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.1.1}Common Pages in a Website}{5}{subsubsection.1.2.1.1}%
-\contentsline {subsubsection}{\numberline {1.2.1.2}Types of Website Structure}{6}{subsubsection.1.2.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1.2}Types of Website Structure}{5}{subsubsection.1.2.1.2}%
 \contentsline {paragraph}{\numberline {1.2.1.2.1}Hierarchical Structure}{6}{paragraph.1.2.1.2.1}%
 \contentsline {paragraph}{\numberline {1.2.1.2.2}Linear Structure}{6}{paragraph.1.2.1.2.2}%
 \contentsline {paragraph}{\numberline {1.2.1.2.3}Network Structure}{6}{paragraph.1.2.1.2.3}%
 \contentsline {paragraph}{\numberline {1.2.1.2.4}Hybrid Structure}{6}{paragraph.1.2.1.2.4}%
 \contentsline {subsection}{\numberline {1.2.2}Types of Website}{6}{subsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.2.1}Static Website}{6}{subsubsection.1.2.2.1}%
-\contentsline {paragraph}{\numberline {1.2.2.1.1}Advantages of Static Website}{7}{paragraph.1.2.2.1.1}%
+\contentsline {paragraph}{\numberline {1.2.2.1.1}Advantages of Static Website}{6}{paragraph.1.2.2.1.1}%
 \contentsline {paragraph}{\numberline {1.2.2.1.2}Disadvantages of Static Website}{7}{paragraph.1.2.2.1.2}%
 \contentsline {subsubsection}{\numberline {1.2.2.2}Dynamic Website}{7}{subsubsection.1.2.2.2}%
 \contentsline {paragraph}{\numberline {1.2.2.2.1}Advantages of Dynamic Website}{7}{paragraph.1.2.2.2.1}%
@@ -21,84 +21,84 @@
 \contentsline {subsubsection}{\numberline {1.2.2.3}Comparison}{7}{subsubsection.1.2.2.3}%
 \contentsline {subsection}{\numberline {1.2.3}Types of Webpage Based on Location}{8}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Website Classification by Purpose}{8}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Web Browser and Search Engine}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Web Browser}{9}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.3}Web Browser and Search Engine}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Web Browser}{8}{subsection.1.3.1}%
 \contentsline {subsubsection}{\numberline {1.3.1.1}Functions of Web Browser}{9}{subsubsection.1.3.1.1}%
 \contentsline {subsection}{\numberline {1.3.2}Web Browsing}{9}{subsection.1.3.2}%
 \contentsline {subsubsection}{\numberline {1.3.2.1}Methods of Web Browsing}{9}{subsubsection.1.3.2.1}%
 \contentsline {subsection}{\numberline {1.3.3}Search Engine}{9}{subsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.3.1}Functions of Search Engine}{10}{subsubsection.1.3.3.1}%
-\contentsline {subsection}{\numberline {1.3.4}Difference Between Browser and Search Engine}{10}{subsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.3.1}Functions of Search Engine}{9}{subsubsection.1.3.3.1}%
+\contentsline {subsection}{\numberline {1.3.4}Difference Between Browser and Search Engine}{9}{subsection.1.3.4}%
 \contentsline {section}{\numberline {1.4}IP Address}{10}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Purpose of IP Address}{10}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Types of IP Address}{11}{subsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.2.1}Network ID and Host ID}{11}{subsubsection.1.4.2.1}%
+\contentsline {subsection}{\numberline {1.4.2}Types of IP Address}{10}{subsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.1}Network ID and Host ID}{10}{subsubsection.1.4.2.1}%
 \contentsline {section}{\numberline {1.5}Domain Name and Domain Name System (DNS)}{11}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Some Technical Terms}{12}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.1}Some Technical Terms}{11}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Domain Registration and ICANN}{12}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Types of Domain}{12}{subsection.1.5.3}%
-\contentsline {subsection}{\numberline {1.5.4}Common Top Level Domains / Generic TLDs}{13}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.4}Common Top Level Domains / Generic TLDs}{12}{subsection.1.5.4}%
 \contentsline {subsection}{\numberline {1.5.5}Country Code Top Level Domains}{13}{subsection.1.5.5}%
 \contentsline {section}{\numberline {1.6}Web Hosting}{13}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Types of Web Hosting}{14}{subsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.1.1}Based on Platform or Operating System}{14}{subsubsection.1.6.1.1}%
-\contentsline {subsubsection}{\numberline {1.6.1.2}Based on Facilities}{14}{subsubsection.1.6.1.2}%
+\contentsline {subsection}{\numberline {1.6.1}Types of Web Hosting}{13}{subsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.1}Based on Platform or Operating System}{13}{subsubsection.1.6.1.1}%
+\contentsline {subsubsection}{\numberline {1.6.1.2}Based on Facilities}{13}{subsubsection.1.6.1.2}%
 \contentsline {subsubsection}{\numberline {1.6.1.3}Email Services with Hosting}{14}{subsubsection.1.6.1.3}%
 \contentsline {subsection}{\numberline {1.6.2}Difference between Domain Name and Web Hosting}{14}{subsection.1.6.2}%
-\contentsline {section}{\numberline {1.7}URL (Uniform Resource Locator)}{15}{section.1.7}%
+\contentsline {section}{\numberline {1.7}URL (Uniform Resource Locator)}{14}{section.1.7}%
 \contentsline {subsection}{\numberline {1.7.1}Components of URL}{15}{subsection.1.7.1}%
-\contentsline {section}{\numberline {1.8}Protocol}{16}{section.1.8}%
-\contentsline {subsection}{\numberline {1.8.1}Common Internet Protocols}{16}{subsection.1.8.1}%
+\contentsline {section}{\numberline {1.8}Protocol}{15}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Common Internet Protocols}{15}{subsection.1.8.1}%
 \contentsline {subsection}{\numberline {1.8.2}HTTP}{16}{subsection.1.8.2}%
 \contentsline {subsubsection}{\numberline {1.8.2.1}Functions of HTTP}{16}{subsubsection.1.8.2.1}%
 \contentsline {subsection}{\numberline {1.8.3}FTP}{16}{subsection.1.8.3}%
-\contentsline {subsubsection}{\numberline {1.8.3.1}Functions of FTP}{17}{subsubsection.1.8.3.1}%
-\contentsline {subsubsection}{\numberline {1.8.3.2}Types of FTP Access}{17}{subsubsection.1.8.3.2}%
+\contentsline {subsubsection}{\numberline {1.8.3.1}Functions of FTP}{16}{subsubsection.1.8.3.1}%
+\contentsline {subsubsection}{\numberline {1.8.3.2}Types of FTP Access}{16}{subsubsection.1.8.3.2}%
 \contentsline {section}{\numberline {1.9}Web Communication}{17}{section.1.9}%
 \contentsline {subsection}{\numberline {1.9.1}Correct Overall Idea}{17}{subsection.1.9.1}%
 \contentsline {subsection}{\numberline {1.9.2}Website Creation Side}{17}{subsection.1.9.2}%
-\contentsline {subsection}{\numberline {1.9.3}User Access Side}{18}{subsection.1.9.3}%
+\contentsline {subsection}{\numberline {1.9.3}User Access Side}{17}{subsection.1.9.3}%
 \contentsline {section}{\numberline {1.10}Difference between IP Address, Domain Name, DNS and URL}{18}{section.1.10}%
-\contentsline {section}{\numberline {1.11}HTML (HyperText Markup Language)}{19}{section.1.11}%
+\contentsline {section}{\numberline {1.11}HTML (HyperText Markup Language)}{18}{section.1.11}%
 \contentsline {subsection}{\numberline {1.11.1}Short History of HTML}{19}{subsection.1.11.1}%
-\contentsline {subsection}{\numberline {1.11.2}Key Characteristics}{20}{subsection.1.11.2}%
-\contentsline {subsection}{\numberline {1.11.3}Advantages of HTML}{20}{subsection.1.11.3}%
-\contentsline {subsection}{\numberline {1.11.4}Limitations of HTML}{20}{subsection.1.11.4}%
-\contentsline {section}{\numberline {1.12}Basic Structure of an HTML Document}{20}{section.1.12}%
+\contentsline {subsection}{\numberline {1.11.2}Key Characteristics}{19}{subsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.11.3}Advantages of HTML}{19}{subsection.1.11.3}%
+\contentsline {subsection}{\numberline {1.11.4}Limitations of HTML}{19}{subsection.1.11.4}%
+\contentsline {section}{\numberline {1.12}Basic Structure of an HTML Document}{19}{section.1.12}%
 \contentsline {subsection}{\numberline {1.12.1}Skeleton Code}{20}{subsection.1.12.1}%
-\contentsline {subsection}{\numberline {1.12.2}Explanation of Parts}{21}{subsection.1.12.2}%
-\contentsline {subsection}{\numberline {1.12.3}Head Section Elements}{21}{subsection.1.12.3}%
+\contentsline {subsection}{\numberline {1.12.2}Explanation of Parts}{20}{subsection.1.12.2}%
+\contentsline {subsection}{\numberline {1.12.3}Head Section Elements}{20}{subsection.1.12.3}%
 \contentsline {subsection}{\numberline {1.12.4}Body Section Elements}{21}{subsection.1.12.4}%
-\contentsline {section}{\numberline {1.13}HTML Tags}{22}{section.1.13}%
-\contentsline {subsection}{\numberline {1.13.1}Types of Tags}{22}{subsection.1.13.1}%
-\contentsline {subsection}{\numberline {1.13.2}Examples}{22}{subsection.1.13.2}%
+\contentsline {section}{\numberline {1.13}HTML Tags}{21}{section.1.13}%
+\contentsline {subsection}{\numberline {1.13.1}Types of Tags}{21}{subsection.1.13.1}%
+\contentsline {subsection}{\numberline {1.13.2}Examples}{21}{subsection.1.13.2}%
 \contentsline {subsection}{\numberline {1.13.3}HTML Comments}{22}{subsection.1.13.3}%
-\contentsline {section}{\numberline {1.14}HTML Elements}{23}{section.1.14}%
-\contentsline {subsection}{\numberline {1.14.1}Structure of an Element}{23}{subsection.1.14.1}%
-\contentsline {subsection}{\numberline {1.14.2}Example}{23}{subsection.1.14.2}%
+\contentsline {section}{\numberline {1.14}HTML Elements}{22}{section.1.14}%
+\contentsline {subsection}{\numberline {1.14.1}Structure of an Element}{22}{subsection.1.14.1}%
+\contentsline {subsection}{\numberline {1.14.2}Example}{22}{subsection.1.14.2}%
 \contentsline {section}{\numberline {1.15}HTML Attributes}{23}{section.1.15}%
-\contentsline {subsection}{\numberline {1.15.1}General Form}{24}{subsection.1.15.1}%
-\contentsline {subsection}{\numberline {1.15.2}Examples}{24}{subsection.1.15.2}%
-\contentsline {subsection}{\numberline {1.15.3}Common Attributes}{24}{subsection.1.15.3}%
-\contentsline {section}{\numberline {1.16}Headings, Paragraphs and Line Breaks}{24}{section.1.16}%
-\contentsline {subsection}{\numberline {1.16.1}Heading Elements}{24}{subsection.1.16.1}%
-\contentsline {subsection}{\numberline {1.16.2}Paragraph, Break and Horizontal Rule}{25}{subsection.1.16.2}%
-\contentsline {section}{\numberline {1.17}Text Formatting Tags}{25}{section.1.17}%
-\contentsline {subsection}{\numberline {1.17.1}Basic Formatting}{25}{subsection.1.17.1}%
-\contentsline {subsection}{\numberline {1.17.2}Font, Bangla Text and Marquee}{26}{subsection.1.17.2}%
-\contentsline {section}{\numberline {1.18}HTML Lists}{26}{section.1.18}%
-\contentsline {subsection}{\numberline {1.18.1}Ordered List (OL)}{26}{subsection.1.18.1}%
-\contentsline {subsection}{\numberline {1.18.2}Unordered List (UL)}{27}{subsection.1.18.2}%
-\contentsline {subsection}{\numberline {1.18.3}Description List (DL)}{27}{subsection.1.18.3}%
+\contentsline {subsection}{\numberline {1.15.1}General Form}{23}{subsection.1.15.1}%
+\contentsline {subsection}{\numberline {1.15.2}Examples}{23}{subsection.1.15.2}%
+\contentsline {subsection}{\numberline {1.15.3}Common Attributes}{23}{subsection.1.15.3}%
+\contentsline {section}{\numberline {1.16}Headings, Paragraphs and Line Breaks}{23}{section.1.16}%
+\contentsline {subsection}{\numberline {1.16.1}Heading Elements}{23}{subsection.1.16.1}%
+\contentsline {subsection}{\numberline {1.16.2}Paragraph, Break and Horizontal Rule}{24}{subsection.1.16.2}%
+\contentsline {section}{\numberline {1.17}Text Formatting Tags}{24}{section.1.17}%
+\contentsline {subsection}{\numberline {1.17.1}Basic Formatting}{24}{subsection.1.17.1}%
+\contentsline {subsection}{\numberline {1.17.2}Font, Bangla Text and Marquee}{25}{subsection.1.17.2}%
+\contentsline {section}{\numberline {1.18}HTML Lists}{25}{section.1.18}%
+\contentsline {subsection}{\numberline {1.18.1}Ordered List (OL)}{25}{subsection.1.18.1}%
+\contentsline {subsection}{\numberline {1.18.2}Unordered List (UL)}{26}{subsection.1.18.2}%
+\contentsline {subsection}{\numberline {1.18.3}Description List (DL)}{26}{subsection.1.18.3}%
 \contentsline {section}{\numberline {1.19}Hyperlinks in HTML}{27}{section.1.19}%
-\contentsline {subsection}{\numberline {1.19.1}Anchor Tag}{28}{subsection.1.19.1}%
-\contentsline {subsection}{\numberline {1.19.2}Important Attributes}{28}{subsection.1.19.2}%
-\contentsline {subsection}{\numberline {1.19.3}Target Values}{28}{subsection.1.19.3}%
-\contentsline {section}{\numberline {1.20}Images in HTML}{28}{section.1.20}%
-\contentsline {subsection}{\numberline {1.20.1}Basic Syntax}{28}{subsection.1.20.1}%
-\contentsline {subsection}{\numberline {1.20.2}Common Attributes}{29}{subsection.1.20.2}%
-\contentsline {section}{\numberline {1.21}HTML Tables}{29}{section.1.21}%
-\contentsline {subsection}{\numberline {1.21.1}Basic Structure}{29}{subsection.1.21.1}%
-\contentsline {subsection}{\numberline {1.21.2}Table Elements}{29}{subsection.1.21.2}%
-\contentsline {subsection}{\numberline {1.21.3}Common Attributes}{30}{subsection.1.21.3}%
-\contentsline {section}{\numberline {1.22}Final Summary of the Chapter}{30}{section.1.22}%
+\contentsline {subsection}{\numberline {1.19.1}Anchor Tag}{27}{subsection.1.19.1}%
+\contentsline {subsection}{\numberline {1.19.2}Important Attributes}{27}{subsection.1.19.2}%
+\contentsline {subsection}{\numberline {1.19.3}Target Values}{27}{subsection.1.19.3}%
+\contentsline {section}{\numberline {1.20}Images in HTML}{27}{section.1.20}%
+\contentsline {subsection}{\numberline {1.20.1}Basic Syntax}{27}{subsection.1.20.1}%
+\contentsline {subsection}{\numberline {1.20.2}Common Attributes}{28}{subsection.1.20.2}%
+\contentsline {section}{\numberline {1.21}HTML Tables}{28}{section.1.21}%
+\contentsline {subsection}{\numberline {1.21.1}Basic Structure}{28}{subsection.1.21.1}%
+\contentsline {subsection}{\numberline {1.21.2}Table Elements}{28}{subsection.1.21.2}%
+\contentsline {subsection}{\numberline {1.21.3}Common Attributes}{28}{subsection.1.21.3}%
+\contentsline {section}{\numberline {1.22}Final Summary of the Chapter}{29}{section.1.22}%

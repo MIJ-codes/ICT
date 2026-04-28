@@ -51,11 +51,12 @@
 
 \usepackage[
     top=2.0cm,
-    bottom=2cm,
+    bottom=1.5cm,
     left=1.5cm,
     right=1.5cm,
     headheight=24pt,
-    headsep=10pt
+    headsep=10pt,
+    footskip=1.15cm
 ]{geometry}
 
 % ─── Page breaking behaviour ─────────────────────────────────────────────────
@@ -464,14 +465,9 @@
 \titlespacing*{\subparagraph}
     {0pt}{0.9ex plus 0.15ex minus .1ex}{0.7em}
 
-% Keep headings attached to the content that follows them.
-% This is the correct place for needspace — after titleformat, not inside it.
-\AtBeginDocument{%
-    \pretocmd{\section}      {\needspace{6\baselineskip}}{}{}%
-    \pretocmd{\subsection}   {\needspace{5\baselineskip}}{}{}%
-    \pretocmd{\subsubsection}{\needspace{4\baselineskip}}{}{}%
-    \pretocmd{\paragraph}    {\needspace{3\baselineskip}}{}{}%
-}
+% Heading page-break protection is intentionally not forced globally.
+% Large \needspace values before every heading can push headings and following
+% content to the next page, collecting blank space at page bottoms.
  
 \renewcommand{\theparagraph}   {\thesubsubsection.\arabic{paragraph}}
 \renewcommand{\thesubparagraph}{\theparagraph.\arabic{subparagraph}}
@@ -579,15 +575,15 @@
                 (frame.north west) rectangle ([yshift=-2pt]frame.north east);
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.south west) rectangle ([yshift=2pt]frame.south east);
-            \draw[#1!18, line width=0.4pt]
+            \draw[#1!45, line width=0.55pt]
                 ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
-            \draw[#1!18, line width=0.4pt]
+            \draw[#1!45, line width=0.55pt]
                 ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
         },
         overlay first={
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.north west) rectangle ([yshift=-2pt]frame.north east);
-            \draw[#1!18, line width=0.4pt]
+            \draw[#1!45, line width=0.55pt]
                 ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
         },
         overlay middle={
@@ -599,7 +595,7 @@
         overlay last={
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.south west) rectangle ([yshift=2pt]frame.south east);
-            \draw[#1!18, line width=0.4pt]
+            \draw[#1!45, line width=0.55pt]
                 ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
         },
     }
@@ -752,7 +748,6 @@
 \AtBeginEnvironment{longtable}{%
     \arrayrulecolor{tablegrid}%
     \rowcolors{2}{white}{tablezebrarow}%
-    \needspace{0.12\textheight}%
 }
 \AtEndEnvironment{longtable}{\rowcolors{2}{}{}}
 
