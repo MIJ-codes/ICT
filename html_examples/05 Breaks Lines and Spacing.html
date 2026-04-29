@@ -16,6 +16,17 @@
         in normal paragraph text.
     </p>
 
+    <!-- WHAT: &nbsp; means non-breaking space.
+         WHY: HTML collapses normal spaces, so &nbsp; is used when visible extra spaces are needed.
+         NOTE: Use it for special text spacing, not for full page layout. -->
+    <p>
+        This&nbsp;&nbsp;&nbsp;paragraph&nbsp;&nbsp;shows&nbsp;&nbsp;&nbsp;&nbsp;extra spaces.
+    </p>
+
+    <!-- WHAT: hr can use old attributes such as align, width, size and color.
+         NOTE: These attributes are exam/reference only. Modern HTML uses CSS. -->
+    <hr align="center" width="60%" size="4" color="blue">
+
     <!-- WHAT: <br> creates a visible line break.
          WHY: Sometimes a line break is part of the content.
          EFFECT: Text after <br> starts on a new line. -->
@@ -40,6 +51,8 @@
     <!-- SUMMARY:
          - <br> breaks a line.
          - <hr> separates sections.
-         - HTML ignores most extra spaces in normal text. -->
+         - HTML ignores most extra spaces in normal text.
+         - &nbsp; creates visible extra spaces.
+         - hr align, width, size and color are old exam-style attributes. -->
 </body>
 </html>

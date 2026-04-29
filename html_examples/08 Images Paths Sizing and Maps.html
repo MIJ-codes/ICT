@@ -40,6 +40,19 @@
          EFFECT: This image width becomes 300px and height adjusts automatically. -->
     <img src="ocean.jpg" alt="Ocean image using CSS width" style="width:300px; height:auto;">
 
+    <!-- WHAT: align, hspace, vspace and border are old image attributes.
+         ATTRIBUTE: align controls image position relative to nearby text.
+         ATTRIBUTE: hspace adds horizontal space around the image.
+         ATTRIBUTE: vspace adds vertical space around the image.
+         ATTRIBUTE: border controls the image border.
+         NOTE: These are exam/reference only. Modern HTML uses CSS. -->
+    <p>
+        <img src="ocean.jpg" alt="Old image attributes example"
+             width="160" align="left" hspace="20" vspace="10" border="2">
+        This text flows beside an image that uses old spacing and border attributes.
+    </p>
+    <br clear="all">
+
     <hr>
 
     <!-- WHAT: h2 creates a section heading. -->
@@ -102,7 +115,7 @@
          WHAT: img inside a makes the image clickable.
          EFFECT: Clicking the image opens the href destination. -->
     <a href="https://www.example.com" target="_blank">
-        <img src="anime-moon-landscape.jpg" alt="Clickable image" width="300">
+        <img src="anime-moon-landscape.jpg" alt="Clickable image" width="300" border="0">
     </a>
 
     <hr>
@@ -149,6 +162,7 @@
          - src gives the image location.
          - alt gives backup/description text.
          - width and height control image size.
+         - align, hspace, vspace and border are old exam-style image attributes.
          - Images can use same-folder, folder, parent-folder, or full URL paths.
          - GIF can show animation.
          - An image can be made clickable by placing it inside <a>.

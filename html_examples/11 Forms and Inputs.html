@@ -44,6 +44,15 @@
         <input type="submit" value="Send">
     </form>
 
+    <!-- WHAT: method="get" sends form data through the URL.
+         WHAT: method="post" sends form data inside the request body.
+         NOTE: Textbooks commonly show method="get" in basic examples. -->
+    <form action="form_action.asp" method="get">
+        <label for="searchtext">Search:</label>
+        <input type="text" id="searchtext" name="searchtext">
+        <input type="submit" value="Search">
+    </form>
+
     <hr>
 
     <!-- =========================================================
@@ -116,7 +125,8 @@
              EFFECT: Only one option can be selected from the group. -->
         <p>Gender:</p>
 
-        <input type="radio" id="male" name="gender" value="male">
+        <!-- WHAT: checked selects this option by default. -->
+        <input type="radio" id="male" name="gender" value="male" checked="checked">
         <label for="male">Male</label>
 
         <input type="radio" id="female" name="gender" value="female">
@@ -139,7 +149,8 @@
              WHY: Checkboxes are used when multiple answers can be selected. -->
         <p>IT Experience:</p>
 
-        <input type="checkbox" id="hardware" name="experience" value="Hardware Expert">
+        <!-- WHAT: checked selects this checkbox by default. -->
+        <input type="checkbox" id="hardware" name="experience" value="Hardware Expert" checked="checked">
         <label for="hardware">Hardware Expert</label>
 
         <input type="checkbox" id="software" name="experience" value="Software Expert">
@@ -165,19 +176,23 @@
              ATTRIBUTE: name is the submitted field name. -->
         <label for="department">Department:</label>
 
-        <select id="department" name="department">
+        <!-- WHAT: size shows more than one option at a time.
+             WHAT: multiple allows more than one option to be selected.
+             WHAT: selected chooses a default option.
+             NOTE: Hold Ctrl on many systems to select multiple options. -->
+        <select id="department" name="department" size="4" multiple="multiple">
             <!-- WHAT: optgroup groups related options.
                  WHY: Long option lists become easier to understand. -->
             <optgroup label="Engineering">
                 <!-- WHAT: option creates one item inside a select list.
                      ATTRIBUTE: value is the submitted value. -->
-                <option value="CSE">CSE</option>
+                <option value="CSE" selected="selected">CSE</option>
                 <option value="EEE">EEE</option>
                 <option value="Power">Power</option>
             </optgroup>
 
             <optgroup label="Health">
-                <option value="Pharmacy">Pharmacy</option>
+                <option value="Pharmacy" selected="selected">Pharmacy</option>
                 <option value="Public Health">Public Health</option>
             </optgroup>
         </select>
@@ -307,7 +322,7 @@
                 <tr>
                     <td>Gender</td>
                     <td colspan="3">
-                        <input type="radio" id="student_male" name="gender" value="male">
+                        <input type="radio" id="student_male" name="gender" value="male" checked="checked">
                         <label for="student_male">Male</label>
 
                         <input type="radio" id="student_female" name="gender" value="female">
@@ -329,7 +344,7 @@
                 <tr>
                     <td>IT Experience</td>
                     <td colspan="3">
-                        <input type="checkbox" id="student_hardware" name="experience" value="Hardware Expert">
+                        <input type="checkbox" id="student_hardware" name="experience" value="Hardware Expert" checked="checked">
                         <label for="student_hardware">Hardware Expert</label>
 
                         <input type="checkbox" id="student_software" name="experience" value="Software Expert">
@@ -348,7 +363,7 @@
                     <td colspan="3">
                         <select id="student_department" name="department">
                             <optgroup label="Engineering">
-                                <option value="CSE">CSE</option>
+                                <option value="CSE" selected="selected">CSE</option>
                                 <option value="EEE">EEE</option>
                                 <option value="Power">Power</option>
                             </optgroup>
@@ -389,7 +404,9 @@
          - type="password" hides typed text.
          - radio is used for one choice.
          - checkbox is used for multiple choices.
+         - checked selects radio buttons or checkboxes by default.
          - select, optgroup, and option create drop-down lists.
+         - selected chooses a default option, and multiple allows several options.
          - textarea creates a multi-line input box.
          - fieldset and legend group related form controls.
          - submit sends data, reset clears data, button creates a normal button.

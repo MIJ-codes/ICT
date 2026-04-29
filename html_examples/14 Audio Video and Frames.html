@@ -105,10 +105,25 @@
     <hr>
 
     <!-- =========================================================
-         5. IFRAME
+         5. OLD EMBED TAG
     ========================================================== -->
 
-    <h2>5. Iframe</h2>
+    <h2>5. Old Embed Tag</h2>
+
+    <!-- WHAT: embed was used to add audio, video, PDF or plug-in content.
+         ATTRIBUTE: src gives the media/resource path.
+         ATTRIBUTE: autostart was used in older examples to start media automatically.
+         ATTRIBUTE: width and height control display size.
+         NOTE: Deprecated/exam-reference style. Modern HTML uses audio, video, iframe or object. -->
+    <embed src="video.mp4" autostart="false" width="300" height="200">
+
+    <hr>
+
+    <!-- =========================================================
+         6. IFRAME
+    ========================================================== -->
+
+    <h2>6. Iframe</h2>
 
     <!-- WHAT: iframe embeds another webpage inside the current webpage.
          ATTRIBUTE: src gives the page/file to show.
@@ -120,10 +135,10 @@
     <hr>
 
     <!-- =========================================================
-         6. OLD FRAME TAGS
+         7. OLD FRAME TAGS
     ========================================================== -->
 
-    <h2>6. Old Frame Tags</h2>
+    <h2>7. Old Frame Tags</h2>
 
     <!-- WHAT: pre displays code while preserving spaces and line breaks.
          WHY: frameset/frame code cannot be used normally inside body in modern HTML. -->
@@ -143,10 +158,10 @@
     <hr>
 
     <!-- =========================================================
-         7. COMBINED MEDIA EXAMPLE
+         8. COMBINED MEDIA EXAMPLE
     ========================================================== -->
 
-    <h2>7. Combined Media Example</h2>
+    <h2>8. Combined Media Example</h2>
 
     <!-- WHAT: This section combines image, audio, video and iframe together. -->
     <h3>Image</h3>
@@ -176,6 +191,7 @@
          - <source> provides media file path and type.
          - controls shows media controls.
          - autoplay, muted and loop control media behavior.
+         - <embed> is an old exam/reference tag for embedded media or plug-in content.
          - <iframe> embeds another webpage inside the current page.
          - background attribute is old/deprecated.
          - <frame>, <frameset> and <noframes> are old/deprecated frame tags.

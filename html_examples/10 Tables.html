@@ -72,6 +72,15 @@
          Do not add extra <td> cells randomly.
          Every row should usually match the number of columns in the table. -->
 
+    <!-- WHAT: border="0" creates a borderless table.
+         NOTE: If border is missing or border="0" is used, the table border is not shown. -->
+    <table border="0">
+        <tr>
+            <td>Borderless cell 1</td>
+            <td>Borderless cell 2</td>
+        </tr>
+    </table>
+
     <hr>
 
     <!-- WHAT: h2 creates a section heading. -->
@@ -94,14 +103,15 @@
         <tr height="50">
             <td>John</td>
             <td>25</td>
-            <!-- WHAT: br inside td keeps an empty cell visible. -->
-            <td><br></td>
+            <!-- WHAT: &nbsp; keeps an empty table cell visible.
+                 WHY: Some older examples use it when a cell has no real content. -->
+            <td>&nbsp;</td>
         </tr>
 
         <tr>
             <td>Jane</td>
             <td>30</td>
-            <td><br></td>
+            <td>&nbsp;</td>
         </tr>
     </table>
 
@@ -334,6 +344,8 @@
          - <td> creates normal data cells.
          - <caption> gives a table title.
          - border, width, height, cellpadding, cellspacing, align, bgcolor and valign are old-style table attributes.
+         - border="0" creates a borderless table.
+         - &nbsp; can keep an empty table cell visible.
          - colspan merges columns.
          - rowspan merges rows.
          - thead, tbody and tfoot organize large tables.

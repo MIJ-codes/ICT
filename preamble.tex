@@ -118,7 +118,7 @@
         div,span,header,nav,main,section,article,footer,address,
         audio,video,source,iframe,frameset,frame,noframes,
         pre,code,kbd,var,dfn,samp,tt,abbr,acronym,blockquote,q,cite,bdo,
-        object,param,applet
+        object,param,applet,menu
     },
     morekeywords=[2]{
         charset,name,content,http-equiv,lang,dir,class,id,style,title,
@@ -214,6 +214,113 @@
     }%
 }
 \let\safeincludegraphics\safeimg
+
+\newenvironment{browseroutput}[2]{%
+    \begin{tcolorbox}[
+        enhanced,
+        colback=white,
+        colframe=tablegrid,
+        boxrule=0.8pt,
+        arc=1pt,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        boxsep=0pt,
+        breakable=false
+    ]%
+    \begingroup
+    \setlength{\fboxsep}{0pt}%
+    \colorbox{black!92}{%
+        \parbox{\linewidth}{%
+            \vspace{3pt}%
+            \hspace{6pt}%
+            \colorbox{black!82}{%
+                \parbox[c][22pt][c]{0.32\linewidth}{%
+                    \hspace{6pt}{\color{white}\scriptsize #1}%
+                    \hfill{\color{white}\scriptsize $\times$}\hspace{6pt}%
+                }%
+            }%
+            \hfill{\color{white}\scriptsize $\triangleright$}\hspace{8pt}%
+            \vspace{3pt}%
+        }%
+    }%
+    \par
+    \colorbox{black!86}{%
+        \parbox{\linewidth}{%
+            \vspace{4pt}%
+            \hspace{7pt}{\color{white!70}\scriptsize $\leftarrow$}%
+            \hspace{9pt}{\color{white!70}\scriptsize $\rightarrow$}%
+            \hspace{9pt}{\color{white!85}\scriptsize $\circlearrowright$}%
+            \hspace{8pt}%
+            \colorbox{black!68}{%
+                \parbox[c][20pt][c]{0.74\linewidth}{%
+                    \hspace{7pt}{\color{white!82}\scriptsize\ttfamily #2}%
+                }%
+            }%
+            \vspace{4pt}%
+        }%
+    }%
+    \par\vspace{0pt}%
+    \endgroup
+}{%
+    \end{tcolorbox}%
+}
+
+\newenvironment{browseroutputcompact}[2]{%
+    \begin{center}%
+    \begin{tcolorbox}[
+        enhanced,
+        width=0.78\linewidth,
+        colback=white,
+        colframe=tablegrid,
+        boxrule=0.7pt,
+        arc=1pt,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        boxsep=0pt,
+        breakable=false
+    ]%
+    \begingroup
+    \setlength{\fboxsep}{0pt}%
+    \colorbox{black!92}{%
+        \parbox{\linewidth}{%
+            \vspace{1.5pt}%
+            \hspace{4pt}%
+            \colorbox{black!82}{%
+                \parbox[c][15pt][c]{0.36\linewidth}{%
+                    \hspace{4pt}{\color{white}\tiny #1}%
+                    \hfill{\color{white}\tiny $\times$}\hspace{4pt}%
+                }%
+            }%
+            \hfill{\color{white}\tiny $\triangleright$}\hspace{5pt}%
+            \vspace{1.5pt}%
+        }%
+    }%
+    \par
+    \colorbox{black!86}{%
+        \parbox{\linewidth}{%
+            \vspace{2pt}%
+            \hspace{5pt}{\color{white!70}\tiny $\leftarrow$}%
+            \hspace{6pt}{\color{white!70}\tiny $\rightarrow$}%
+            \hspace{6pt}{\color{white!85}\tiny $\circlearrowright$}%
+            \hspace{5pt}%
+            \colorbox{black!68}{%
+                \parbox[c][14pt][c]{0.70\linewidth}{%
+                    \hspace{5pt}{\color{white!82}\tiny\ttfamily #2}%
+                }%
+            }%
+            \vspace{2pt}%
+        }%
+    }%
+    \par\vspace{0pt}%
+    \endgroup
+}{%
+    \end{tcolorbox}%
+    \end{center}%
+}
 
 \setlength{\headheight}{24pt}
 

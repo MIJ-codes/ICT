@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complete Form Example</title>
+<style>
+@page { size: 620px 520px; margin: 14px; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Times New Roman", serif; font-size: 18px; line-height: 1.25; color: #000; background: white; }
+h1 { font-size: 30px; margin: 0 0 10px; }
+h2 { font-size: 22px; margin: 10px 0 6px; }
+p { margin: 0 0 8px; }
+ul, ol { margin-top: 4px; margin-bottom: 8px; }
+dl { margin-top: 4px; margin-bottom: 8px; }
+table { margin: 0 0 8px; }
+img { max-width: 220px; max-height: 130px; }
+iframe { border: 1px solid #777; }
+header, footer, nav, main, section, article { display: block; }
+header, footer { padding: 6px; }
+nav a { margin-right: 8px; }
+textarea { vertical-align: top; }
+</style>
+</head>
+<body>
+<form action="form_action.asp" method="get">
+    <fieldset>
+        <legend>Student Information</legend>
+
+        <label>Name:</label>
+        <input type="text" name="student_name"><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <label>Group:</label>
+        <input type="radio" name="group" value="science"> Science
+        <input type="radio" name="group" value="business"> Business<br>
+
+        <label>Subjects:</label>
+        <input type="checkbox" name="subject" value="ict"> ICT
+        <input type="checkbox" name="subject" value="english"> English<br>
+
+        <label>District:</label>
+        <select name="district">
+            <option>Dhaka</option>
+            <option>Chattogram</option>
+        </select><br>
+
+        <textarea name="comment" rows="4" cols="30">
+Write your comment here.
+        </textarea><br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Please Click Me!">
+    </fieldset>
+</form>
+</body>
+</html>

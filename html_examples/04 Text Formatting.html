@@ -69,12 +69,31 @@
         <strong><em><u>This text is strong, emphasized, and underlined.</u></em></strong>
     </p>
 
+    <hr>
+
+    <!-- WHAT: marquee creates scrolling text in old HTML examples.
+         ATTRIBUTES: direction, behavior, loop, scrolldelay, scrollamount, bgcolor, width and height.
+         NOTE: Deprecated. Modern HTML uses CSS animation or JavaScript. Keep it for exam/reference only. -->
+    <marquee direction="right" behavior="scroll" loop="3"
+             scrolldelay="100" scrollamount="6"
+             bgcolor="lightyellow" width="80%" height="40">
+        Welcome to HTML formatting
+    </marquee>
+
+    <br><br>
+
+    <!-- WHAT: behavior="alternate" makes the text move back and forth. -->
+    <marquee behavior="alternate" direction="left" scrollamount="8">
+        This marquee uses alternate behavior.
+    </marquee>
+
     <!-- SUMMARY:
          - <b> and <strong> create bold-looking text.
          - <i> and <em> create italic-looking text.
          - <strong> and <em> also add meaning.
          - <sub> and <sup> are used for formulas and powers.
          - <del> and <ins> show correction or update.
-         - <big> is old/deprecated but may appear in exams. -->
+         - <big> is old/deprecated but may appear in exams.
+         - <marquee> and its attributes are old exam/reference-only HTML. -->
 </body>
 </html>

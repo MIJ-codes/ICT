@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Browser Flow and Raw HTML</title>
+</head>
+
+<body>
+    <!-- WHAT: Browsers read HTML from top to bottom.
+         EFFECT: Content written first usually appears first on the page. -->
+    <h1>Browser Flow and Raw HTML</h1>
+
+    <p>This paragraph appears before the next heading because it is written first.</p>
+
+    <h2>Normal Elements</h2>
+
+    <!-- WHAT: A normal/container element has an opening tag, content and closing tag. -->
+    <p>This is a normal paragraph element.</p>
+
+    <h2>Empty Elements</h2>
+
+    <!-- WHAT: Empty elements do not wrap text content. -->
+    First line<br>
+    Second line
+    <hr>
+
+    <h2>Showing HTML as Text</h2>
+
+    <!-- WHAT: pre preserves spaces and line breaks.
+         WHAT: code marks code text.
+         WHY: Use escaped characters to show tags as text. -->
+    <pre><code>&lt;p&gt;This tag is shown as text, not rendered as HTML.&lt;/p&gt;</code></pre>
+
+    <!-- WHAT: xmp displayed raw HTML in very old examples.
+         NOTE: Deprecated. Use pre/code with escaped tags instead. -->
+    <xmp>
+<p>This appears as raw text inside old xmp.</p>
+    </xmp>
+
+    <!-- SUMMARY:
+         - Browsers read HTML source from top to bottom.
+         - Container elements wrap content.
+         - Empty elements such as br and hr do not need closing tags.
+         - Use pre/code with escaped tags to show HTML source in a modern page.
+         - xmp is old/deprecated and exam/reference only. -->
+</body>
+</html>

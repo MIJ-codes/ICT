@@ -65,9 +65,27 @@
     <!-- WHAT: type is an old attribute for ul.
          VALUES: disc, circle, square.
          NOTE: Deprecated. Modern HTML uses CSS. -->
+    <ul type="disc">
+        <li>Old disc bullet</li>
+        <li>Old disc bullet</li>
+    </ul>
+
     <ul type="circle">
         <li>Old circle bullet</li>
         <li>Old circle bullet</li>
+    </ul>
+
+    <ul type="square">
+        <li>Old square bullet</li>
+        <li>Old square bullet</li>
+    </ul>
+
+    <!-- WHAT: li could also use old type values in older examples.
+         NOTE: Deprecated. Use CSS list-style-type instead. -->
+    <ul>
+        <li type="circle">List item with old circle marker</li>
+        <li type="disc">List item with old disc marker</li>
+        <li type="square">List item with old square marker</li>
     </ul>
 
     <hr>
@@ -99,6 +117,16 @@
     <ol type="I">
         <li>Roman number item</li>
         <li>Roman number item</li>
+    </ol>
+
+    <ol type="i">
+        <li>Lowercase roman item</li>
+        <li>Lowercase roman item</li>
+    </ol>
+
+    <ol type="1">
+        <li>Number item</li>
+        <li>Number item</li>
     </ol>
 
     <!-- WHAT: start changes the starting number. -->
@@ -202,7 +230,7 @@
          - <dl>, <dt>, and <dd> create description lists.
          - ol attributes: type, start, reversed.
          - li can use value inside ordered lists.
-         - ul type is old/deprecated; use CSS list-style-type instead.
+         - ul type and li type are old/deprecated; use CSS list-style-type instead.
          - <dir> and <menu> are old exam-style list tags. -->
 </body>
 </html>

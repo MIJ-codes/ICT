@@ -1,0 +1,52 @@
+listing-01-element-and-attribute-parts	55	compact	Element and Attribute Parts
+listing-02-html-comment	38	compact	HTML Comment
+listing-03-basic-html-document-structure	179	compact	Basic HTML Document Structure
+listing-04-heading-levels	88	compact	Heading Levels
+listing-07-old-hr-attributes	55	compact	Old HR Attributes
+listing-10-text-formatting-example	198	compact	Text Formatting Example
+listing-11-visual-and-meaningful-formatting	132	compact	Visual and Meaningful Formatting
+listing-12-formula-and-correction-tags	132	compact	Formula and Correction Tags
+listing-13-old-text-tags	106	compact	Old Text Tags
+listing-14-font-styling-with-css	88	compact	Font Styling with CSS
+listing-15-utf-8-and-unicode-bangla	180	compact	UTF-8 and Unicode Bangla
+listing-16-marquee-variations	150	compact	Marquee Variations
+listing-17-ordered-list	124	compact	Ordered List
+listing-18-ordered-list-type-and-start	230	compact	Ordered List Type and Start
+listing-19-unordered-list	124	compact	Unordered List
+listing-20-unordered-list-marker-types	230	compact	Unordered List Marker Types
+listing-21-description-list	95	compact	Description List
+listing-22-nested-list	196	compact	Nested List
+listing-23-old-list-tags	160	compact	Old List Tags
+listing-24-basic-anchor-link	55	compact	Basic Anchor Link
+listing-25-internal-and-external-links	88	compact	Internal and External Links
+listing-26-common-link-variations	142	compact	Common Link Variations
+listing-27-target-and-download-links	124	compact	Target and Download Links
+listing-28-head-link-tags	42	compact	Head Link Tags
+listing-29-image-with-size-and-tooltip	70	compact	Image with Size and Tooltip
+listing-30-image-path-variations	106	compact	Image Path Variations
+listing-31-old-image-attributes	142	compact	Old Image Attributes
+listing-32-image-link	88	compact	Image Link
+listing-33-image-map-example	202	compact	Image Map Example
+listing-34-audio-and-video-example	182	compact	Audio and Video Example
+listing-35-iframe-example	110	compact	Iframe Example
+listing-36-old-frameset-example	142	compact	Old Frameset Example
+listing-37-basic-html-table	288	compact	Basic HTML Table
+listing-38-unequal-table-cells	266	compact	Unequal Table Cells
+listing-39-cellspacing-and-cellpadding	266	compact	Cellspacing and Cellpadding
+listing-40-colspan-and-rowspan	310	compact	Colspan and Rowspan
+listing-41-table-background-color	310	compact	Table Background Color
+listing-42-alignment-and-empty-cells	266	compact	Alignment and Empty Cells
+listing-43-table-head-body-and-foot	332	compact	Table Head, Body and Foot
+listing-44-simple-div-layout	322	compact	Simple Div Layout
+listing-45-semantic-layout	202	compact	Semantic Layout
+listing-46-internal-css-and-class-selector	286	compact	Internal CSS and Class Selector
+listing-47-basic-form-structure	154	compact	Basic Form Structure
+listing-48-text-and-password-fields	154	compact	Text and Password Fields
+listing-49-radio-and-checkbox-inputs	198	compact	Radio and Checkbox Inputs
+listing-50-drop-down-and-option-group	196	compact	Drop-down and Option Group
+listing-51-textarea-and-buttons	220	compact	Textarea and Buttons
+listing-52-complete-form-example	520	full	Complete Form Example
+listing-53-code-and-output-tags	178	compact	Code and Output Tags
+listing-54-quote-and-direction-tags	124	compact	Quote and Direction Tags
+listing-55-script-and-object-tags	95	compact	Script and Object Tags
+listing-56-mini-webpage-project	650	full	Mini Webpage Project

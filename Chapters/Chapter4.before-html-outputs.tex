@@ -1,0 +1,2554 @@
+% !TEX root = ../main.tex
+
+\chapter{Introduction to Web Design and HTML}
+
+\section{Core Concepts in Web Design}
+
+\begin{definitionbox}[Internet]
+    \term{Internet} is the connection of millions of computers worldwide that allows them to communicate and share information.
+\end{definitionbox}
+
+\begin{definitionbox}[World Wide Web]
+    \term{World Wide Web} is a system of sharing information over the Internet by using hypertext documents, which are linked together and can be accessed through a web browser.
+\end{definitionbox}
+
+\Note The Internet is the hardware, wires and protocols: the global infrastructure. The World Wide Web is a service, like email or online gaming, that runs on top of that infrastructure.
+
+\subsection{Basic Components of the Web}
+
+The web works through the combined use of three main components:
+
+\begin{enumerate}
+    \item \term{HTML}: A markup language used to write and structure webpages.
+    \item \term{HTTP}: The protocol used to transfer webpages between web server and browser.
+    \item \term{Web Browser}: The software that receives, interprets and displays webpage content for the user.
+\end{enumerate}
+
+\par\vspace{\baselineskip}
+
+\begin{definitionbox}[Hypertext document file]
+    A hypertext document is a type of document that contains links to other documents, allowing users to navigate between them easily. 
+    \begin{itemize}
+        \item Like images this is a file type with extension .html or .htm.
+        \item It is made by using HTML (HyperText Markup Language).
+    \end{itemize}
+\end{definitionbox}
+
+\begin{definitionbox}[Webpage]
+    A webpage is a single hypertext document or page that is displayed in a web browser. It is also called a web document. It can contain text, audio, video, still images, animation, links of other webpages and other multimedia content.
+\end{definitionbox}
+
+\begin{definitionbox}[Website]
+    A website is a collection of related webpages stored under a common domain name and connected through hyperlinks.
+\end{definitionbox}
+
+\begin{definitionbox}[Web design]
+    Web design is the process of planning, creating, arranging and presenting information on the World Wide Web. It includes the design of webpages, navigation system, content layout, links, images, and user interaction.
+\end{definitionbox}
+
+\subsection{Basic Relationship}
+
+\begin{itemize}
+    \item A webpage is one single page.
+    \item A website contains multiple related webpages.
+    \item The first page shown after entering a website is called the \term{homepage}.
+    \item Webpages are connected using hyperlinks.
+    \item A web browser is used to view webpages.
+\end{itemize}
+
+\begin{summarybox}[Core Idea]
+    HTML $\rightarrow$ Hypertext document files $\rightarrow$ Webpage $\xrightarrow{\text{Web Design}}$ Website $\rightarrow$ World Wide Web $\rightarrow$ Internet
+\end{summarybox}
+
+
+\subsection{Advantages of Website}
+
+\begin{itemize}
+    \item Information can be published and accessed easily.
+    \item A website can be accessed from anywhere in the world.
+    \item It is available twenty-four hours a day.
+    \item It reduces the need for physical communication.
+    \item It supports text, images, audio, video and links.
+    \item Information can be updated more easily than printed documents.
+    \item It is useful for education, business, news, communication and entertainment.
+\end{itemize}
+
+
+\section{Website}
+
+\subsection{Website Structure}
+
+\begin{definitionbox}[Website Structure]
+Website structure refers to the way webpages are organized, designed and interconnected within a website.
+\end{definitionbox}
+
+\subsubsection{Common Pages in a Website}
+
+\begin{itemize}
+    \item \term{Home Page}: The first page displayed after entering a website. It works as the entry page or index page of the website and gives the main idea, purpose and links to important sections.
+    
+    \item \term{Main Section Page}: A page that represents a major topic or section of the website. It works like a menu or site index and links users to related subsection pages.
+    
+    \item \term{Subsection Page}: A page placed under a main section to present specific information. It should contain relevant content and navigation links to move through the website.
+\end{itemize}
+
+\subsubsection{Types of Website Structure}
+
+\paragraph{Hierarchical Structure}
+
+\begin{itemize}
+    \item Pages are arranged like a tree.
+    \item Starts from the homepage and branches into main sections and subsections.
+    \item It is easy to manage and most commonly used.
+    \item Users can easily understand their current position in the website.
+\end{itemize}
+
+\paragraph{Linear Structure}
+
+\begin{itemize}
+    \item Pages are connected in a fixed sequence.
+    \item Users move step-by-step using links such as Next, Previous or Last.
+    \item Suitable for tutorials, forms, sign-up pages or small documents.
+\end{itemize}
+
+\paragraph{Network Structure}
+
+\begin{itemize}
+    \item Each page is connected with many other pages.
+    \item Users can move from one page to another without a fixed path.
+    \item It gives flexibility, but may confuse users if navigation is not clear.
+\end{itemize}
+
+\paragraph{Hybrid Structure}
+
+\begin{itemize}
+    \item Combination of multiple structures.
+    \item Usually combines hierarchical and linear or network structure.
+    \item Most modern websites follow this model.
+    \item Navigation tools such as menu, button and links should be clear and consistent.
+\end{itemize}
+
+
+\subsection{Web Portal}
+
+\begin{definitionbox}[Web Portal]
+A web portal is a website that collects important links, content and services from different sources in one place.
+\end{definitionbox}
+
+\begin{itemize}
+    \item It helps users access different information and services easily.
+    \item Example: a government portal, education portal or service portal.
+\end{itemize}
+
+
+% ─────────────────────────────────────────
+\subsection{Types of Website}
+% ─────────────────────────────────────────
+
+There are two main types of websites based on how their content works:
+
+\begin{itemize}
+    \item Static Website
+    \item Dynamic Website
+\end{itemize}
+
+\subsubsection{Static Website}
+
+\begin{definitionbox}[Static Website]
+A static website displays fixed content that does not change unless the source files are manually updated.
+\end{definitionbox}
+
+\begin{itemize}
+    \item Built mainly using HTML and CSS.
+    \item Content remains fixed for all users.
+    \item Users cannot directly input or update information.
+    \item No database connection is normally required.
+    \item Communication is mainly one-way: server to client.
+    \item Loads quickly because pages are already prepared.
+\end{itemize}
+
+\paragraph{Advantages of Static Website}
+
+\begin{itemize}
+    \item Low development and hosting cost.
+    \item Easy to develop, test and maintain.
+    \item Loads quickly, even on slower connections.
+    \item More secure because there is usually no database or server-side processing.
+    \item Easier for search engines to index.
+\end{itemize}
+
+\paragraph{Disadvantages of Static Website}
+
+\begin{itemize}
+    \item Content cannot change automatically.
+    \item User input or update is not supported.
+    \item Updating content requires manual editing and re-uploading.
+    \item Large static websites become difficult to control.
+    \item Quality design can be time-consuming.
+\end{itemize}
+
+
+\subsubsection{Dynamic Website}
+
+\begin{definitionbox}[Dynamic Website]
+A dynamic website generates or changes content at runtime based on user input, request or database.
+\end{definitionbox}
+
+\begin{itemize}
+    \item Uses server-side scripting such as PHP, ASP.NET, JSP or similar technologies.
+    \item Usually uses a database such as SQL or MySQL.
+    \item Content can change for different users.
+    \item Users can provide input and update information.
+    \item Suitable for interactive services such as login, search, comment, online exam or e-commerce.
+\end{itemize}
+
+\paragraph{Advantages of Dynamic Website}
+
+\begin{itemize}
+    \item Content can be updated quickly.
+    \item Can display specific pages or information for specific users.
+    \item Handles large amounts of information using database.
+    \item Supports user input and interactive features.
+    \item Attractive and interactive layouts can be prepared.
+\end{itemize}
+
+\paragraph{Disadvantages of Dynamic Website}
+
+\begin{itemize}
+    \item Development and maintenance are more complex.
+    \item Cost is higher than static websites.
+    \item Loading may be slower because database and server processing are used.
+    \item Security management is more important because input and database are involved.
+\end{itemize}
+
+
+\subsubsection{Comparison between Static and Dynamic Website}
+
+\begin{longtable}{|C{3.5cm}|L{6.5cm}|L{6.5cm}|}
+\longtableheader{3}{Static vs Dynamic Website}{%
+\tblcolhdcell{Feature} & \tblcolhdcell{Static Website} & \tblcolhdcell{Dynamic Website}}
+
+Content
+& Fixed content.
+& Content can change at runtime. \\ \tblhline
+
+Loading Speed
+& Loads faster because pages are already prepared.
+& Loads slower because content may be generated dynamically. \\ \tblhline
+
+Database
+& Does not usually use a database.
+& Usually uses a database to store data. \\ \tblhline
+
+Security
+& More secure because there is less server-side processing.
+& Less secure than static if input and database are not properly protected. \\ \tblhline
+
+User Input
+& User input or update is not supported.
+& User input and update are supported. \\ \tblhline
+
+Technology
+& HTML and CSS are enough.
+& Requires HTML, CSS, server-side language and database. \\ \tblhline
+
+Development
+& Easy to create and maintain.
+& Requires skilled developers and more control. \\ \tblhline
+
+Update
+& Source files must be edited and uploaded again.
+& Content can be modified through server application or database. \\ \tblhline
+
+Pages
+& Usually has a fixed number of pages.
+& Many pages can be generated dynamically. \\ \tblhline
+
+Example Use
+& Simple information website.
+& E-commerce, online exam, login system or database website. \\ \tblhline
+
+\tblbottomrule
+\caption{Comparison between Static and Dynamic Website}
+\label{tab:static-dynamic-website}
+\end{longtable}
+
+
+\subsection{Types of Webpage Based on Location}
+
+\begin{itemize}
+    \item \term{Local Webpage}: A webpage stored and opened from the user's own computer or local storage. It can be viewed without internet connection and without uploading it to a web server.
+    
+    \item \term{Remote Webpage}: A webpage stored on another computer or remote web server. It requires internet connection and a URL to access.
+\end{itemize}
+
+
+\subsection{Website Classification by Purpose}
+
+\begin{itemize}
+    \item \term{Archive Site}: Stores old or important information for later use.
+    \item \term{Business Site}: Presents information about a business, product or service.
+    \item \term{E-commerce Site}: Supports buying and selling products or services online.
+    \item \term{Community Site}: Connects people with common interests.
+    \item \term{Database Site}: Provides searchable or organized data from a database.
+    \item \term{Development Site}: Shares software, tools, documentation or project resources.
+    \item \term{Directory Site}: Lists links, organizations, services or resources by category.
+    \item \term{Download Site}: Provides files, software, documents or media for download.
+    \item \term{Game Site}: Provides online games or gaming-related content.
+    \item \term{Information Site}: Publishes subject-based information for readers.
+    \item \term{News Site}: Publishes current news and updates.
+\end{itemize}
+
+\begin{summarybox}
+Static websites are simple and fast, whereas dynamic websites are flexible and interactive.
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{Web Browser and Search Engine}
+% ─────────────────────────────────────────
+
+\subsection{Web Browser}
+
+\begin{definitionbox}[Web Browser]
+A web browser is application software used to access, retrieve, interpret and display webpages.
+\end{definitionbox}
+
+A browser works like an interpreter. It receives webpage code from the web server, converts it into visual output and shows the webpage on the screen.
+
+\subsubsection{Functions of Web Browser}
+
+\begin{itemize}
+    \item Opens websites and webpages using a URL.
+    \item Interprets HTML and other webpage code.
+    \item Displays text, images, links, forms and other webpage contents.
+    \item Helps users move from one webpage to another through hyperlinks.
+    \item Can download information or files from websites.
+    \item Can upload information through forms or file upload systems.
+    \item Can use search engines when the exact web address is not known.
+    \item Example: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera.
+\end{itemize}
+
+\subsection{Web Browsing}
+
+\begin{definitionbox}[Web Browsing]
+Web browsing is the process of visiting and viewing webpages stored on different web servers through a web browser.
+\end{definitionbox}
+
+\subsubsection{Methods of Web Browsing}
+
+\begin{itemize}
+    \item \term{Direct Browsing by URL}: The user types the known website address in the browser address bar and opens the webpage directly.
+    \item \term{Browsing through Search Engine}: The user searches with keywords when the exact website address is not known.
+\end{itemize}
+
+
+\subsection{Search Engine}
+
+\begin{definitionbox}[Search Engine]
+A search engine is a tool that helps users find information on the internet by searching indexed webpages and showing relevant results.
+\end{definitionbox}
+
+A search engine collects and organizes webpage information. When a user searches with a word or phrase, it shows a list of related webpages.
+
+\subsubsection{Functions of Search Engine}
+
+\begin{itemize}
+    \item Helps users find information when the exact website address is unknown.
+    \item Searches indexed webpages using keywords.
+    \item Displays related webpage links as search results.
+    \item Helps users reach websites quickly through the result list.
+    \item Example: Google, Bing, Yahoo, DuckDuckGo, Ask, Yandex, Baidu, WolframAlpha (computational information-based search tool).
+\end{itemize}
+
+\subsection{Difference Between Browser and Search Engine}
+
+\begin{longtable}{|C{2.5cm}|L{7cm}|L{7cm}|}
+\longtableheader{3}{Browser vs Search Engine}{%
+\tblcolhdcell{Aspect} & \tblcolhdcell{Web Browser} & \tblcolhdcell{Search Engine}}
+
+Meaning
+& Software used to open and display webpages.
+& Tool used to find information and webpages on the internet. \\ \tblhline
+
+Main Work
+& Reads webpage code and shows the webpage visually.
+& Searches indexed webpages and shows related results. \\ \tblhline
+
+Use
+& Used when opening a website or viewing a webpage.
+& Used when the needed website or exact address is not known. \\ \tblhline
+
+Input
+& URL or website address.
+& Keyword, phrase or question. \\ \tblhline
+
+Examples
+& Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera.
+& Google, Bing, Yahoo, DuckDuckGo, Ask. \\ \tblhline
+
+\tblbottomrule
+\caption{Difference between Web Browser and Search Engine}
+\label{tab:browser-search-engine}
+\end{longtable}
+
+\begin{summarybox}
+A web browser opens and displays webpages, while a search engine helps find webpages and information.
+\end{summarybox}
+
+\section{IP Address}
+
+\begin{definitionbox}[IP Address]
+IP Address stands for Internet Protocol Address. It is a unique numerical address used to identify a device connected to a network on the internet.
+\end{definitionbox}
+
+\Note An IP address works like the digital address of a device. When sender sends data to a receiver, the receiver's IP address is used to ensure that the data reaches the correct destination.
+
+\subsection{Purpose of IP Address}
+
+\begin{itemize}
+    \item It identifies a device in a network.
+    \item It helps send data to the correct destination.
+    \item It allows communication between client and server.
+    \item It is necessary for internet-based communication.
+\end{itemize}
+
+\subsection{Types of IP Address}
+
+There are two main types of IP addresses:
+\begin{itemize}
+    \item \term{IPv4}: 32-bit address, with four 8-bit octets, 1 octet = 8 bits, usually written in four decimal parts.\\
+          Example:  \texttt{11000000.10101000.00000001.00000001} $\xrightarrow{\text{in decimal}}$ \texttt{192.168.1.1}
+    \item \term{IPv6}: 128-bit address, with eight 16-bit words, usually written in hexadecimal format.\\
+          Example: \texttt{2001:0db8:85a3:0000:0000:8a2e:0370:7334}
+\end{itemize}
+
+\subsubsection{Network ID and Host ID}
+\begin{itemize}
+    \item The internet is a network of many networks.
+    \item Each network has many hosts (computers, mobiles, servers etc.) in it.
+    \item So each network and each device needs an unique identifier for communication.
+    \item This is done by dividing the IP address into two parts: Network ID and Host ID.
+        \begin{itemize}
+            \item \term{Network ID}: identifies the network the device is connected to. \\
+            Example: in \texttt{192.168.1.1}, the network ID is \texttt{192.168.1}.
+            \item \term{Host ID}: identifies the specific device inside that network. \\
+            Example: in \texttt{192.168.1.1}, the host ID is \texttt{1}.
+        \end{itemize}
+\end{itemize}
+
+\begin{questionanswerbox}
+\textbf{Q: Why is IP address required?}
+
+\medskip
+\textbf{A:}  
+IP address is required because every device in a network must be uniquely identified. It helps data packets travel from the sender to the correct receiver.
+
+\medskip
+\textbf{Conclusion:}  
+Without IP addresses, devices on the internet could not communicate properly.
+\end{questionanswerbox}
+
+
+\section{Domain Name and Domain Name System (DNS)}
+
+\begin{definitionbox}[Domain Name]
+    A \term{domain name} is a human-readable name used to identify a website on the internet.
+\end{definitionbox}
+
+\Note IP addresses are difficult for humans to remember. For this reason, domain names act as an alias for the numeric IP address.
+
+\begin{definitionbox}[DNS]
+    \term{DNS} (Domain Name System) is the system that converts a readable domain name into its corresponding numeric IP address so the browser can load the resource.
+\end{definitionbox}
+
+\begin{summarybox}[The Bridge]
+    \begin{itemize}
+        \item \term{IP Address} ($192.168.1.1$): used by computers in numeric form.
+        \item \term{Domain Name} ($google.com$): used by humans in readable form.
+        \item \term{DNS}: works like a phonebook that connects the readable name with the numeric address.
+    \end{itemize}
+\end{summarybox}
+
+\subsection{Some Technical Terms}
+\begin{itemize}
+    \item \term{FQDN} (Fully Qualified Domain Name): The complete domain name that identifies a specific host on the internet.
+    \item \term{Subdomain}: An additional name placed before the main domain name, such as \texttt{www}.
+    \item \term{Web Hosting}: The server space where website files are stored so users can access them through the internet.
+    \item \term{Difference}: The \textit{Domain} is your address; \textit{Hosting} is the house where your data lives.
+\end{itemize}
+
+\subsection{Domain Registration and ICANN}
+\begin{itemize}
+    \item \term{Domain Registration} is the process of reserving a domain name for use on the internet. It involves choosing a unique name and registering it with a domain registrar.
+    \item Every registered domain name must be unique. If the same name could be registered by many people, users would not know which website to visit. 
+    \item For this reason, domain names are controlled through registration authorities.
+    \item \term{ICANN} stands for "Internet Corporation for Assigned Names and Numbers".
+    \item ICANN coordinates the global domain name and IP address system.
+    \item Domain names are usually registered through domain registrars approved under this system.
+    \item A registered domain gives a website a unique identity on the internet.
+\end{itemize}
+
+\subsection{Types of Domain}
+
+\begin{itemize}
+    \item \textbf{Top Level Domain (TLD)} $\rightarrow$ The last part of a domain name. It shows the highest level/category of the domain.
+    \begin{itemize}
+        \item \textbf{gTLD (Generic TLD)} $\rightarrow$ General TLD, not tied to a country. Examples: \texttt{.com}, \texttt{.org}, \texttt{.net}
+        \item \textbf{ccTLD (Country Code TLD)} $\rightarrow$ Country-based TLD. Examples: \texttt{.bd}, \texttt{.uk}, \texttt{.in}
+    \end{itemize}
+
+    \item \textbf{Second Level Domain (SLD) / Main Domain Name} $\rightarrow$ The unique name chosen by the owner. It identifies the website or organization. Examples: \texttt{google}, \texttt{bbc}
+
+    \item \textbf{Subdomain / Host Name} $\rightarrow$ A name placed before the main domain to identify a service or section. Examples: \texttt{www}, \texttt{mail}, \texttt{blog}
+\end{itemize}
+
+\begin{infobox}[Example: Domain Structure]
+
+\[
+\small
+\underbrace{\text{\texttt{mail}}}_{\substack{\text{Subdomain}\\\text{/ Host Name}}}
+\text{\texttt{.}}
+\underbrace{\text{\texttt{google}}}_{\substack{\text{Main Domain}\\\text{/ SLD}}}
+\underbrace{\text{\texttt{.com}}}_{\substack{\text{TLD}\\\text{gTLD}}}
+\]
+
+\[
+\small
+\underbrace{\text{\texttt{www}}}_{\substack{\text{Subdomain}\\\text{/ Host Name}}}
+\text{\texttt{.}}
+\underbrace{\text{\texttt{bbc}}}_{\substack{\text{Main Domain}\\\text{/ SLD}}}
+\underbrace{\text{\texttt{.co}}}_{\substack{\text{Commercial}\\\text{category}}}
+\underbrace{\text{\texttt{.uk}}}_{\substack{\text{TLD}\\\text{ccTLD}}}
+\]
+
+\end{infobox}
+
+\subsection{Common Top Level Domains / Generic TLDs}
+
+\begin{longtable}{|C{3cm}|C{6cm}|}
+\longtableheader{2}{Common Top Level Domains}{%
+\tblcolhdcell{Domain} & \tblcolhdcell{Used For}}
+
+.com & Commercial organizations \\ \tblhline
+.net & Network-related services \\ \tblhline
+.edu & Educational institutions \\ \tblhline
+.gov & Government organizations \\ \tblhline
+.org & Non-profit organizations \\ \tblhline
+.mil & Military organizations \\ \tblhline
+.int & International organizations \\ \tblhline
+.biz & Business organizations \\ \tblhline
+.info & Information-based websites \\ \tblhline
+
+\tblbottomrule
+\caption{Common Top Level Domains}
+\label{tab:common-tld}
+\end{longtable}
+
+\subsection{Country Code Top Level Domains}
+
+\begin{longtable}{|C{3cm}|C{4cm}|C{3cm}|C{4cm}|}
+\longtableheader{4}{Common Country Code Top Level Domains}{%
+\tblcolhdcell{Code} & \tblcolhdcell{Country} & \tblcolhdcell{Code} & \tblcolhdcell{Country}}
+
+.bd & Bangladesh & .cn & China \\ \tblhline
+.au & Australia & .fi & Finland \\ \tblhline
+.in & India & .fr & France \\ \tblhline
+.br & Brazil & .hk & Hong Kong \\ \tblhline
+.uk & United Kingdom & .us & United States \\ \tblhline
+
+\tblbottomrule
+\caption{Common Country Code Top Level Domains}
+\label{tab:common-cctld}
+\end{longtable}
+
+\section{Web Hosting}
+
+\begin{definitionbox}[Web Hosting]
+Web hosting means storing website files on an internet-connected server so that the website can be uploaded and accessed online.
+\end{definitionbox}
+
+\begin{itemize}
+    \item Hosting space is usually provided by an ISP or hosting company.
+    \item Hosting cost depends on storage space, bandwidth, server resources and support.
+    \item Different hosting services can be obtained from hosting providers by paying rent or service charge.
+    \item Without hosting, a website's files cannot be publicly accessed through the internet.
+\end{itemize}
+
+\subsection{Types of Web Hosting}
+
+\subsubsection{Based on Platform or Operating System}
+
+\begin{itemize}
+    \item \term{Windows Hosting}: Hosting on a Windows server. It is mainly used for websites made with ASP/ASP.NET and Microsoft SQL Server.
+    
+    \item \term{Linux Hosting}: Hosting on a Linux server. It is mainly used for websites made with PHP and MySQL.
+\end{itemize}
+
+\subsubsection{Based on Facilities}
+
+\begin{itemize}
+    \item \term{Free Hosting}: Basic hosting for small personal websites. It costs little or nothing, but bandwidth, security and domain facilities are limited.
+    
+    \item \term{Shared Hosting}: Many websites share the same server resources. It is cheaper, but speed, security, email, database and bandwidth are limited.
+    
+    \item \term{Dedicated Hosting}: One website or user gets a full server. It gives better speed, security, bandwidth, database support and control, so it is suitable for large websites.
+    
+    \begin{itemize}
+        \item \term{Managed Hosting}: The hosting company manages setup, software, security, maintenance and control panel support. It is easier but more costly.
+        \item \term{Unmanaged Hosting}: The website owner manages setup, software, security and maintenance. It is cheaper but needs technical skill.
+    \end{itemize}
+    
+    \item \term{Collocated Hosting}: The owner keeps their own server in the hosting company's data center and uses the company's power, network and support.
+\end{itemize}
+
+\subsubsection{Email Services with Hosting}
+
+Hosting providers may also provide domain-based email accounts, such as \texttt{info@example.com}.
+
+\begin{itemize}
+    \item \term{POP} (Post Office Protocol): downloads email from the server to a client device.
+    \item \term{IMAP} (Internet Message Access Protocol): keeps email on the server and synchronizes it across devices.
+    \item \term{Web-based Email / Webmail}: allows users to read and send email through a web browser.
+\end{itemize}
+
+\subsection{Difference between Domain Name and Web Hosting}
+
+\begin{longtable}{|L{8cm}|L{8cm}|}
+\longtableheader{2}{Domain Name vs Web Hosting}{%
+\tblcolhdcell{Domain Name} & \tblcolhdcell{Web Hosting}}
+
+The unique readable name of a website. & The server space where website files are stored. \\ \tblhline
+Must be registered with a domain registrar. & Must be rented or configured from a hosting provider. \\ \tblhline
+One domain name identifies one main web address. & One hosting account may contain one or many websites, depending on the plan. \\ \tblhline
+Users cannot easily reach a website without a domain name or URL. & A website cannot be publicly available without hosting. \\ \tblhline
+Domain registration does not require server configuration. & Hosting requires server configuration, storage, bandwidth and control panel settings. \\ \tblhline
+Bandwidth is not the main issue in domain registration. & Bandwidth is an important issue in hosting. \\ \tblhline
+The quality of the domain registrar is less visible to normal visitors. & The quality of the hosting provider affects speed, uptime, security and support. \\ \tblhline
+
+\tblbottomrule
+\caption{Difference between Domain Name and Web Hosting}
+\label{tab:domain-hosting-difference}
+\end{longtable}
+
+% ─────────────────────────────────────────
+\section{URL (Uniform Resource Locator)}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[URL]
+A URL (Uniform Resource Locator) is the complete web address used to locate a resource on the internet.
+\end{definitionbox}
+
+\Note A URL identifies where a webpage or file is located and also tells the browser which protocol should be used to access it.
+
+\subsection{Components of URL}
+
+\begin{itemize}
+    \item \term{Protocol}: Defines the communication rule used to access the resource. Examples: \texttt{http://}, \texttt{https://}, \texttt{ftp://}
+    \item \term{Domain Name}: Identifies the website or server. Example: \texttt{www.example.com}
+    \item \term{Path}: Specifies the exact location of a file or page inside the server. Example: \texttt{/folder/page.html}
+\end{itemize}
+
+\begin{formulabox}[Structure of URL]
+\[
+\text{URL} = \text{Protocol} + \text{Domain Name} + \text{Path}
+\]
+\[
+\text{URL}
+=
+\underbrace{\text{\texttt{https://}}}_{\text{Protocol}}
+\underbrace{\text{\texttt{www.example.com}}}_{\text{Domain Name}}
+\underbrace{\text{\texttt{/folder/page.html}}}_{\text{Path}}
+\]
+\end{formulabox}
+
+\begin{infobox}[Example: URL Structure]
+
+\[
+\small
+\underbrace{\text{\texttt{https://}}}_{\text{Protocol}}
+\underbrace{\text{\texttt{www}}}_{\substack{\text{Subdomain}\\\text{/ Host Name}}}
+\text{\texttt{.}}
+\underbrace{\text{\texttt{example}}}_{\substack{\text{Main Domain}\\\text{/ SLD}}}
+\underbrace{\text{\texttt{.com}}}_{\text{TLD}}
+\underbrace{\text{\texttt{/folder/page.html}}}_{\text{Path}}
+\]
+
+\[
+\small
+\underbrace{\text{\texttt{http://}}}_{\text{Protocol}}
+\underbrace{\text{\texttt{www}}}_{\substack{\text{Subdomain}\\\text{/ Host Name}}}
+\text{\texttt{.}}
+\underbrace{\text{\texttt{corneliusenterprises}}}_{\substack{\text{Main Domain}\\\text{/ SLD}}}
+\underbrace{\text{\texttt{.co}}}_{\substack{\text{Commercial}\\\text{category}}}
+\underbrace{\text{\texttt{.uk}}}_{\substack{\text{Country Code}\\\text{TLD}}}
+\]
+
+\end{infobox}
+
+\begin{summarybox}
+A URL gives both the access method and the location of a web resource.
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{Protocol}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Protocol]
+A protocol is a set of rules that controls how data is transmitted between computers on the internet.
+\end{definitionbox}
+
+\subsection{Common Internet Protocols}
+
+\begin{itemize}
+    \item \term{HTTP} (Hyper Text Transfer Protocol): Used to transfer webpages between browser and web server.
+    \item \term{FTP} (File Transfer Protocol): Used to upload and download files through the internet.
+    \item \term{IP} (Internet Protocol): Handles addressing and routing so data packets reach the correct destination.
+    \item \term{TCP/IP} (Transmission Control Protocol / Internet Protocol): Main protocol system used for internet communication.
+    \item \term{SMTP} (Simple Mail Transfer Protocol): Used for sending email.
+    \item \term{POP} (Post Office Protocol): Used for receiving or downloading email from a mail server.
+    \item \term{VoIP} (Voice over Internet Protocol): Used for voice communication through the internet.
+\end{itemize}
+
+\subsection{HTTP}
+
+\begin{definitionbox}[HTTP]
+HTTP stands for Hyper Text Transfer Protocol. It is the web protocol used to exchange data between a browser and a web server.
+\end{definitionbox}
+
+\Note HTTP is used when a user visits or browses a webpage. The browser sends a request to the web server, and the server sends the requested webpage or resource back to the browser.
+
+\subsubsection{Functions of HTTP}
+
+\begin{itemize}
+    \item Creates a connection between the browser and the server.
+    \item Sends the browser's request to the server.
+    \item Brings the requested webpage or resource from the server to the browser.
+    \item Disconnects the browser and server after the request-response process.
+\end{itemize}
+
+\subsection{FTP}
+
+\begin{definitionbox}[FTP]
+FTP stands for File Transfer Protocol. It is a protocol used to exchange files between computers through the internet.
+\end{definitionbox}
+
+\Note FTP is mainly used to upload and download files between a local computer and a remote computer or server. It is commonly used to upload website files to a hosting server.
+
+\subsubsection{Functions of FTP}
+
+\begin{itemize}
+    \item Transfers website files, documents, books, images, software and other normal files.
+    \item \term{Download}: Receives a file from a remote computer or server to the local computer.
+    \item \term{Upload}: Sends a file from the local computer to a remote computer or server.
+    \item FTP software such as \term{WS-FTP} and \term{Fetch} can be used for upload and download.
+\end{itemize}
+
+\subsubsection{Types of FTP Access}
+
+\begin{itemize}
+    \item \term{Private Access}: Requires username and password to access server files.
+    \item \term{Public Access}: Allows users to access selected files without private login.
+\end{itemize}
+
+\begin{summarybox}[HTTP vs FTP]
+HTTP is used to transfer hypertext/webpage files between browser and web server. FTP is used to transfer normal files such as documents, images, software and website files between computers.
+\end{summarybox}
+
+% ─────────────────────────────────────────
+\section{Web Communication}
+% ─────────────────────────────────────────
+
+\begin{definitionbox}[Web Communication]
+Web communication is the process of exchanging data between a client browser and a web server through the internet.
+\end{definitionbox}
+
+\Note The World Wide Web works on top of the internet using a client-server system. The browser works as the client, and the web server stores and sends the requested webpage or resource.
+
+\subsection{Correct Overall Idea}
+
+\begin{itemize}
+    \item \term{Internet}: The global network infrastructure that connects computers and servers.
+    \item \term{World Wide Web}: A service that runs on the internet and uses webpages, hyperlinks, browsers and web servers.
+    \item \term{Website Developer}: Creates website files using HTML, CSS, images, scripts and other resources.
+    \item \term{Web Hosting}: Stores the website files on an internet-connected server.
+    \item \term{IP Address}: The numerical address of the hosting server.
+    \item \term{Domain Name}: The human-readable name registered through a domain registrar.
+    \item \term{DNS}: Connects the domain name with the hosting server's IP address.
+    \item \term{URL}: The complete address used by the browser to request a specific webpage or file.
+    \item \term{Protocol}: The rule used for communication, such as HTTP or HTTPS.
+\end{itemize}
+
+\subsection{Client-Server System}
+
+\begin{itemize}
+    \item A website works using two main parts: \term{client} and \term{server}.
+    \item \term{Client}: The user's computer or browser that requests a webpage.
+    \item \term{Server}: The computer where webpages or website files are stored and protected.
+    \item The client needs an internet connection and a web browser to request webpages.
+    \item The web server uses HTTP/HTTPS to respond to the client's request and supply webpages.
+\end{itemize}
+
+\subsection{Website Creation Side}
+
+\begin{enumerate}
+    \item The developer creates hypertext documents using \term{HTML}.
+    \item Other files such as CSS, images, audio, video and scripts may also be added.
+    \item These files are organized together as a website project or website folder.
+    \item The website folder is uploaded to a web hosting server.
+    \item The hosting server has an IP address.
+    \item A domain name is registered through a domain registrar.
+    \item DNS records connect the domain name with the hosting server's IP address.
+\end{enumerate}
+
+\subsection{User Access Side}
+
+\begin{enumerate}
+    \item The user enters a URL in the web browser.
+    \item The browser reads the protocol, domain name and path from the URL.
+    \item DNS converts the domain name into the server's IP address.
+    \item The browser connects to the correct web server using HTTP or HTTPS.
+    \item The browser sends an HTTP request for the specific webpage or file.
+    \item The server searches for the requested HTML document or resource.
+    \item The server sends the requested data back as an HTTP response.
+    \item The browser interprets the HTML and related files.
+    \item The webpage is displayed on the screen.
+\end{enumerate}
+
+\begin{summarybox}[Web Working Flow]
+Developer creates website files $\rightarrow$ files are uploaded to hosting server $\rightarrow$ domain name is connected to server IP through DNS $\rightarrow$ user enters URL $\rightarrow$ browser requests the file $\rightarrow$ server responds $\rightarrow$ browser displays the webpage.
+\end{summarybox}
+
+\section{Difference between IP Address, Domain Name, DNS and URL}
+\begin{longtable}{|C{2cm}|L{3.4cm}|L{3.4cm}|L{3.4cm}|L{3.4cm}|}
+\longtableheader{5}{IP Address vs Domain Name vs DNS vs URL}{%
+\tblcolhdcell{Aspect} & \tblcolhdcell{IP Address} & \tblcolhdcell{Domain Name} & \tblcolhdcell{DNS} & \tblcolhdcell{URL}}
+
+Meaning
+& A unique numeric address used to identify a device or server on a network.
+& A human-readable name used to identify a website.
+& A system that converts a domain name into its corresponding IP address.
+& A complete web address used to locate a specific resource on the internet. \\ \tblhline
+
+Main User
+& Computers and network devices.
+& Humans.
+& Browser and network system.
+& Browser and user. \\ \tblhline
+
+Main Work
+& Finds the actual destination server or device.
+& Gives an easy readable name for a website.
+& Connects the domain name with the correct IP address.
+& Gives the access method and exact resource location. \\ \tblhline
+
+Points To
+& A device or server.
+& A website name.
+& The IP address of a domain.
+& A webpage, file, image or resource. \\ \tblhline
+
+Form
+& Numeric form.
+& Readable word form.
+& Background lookup system.
+& Full address with protocol, domain and path. \\ \tblhline
+
+Example
+& \texttt{142.250.190.78}
+& \texttt{google.com}
+& \texttt{google.com} $\rightarrow$ \texttt{142.250.190.78}
+& {\hypersetup{urlcolor=black}\footnotesize\url{https://www.example.com/folder/page.html}} \\ \tblhline
+
+\tblbottomrule
+\caption{Difference between IP Address, Domain Name, DNS and URL}
+\label{tab:ip-domain-dns-url}
+\end{longtable}
+
+% ─────────────────────────────────────────
+\section{HTML Fundamentals}
+
+\begin{definitionbox}[HTML]
+HTML (HyperText Markup Language) is a markup language used to create webpages and web applications by describing how text, images, links, tables, forms and other contents should be organized and displayed in a browser.
+\end{definitionbox}
+
+HTML is not a programming language. It cannot process data, make decisions, or create a dynamic website by itself. It marks content with tags so that a browser can present that content as a webpage.
+
+\subsection{Concept of HTML}
+\begin{itemize}
+    \item HTML files are usually saved with the \texttt{.html} or \texttt{.htm} extension.
+    \item A file created with HTML is generally known as a webpage or web document.
+    \item HTML is platform independent; the same page can be opened in different operating systems and browsers.
+    \item HTML can present text, audio, video, graphics, animation, hyperlinks, tables and attached contents.
+    \item A conventional static webpage can be created with HTML, but dynamic or interactive behavior needs CSS, JavaScript, server-side scripts or databases.
+\end{itemize}
+
+\subsection{Markup Language vs Programming Language}
+\begin{longtable}{|L{8.25cm}|L{8.25cm}|}
+\longtableheader{2}{Markup Language vs Programming Language}{%
+\tblcolhdcell{Markup Language} & \tblcolhdcell{Programming Language}}
+Uses tags to describe how content should be displayed. & Uses logic, variables, conditions and instructions to process data. \\ \tblhline
+Cannot process data by itself. & Can process data and produce calculated results. \\ \tblhline
+Cannot take and handle user input by itself. & Can take input, process it and produce output. \\ \tblhline
+Example: HTML. & Example: C, JavaScript, Python, PHP. \\ \tblhline
+\tblbottomrule
+\caption{Difference between markup language and programming language}
+\end{longtable}
+
+\subsection{Short History of HTML}
+\begin{itemize}
+    \item Tim Berners-Lee invented HTML in 1990 while working at CERN in Geneva, Switzerland.
+    \item HTML became widely known through the Mosaic browser developed by NCSA.
+    \item HTML 2.0 was released in 1995.
+    \item HTML 3.2 was released in January 1997.
+    \item HTML 4.0 was released in December 1997.
+    \item HTML5 is the modern major version; HTML 5.2 was released in December 2017.
+\end{itemize}
+
+\subsection{Advantages of HTML}
+\begin{itemize}
+    \item It is a user-friendly open technology.
+    \item It is used all over the world.
+    \item Almost every web browser supports HTML documents.
+    \item Its syntax is easy to learn and use.
+    \item It can be written in any text editor.
+    \item It is lightweight; normal HTML pages require less hosting space.
+    \item It is not expensive and does not require a special license.
+\end{itemize}
+
+\subsection{Limitations of HTML}
+\begin{itemize}
+    \item It can create static webpages but cannot create dynamic webpages by itself.
+    \item It cannot process data or interact with a database.
+    \item Large pages may require many lines of code.
+    \item Security is limited because processing and validation are not handled by HTML alone.
+    \item Complex websites require CSS, JavaScript and server-side technologies in addition to HTML.
+\end{itemize}
+
+\begin{summarybox}
+HTML defines webpage structure. CSS controls presentation, JavaScript controls browser-side behavior, and server-side languages handle dynamic processing.
+\end{summarybox}
+
+\section{HTML Tags, Elements and Attributes}
+
+\subsection{HTML Tag}
+\begin{definitionbox}[HTML Tag]
+An HTML tag is a keyword enclosed in angle brackets that gives direction to the browser about how a content item should be structured or displayed.
+\end{definitionbox}
+
+\begin{formulabox}[Basic HTML Tag Syntax]
+\[
+\texttt{<TagName> Content </TagName>}
+\]
+\end{formulabox}
+
+\begin{itemize}
+    \item The opening tag is also called the start tag. Example: \texttt{<p>}.
+    \item The closing tag is also called the end tag. Example: \texttt{</p>}.
+    \item The slash \texttt{/} is used in the closing tag.
+    \item HTML tags are not case-sensitive, but lowercase tags are recommended by W3C.
+\end{itemize}
+
+\subsection{Classification of HTML Tags}
+\begin{longtable}{|C{3cm}|L{9.5cm}|C{4cm}|}
+\longtableheader{3}{Types of HTML Tags}{%
+\tblcolhdcell{Tag Type} & \tblcolhdcell{Meaning} & \tblcolhdcell{Examples}}
+Container tag & Has both opening and closing tags and contains content between them. & \texttt{<html>...</html>}, \texttt{<p>...</p>} \\ \tblhline
+Empty tag & Has only an opening tag and no content between opening and closing tags. & \texttt{<br>}, \texttt{<hr>}, \texttt{<img>} \\ \tblhline
+\tblbottomrule
+\caption{Container and empty HTML tags}
+\end{longtable}
+
+In modern HTML examples, empty elements may be written with a closing slash, such as \texttt{<br/>} and \texttt{<hr/>}. Closing paired tags properly is important because missing end tags can produce unexpected output.
+
+\subsection{HTML Element}
+\begin{definitionbox}[HTML Element]
+An HTML element is the complete unit formed by a start tag, element content and an end tag.
+\end{definitionbox}
+
+\begin{formulabox}[Element Structure]
+\[
+\text{Element} = \text{Start Tag} + \text{Content} + \text{End Tag}
+\]
+\end{formulabox}
+
+For example, in \texttt{<p align="left">This is HTML class</p>}, the start tag is \texttt{<p align="left">}, the content is \texttt{This is HTML class}, and the end tag is \texttt{</p>}.
+
+\subsection{HTML Attribute}
+\begin{definitionbox}[Attribute]
+An attribute is a special word written inside the start tag to give extra information or control the behavior, appearance or value of an HTML element.
+\end{definitionbox}
+
+\begin{formulabox}[Attribute Syntax]
+\[
+\texttt{<TagName AttributeName="Attribute Value"> Content </TagName>}
+\]
+\end{formulabox}
+
+\begin{itemize}
+    \item An attribute has two parts: attribute name and attribute value.
+    \item Attributes are written in the start tag, not in the end tag.
+    \item Multiple attributes can be used in one tag.
+    \item Lowercase attribute names are preferred.
+    \item Attribute values are usually written inside double quotation marks.
+    \item If an attribute value contains spaces, quotation marks are required.
+    \item Single quotation marks can also be used when needed.
+\end{itemize}
+
+\begin{lstlisting}[style=htmlide, caption={Element and Attribute Parts}]
+<p align="left">This is HTML class</p>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{align} is the attribute name.
+    \item \texttt{left} is the attribute value.
+    \item The attribute is written in the opening \texttt{p} tag.
+\end{itemize}
+
+\subsection{HTML Comments}
+Comments are written for explanation inside source code. Browsers ignore comments, so they are not displayed on the webpage.
+
+\begin{lstlisting}[style=htmlide, caption={HTML Comment}]
+<!-- This is a comment -->
+\end{lstlisting}
+
+\section{First HTML Document}
+
+\begin{definitionbox}[HTML Document Structure]
+An HTML document is mainly formed with two sections inside the \texttt{html} element: the \texttt{head} section and the \texttt{body} section.
+\end{definitionbox}
+
+\subsection{Basic Skeleton}
+This example shows the minimum structure of a valid HTML page. The \texttt{head} section stores information about the page, while the \texttt{body} section stores visible content.
+
+\begin{lstlisting}[style=htmlide, caption={Basic HTML Document Structure}]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    Content goes here
+</body>
+</html>
+\end{lstlisting}
+
+\textbf{Rendered output}
+\begin{center}
+    \fbox{\includegraphics[width=4cm]{html_outputs/01-basic-skeleton.png}}
+\end{center}
+
+\subsection{Head Section}
+The head section contains document-related information such as document title, metadata, keywords, stylesheet links and scripts. This information is important for the browser and search engines, but most of it is not displayed as body content.
+
+\begin{longtable}{|C{2.5cm}|C{2.5cm}|L{11.5cm}|}
+\longtableheader{3}{Common Head Section Elements}{%
+\tblcolhdcell{Element} & \tblcolhdcell{Type} & \tblcolhdcell{Use}}
+\texttt{title} & Container & Sets the page title shown in the browser tab. A short useful title is preferred; no HTML tag should be written inside \texttt{title}. \\ \tblhline
+\texttt{meta} & Empty & Stores document information such as charset, author, description or keywords. \\ \tblhline
+\texttt{link} & Empty & Connects an external file such as a CSS stylesheet. \\ \tblhline
+\texttt{base} & Empty & Sets a base URL for relative links in a document. \\ \tblhline
+\texttt{style} & Container & Stores internal CSS rules. \\ \tblhline
+\texttt{script} & Container & Stores or connects script commands. \\ \tblhline
+\tblbottomrule
+\caption{Common elements used in the HTML head section}
+\end{longtable}
+
+\subsection{Body Section}
+\begin{itemize}
+    \item The body section starts with \texttt{<body>} and ends with \texttt{</body>}.
+    \item Text, headings, paragraphs, lists, tables, images, links and forms are placed inside \texttt{body}.
+    \item Browsers display the visible content written inside the body section.
+\end{itemize}
+
+\subsection{Block-Level and Inline Elements}
+\begin{longtable}{|C{4cm}|L{8cm}|C{4cm}|}
+\longtableheader{3}{Block-Level vs Inline Elements}{%
+\tblcolhdcell{Element Type} & \tblcolhdcell{Behavior} & \tblcolhdcell{Examples}}
+Block-level element & Starts on a new line and usually takes the full available width. & \texttt{div}, \texttt{p}, \texttt{h1}, \texttt{ul}, \texttt{li} \\ \tblhline
+Inline element & Does not start a new line; it stays inside the flow of text. & \texttt{a}, \texttt{b}, \texttt{span}, \texttt{strong} \\ \tblhline
+\tblbottomrule
+\caption{Block-level and inline HTML elements}
+\end{longtable}
+
+\subsection{Body Tag Attributes}
+The following old body attributes are important for exam/reference recognition. Modern webpages should use CSS instead.
+
+\begin{longtable}{|C{2.5cm}|L{12cm}|}
+\longtableheader{2}{Body Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{bgcolor} & Sets the page background color. Example: \texttt{<body bgcolor="green">}. \\ \tblhline
+\texttt{background} & Sets an image as the page background. Example: \texttt{<body background="watermark.jpg">}. \\ \tblhline
+\texttt{text} & Sets the color of normal page text. \\ \tblhline
+\texttt{link} & Sets the color of unvisited hyperlinks. \\ \tblhline
+\texttt{vlink} & Sets the color of visited hyperlinks. \\ \tblhline
+\texttt{alink} & Sets the color of the active link while the mouse/cursor is on it. \\ \tblhline
+\tblbottomrule
+\caption{Old body attributes used in HTML}
+\end{longtable}
+
+\section{Creating and Running HTML Files}
+\begin{enumerate}
+    \item Open a simple text editor such as Notepad.
+    \item Write the HTML code.
+    \item Save the file using the \texttt{.html} or \texttt{.htm} extension.
+    \item Open the saved file in a web browser.
+    \item Edit the source file again when changes are needed, then refresh the browser.
+\end{enumerate}
+
+\begin{summarybox}
+HTML source code is written in a text editor, saved as an HTML file, and interpreted by a browser to display the webpage.
+\end{summarybox}
+
+\section{Headings, Paragraphs and Line Breaks}
+
+\subsection{Heading Elements}
+HTML provides six heading levels from \texttt{h1} to \texttt{h6}. Headings are container elements and should be used to show document structure.
+
+\begin{longtable}{|C{2cm}|L{7cm}|}
+\longtableheader{2}{HTML Heading Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
+\texttt{<h1>} & Largest and most important heading. \\ \tblhline
+\texttt{<h2>} & Second-level heading. \\ \tblhline
+\texttt{<h3>} & Third-level heading. \\ \tblhline
+\texttt{<h4>} & Fourth-level heading. \\ \tblhline
+\texttt{<h5>} & Fifth-level heading. \\ \tblhline
+\texttt{<h6>} & Smallest heading. \\ \tblhline
+\tblbottomrule
+\caption{Heading elements in HTML}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Heading Levels}]
+<h1>Dhaka Govt. College</h1>
+<p>This is normal text</p>
+<h6>Dhaka, Bangladesh</h6>
+\end{lstlisting}
+
+\subsection{Paragraph, Break, Horizontal Rule and Spacing}
+Normal paragraph text in HTML does not preserve every space, tab or Enter key from the source code. The browser reads the structure from tags, then displays the content according to HTML rules.
+
+\begin{itemize}
+    \item \texttt{<p>...</p>} creates a paragraph.
+    \item \texttt{<br>} or \texttt{<br/>} creates a line break inside text.
+    \item \texttt{<hr>} or \texttt{<hr/>} creates a horizontal line.
+    \item \texttt{\&nbsp;} creates a visible non-breaking space.
+\end{itemize}
+
+\subsubsection{Basic Paragraph and Line Break}
+This example uses \texttt{p} for paragraph structure and \texttt{br} for manual line breaks. The paragraph tag creates a block of text, while \texttt{br} moves the next text to a new line without starting a new paragraph.
+
+\begin{lstlisting}[style=htmlide, caption={Paragraph and Line Break}]
+<p>This is the first paragraph.</p>
+<p>This line has<br>two lines inside one paragraph.</p>
+\end{lstlisting}
+
+\textbf{Browser Output}
+\begin{browseroutputcompact}{Paragraph and Line Break}{http://127.0.0.1:3000/paragraph-line-break-output.html}
+    \includegraphics[width=\linewidth]{html_outputs/paragraph-line-break-output.pdf}
+\end{browseroutputcompact}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item A paragraph creates a separate block of text.
+    \item \texttt{br} breaks the line at the exact position where it is written.
+    \item Use \texttt{br} for real line breaks, not for full page layout spacing.
+\end{itemize}
+
+\subsubsection{Horizontal Rule}
+The \texttt{hr} tag creates a horizontal line across the page. It is an empty tag, so it does not wrap any content.
+
+\begin{lstlisting}[style=htmlide, caption={Horizontal Rule}]
+<p>Section One</p>
+<hr>
+<p>Section Two</p>
+\end{lstlisting}
+
+\textbf{Browser Output}
+\begin{browseroutputcompact}{Horizontal Rule}{http://127.0.0.1:3000/horizontal-rule-output.html}
+    \includegraphics[width=\linewidth]{html_outputs/horizontal-rule-output.pdf}
+\end{browseroutputcompact}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{hr} visually separates two parts of a page.
+    \item It is not used for writing text.
+    \item Modern webpages usually style horizontal lines with CSS.
+\end{itemize}
+
+\subsubsection{Old Horizontal Rule Attributes}
+Older HTML examples may use attributes inside \texttt{hr} to control alignment, width, thickness and color. These are exam/reference only, not modern practice.
+
+\begin{lstlisting}[style=htmlide, caption={Old HR Attributes}]
+<hr align="center" width="60%" size="4" color="blue">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{align} controls the position of the line.
+    \item \texttt{width} controls how long the line is.
+    \item \texttt{size} controls line thickness.
+    \item \texttt{color} controls line color.
+    \item These old attributes may appear in exams, but CSS is preferred in modern HTML.
+\end{itemize}
+
+\subsubsection{Whitespace Collapsing}
+Browsers collapse multiple normal spaces, tabs and source-code line breaks into a single space in normal paragraph text. Pressing Enter in the source file does not automatically create a visible new line in the browser.
+
+\begin{lstlisting}[style=htmlide, caption={Whitespace Collapsing}]
+<p>
+This       paragraph
+contains      many spaces
+and line breaks in source code.
+</p>
+\end{lstlisting}
+
+\textbf{Browser Output}
+\begin{browseroutputcompact}{Whitespace Collapsing}{http://127.0.0.1:3000/whitespace-collapsing-output.html}
+    \includegraphics[width=\linewidth]{html_outputs/whitespace-collapsing-output.pdf}
+\end{browseroutputcompact}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item Extra normal spaces usually display as one space.
+    \item Source-code line breaks do not behave like \texttt{br}.
+    \item Use proper tags, not random spacing, to control structure.
+\end{itemize}
+
+\subsubsection{Non-breaking Space}
+The entity \texttt{\&nbsp;} creates a visible space that the browser does not collapse. It is useful for small special spacing cases, but it should not be used as the main method for page layout.
+
+\begin{lstlisting}[style=htmlide, caption={Using Non-breaking Space}]
+<p>This&nbsp;&nbsp;&nbsp;paragraph&nbsp;&nbsp;has extra spaces.</p>
+\end{lstlisting}
+
+\textbf{Browser Output}
+\begin{browseroutputcompact}{Non-breaking Space}{http://127.0.0.1:3000/nonbreaking-space-output.html}
+    \includegraphics[width=\linewidth]{html_outputs/nonbreaking-space-output.pdf}
+\end{browseroutputcompact}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{\&nbsp;} is an HTML entity, not a tag.
+    \item Each \texttt{\&nbsp;} adds one visible non-breaking space.
+    \item For layout spacing, CSS is the correct modern method.
+\end{itemize}
+
+\section{Text Formatting in HTML}
+Formatting means giving proper shape and appearance to text on a webpage. Text formatting includes bold, italic, underline, big/small text, subscript, superscript, deleted text, inserted text, quotation and preformatted text.
+
+\begin{longtable}{|C{2.5cm}|C{9cm}|C{5cm}|}
+\longtableheader{3}{HTML Text Formatting Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use} & \tblcolhdcell{Example}}
+\texttt{<b>} & Makes text bold. & \texttt{<b>Welcome</b>} \\ \tblhline
+\texttt{<strong>} & Marks important text, usually shown bold. & \texttt{<strong>ICT</strong>} \\ \tblhline
+\texttt{<i>} & Makes text italic. & \texttt{<i>Text</i>} \\ \tblhline
+\texttt{<em>} & Emphasizes text, usually shown italic. & \texttt{<em>Text</em>} \\ \tblhline
+\texttt{<u>} & Underlines text. & \texttt{<u>Text</u>} \\ \tblhline
+\texttt{<ins>} & Shows inserted text, usually underlined. & \texttt{<ins>New</ins>} \\ \tblhline
+\texttt{<big>} & Makes text bigger; exam/reference only. & \texttt{<big>Text</big>} \\ \tblhline
+\texttt{<small>} & Makes text smaller. & \texttt{<small>Text</small>} \\ \tblhline
+\texttt{<del>} & Shows deleted text. & \texttt{<del>Old</del>} \\ \tblhline
+\texttt{<strike>} & Shows strikethrough text; exam/reference only. & \texttt{<strike>Old</strike>} \\ \tblhline
+\texttt{<s>} & Shows text no longer correct; exam/reference recognition. & \texttt{<s>Old</s>} \\ \tblhline
+\texttt{<sub>} & Shows subscript text. & \texttt{H<sub>2</sub>O} \\ \tblhline
+\texttt{<sup>} & Shows superscript text. & \texttt{x<sup>2</sup>} \\ \tblhline
+\texttt{<q>} & Shows inline quotation. & \texttt{<q>ICT</q>} \\ \tblhline
+\texttt{<mark>} & Highlights/marks text. & \texttt{<mark>Important</mark>} \\ \tblhline
+\texttt{<pre>} & Preserves spaces and line breaks. & \texttt{<pre>Text</pre>} \\ \tblhline
+\tblbottomrule
+\caption{Common text formatting tags}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Text Formatting Example}]
+<p><b>Bold</b> and <i>italic</i> text</p>
+<p>H<sub>2</sub>O and x<sup>2</sup></p>
+<p><del>2017</del> <ins>2018</ins></p>
+<pre>
+This text keeps
+spaces and line breaks.
+</pre>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{b}, \texttt{i} and \texttt{u} mainly change visual appearance.
+    \item \texttt{strong} and \texttt{em} also add meaning to the text.
+    \item \texttt{sub} and \texttt{sup} are useful for formulas and powers.
+    \item \texttt{pre} keeps source-code spacing and line breaks.
+\end{itemize}
+
+\subsection{Visual vs Meaningful Formatting}
+Some tags only make text look different, while some tags also give meaning. For example, \texttt{b} and \texttt{strong} usually look similar, but \texttt{strong} means important text.
+
+\begin{lstlisting}[style=htmlide, caption={Visual and Meaningful Formatting}]
+<p><b>Bold text</b></p>
+<p><strong>Important text</strong></p>
+<p><i>Italic text</i></p>
+<p><em>Emphasized text</em></p>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{b} and \texttt{i} are visual formatting tags.
+    \item \texttt{strong} and \texttt{em} are semantic formatting tags.
+    \item In exam answers, mention both the output and the meaning where needed.
+\end{itemize}
+
+\subsection{Formula and Correction Formatting}
+Subscript and superscript are important for science notation. Deleted and inserted text are useful when showing correction or update.
+
+\begin{lstlisting}[style=htmlide, caption={Formula and Correction Tags}]
+<p>Water formula: H<sub>2</sub>O</p>
+<p>Area formula: x<sup>2</sup></p>
+<p>Old price: <del>500</del> New price: <ins>450</ins></p>
+<p>This is <mark>important</mark> text.</p>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{sub} lowers text below the normal line.
+    \item \texttt{sup} raises text above the normal line.
+    \item \texttt{del} usually shows strikethrough text.
+    \item \texttt{ins} usually shows underlined inserted text.
+\end{itemize}
+
+\subsection{Old Text Tags}
+Some old tags may appear in textbooks or exam questions, but they are not modern practice. Modern HTML uses CSS for most visual text styling.
+
+\begin{lstlisting}[style=htmlide, caption={Old Text Tags}]
+<p><big>Big text</big></p>
+<p><strike>Old strikethrough text</strike></p>
+<p><s>Text no longer correct</s></p>
+<center>This text is centered.</center>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{big}, \texttt{strike} and \texttt{center} are exam/reference only.
+    \item Use CSS for modern font size, text alignment and decoration.
+\end{itemize}
+
+\section{Font, Color, Style and Bangla Text}
+
+\subsection{Font Tag}
+The old \texttt{font} tag was used to control font face, color and size. It is exam/reference only, not modern practice. Modern webpages should use CSS.
+
+\begin{formulabox}[Old Font Tag Syntax]
+\[
+\texttt{<font face="fontname" color="fontcolor" size="number">Text</font>}
+\]
+\end{formulabox}
+
+\begin{longtable}{|C{2.5cm}|L{14cm}|}
+\longtableheader{2}{Old Font Tag Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{face} & Sets font type or font family. Example: \texttt{face="Verdana"}. \\ \tblhline
+\texttt{color} & Sets font color using name, RGB or hexadecimal color. \\ \tblhline
+\texttt{size} & Sets font size. Old HTML size values are usually from \texttt{1} to \texttt{7}; default is \texttt{3}. Relative values such as \texttt{+1} and \texttt{-1} may also appear. \\ \tblhline
+\tblbottomrule
+\caption{Attributes of the old font tag}
+\end{longtable}
+
+\subsection{Color Values}
+\begin{itemize}
+    \item \term{Named colors}: black, gray, silver, white, yellow, lime, aqua, fuchsia, red, green, blue, purple, maroon, olive, navy, teal.
+    \item \term{RGB colors}: Written as \texttt{rgb(red, green, blue)}, where each value is from 0 to 255. Example: \texttt{rgb(255,0,0)} means red.
+    \item \term{Hexadecimal colors}: Written as \texttt{\#RRGGBB}. Example: \texttt{\#FF0000} means red and \texttt{\#000000} means black.
+\end{itemize}
+
+\begingroup
+\newcommand{\colorrow}[2]{%
+    \makebox[2.2cm][l]{\raisebox{0.25em}{\colorswatch{#1}}\hspace{0.45em}#2}%
+}
+
+\begin{longtable}{|C{4cm}|C{4cm}|C{4cm}|}
+\longtableheader{3}{Common Color Codes}{%
+\tblcolhdcell{Color} & \tblcolhdcell{HEX} & \tblcolhdcell{RGB}}
+
+\colorrow{FFFFFF}{White}  & \texttt{\#FFFFFF} & \texttt{rgb(255,255,255)} \\ \tblhline
+\colorrow{000000}{Black}  & \texttt{\#000000} & \texttt{rgb(0,0,0)} \\ \tblhline
+\colorrow{FF0000}{Red}    & \texttt{\#FF0000} & \texttt{rgb(255,0,0)} \\ \tblhline
+\colorrow{00FF00}{Green}  & \texttt{\#00FF00} & \texttt{rgb(0,255,0)} \\ \tblhline
+\colorrow{0000FF}{Blue}   & \texttt{\#0000FF} & \texttt{rgb(0,0,255)} \\ \tblhline
+\colorrow{FFFF00}{Yellow} & \texttt{\#FFFF00} & \texttt{rgb(255,255,0)} \\ \tblhline
+\colorrow{FFA500}{Orange} & \texttt{\#FFA500} & \texttt{rgb(255,165,0)} \\ \tblhline
+\colorrow{EE82EE}{Violet} & \texttt{\#EE82EE} & \texttt{rgb(238,130,238)} \\ \tblhline
+
+\tblbottomrule
+\caption{Common HTML color values}
+\end{longtable}
+
+\endgroup
+
+\subsection{Style Attribute}
+The \texttt{style} attribute is used for inline CSS. It can control exact font family, font size, font style and color.
+
+\begin{lstlisting}[style=htmlide, caption={Font Styling with CSS}]
+<p style="font-family: Arial; font-size: 18px; color: red;">
+    This is styled text.
+</p>
+\end{lstlisting}
+
+\subsection{Bangla Text in HTML}
+Bangla text may appear in older books using old font names such as \texttt{SutonnyMJ}. This is exam/reference only. The modern method is Unicode with UTF-8 encoding.
+
+\begin{itemize}
+    \item Bangla can be written using old \texttt{font face} values, but this is not portable.
+    \item Bangla can be shown using CSS \texttt{font-family}, but the font must exist on the user device.
+    \item Unicode Bangla text with UTF-8 is the correct modern method.
+    \item File names, image paths and link paths should be written in English characters for better compatibility.
+\end{itemize}
+
+\begin{lstlisting}[style=htmlide, caption={UTF-8 and Unicode Bangla}]
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bangla Text</title>
+</head>
+<body>
+    <p>Bangla Unicode text can be written here.</p>
+</body>
+</html>
+\end{lstlisting}
+
+\subsection{Marquee}
+The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam/reference only, not modern practice.
+
+\begin{lstlisting}[style=htmlide, caption={Marquee Variations}]
+<marquee direction="right">Moving right</marquee>
+<marquee behavior="alternate" scrollamount="8">
+    Moving back and forth
+</marquee>
+<marquee loop="3" scrolldelay="100" bgcolor="lightyellow">
+    This scrolls three times
+</marquee>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{direction} controls movement direction.
+    \item \texttt{behavior="alternate"} makes the text bounce between sides.
+    \item \texttt{loop}, \texttt{scrollamount} and \texttt{scrolldelay} control movement behavior.
+    \item Modern pages should use CSS animation instead of \texttt{marquee}.
+\end{itemize}
+
+\section{HTML Lists}
+HTML lists organize related items. The main list types are ordered list, unordered list and description list.
+
+\subsection{Ordered List}
+An ordered list is used when the order of items matters. The browser automatically numbers the \texttt{li} elements.
+
+\begin{lstlisting}[style=htmlide, caption={Ordered List}]
+<ol>
+    <li>Bangla</li>
+    <li>English</li>
+    <li>ICT</li>
+</ol>
+\end{lstlisting}
+
+\subsubsection{Ordered List Variations}
+The \texttt{type} attribute changes the numbering style. The \texttt{start} attribute changes the starting number, and \texttt{value} can force the number of a specific list item.
+
+\begin{lstlisting}[style=htmlide, caption={Ordered List Type and Start}]
+<ol type="A">
+    <li>HTML</li>
+    <li>CSS</li>
+</ol>
+
+<ol type="i" start="4">
+    <li>Fourth item</li>
+    <li>Fifth item</li>
+</ol>
+
+<ol>
+    <li>Normal item</li>
+    <li value="10">Forced number ten</li>
+    <li>Continues as eleven</li>
+</ol>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item Common \texttt{type} values are \texttt{1}, \texttt{A}, \texttt{a}, \texttt{I} and \texttt{i}.
+    \item \texttt{start="4"} changes the first list number.
+    \item \texttt{value="10"} changes only that item number and affects following items.
+\end{itemize}
+
+\subsection{Unordered List}
+An unordered list is used when item order is not important. The browser normally displays bullet markers.
+
+\begin{lstlisting}[style=htmlide, caption={Unordered List}]
+<ul>
+    <li>Physics</li>
+    <li>Chemistry</li>
+    <li>Biology</li>
+</ul>
+\end{lstlisting}
+
+\subsubsection{Unordered List Marker Variations}
+Older HTML examples may use \texttt{type} values such as \texttt{disc}, \texttt{circle} and \texttt{square}. Modern HTML should use CSS \texttt{list-style-type}.
+
+\begin{lstlisting}[style=htmlide, caption={Unordered List Marker Types}]
+<ul type="disc">
+    <li>Disc marker</li>
+</ul>
+
+<ul type="circle">
+    <li>Circle marker</li>
+</ul>
+
+<ul type="square">
+    <li>Square marker</li>
+</ul>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{type} on \texttt{ul} is old exam/reference style.
+    \item CSS is the modern way to change list markers.
+\end{itemize}
+
+\subsection{Description List}
+A description list is used for terms and their meanings. It uses \texttt{dl}, \texttt{dt} and \texttt{dd}.
+
+\begin{lstlisting}[style=htmlide, caption={Description List}]
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>HTTP</dt>
+    <dd>HyperText Transfer Protocol</dd>
+</dl>
+\end{lstlisting}
+
+\subsection{Nested List}
+A nested list means a list inside another list. It is useful for showing categories and subcategories.
+
+\begin{lstlisting}[style=htmlide, caption={Nested List}]
+<ol>
+    <li>Science
+        <ul>
+            <li>Physics</li>
+            <li>Chemistry</li>
+        </ul>
+    </li>
+    <li>Business Studies</li>
+</ol>
+\end{lstlisting}
+
+\subsection{Old Exam-Style List Tags}
+The old \texttt{dir} and \texttt{menu} tags may appear in old books. They are exam/reference only; use \texttt{ul}, \texttt{ol}, semantic navigation and CSS in modern pages.
+
+\begin{lstlisting}[style=htmlide, caption={Old List Tags}]
+<dir>
+    <li>Old directory item</li>
+</dir>
+
+<menu>
+    <li>Old menu item</li>
+</menu>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{dir} and old \texttt{menu} examples are not modern list practice.
+    \item Use \texttt{ol} for sequence, \texttt{ul} for bullets and \texttt{dl} for term-description pairs.
+\end{itemize}
+
+\begin{summarybox}
+Use \texttt{ol} for sequence, \texttt{ul} for bullets, and \texttt{dl} for term-description pairs.
+\end{summarybox}
+
+\section{Hyperlinks in HTML}
+
+\begin{definitionbox}[Hyperlink]
+A hyperlink is a connection that allows a user to move from one webpage, file or resource to another.
+\end{definitionbox}
+
+Hyperlinks create bridges between pages. A website homepage can connect to other pages through hyperlinks. HTML pages, images, sound files, videos and documents can be referenced by hyperlinks.
+
+\subsection{Anchor Tag}
+\begin{formulabox}[Hyperlink Syntax]
+\[
+\texttt{<a href="url"> Link Text </a>}
+\]
+\end{formulabox}
+Two things are necessary to create a link: the destination address and the visible clickable text or object.
+
+\begin{lstlisting}[style=htmlide, caption={Basic Anchor Link}]
+<a href="https://www.example.com">Visit Website</a>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{a} creates the hyperlink.
+    \item \texttt{href} stores the destination address.
+    \item The text between \texttt{<a>} and \texttt{</a>} becomes clickable.
+\end{itemize}
+
+\subsection{Internal and External Links}
+\begin{itemize}
+    \item \term{Internal link}: Connects one page of a website with another page of the same website. Example: \texttt{studentinfo.html}.
+    \item \term{External link}: Connects to a webpage or resource on another server or website. Example: {\hypersetup{urlcolor=black}\url{https://www.du.ac.bd/}}.
+\end{itemize}
+
+\subsection{Relative and Absolute Paths}
+\begin{longtable}{|C{3cm}|L{12.5cm}|}
+\longtableheader{2}{Relative Path vs Absolute Path}{%
+\tblcolhdcell{Path Type} & \tblcolhdcell{Meaning}}
+Relative path & Gives a file location relative to the current HTML document. Example: \texttt{address.html} or \texttt{images/logo.jpg}. \\ \tblhline
+Absolute path & Gives the complete address or fixed location. Example: \texttt{https://www.example.com/page.html}. \\ \tblhline
+\tblbottomrule
+\caption{Types of paths used in hyperlinks}
+\end{longtable}
+
+\subsection{Hyperlink Attributes}
+\begin{longtable}{|C{3cm}|L{12.5cm}|}
+\longtableheader{2}{Anchor Tag Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{href} & Determines the destination address of the hyperlink. \\ \tblhline
+\texttt{title} & Shows tooltip text when the mouse is placed over the link. \\ \tblhline
+\texttt{target} & Controls where the link opens. Common values are \texttt{\_self} and \texttt{\_blank}. \\ \tblhline
+\texttt{name} & Used in older HTML to create a bookmark/anchor point inside a page. Modern HTML commonly uses \texttt{id}. \\ \tblhline
+\tblbottomrule
+\caption{Common hyperlink attributes}
+\end{longtable}
+
+\subsection{Advantages of Hyperlink}
+\begin{itemize}
+    \item Connects different pages of a website.
+    \item Connects websites stored on different servers.
+    \item Helps users find related information quickly.
+    \item Saves time by allowing direct navigation.
+\end{itemize}
+
+\begin{lstlisting}[style=htmlide, caption={Internal and External Links}]
+<p><a href="address.html">Our Address</a></p>
+<p><a href="https://www.example.com" target="_blank">External Site</a></p>
+<p><a href="#top">Go to Top</a></p>
+\end{lstlisting}
+
+\subsection{Common Link Variations}
+Links can point to web addresses, local files, folders, email addresses, phone numbers or a specific place inside the same page.
+
+\begin{lstlisting}[style=htmlide, caption={Common Link Variations}]
+<a href="index.html">Same folder page</a>
+<a href="pages/about.html">Page inside folder</a>
+<a href="../home.html">Page in parent folder</a>
+<a href="https://www.example.com">Absolute web link</a>
+<a href="mailto:mail@example.com">Send email</a>
+<a href="tel:+8801234567890">Call phone number</a>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item Relative links depend on the current file location.
+    \item Absolute links use the full address.
+    \item \texttt{mailto:} opens an email program when supported.
+    \item \texttt{tel:} is mainly useful on phones and supported devices.
+\end{itemize}
+
+\subsection{Target and Download Attributes}
+The \texttt{target} attribute controls where a link opens. The \texttt{download} attribute tells the browser to download a file instead of opening it normally when supported.
+
+\begin{lstlisting}[style=htmlide, caption={Target and Download Links}]
+<a href="notice.html" target="_self">Open here</a>
+<a href="https://www.example.com" target="_blank">
+    Open in new tab
+</a>
+<a href="files/sample.pdf" download>Download PDF</a>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{\_self} opens in the same tab.
+    \item \texttt{\_blank} opens in a new tab or window.
+    \item \texttt{download} works best with local or same-site files.
+\end{itemize}
+
+\subsection{Head Links: Link, Base and Basefont}
+The \texttt{link}, \texttt{base} and \texttt{basefont} tags are written in the \texttt{head} section. \texttt{basefont} is exam/reference only, not modern practice.
+
+\begin{lstlisting}[style=htmlide, caption={Head Link Tags}]
+<head>
+    <base href="https://www.example.com/">
+    <link rel="stylesheet" href="style.css">
+    <basefont face="Arial" size="4">
+</head>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{link} connects external resources such as CSS files.
+    \item \texttt{base} changes how relative links are resolved.
+    \item \texttt{basefont} is old and should be replaced by CSS.
+\end{itemize}
+
+\section{Images and Image Maps}
+
+\subsection{Adding Images}
+\begin{definitionbox}[Image Tag]
+The \texttt{img} tag is an empty element used to add an image to a webpage.
+\end{definitionbox}
+Images, diagrams, charts, maps and graphics make webpages more attractive and can reduce the amount of text needed for explanation.
+
+\subsection{Advantages and Disadvantages of Web Graphics}
+\begin{longtable}{|L{8.25cm}|L{8.25cm}|}
+\longtableheader{2}{Web Graphics}{%
+\tblcolhdcell{Advantages} & \tblcolhdcell{Disadvantages}}
+Can reduce the amount of text. & Images take longer to download than text. \\ \tblhline
+Attracts user attention. & Some browsers or devices may not support all graphics properly. \\ \tblhline
+Can be used as graphical navigation links. & Too many images can make a page slow or heavy. \\ \tblhline
+\tblbottomrule
+\caption{Advantages and disadvantages of web graphics}
+\end{longtable}
+
+\subsection{Inline and External Images}
+\begin{itemize}
+    \item \term{Inline image}: Loads and displays directly with the webpage.
+    \item \term{External image}: May not load immediately with the page and may require downloading or a separate source.
+\end{itemize}
+
+\subsection{Image Syntax and Attributes}
+\begin{formulabox}[Image Syntax]
+\[
+\texttt{<img src="url" alt="text">}
+\]
+\end{formulabox}
+
+\begin{longtable}{|C{3cm}|L{13.5cm}|}
+\longtableheader{2}{Image Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{src} & Specifies the image file path or URL. \\ \tblhline
+\texttt{alt} & Shows alternate text if the image fails to load; also helps accessibility. \\ \tblhline
+\texttt{width} & Sets image width. \\ \tblhline
+\texttt{height} & Sets image height. \\ \tblhline
+\texttt{title} & Shows tooltip text when the mouse is placed over the image. \\ \tblhline
+\texttt{align} & Old/exam-reference attribute for image placement: top, middle, bottom, left or right. Modern CSS is preferred. \\ \tblhline
+\texttt{hspace} & Old/exam-reference attribute for horizontal space around an image. \\ \tblhline
+\texttt{vspace} & Old/exam-reference attribute for vertical space around an image. \\ \tblhline
+\texttt{border} & Old/exam-reference attribute for image border size. \\ \tblhline
+\tblbottomrule
+\caption{Common image attributes}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Image with Size and Tooltip}]
+<img src="campus.jpg" alt="College campus"
+     width="400" height="250" title="Campus Image">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{src} must point to the correct image path.
+    \item \texttt{alt} appears when an image cannot load and helps accessibility.
+    \item \texttt{width} and \texttt{height} control image display size.
+\end{itemize}
+
+\subsection{Image Paths and Broken Images}
+Image loading depends on the path written in \texttt{src}. If the path is wrong, the image will not load and the browser may show the alternate text.
+
+\begin{lstlisting}[style=htmlide, caption={Image Path Variations}]
+<img src="photo.jpg" alt="Same folder image">
+<img src="images/photo.jpg" alt="Image inside folder">
+<img src="../photo.jpg" alt="Image in parent folder">
+<img src="wrong-name.jpg" alt="This image path is wrong">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item File names and folder names must match exactly.
+    \item A wrong \texttt{src} creates a broken image.
+    \item The \texttt{alt} text is still meaningful when the image fails.
+\end{itemize}
+
+\subsection{Old Image Spacing and Border Attributes}
+Older HTML examples may use image spacing and border attributes. These are exam/reference only; modern pages use CSS.
+
+\begin{lstlisting}[style=htmlide, caption={Old Image Attributes}]
+<img src="logo.jpg" alt="Logo" align="left"
+     hspace="20" vspace="10" border="2">
+
+<a href="home.html">
+    <img src="home.jpg" alt="Home" border="0">
+</a>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{hspace} and \texttt{vspace} add space around the image.
+    \item \texttt{border="0"} was often used to remove link image borders.
+    \item CSS is preferred for alignment, spacing and borders.
+\end{itemize}
+
+\subsection{Clickable Image}
+\begin{lstlisting}[style=htmlide, caption={Image Link}]
+<a href="https://www.educationboard.gov.bd">
+    <img src="logo.jpg" alt="Education Board" width="200">
+</a>
+\end{lstlisting}
+
+\subsection{Image Map}
+An image map makes selected areas of one image clickable. It uses the \texttt{map} and \texttt{area} tags with coordinates.
+
+\begin{longtable}{|C{3cm}|L{13cm}|}
+\longtableheader{2}{Image Map Tags and Attributes}{%
+\tblcolhdcell{Name} & \tblcolhdcell{Use}}
+\texttt{map} & Defines an image map area and uses the \texttt{name} attribute. \\ \tblhline
+\texttt{area} & Defines one clickable region inside the image map. \\ \tblhline
+\texttt{usemap} & Connects an image with a map. Example: \texttt{usemap="\#boardmap"}. \\ \tblhline
+\texttt{shape} & Defines region shape, such as \texttt{rect}, \texttt{circle} or \texttt{poly}. \\ \tblhline
+\texttt{coords} & Gives the coordinate values of the clickable region. \\ \tblhline
+\texttt{href} & Gives the destination link for the selected area. \\ \tblhline
+\texttt{alt} & Gives alternate text for the clickable area. \\ \tblhline
+\tblbottomrule
+\caption{Image map tags and attributes}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Image Map Example}]
+<img src="campus-map.jpg" alt="Campus Map" usemap="#campusmap">
+
+<map name="campusmap">
+    <area shape="rect" coords="10,20,120,90"
+          href="library.html" alt="Library">
+    <area shape="circle" coords="200,80,40"
+          href="lab.html" alt="ICT Lab">
+</map>
+\end{lstlisting}
+
+\begin{summarybox}
+Use \texttt{img} for normal images, image attributes for basic control, and \texttt{map}/\texttt{area} when selected parts of one image need separate links.
+\end{summarybox}
+
+\section{Media and Frames}
+
+\subsection{Audio and Video}
+Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add media.
+
+\begin{lstlisting}[style=htmlide, caption={Audio and Video Example}]
+<audio controls>
+    <source src="lecture.mp3" type="audio/mpeg">
+</audio>
+
+<video controls width="400">
+    <source src="lesson.mp4" type="video/mp4">
+</video>
+\end{lstlisting}
+
+\subsection{Iframe}
+The \texttt{iframe} tag displays another webpage or resource inside the current webpage. It is commonly used for embedded maps, videos or external pages.
+
+\begin{lstlisting}[style=htmlide, caption={Iframe Example}]
+<iframe src="notice.html" width="500" height="250">
+</iframe>
+\end{lstlisting}
+
+\subsection{Old Frame Tags}
+Older HTML used \texttt{frameset}, \texttt{frame} and \texttt{noframes} to divide the browser window into separate frames. These are exam/reference only, not modern practice.
+
+\begin{lstlisting}[style=htmlide, caption={Old Frameset Example}]
+<frameset cols="30%,70%">
+    <frame src="menu.html">
+    <frame src="content.html">
+    <noframes>Your browser does not support frames.</noframes>
+</frameset>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{audio} and \texttt{video} need \texttt{controls} if users should play or pause media.
+    \item \texttt{source} can provide the media file and type.
+    \item \texttt{iframe} is still used, but old frame tags are only for exam/reference recognition.
+\end{itemize}
+
+\section{HTML Tables}
+
+\begin{definitionbox}[HTML Table]
+An HTML table presents information in rows and columns using the \texttt{table} element.
+\end{definitionbox}
+
+\subsection{Parts of a Table}
+\begin{itemize}
+    \item \term{Caption}: title of the table.
+    \item \term{Row}: horizontal line of cells.
+    \item \term{Column}: vertical line of cells.
+    \item \term{Cell}: box formed by the intersection of a row and a column.
+    \item \term{Heading}: row or column title, usually shown in bold and centered.
+\end{itemize}
+
+\subsection{Table Elements}
+\begin{longtable}{|C{3cm}|L{13.5cm}|}
+\longtableheader{2}{HTML Table Elements}{%
+\tblcolhdcell{Element} & \tblcolhdcell{Use}}
+\texttt{table} & Defines the table. \\ \tblhline
+\texttt{caption} & Displays a title for the table. \\ \tblhline
+\texttt{tr} & Creates a table row. It should contain \texttt{td} or \texttt{th} cells. \\ \tblhline
+\texttt{td} & Creates a normal table data cell. \\ \tblhline
+\texttt{th} & Creates a table heading cell; browsers usually show it bold and centered. \\ \tblhline
+\tblbottomrule
+\caption{Main HTML table elements}
+\end{longtable}
+
+\subsection{Basic Table}
+\begin{lstlisting}[style=htmlide, caption={Basic HTML Table}]
+<table border="1">
+    <caption>Student Info</caption>
+    <tr>
+        <th>Name</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>Raza</td>
+        <td>A-</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{table} contains the whole table.
+    \item \texttt{tr} creates one row.
+    \item \texttt{th} creates heading cells.
+    \item \texttt{td} creates normal data cells.
+\end{itemize}
+
+\subsection{Unequal Number of Cells}
+If one row has more or fewer cells than another row, the browser still tries to draw the table. This can create an uneven table, so each row should usually follow the planned column count.
+
+\begin{lstlisting}[style=htmlide, caption={Unequal Table Cells}]
+<table border="1">
+    <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td>Three</td>
+    </tr>
+    <tr>
+        <td>Only one cell</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item The first row has three cells.
+    \item The second row has only one cell.
+    \item This is allowed by the browser, but it is usually bad table design unless merging is intended.
+\end{itemize}
+
+\subsection{Table Attributes}
+\begin{longtable}{|C{3.5cm}|L{13.5cm}|}
+\longtableheader{2}{Common Table Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{border} & Sets table border width. \texttt{border="1"} shows a border; \texttt{border="0"} shows no border. \\ \tblhline
+\texttt{width} & Sets table width in pixels or percentage. \\ \tblhline
+\texttt{height} & Sets table or cell height. \\ \tblhline
+\texttt{align} & Aligns table, row or cell content horizontally. \\ \tblhline
+\texttt{valign} & Aligns cell content vertically: top, middle or bottom. \\ \tblhline
+\texttt{cellspacing} & Sets the space between table cells. \\ \tblhline
+\texttt{cellpadding} & Sets the space between cell border and cell content. \\ \tblhline
+\texttt{colspan} & Merges cells across columns. \\ \tblhline
+\texttt{rowspan} & Merges cells across rows. \\ \tblhline
+\texttt{bgcolor} & Sets background color of table, row or cell; exam/reference only, CSS preferred. \\ \tblhline
+\tblbottomrule
+\caption{Important table attributes}
+\end{longtable}
+
+\subsection{Cellspacing and Cellpadding}
+\begin{lstlisting}[style=htmlide, caption={Cellspacing and Cellpadding}]
+<table border="1" cellspacing="7" cellpadding="10">
+    <tr>
+        <td>First</td>
+        <td>Row</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>Row</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{cellspacing} controls the gap between cells.
+    \item \texttt{cellpadding} controls the gap inside each cell.
+    \item Both are old HTML attributes; modern CSS uses \texttt{border-spacing} and \texttt{padding}.
+\end{itemize}
+
+\subsection{Colspan and Rowspan}
+\begin{lstlisting}[style=htmlide, caption={Colspan and Rowspan}]
+<table border="1">
+    <tr>
+        <th colspan="2">Test Result</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Science</td>
+        <td>Physics</td>
+    </tr>
+    <tr>
+        <td>Chemistry</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{colspan="2"} makes one cell cover two columns.
+    \item \texttt{rowspan="2"} makes one cell cover two rows.
+    \item After merging, the number of remaining cells in that row or column must be adjusted.
+\end{itemize}
+
+\subsection{Table Background Color}
+\begin{lstlisting}[style=htmlide, caption={Table Background Color}]
+<table border="1" width="300">
+    <tr bgcolor="green">
+        <th>Roll</th>
+        <th>Name</th>
+        <th>District</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Abrar Dip</td>
+        <td bgcolor="blue">Dhaka</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\subsection{Table Alignment and Empty Cells}
+Old HTML examples may use \texttt{align}, \texttt{valign}, \texttt{bgcolor}, \texttt{width}, \texttt{height} and \texttt{\&nbsp;} inside tables. These are important for exam recognition, but CSS is preferred in modern webpages.
+
+\begin{lstlisting}[style=htmlide, caption={Alignment and Empty Cells}]
+<table border="1" width="400" align="center">
+    <tr bgcolor="lightblue">
+        <th>Name</th>
+        <th>Result</th>
+    </tr>
+    <tr height="50" align="center">
+        <td valign="top">Rafi</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{align} controls horizontal alignment.
+    \item \texttt{valign} controls vertical alignment inside a cell.
+    \item \texttt{\&nbsp;} keeps an otherwise empty cell visible in old examples.
+    \item \texttt{bgcolor}, \texttt{width} and \texttt{height} are exam/reference style attributes.
+\end{itemize}
+
+\subsection{Table Sections}
+Large tables can be divided into \texttt{thead}, \texttt{tbody} and \texttt{tfoot}. This makes the structure clearer.
+
+\begin{lstlisting}[style=htmlide, caption={Table Head, Body and Foot}]
+<table border="1">
+    <caption>Marks Table</caption>
+    <thead>
+        <tr><th>Name</th><th>Marks</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Asha</td><td>90</td></tr>
+        <tr><td>Rafi</td><td>85</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td>Total Students</td><td>2</td></tr>
+    </tfoot>
+</table>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{thead} contains heading rows.
+    \item \texttt{tbody} contains the main table data.
+    \item \texttt{tfoot} contains footer or summary rows.
+\end{itemize}
+
+\begin{summarybox}
+For exams, know \texttt{table}, \texttt{tr}, \texttt{td}, \texttt{th}, \texttt{caption}, \texttt{border}, \texttt{cellspacing}, \texttt{cellpadding}, \texttt{colspan}, \texttt{rowspan}, \texttt{align}, \texttt{valign} and \texttt{bgcolor}.
+\end{summarybox}
+
+\section{Containers, Semantic HTML and CSS}
+
+\subsection{Webpage Layout}
+Layout means the planned arrangement of webpage parts such as header, navigation, main content, sidebar and footer. A good layout should be planned before making the website.
+
+\begin{longtable}{|C{3cm}|L{13cm}|}
+\longtableheader{2}{Common Webpage Layout Parts}{%
+\tblcolhdcell{Part} & \tblcolhdcell{Purpose}}
+Header & Contains page title, logo or main heading. \\ \tblhline
+Navigation & Contains links to different pages or sections. \\ \tblhline
+Main content & Contains the main information of the webpage. \\ \tblhline
+Sidebar & Contains supporting links or helping elements. \\ \tblhline
+Footer & Contains footer information such as copyright, contact or lower navigation. \\ \tblhline
+\tblbottomrule
+\caption{Common parts of a webpage layout}
+\end{longtable}
+
+\subsection{Methods of Creating Layout}
+\begin{itemize}
+    \item \term{Using table}: Old method; only HTML can create the structure, but it is not modern practice.
+    \item \term{Using div}: Uses \texttt{div} with CSS; common for layout learning.
+    \item \term{Using frameset/frame}: Old method; exam/reference only, not significant in modern webpages.
+    \item \term{Using semantic HTML}: Modern method using tags such as \texttt{header}, \texttt{nav}, \texttt{main}, \texttt{section}, \texttt{article} and \texttt{footer}.
+\end{itemize}
+
+\subsection{Div and Span}
+\begin{itemize}
+    \item \texttt{div} is a block-level container used to divide a webpage into sections.
+    \item \texttt{span} is an inline container used to mark a small part of text.
+    \item Common \texttt{div} attributes in examples include \texttt{id}, \texttt{class}, \texttt{style}, \texttt{align}, \texttt{width}, \texttt{height} and \texttt{title}.
+\end{itemize}
+
+\begin{lstlisting}[style=htmlide, caption={Simple Div Layout}]
+<div class="container" style="width:100%;">
+    <div class="header" style="background-color:gray;">
+        <h1 align="center">Header</h1>
+    </div>
+    <div class="sidebar" style="float:left; width:25%;">
+        Sidebar
+    </div>
+    <div class="content" style="float:left; width:75%;">
+        Main Content
+    </div>
+    <div class="footer" style="clear:left;">
+        Footer
+    </div>
+</div>
+\end{lstlisting}
+
+\subsection{Semantic Layout Tags}
+\begin{lstlisting}[style=htmlide, caption={Semantic Layout}]
+<header>Site Title</header>
+<nav>Navigation Links</nav>
+<main>
+    <section>
+        <article>Main Article</article>
+    </section>
+</main>
+<footer>Footer Information</footer>
+\end{lstlisting}
+
+\subsection{CSS Basics}
+CSS means Cascading Style Sheets. HTML creates the structure of a page, and CSS controls the presentation such as color, font, spacing, border and layout.
+
+\begin{itemize}
+    \item \term{Inline CSS}: written inside the \texttt{style} attribute of a tag.
+    \item \term{Internal CSS}: written inside a \texttt{style} tag in the \texttt{head} section.
+    \item \term{External CSS}: written in a separate CSS file and connected with the \texttt{link} tag.
+    \item Class selectors begin with a dot, such as \texttt{.notice}.
+    \item ID selectors begin with a hash sign, such as \texttt{\#main}.
+\end{itemize}
+
+\begin{lstlisting}[style=htmlide, caption={Internal CSS and Class Selector}]
+<head>
+    <style>
+        .notice {
+            color: blue;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="notice">This paragraph uses a class selector.</p>
+</body>
+\end{lstlisting}
+
+\begin{summarybox}
+Use semantic tags for meaningful page structure, \texttt{div}/\texttt{span} for generic containers, and CSS for visual design.
+\end{summarybox}
+
+\section{HTML Forms}
+
+\begin{definitionbox}[HTML Form]
+An HTML form is an area of a webpage that allows users to enter or select data.
+\end{definitionbox}
+
+Forms are useful for understanding dynamic websites because users submit data through forms. A form can contain many controls, but one \texttt{form} element should not contain another \texttt{form} element.
+
+\subsection{Form Element and Attributes}
+\begin{longtable}{|C{3cm}|L{11cm}|}
+\longtableheader{2}{Form Attributes}{%
+\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
+\texttt{action} & Specifies where the submitted form data will be sent. \\ \tblhline
+\texttt{method} & Specifies how form data will be sent, commonly \texttt{get} or \texttt{post}. \\ \tblhline
+\tblbottomrule
+\caption{Main attributes of the form tag}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Basic Form Structure}]
+<form action="submit.html" method="post">
+    <label>Name:</label>
+    <input type="text" name="student_name">
+    <input type="submit" value="Send">
+</form>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{form} groups the input controls.
+    \item \texttt{action} gives the destination that receives submitted data.
+    \item \texttt{method} commonly uses \texttt{get} or \texttt{post}.
+    \item HTML creates the form, but another program processes the submitted data.
+\end{itemize}
+
+\subsection{Form Tags}
+\begin{longtable}{|C{2.5cm}|L{14cm}|}
+\longtableheader{2}{Common Form Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
+\texttt{form} & Defines a form area. \\ \tblhline
+\texttt{input} & Creates input fields such as text box, password field, radio button, checkbox and button. \\ \tblhline
+\texttt{textarea} & Creates a multi-line text input area. Default examples often use rows and columns. \\ \tblhline
+\texttt{select} & Creates a drop-down list. \\ \tblhline
+\texttt{option} & Defines an option inside a drop-down list. \\ \tblhline
+\texttt{button} & Creates a clickable button. \\ \tblhline
+\texttt{label} & Gives a text label for an input control. \\ \tblhline
+\texttt{fieldset} & Groups related form controls. \\ \tblhline
+\texttt{legend} & Gives a title to a fieldset. \\ \tblhline
+\tblbottomrule
+\caption{Common HTML form tags}
+\end{longtable}
+
+\subsection{Input Types}
+\begin{longtable}{|C{3cm}|L{13.5cm}|}
+\longtableheader{2}{Common Input Types}{%
+\tblcolhdcell{Input Type} & \tblcolhdcell{Use}}
+\texttt{text} & Single-line text field. \\ \tblhline
+\texttt{password} & Password field; browsers show bullets or asterisks instead of typed characters. \\ \tblhline
+\texttt{radio} & Selects one option from a group. \\ \tblhline
+\texttt{checkbox} & Selects one or more options. \\ \tblhline
+\texttt{submit} & Submits form data. \\ \tblhline
+\texttt{button} & Creates a normal command button. \\ \tblhline
+\tblbottomrule
+\caption{Common input types in HTML forms}
+\end{longtable}
+
+\subsection{Text and Password Inputs}
+Text input accepts one line of normal text. Password input hides the typed characters on the screen.
+
+\begin{lstlisting}[style=htmlide, caption={Text and Password Fields}]
+<label>Username:</label>
+<input type="text" name="username" placeholder="Enter name">
+
+<label>Password:</label>
+<input type="password" name="password">
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{type="text"} creates a normal text box.
+    \item \texttt{type="password"} hides typed characters.
+    \item \texttt{placeholder} gives a hint inside the box.
+\end{itemize}
+
+\subsection{Radio Buttons and Checkboxes}
+Radio buttons are used when only one option should be selected from a group. Checkboxes are used when one or more options may be selected.
+
+\begin{lstlisting}[style=htmlide, caption={Radio and Checkbox Inputs}]
+<p>Group:</p>
+<input type="radio" name="group" value="science" checked> Science
+<input type="radio" name="group" value="business"> Business
+
+<p>Subjects:</p>
+<input type="checkbox" name="subject" value="ict" checked> ICT
+<input type="checkbox" name="subject" value="english"> English
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item Radio buttons with the same \texttt{name} form one group.
+    \item Only one radio button in the same group can be selected.
+    \item More than one checkbox can be selected.
+    \item \texttt{checked} selects an option by default.
+\end{itemize}
+
+\subsection{Select, Option and Optgroup}
+A \texttt{select} element creates a drop-down list. \texttt{option} defines each choice, and \texttt{optgroup} groups related choices.
+
+\begin{lstlisting}[style=htmlide, caption={Drop-down and Option Group}]
+<select name="department" size="4" multiple>
+    <optgroup label="Engineering">
+        <option value="cse" selected>CSE</option>
+        <option value="eee">EEE</option>
+    </optgroup>
+    <optgroup label="Business">
+        <option value="bba">BBA</option>
+    </optgroup>
+</select>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{selected} chooses an option by default.
+    \item \texttt{multiple} allows more than one option to be selected.
+    \item \texttt{size} controls how many options are visible.
+\end{itemize}
+
+\subsection{Textarea and Buttons}
+\texttt{textarea} is used for multi-line input. Buttons are used to submit, reset or trigger commands.
+
+\begin{lstlisting}[style=htmlide, caption={Textarea and Buttons}]
+<textarea name="comment" rows="4" cols="30">
+Write your comment here.
+</textarea>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<input type="button" value="Normal Button">
+<button type="button">Button Tag</button>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item \texttt{rows} controls textarea height.
+    \item \texttt{cols} controls textarea width.
+    \item \texttt{submit} sends form data.
+    \item \texttt{reset} clears the form fields.
+\end{itemize}
+
+\subsection{Form Example}
+\begin{lstlisting}[style=htmlide, caption={Complete Form Example}]
+<form action="form_action.asp" method="get">
+    <fieldset>
+        <legend>Student Information</legend>
+
+        <label>Name:</label>
+        <input type="text" name="student_name"><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <label>Group:</label>
+        <input type="radio" name="group" value="science"> Science
+        <input type="radio" name="group" value="business"> Business<br>
+
+        <label>Subjects:</label>
+        <input type="checkbox" name="subject" value="ict"> ICT
+        <input type="checkbox" name="subject" value="english"> English<br>
+
+        <label>District:</label>
+        <select name="district">
+            <option>Dhaka</option>
+            <option>Chattogram</option>
+        </select><br>
+
+        <textarea name="comment" rows="4" cols="30">
+Write your comment here.
+        </textarea><br>
+
+        <input type="submit" value="Submit">
+        <input type="button" value="Please Click Me!">
+    </fieldset>
+</form>
+\end{lstlisting}
+
+\begin{summarybox}
+Forms collect user input. HTML creates the form controls, but server-side processing is needed to store or process submitted data.
+\end{summarybox}
+
+\section{Code, Quote, Direction, Script and Object Tags}
+
+Some HTML tags are not used for ordinary paragraphs, links or tables. They are used to show code, keyboard input, quotations, text direction, scripts or embedded objects.
+
+\subsection{Code and Computer Output Tags}
+\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
+\longtableheader{2}{Code and Output Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
+\texttt{pre} & Preserves spaces and line breaks exactly as written in source code. \\ \tblhline
+\texttt{code} & Shows computer code or program text. \\ \tblhline
+\texttt{kbd} & Shows keyboard input typed by the user. \\ \tblhline
+\texttt{var} & Shows a variable name. \\ \tblhline
+\texttt{dfn} & Marks a defining instance of a term. \\ \tblhline
+\texttt{samp} & Shows sample output from a computer program. \\ \tblhline
+\texttt{tt} & Shows teletype-style text; exam/reference only, not modern practice. \\ \tblhline
+\tblbottomrule
+\caption{Code and output related tags}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Code and Output Tags}]
+<pre>
+Line one
+    Line two with spaces
+</pre>
+<p>Use <code>document.write()</code> in script examples.</p>
+<p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+<p><var>x</var> is a variable.</p>
+<p><samp>Hello World</samp></p>
+\end{lstlisting}
+
+\subsection{Quote, Citation and Direction Tags}
+\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
+\longtableheader{2}{Quote and Direction Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
+\texttt{blockquote} & Shows a long quotation as a separate block. \\ \tblhline
+\texttt{q} & Shows a short inline quotation. \\ \tblhline
+\texttt{cite} & Shows the title of a cited work or reference. \\ \tblhline
+\texttt{abbr} & Marks an abbreviation. \\ \tblhline
+\texttt{acronym} & Old tag for acronyms; exam/reference only, use \texttt{abbr} in modern HTML. \\ \tblhline
+\texttt{bdo} & Overrides text direction using the \texttt{dir} attribute. \\ \tblhline
+\tblbottomrule
+\caption{Quote, citation and direction tags}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Quote and Direction Tags}]
+<blockquote>This is a long quotation.</blockquote>
+<p>HTML means <q>HyperText Markup Language</q>.</p>
+<p><abbr title="World Wide Web">WWW</abbr></p>
+<p><cite>ICT Book</cite></p>
+<p><bdo dir="rtl">This text is shown right to left.</bdo></p>
+\end{lstlisting}
+
+\subsection{Script, Noscript, Object and Applet}
+\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
+\longtableheader{2}{Script and Object Tags}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
+\texttt{script} & Adds JavaScript code or links an external script file. \\ \tblhline
+\texttt{noscript} & Shows alternative content when script support is unavailable or disabled. \\ \tblhline
+\texttt{object} & Embeds an external object or resource. \\ \tblhline
+\texttt{param} & Gives parameters to an embedded object. \\ \tblhline
+\texttt{embed} & Embeds external media or plugin content; many old uses are exam/reference only. \\ \tblhline
+\texttt{applet} & Old Java applet tag; exam/reference only, not modern practice. \\ \tblhline
+\tblbottomrule
+\caption{Script and object related tags}
+\end{longtable}
+
+\begin{lstlisting}[style=htmlide, caption={Script and Object Tags}]
+<script>
+    document.write("Hello from JavaScript");
+</script>
+<noscript>Your browser does not support JavaScript.</noscript>
+
+<object data="notice.pdf" width="400" height="300">
+    <param name="autoplay" value="false">
+</object>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item HTML can connect JavaScript, but JavaScript does the programming work.
+    \item \texttt{noscript} is fallback content.
+    \item \texttt{applet}, many \texttt{embed} uses and \texttt{tt} are old exam/reference items, not modern practice.
+\end{itemize}
+
+\section{Designing and Publishing a Website}
+
+\subsection{Designing a Webpage}
+Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
+
+\subsection{Steps for Better Website Design}
+\begin{enumerate}
+    \item \term{Planning}: decide the objective of the website, target users, topics to publish and quality standard.
+    \item \term{Information architecture}: organize the website structure, page relationships and navigation.
+    \item \term{Layout design}: plan header, navigation, content, sidebar and footer.
+    \item \term{Content preparation}: prepare text, images, links, tables, forms and other materials.
+    \item \term{Implementation}: write HTML and CSS, then test the pages in a browser.
+    \item \term{Publishing}: upload the website files to hosting so users can access the website online.
+\end{enumerate}
+
+\subsection{Publishing a Website}
+Publishing means making the completed website available on the internet. To publish a website, the files are uploaded to a web hosting server and connected with a domain name.
+
+\begin{itemize}
+    \item HTML, CSS, images and other files should be kept in organized folders.
+    \item File names and folder paths should be correct because links and images depend on them.
+    \item FTP or hosting control panels can be used to upload website files.
+    \item After publishing, the website should be tested from a browser using its URL.
+\end{itemize}
+
+\begin{summarybox}
+Design prepares the website plan and structure; publishing uploads the finished website so it can be accessed through the internet.
+\end{summarybox}
+
+\section{Integrated Mini Project}
+
+This final example combines the main ideas from the HTML lessons. It uses document structure, semantic layout, navigation links, an image, a list, a form and simple CSS in one small webpage.
+
+\begin{lstlisting}[style=htmlide, caption={Mini Webpage Project}]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College ICT Club</title>
+    <style>
+        body { font-family: Arial; }
+        header, footer { background-color: navy; color: white; }
+        nav a { color: blue; margin-right: 10px; }
+        .notice { background-color: lightyellow; padding: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College ICT Club</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About the Club</h2>
+            <p class="notice">We learn web design, programming and ICT.</p>
+            <img src="club.jpg" alt="ICT Club" width="250">
+        </section>
+
+        <section>
+            <h2>Activities</h2>
+            <ul>
+                <li>HTML practice</li>
+                <li>Website design</li>
+                <li>Project presentation</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Join Us</h2>
+            <form action="join.php" method="post">
+                <label>Name:</label>
+                <input type="text" name="student_name"><br>
+                <label>Group:</label>
+                <input type="radio" name="group" value="science"> Science
+                <input type="radio" name="group" value="business"> Business<br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright College ICT Club</p>
+    </footer>
+</body>
+</html>
+\end{lstlisting}
+
+\textbf{What to notice}
+\begin{itemize}
+    \item The page has a correct HTML document skeleton.
+    \item Semantic tags organize the page into header, navigation, main content, sections and footer.
+    \item CSS controls presentation, while HTML controls structure.
+    \item The form collects data, but server-side code is required to process the submitted information.
+\end{itemize}
+
+\section{Final Summary of the Chapter}
+
+\begin{summarybox}[Chapter Overview]
+\begin{itemize}
+    \item Web design deals with creating and structuring websites.
+    \item Websites are collections of interconnected webpages.
+    \item IP address uniquely identifies devices on a network.
+    \item Domain name provides a human-readable address.
+    \item URL specifies the location of resources.
+    \item HTTP controls browser-server webpage communication.
+    \item FTP is used for uploading and downloading files.
+    \item Website structure affects navigation and usability.
+    \item Websites may be static, dynamic, local or remote.
+    \item Browsers interpret webpage code, while search engines help find webpages.
+    \item HTML is a markup language used to create webpages.
+    \item HTML uses tags, elements and attributes to organize content.
+    \item HTML documents contain head and body sections.
+    \item Headings, paragraphs, formatting tags, lists, links, images, image maps, media, tables, layout containers and forms are essential HTML topics.
+    \item CSS controls visual presentation, while semantic HTML improves page structure.
+    \item Code, quote, direction, script and object tags are important for exam/reference recognition.
+    \item Deprecated tags and attributes may appear in exams, but modern practice prefers CSS, Unicode and semantic HTML.
+\end{itemize}
+\end{summarybox}
