@@ -299,6 +299,35 @@ Example Use
     \item \term{News Site}: Publishes current news and updates.
 \end{itemize}
 
+\subsection{Designing and Publishing a Website}
+
+\subsubsection{Designing a Webpage}
+Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
+
+\subsubsection{Steps for Better Website Design}
+\begin{enumerate}
+    \item \term{Planning}: decide the objective of the website, target users, topics to publish and quality standard.
+    \item \term{Information architecture}: organize the website structure, page relationships and navigation.
+    \item \term{Layout design}: plan header, navigation, content, sidebar and footer.
+    \item \term{Content preparation}: prepare text, images, links, tables, forms and other materials.
+    \item \term{Implementation}: write HTML and CSS, then test the pages in a browser.
+    \item \term{Publishing}: upload the website files to hosting so users can access the website online.
+\end{enumerate}
+
+\subsubsection{Publishing a Website}
+Publishing means making the completed website available on the internet. To publish a website, the files are uploaded to a web hosting server and connected with a domain name.
+
+\begin{itemize}
+    \item HTML, CSS, images and other files should be kept in organized folders.
+    \item File names and folder paths should be correct because links and images depend on them.
+    \item FTP or hosting control panels can be used to upload website files.
+    \item After publishing, the website should be tested from a browser using its URL.
+\end{itemize}
+
+\begin{summarybox}
+Design prepares the website plan and structure; publishing uploads the finished website so it can be accessed through the internet.
+\end{summarybox}
+
 \begin{summarybox}
 Static websites are simple and fast, whereas dynamic websites are flexible and interactive.
 \end{summarybox}
@@ -1545,6 +1574,35 @@ The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam
 \section{HTML Lists}
 HTML lists organize related items. The main list types are ordered list, unordered list and description list.
 
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.4cm}|C{3cm}|C{3.2cm}|L{7.2cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{8}{*}{\texttt{<ol>}} & \texttt{--} & \texttt{--} & Creates an ordered list with automatic numbering. \\ \cline{2-4}
+ & \multirow[c]{5}{*}{\texttt{type}} & \texttt{1} & Uses normal numbers: 1, 2, 3. \\ \cline{3-4}
+ &  & \texttt{A} & Uses uppercase letters: A, B, C. \\ \cline{3-4}
+ &  & \texttt{a} & Uses lowercase letters: a, b, c. \\ \cline{3-4}
+ &  & \texttt{I} & Uses uppercase Roman numerals: I, II, III. \\ \cline{3-4}
+ &  & \texttt{i} & Uses lowercase Roman numerals: i, ii, iii. \\ \cline{2-4}
+ & \texttt{start} & number & Sets the starting number of the ordered list. \\ \cline{2-4}
+ & \texttt{reversed} & \texttt{reversed} & Displays the ordered list in descending order. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<ul>}} & \texttt{--} & \texttt{--} & Creates an unordered list with bullet markers. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{type}} & \texttt{disc} & Shows filled circle bullets; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{circle} & Shows hollow circle bullets; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{square} & Shows square bullets; old exam/reference style. \\ \tblhline
+\multirow[c]{2}{*}{\texttt{<li>}} & \texttt{--} & \texttt{--} & Creates one item inside \texttt{ol}, \texttt{ul}, \texttt{dir} or old \texttt{menu}. \\ \cline{2-4}
+ & \texttt{value} & number & Forces the number of a list item inside an ordered list. \\ \tblhline
+\texttt{<dl>} & \texttt{--} & \texttt{--} & Creates a description list. \\ \tblhline
+\texttt{<dt>} & \texttt{--} & \texttt{--} & Defines a term inside a description list. \\ \tblhline
+\texttt{<dd>} & \texttt{--} & \texttt{--} & Defines the description of a term inside a description list. \\ \tblhline
+\texttt{<dir>} & \texttt{--} & \texttt{--} & Old directory-style list tag; exam/reference only, not modern practice. \\ \tblhline
+\texttt{<menu>} & \texttt{--} & \texttt{--} & Old menu-style list tag in textbook examples; exam/reference only, not modern practice. \\ \tblhline
+\tblbottomrule
+\caption{Main tags, attributes and values for HTML lists}
+\end{longtable}
+
 \subsection{Ordered List}
 An ordered list is used when the order of items matters. The browser automatically numbers the \texttt{li} elements.
 
@@ -1718,6 +1776,43 @@ A hyperlink is a connection that allows a user to move from one webpage, file or
 
 Hyperlinks create bridges between pages. A website homepage can connect to other pages through hyperlinks. HTML pages, images, sound files, videos and documents can be referenced by hyperlinks.
 
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{13}{*}{\texttt{<a>}} & \texttt{--} & \texttt{--} & Creates a hyperlink when used with a destination attribute. \\ \cline{2-4}
+ & \multirow[c]{6}{*}{\texttt{href}} & relative path & Links to a file using its location from the current page, such as \texttt{about.html}. \\ \cline{3-4}
+ &  & absolute URL & Links to a complete web address, such as \texttt{https://www.example.com}. \\ \cline{3-4}
+ &  & folder path & Links to a file inside another folder, such as \texttt{pages/about.html}. \\ \cline{3-4}
+ &  & fragment ID & Links to a place inside a page, such as \texttt{\#top}. \\ \cline{3-4}
+ &  & \texttt{mailto:} address & Opens an email program when supported. \\ \cline{3-4}
+ &  & \texttt{tel:} number & Starts a phone call on supported devices. \\ \cline{2-4}
+ & \multirow[c]{4}{*}{\texttt{target}} & \texttt{\_self} & Opens the link in the same tab or frame. \\ \cline{3-4}
+ &  & \texttt{\_blank} & Opens the link in a new tab or window. \\ \cline{3-4}
+ &  & \texttt{\_parent} & Opens the link in the parent frame. \\ \cline{3-4}
+ &  & \texttt{\_top} & Opens the link in the full browser window. \\ \cline{2-4}
+ & \texttt{title} & text & Shows tooltip text when the mouse is placed over the link. \\ \cline{2-4}
+ & \texttt{name} & anchor name & Old method for creating a bookmark point; modern pages usually use \texttt{id}. \\ \cline{2-4}
+ & \texttt{download} & file name or empty & Tells the browser to download the linked file when supported. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<link>}} & \texttt{href} & file path or URL & Gives the location of the external resource. \\ \cline{2-4}
+ & \multirow[c]{2}{*}{\texttt{rel}} & \texttt{stylesheet} & Connects an external CSS file. \\ \cline{3-4}
+ &  & \texttt{icon} & Connects a website icon. \\ \cline{2-4}
+ & \texttt{type} & MIME type & States the resource type, such as \texttt{text/css}; often optional in HTML5. \\ \tblhline
+\multirow[c]{5}{*}{\texttt{<base>}} & \texttt{href} & base URL & Sets the base address for relative links in the page. \\ \cline{2-4}
+ & \multirow[c]{4}{*}{\texttt{target}} & \texttt{\_self} & Opens relative links in the same tab by default. \\ \cline{3-4}
+ &  & \texttt{\_blank} & Opens relative links in a new tab/window by default. \\ \cline{3-4}
+ &  & \texttt{\_parent} & Opens relative links in the parent frame by default. \\ \cline{3-4}
+ &  & \texttt{\_top} & Opens relative links in the full browser window by default. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<basefont>}} & \texttt{--} & \texttt{--} & Old tag for setting default text style; exam/reference only, not modern practice. \\ \cline{2-4}
+ & \texttt{face} & font name & Sets the default font face in old HTML examples. \\ \cline{2-4}
+ & \texttt{size} & \texttt{1}--\texttt{7} & Sets the default font size in old HTML examples. \\ \cline{2-4}
+ & \texttt{color} & color value & Sets the default text color in old HTML examples. \\ \tblhline
+\tblbottomrule
+\caption{Main tags, attributes and values for hyperlinks and head links}
+\end{longtable}
+
 \subsection{Anchor Tag}
 \begin{formulabox}[Hyperlink Syntax]
 \[
@@ -1757,18 +1852,6 @@ Relative path & Gives a file location relative to the current HTML document. Exa
 Absolute path & Gives the complete address or fixed location. Example: \texttt{https://www.example.com/page.html}. \\ \tblhline
 \tblbottomrule
 \caption{Types of paths used in hyperlinks}
-\end{longtable}
-
-\subsection{Hyperlink Attributes}
-\begin{longtable}{|C{3cm}|L{12.5cm}|}
-\longtableheader{2}{Anchor Tag Attributes}{%
-\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
-\texttt{href} & Determines the destination address of the hyperlink. \\ \tblhline
-\texttt{title} & Shows tooltip text when the mouse is placed over the link. \\ \tblhline
-\texttt{target} & Controls where the link opens. Common values are \texttt{\_self} and \texttt{\_blank}. \\ \tblhline
-\texttt{name} & Used in older HTML to create a bookmark/anchor point inside a page. Modern HTML commonly uses \texttt{id}. \\ \tblhline
-\tblbottomrule
-\caption{Common hyperlink attributes}
 \end{longtable}
 
 \subsection{Advantages of Hyperlink}
@@ -1873,6 +1956,45 @@ The \texttt{img} tag is an empty element used to add an image to a webpage.
 \end{definitionbox}
 Images, diagrams, charts, maps and graphics make webpages more attractive and can reduce the amount of text needed for explanation.
 
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{17}{*}{\texttt{<img>}} & \texttt{--} & \texttt{--} & Empty tag used to display an image in a webpage. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{src}} & relative path & Loads an image from the same site or folder structure, such as \texttt{assets/photo.jpg}. \\ \cline{3-4}
+ &  & absolute URL & Loads an image from a complete web address. \\ \cline{3-4}
+ &  & wrong path & Creates a broken image; the \texttt{alt} text may be shown. \\ \cline{2-4}
+ & \texttt{alt} & text & Gives alternate text if the image cannot load and helps accessibility. \\ \cline{2-4}
+ & \multirow[c]{2}{*}{\texttt{width}} & pixel value & Sets a fixed display width, such as \texttt{300}. \\ \cline{3-4}
+ &  & percentage value & Sets width relative to available space, such as \texttt{50\%}. \\ \cline{2-4}
+ & \multirow[c]{2}{*}{\texttt{height}} & pixel value & Sets a fixed display height. \\ \cline{3-4}
+ &  & percentage value & Sets height relative to available space; less common for normal images. \\ \cline{2-4}
+ & \texttt{title} & text & Shows tooltip text when the mouse is placed over the image. \\ \cline{2-4}
+ & \multirow[c]{5}{*}{\texttt{align}} & \texttt{left} & Places the image on the left; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{right} & Places the image on the right; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{top} & Aligns surrounding text with the top of the image; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{middle} & Aligns surrounding text with the middle of the image; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{bottom} & Aligns surrounding text with the bottom of the image; old exam/reference style. \\ \cline{2-4}
+ & \texttt{hspace} & pixel value & Adds horizontal space around the image; old exam/reference style. \\ \cline{2-4}
+ & \texttt{vspace} & pixel value & Adds vertical space around the image; old exam/reference style. \\ \cline{2-4}
+ & \texttt{border} & number & Sets image border thickness; old exam/reference style. \\ \cline{2-4}
+ & \texttt{usemap} & \texttt{\#mapname} & Connects the image to an image map. \\ \tblhline
+\multirow[c]{2}{*}{\texttt{<map>}} & \texttt{name} & map name & Names the image map so an image can connect using \texttt{usemap}. \\ \cline{2-4}
+ & \texttt{id} & map ID & Modern identifier for the map; often matches the \texttt{name}. \\ \tblhline
+\multirow[c]{8}{*}{\texttt{<area>}} & \texttt{--} & \texttt{--} & Empty tag used to define one clickable region inside an image map. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{shape}} & \texttt{rect} & Creates a rectangular clickable area. \\ \cline{3-4}
+ &  & \texttt{circle} & Creates a circular clickable area. \\ \cline{3-4}
+ &  & \texttt{poly} & Creates a polygon clickable area. \\ \cline{2-4}
+ & \texttt{coords} & coordinate values & Gives the position and size of the clickable area. \\ \cline{2-4}
+ & \texttt{href} & URL or path & Gives the destination for that clickable area. \\ \cline{2-4}
+ & \texttt{alt} & text & Gives alternate text for the clickable area. \\ \cline{2-4}
+ & \texttt{target} & target value & Controls where the linked area opens, such as \texttt{\_blank}. \\ \tblhline
+\tblbottomrule
+\caption{Main tags, attributes and values for images and image maps}
+\end{longtable}
+
 \subsection{Advantages and Disadvantages of Web Graphics}
 \begin{longtable}{|L{8.25cm}|L{8.25cm}|}
 \longtableheader{2}{Web Graphics}{%
@@ -1896,22 +2018,6 @@ Can be used as graphical navigation links. & Too many images can make a page slo
 \texttt{<img src="url" alt="text">}
 \]
 \end{formulabox}
-
-\begin{longtable}{|C{3cm}|L{13.5cm}|}
-\longtableheader{2}{Image Attributes}{%
-\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
-\texttt{src} & Specifies the image file path or URL. \\ \tblhline
-\texttt{alt} & Shows alternate text if the image fails to load; also helps accessibility. \\ \tblhline
-\texttt{width} & Sets image width. \\ \tblhline
-\texttt{height} & Sets image height. \\ \tblhline
-\texttt{title} & Shows tooltip text when the mouse is placed over the image. \\ \tblhline
-\texttt{align} & Old/exam-reference attribute for image placement: top, middle, bottom, left or right. Modern CSS is preferred. \\ \tblhline
-\texttt{hspace} & Old/exam-reference attribute for horizontal space around an image. \\ \tblhline
-\texttt{vspace} & Old/exam-reference attribute for vertical space around an image. \\ \tblhline
-\texttt{border} & Old/exam-reference attribute for image border size. \\ \tblhline
-\tblbottomrule
-\caption{Common image attributes}
-\end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Image with Size and Tooltip}]
 <img src="assets/campus.jpg" alt="College campus"
@@ -1996,20 +2102,6 @@ Older HTML examples may use image spacing and border attributes. These are exam/
 \subsection{Image Map}
 An image map makes selected areas of one image clickable. It uses the \texttt{map} and \texttt{area} tags with coordinates.
 
-\begin{longtable}{|C{3cm}|L{13cm}|}
-\longtableheader{2}{Image Map Tags and Attributes}{%
-\tblcolhdcell{Name} & \tblcolhdcell{Use}}
-\texttt{map} & Defines an image map area and uses the \texttt{name} attribute. \\ \tblhline
-\texttt{area} & Defines one clickable region inside the image map. \\ \tblhline
-\texttt{usemap} & Connects an image with a map. Example: \texttt{usemap="\#boardmap"}. \\ \tblhline
-\texttt{shape} & Defines region shape, such as \texttt{rect}, \texttt{circle} or \texttt{poly}. \\ \tblhline
-\texttt{coords} & Gives the coordinate values of the clickable region. \\ \tblhline
-\texttt{href} & Gives the destination link for the selected area. \\ \tblhline
-\texttt{alt} & Gives alternate text for the clickable area. \\ \tblhline
-\tblbottomrule
-\caption{Image map tags and attributes}
-\end{longtable}
-
 \begin{lstlisting}[style=htmlide, caption={Image Map Example}]
 <img src="assets/campus-map.jpg" alt="Campus Map"
      width="300" usemap="#campusmap">
@@ -2033,6 +2125,47 @@ Use \texttt{img} for normal images, image attributes for basic control, and \tex
 \end{summarybox}
 
 \section{Media and Frames}
+
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{5}{*}{\texttt{<audio>}} & \texttt{--} & \texttt{--} & Adds audio content to a webpage. \\ \cline{2-4}
+ & \texttt{controls} & \texttt{--} & Shows play, pause and volume controls. \\ \cline{2-4}
+ & \texttt{autoplay} & \texttt{--} & Starts playback automatically when allowed by the browser. \\ \cline{2-4}
+ & \texttt{loop} & \texttt{--} & Repeats the audio after it finishes. \\ \cline{2-4}
+ & \texttt{muted} & \texttt{--} & Starts the audio muted. \\ \tblhline
+\multirow[c]{8}{*}{\texttt{<video>}} & \texttt{--} & \texttt{--} & Adds video content to a webpage. \\ \cline{2-4}
+ & \texttt{controls} & \texttt{--} & Shows video controls such as play, pause and volume. \\ \cline{2-4}
+ & \texttt{width} & pixel value & Sets the display width of the video. \\ \cline{2-4}
+ & \texttt{height} & pixel value & Sets the display height of the video. \\ \cline{2-4}
+ & \texttt{poster} & image path & Shows an image before the video starts. \\ \cline{2-4}
+ & \texttt{autoplay} & \texttt{--} & Starts playback automatically when allowed by the browser. \\ \cline{2-4}
+ & \texttt{loop} & \texttt{--} & Repeats the video after it finishes. \\ \cline{2-4}
+ & \texttt{muted} & \texttt{--} & Starts the video muted. \\ \tblhline
+\multirow[c]{5}{*}{\texttt{<source>}} & \texttt{src} & file path or URL & Gives the media file location. \\ \cline{2-4}
+ & \multirow[c]{4}{*}{\texttt{type}} & \texttt{audio/wav} & Identifies a WAV audio file. \\ \cline{3-4}
+ &  & \texttt{audio/mpeg} & Identifies an MP3 audio file. \\ \cline{3-4}
+ &  & \texttt{video/mp4} & Identifies an MP4 video file. \\ \cline{3-4}
+ &  & \texttt{video/webm} & Identifies a WebM video file. \\ \tblhline
+\multirow[c]{5}{*}{\texttt{<iframe>}} & \texttt{src} & file path or URL & Gives the webpage or resource to display inside the frame. \\ \cline{2-4}
+ & \texttt{width} & pixel or percentage value & Sets iframe width. \\ \cline{2-4}
+ & \texttt{height} & pixel or percentage value & Sets iframe height. \\ \cline{2-4}
+ & \texttt{name} & frame name & Names the iframe so links can target it. \\ \cline{2-4}
+ & \texttt{title} & text & Describes the iframe for accessibility. \\ \tblhline
+\multirow[c]{3}{*}{\texttt{<frameset>}} & \texttt{--} & \texttt{--} & Old tag for dividing the browser window into frames; exam/reference only. \\ \cline{2-4}
+ & \texttt{rows} & size list & Divides the page horizontally into row frames. \\ \cline{2-4}
+ & \texttt{cols} & size list & Divides the page vertically into column frames. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<frame>}} & \texttt{src} & file path or URL & Gives the page loaded into that old frame. \\ \cline{2-4}
+ & \texttt{name} & frame name & Names the old frame. \\ \cline{2-4}
+ & \texttt{scrolling} & \texttt{yes}, \texttt{no}, \texttt{auto} & Controls scrollbars in old frame examples. \\ \cline{2-4}
+ & \texttt{noresize} & \texttt{--} & Prevents resizing of an old frame. \\ \tblhline
+\texttt{<noframes>} & \texttt{--} & \texttt{--} & Shows fallback text when frames are not supported; exam/reference only. \\ \tblhline
+\tblbottomrule
+\caption{Main tags, attributes and values for media and frames}
+\end{longtable}
 
 \subsection{Audio and Video}
 Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add media.
@@ -2106,17 +2239,51 @@ An HTML table presents information in rows and columns using the \texttt{table} 
     \item \term{Heading}: row or column title, usually shown in bold and centered.
 \end{itemize}
 
-\subsection{Table Elements}
-\begin{longtable}{|C{3cm}|L{13.5cm}|}
-\longtableheader{2}{HTML Table Elements}{%
-\tblcolhdcell{Element} & \tblcolhdcell{Use}}
-\texttt{table} & Defines the table. \\ \tblhline
-\texttt{caption} & Displays a title for the table. \\ \tblhline
-\texttt{tr} & Creates a table row. It should contain \texttt{td} or \texttt{th} cells. \\ \tblhline
-\texttt{td} & Creates a normal table data cell. \\ \tblhline
-\texttt{th} & Creates a table heading cell; browsers usually show it bold and centered. \\ \tblhline
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{10}{*}{\texttt{<table>}} & \texttt{--} & \texttt{--} & Defines the whole table. \\ \cline{2-4}
+ & \texttt{border} & number & Sets table border width; \texttt{0} means no visible border. \\ \cline{2-4}
+ & \texttt{width} & pixel or percentage value & Sets table width. \\ \cline{2-4}
+ & \texttt{height} & pixel or percentage value & Sets table height. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{align}} & \texttt{left} & Places the table on the left; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{center} & Places the table in the center; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{right} & Places the table on the right; old exam/reference style. \\ \cline{2-4}
+ & \texttt{cellspacing} & pixel value & Sets space between table cells. \\ \cline{2-4}
+ & \texttt{cellpadding} & pixel value & Sets space between cell border and cell content. \\ \cline{2-4}
+ & \texttt{bgcolor} & color value & Sets table background color; old exam/reference style. \\ \tblhline
+\texttt{<caption>} & \texttt{--} & \texttt{--} & Displays a title for the table. \\ \tblhline
+\multirow[c]{5}{*}{\texttt{<tr>}} & \texttt{--} & \texttt{--} & Creates one table row. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{align}} & \texttt{left}, \texttt{center}, \texttt{right} & Aligns row content horizontally; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{justify} & Spreads row text evenly where supported; old exam/reference style. \\ \cline{3-4}
+ &  & \texttt{char} & Aligns content around a character in old examples. \\ \cline{2-4}
+ & \texttt{bgcolor} & color value & Sets background color for that row. \\ \tblhline
+\multirow[c]{8}{*}{\texttt{<td>}} & \texttt{--} & \texttt{--} & Creates a normal table data cell. \\ \cline{2-4}
+ & \texttt{colspan} & number & Merges the cell across columns. \\ \cline{2-4}
+ & \texttt{rowspan} & number & Merges the cell across rows. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{align}} & \texttt{left} & Aligns cell content to the left. \\ \cline{3-4}
+ &  & \texttt{center} & Aligns cell content to the center. \\ \cline{3-4}
+ &  & \texttt{right} & Aligns cell content to the right. \\ \cline{2-4}
+ & \texttt{valign} & \texttt{top}, \texttt{middle}, \texttt{bottom} & Aligns cell content vertically. \\ \cline{2-4}
+ & \texttt{bgcolor} & color value & Sets background color for that cell. \\ \tblhline
+\multirow[c]{8}{*}{\texttt{<th>}} & \texttt{--} & \texttt{--} & Creates a heading cell; usually bold and centered. \\ \cline{2-4}
+ & \texttt{colspan} & number & Merges the heading cell across columns. \\ \cline{2-4}
+ & \texttt{rowspan} & number & Merges the heading cell across rows. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{align}} & \texttt{left} & Aligns heading content to the left. \\ \cline{3-4}
+ &  & \texttt{center} & Aligns heading content to the center. \\ \cline{3-4}
+ &  & \texttt{right} & Aligns heading content to the right. \\ \cline{2-4}
+ & \texttt{valign} & \texttt{top}, \texttt{middle}, \texttt{bottom} & Aligns heading content vertically. \\ \cline{2-4}
+ & \texttt{bgcolor} & color value & Sets background color for that heading cell. \\ \tblhline
+\texttt{<thead>} & \texttt{--} & \texttt{--} & Groups the heading rows of a large table. \\ \tblhline
+\texttt{<tbody>} & \texttt{--} & \texttt{--} & Groups the main data rows of a large table. \\ \tblhline
+\texttt{<tfoot>} & \texttt{--} & \texttt{--} & Groups footer or summary rows of a large table. \\ \tblhline
+\texttt{<colgroup>} & \texttt{--} & \texttt{--} & Groups columns so common column formatting can be applied. \\ \tblhline
+\texttt{<col>} & \texttt{span} & number & Applies column settings to one or more columns. \\ \tblhline
 \tblbottomrule
-\caption{Main HTML table elements}
+\caption{Main tags, attributes and values for HTML tables}
 \end{longtable}
 
 \subsection{Basic Table}
@@ -2176,24 +2343,6 @@ If one row has more or fewer cells than another row, the browser still tries to 
     \item The second row has only one cell.
     \item This is allowed by the browser, but it is usually bad table design unless merging is intended.
 \end{itemize}
-
-\subsection{Table Attributes}
-\begin{longtable}{|C{3.5cm}|L{13.5cm}|}
-\longtableheader{2}{Common Table Attributes}{%
-\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
-\texttt{border} & Sets table border width. \texttt{border="1"} shows a border; \texttt{border="0"} shows no border. \\ \tblhline
-\texttt{width} & Sets table width in pixels or percentage. \\ \tblhline
-\texttt{height} & Sets table or cell height. \\ \tblhline
-\texttt{align} & Aligns table, row or cell content horizontally. \\ \tblhline
-\texttt{valign} & Aligns cell content vertically: top, middle or bottom. \\ \tblhline
-\texttt{cellspacing} & Sets the space between table cells. \\ \tblhline
-\texttt{cellpadding} & Sets the space between cell border and cell content. \\ \tblhline
-\texttt{colspan} & Merges cells across columns. \\ \tblhline
-\texttt{rowspan} & Merges cells across rows. \\ \tblhline
-\texttt{bgcolor} & Sets background color of table, row or cell; exam/reference only, CSS preferred. \\ \tblhline
-\tblbottomrule
-\caption{Important table attributes}
-\end{longtable}
 
 \subsection{Cellspacing and Cellpadding}
 \begin{lstlisting}[style=htmlide, caption={Cellspacing and Cellpadding}]
@@ -2364,11 +2513,54 @@ Footer & Contains footer information such as copyright, contact or lower navigat
     \item \term{Using semantic HTML}: Modern method using tags such as \texttt{header}, \texttt{nav}, \texttt{main}, \texttt{section}, \texttt{article} and \texttt{footer}.
 \end{itemize}
 
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+
+\multirow[c]{7}{*}{\texttt{<div>}}
+& \texttt{--} & \texttt{--} & Creates a block-level generic container. \\ \cline{2-4}
+& \texttt{id} & unique name & Identifies one specific container. \\ \cline{2-4}
+& \texttt{class} & class name & Groups containers for CSS styling. \\ \cline{2-4}
+& \texttt{style} & CSS declarations & Adds inline CSS to the container. \\ \cline{2-4}
+& \texttt{align} & \texttt{left}, \texttt{center}, \texttt{right} & Old alignment attribute; exam/reference only. \\ \cline{2-4}
+& \texttt{width} & pixel or percentage value & Old width control; CSS is preferred. \\ \cline{2-4}
+& \texttt{height} & pixel or percentage value & Old height control; CSS is preferred. \\ \tblhline
+
+\multirow[c]{4}{*}{\texttt{<span>}}
+& \texttt{--} & \texttt{--} & Creates an inline generic container. \\ \cline{2-4}
+& \texttt{id} & unique name & Identifies one specific inline part. \\ \cline{2-4}
+& \texttt{class} & class name & Groups inline parts for CSS styling. \\ \cline{2-4}
+& \texttt{style} & CSS declarations & Adds inline CSS to selected text or inline content. \\ \tblhline
+
+\multirow[c]{7}{*}{\makecell{\texttt{<header>}\\\texttt{<nav>}\\\texttt{<main>}\\\texttt{<section>}\\\texttt{<article>}\\\texttt{<address>}\\\texttt{<footer>}}}
+& \texttt{--} & \texttt{--} & Gives meaningful structure to webpage layout. \\ \cline{2-4}
+& \texttt{id} & unique name & Identifies a specific semantic section. \\ \cline{2-4}
+& \texttt{class} & class name & Applies shared CSS styling. \\ \cline{2-4}
+& \texttt{style} & CSS declarations & Adds inline styling when needed. \\ \cline{2-4}
+& \texttt{title} & text & Shows extra information as a tooltip. \\ \cline{2-4}
+& \texttt{lang} & language code & Identifies the language of the content. \\ \cline{2-4}
+& \texttt{dir} & \texttt{ltr}, \texttt{rtl} & Sets text direction for the section. \\ \tblhline
+
+\multirow[c]{2}{*}{\texttt{<style>}}
+& \texttt{--} & \texttt{--} & Stores internal CSS rules inside the HTML document. \\ \cline{2-4}
+& \texttt{type} & \texttt{text/css} & Old explicit CSS type value; usually unnecessary in HTML5. \\ \tblhline
+
+\multirow[c]{3}{*}{\texttt{<link>}}
+& \texttt{rel} & \texttt{stylesheet} & Tells the browser the linked file is a stylesheet. \\ \cline{2-4}
+& \texttt{href} & file path or URL & Gives the CSS file location. \\ \cline{2-4}
+& \texttt{type} & \texttt{text/css} & Old explicit CSS type value; usually unnecessary in HTML5. \\ \tblhline
+
+\tblbottomrule
+\caption{Main tags, attributes and values for containers, semantic HTML and CSS}
+\end{longtable}
+
 \subsection{Div and Span}
 \begin{itemize}
     \item \texttt{div} is a block-level container used to divide a webpage into sections.
     \item \texttt{span} is an inline container used to mark a small part of text.
-    \item Common \texttt{div} attributes in examples include \texttt{id}, \texttt{class}, \texttt{style}, \texttt{align}, \texttt{width}, \texttt{height} and \texttt{title}.
 \end{itemize}
 
 \begin{lstlisting}[style=htmlide, caption={Simple Div Layout}]
@@ -2455,15 +2647,77 @@ An HTML form is an area of a webpage that allows users to enter or select data.
 
 Forms are useful for understanding dynamic websites because users submit data through forms. A form can contain many controls, but one \texttt{form} element should not contain another \texttt{form} element.
 
-\subsection{Form Element and Attributes}
-\begin{longtable}{|C{3cm}|L{11cm}|}
-\longtableheader{2}{Form Attributes}{%
-\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
-\texttt{action} & Specifies where the submitted form data will be sent. \\ \tblhline
-\texttt{method} & Specifies how form data will be sent, commonly \texttt{get} or \texttt{post}. \\ \tblhline
+\subsection{Form Tags, Attributes and Values}
+
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+
+\multirow[c]{4}{*}{\texttt{<form>}}
+& \texttt{--} & \texttt{--} & Defines the form area. \\ \cline{2-4}
+& \texttt{action} & file path or URL & Specifies where submitted form data will be sent. \\ \cline{2-4}
+& \texttt{method} & \texttt{get}, \texttt{post} & Specifies how form data will be sent. \\ \cline{2-4}
+& \texttt{name} & form name & Gives a name to the form. \\ \tblhline
+
+\multirow[c]{11}{*}{\texttt{<input>}}
+& \texttt{--} & \texttt{--} & Creates an input control. \\ \cline{2-4}
+& \multirow[c]{6}{*}{\texttt{type}} & \texttt{text} & Creates a single-line text field. \\ \cline{3-4}
+& & \texttt{password} & Creates a password field that hides typed characters. \\ \cline{3-4}
+& & \texttt{radio} & Creates a radio button for one choice from a group. \\ \cline{3-4}
+& & \texttt{checkbox} & Creates a checkbox for one or more choices. \\ \cline{3-4}
+& & \texttt{submit} & Creates a submit button. \\ \cline{3-4}
+& & \texttt{button} & Creates a normal command button. \\ \cline{2-4}
+& \texttt{name} & field name & Names the input so submitted data can be identified. \\ \cline{2-4}
+& \texttt{value} & text value & Sets the submitted value or button text. \\ \cline{2-4}
+& \texttt{placeholder} & hint text & Shows a hint inside a text field. \\ \cline{2-4}
+& \texttt{checked} & \texttt{--} & Selects a radio button or checkbox by default. \\ \tblhline
+
+\multirow[c]{3}{*}{\texttt{<label>}}
+& \texttt{--} & \texttt{--} & Gives a text label for an input control. \\ \cline{2-4}
+& \texttt{for} & input id & Connects the label with a specific input. \\ \cline{2-4}
+& \texttt{id} & unique name & Identifies the label if needed. \\ \tblhline
+
+\multirow[c]{3}{*}{\texttt{<fieldset>}}
+& \texttt{--} & \texttt{--} & Groups related form controls. \\ \cline{2-4}
+& \texttt{name} & group name & Names the group of controls. \\ \cline{2-4}
+& \texttt{disabled} & \texttt{--} & Disables the grouped controls. \\ \tblhline
+
+\texttt{<legend>} & \texttt{--} & \texttt{--} & Gives a title to a fieldset. \\ \tblhline
+
+\multirow[c]{4}{*}{\texttt{<select>}}
+& \texttt{--} & \texttt{--} & Creates a drop-down list. \\ \cline{2-4}
+& \texttt{name} & field name & Names the selected data. \\ \cline{2-4}
+& \texttt{size} & number & Sets how many options are visible. \\ \cline{2-4}
+& \texttt{multiple} & \texttt{--} & Allows more than one option to be selected. \\ \tblhline
+
+\multirow[c]{3}{*}{\texttt{<option>}}
+& \texttt{--} & \texttt{--} & Defines one choice inside a select list. \\ \cline{2-4}
+& \texttt{value} & option value & Sets the submitted value for the option. \\ \cline{2-4}
+& \texttt{selected} & \texttt{--} & Selects the option by default. \\ \tblhline
+
+\multirow[c]{2}{*}{\texttt{<optgroup>}}
+& \texttt{--} & \texttt{--} & Groups related options inside a select list. \\ \cline{2-4}
+& \texttt{label} & group label & Shows the group title in the list. \\ \tblhline
+
+\multirow[c]{4}{*}{\texttt{<textarea>}}
+& \texttt{--} & \texttt{--} & Creates a multi-line text input area. \\ \cline{2-4}
+& \texttt{name} & field name & Names the textarea data. \\ \cline{2-4}
+& \texttt{rows} & number & Controls textarea height. \\ \cline{2-4}
+& \texttt{cols} & number & Controls textarea width. \\ \tblhline
+
+\multirow[c]{3}{*}{\texttt{<button>}}
+& \texttt{--} & \texttt{--} & Creates a clickable button. \\ \cline{2-4}
+& \texttt{type} & \texttt{button}, \texttt{submit}, \texttt{reset} & Sets the button behavior. \\ \cline{2-4}
+& \texttt{name} & button name & Names the button if submitted or scripted. \\ \tblhline
+
 \tblbottomrule
-\caption{Main attributes of the form tag}
+\caption{Main tags, attributes and values for HTML forms}
 \end{longtable}
+
+\subsection{Basic Form Structure}
 
 \begin{lstlisting}[style=htmlide, caption={Basic Form Structure}]
 <form action="submit.html" method="post">
@@ -2486,37 +2740,6 @@ Forms are useful for understanding dynamic websites because users submit data th
     \item \texttt{method} commonly uses \texttt{get} or \texttt{post}.
     \item HTML creates the form, but another program processes the submitted data.
 \end{itemize}
-
-\subsection{Form Tags}
-\begin{longtable}{|C{2.5cm}|L{14cm}|}
-\longtableheader{2}{Common Form Tags}{%
-\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
-\texttt{form} & Defines a form area. \\ \tblhline
-\texttt{input} & Creates input fields such as text box, password field, radio button, checkbox and button. \\ \tblhline
-\texttt{textarea} & Creates a multi-line text input area. Default examples often use rows and columns. \\ \tblhline
-\texttt{select} & Creates a drop-down list. \\ \tblhline
-\texttt{option} & Defines an option inside a drop-down list. \\ \tblhline
-\texttt{button} & Creates a clickable button. \\ \tblhline
-\texttt{label} & Gives a text label for an input control. \\ \tblhline
-\texttt{fieldset} & Groups related form controls. \\ \tblhline
-\texttt{legend} & Gives a title to a fieldset. \\ \tblhline
-\tblbottomrule
-\caption{Common HTML form tags}
-\end{longtable}
-
-\subsection{Input Types}
-\begin{longtable}{|C{3cm}|L{13.5cm}|}
-\longtableheader{2}{Common Input Types}{%
-\tblcolhdcell{Input Type} & \tblcolhdcell{Use}}
-\texttt{text} & Single-line text field. \\ \tblhline
-\texttt{password} & Password field; browsers show bullets or asterisks instead of typed characters. \\ \tblhline
-\texttt{radio} & Selects one option from a group. \\ \tblhline
-\texttt{checkbox} & Selects one or more options. \\ \tblhline
-\texttt{submit} & Submits form data. \\ \tblhline
-\texttt{button} & Creates a normal command button. \\ \tblhline
-\tblbottomrule
-\caption{Common input types in HTML forms}
-\end{longtable}
 
 \subsection{Text and Password Inputs}
 Text input accepts one line of normal text. Password input hides the typed characters on the screen.
@@ -2675,20 +2898,60 @@ Forms collect user input. HTML creates the form controls, but server-side proces
 
 Some HTML tags are not used for ordinary paragraphs, links or tables. They are used to show code, keyboard input, quotations, text direction, scripts or embedded objects.
 
-\subsection{Code and Computer Output Tags}
-\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
-\longtableheader{2}{Code and Output Tags}{%
-\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
-\texttt{pre} & Preserves spaces and line breaks exactly as written in source code. \\ \tblhline
-\texttt{code} & Shows computer code or program text. \\ \tblhline
-\texttt{kbd} & Shows keyboard input typed by the user. \\ \tblhline
-\texttt{var} & Shows a variable name. \\ \tblhline
-\texttt{dfn} & Marks a defining instance of a term. \\ \tblhline
-\texttt{samp} & Shows sample output from a computer program. \\ \tblhline
-\texttt{tt} & Shows teletype-style text; exam/reference only, not modern practice. \\ \tblhline
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+
+\texttt{<pre>} & \texttt{--} & \texttt{--} & Preserves spaces and line breaks exactly as written. \\ \tblhline
+\texttt{<code>} & \texttt{--} & \texttt{--} & Shows computer code or program text. \\ \tblhline
+\texttt{<kbd>} & \texttt{--} & \texttt{--} & Shows keyboard input typed by the user. \\ \tblhline
+\texttt{<var>} & \texttt{--} & \texttt{--} & Shows a variable name. \\ \tblhline
+\texttt{<dfn>} & \texttt{--} & \texttt{--} & Marks a defining instance of a term. \\ \tblhline
+\texttt{<samp>} & \texttt{--} & \texttt{--} & Shows sample output from a computer program. \\ \tblhline
+\texttt{<tt>} & \texttt{--} & \texttt{--} & Shows teletype-style text; exam/reference only. \\ \tblhline
+
+\texttt{<blockquote>} & \texttt{cite} & URL & Shows a long quotation and may give its source address. \\ \tblhline
+\texttt{<q>} & \texttt{cite} & URL & Shows a short inline quotation and may give its source address. \\ \tblhline
+\texttt{<cite>} & \texttt{--} & \texttt{--} & Shows the title of a cited work or reference. \\ \tblhline
+\texttt{<abbr>} & \texttt{title} & full form text & Marks an abbreviation and gives its full form. \\ \tblhline
+\texttt{<acronym>} & \texttt{title} & full form text & Old acronym tag; exam/reference only. \\ \tblhline
+\multirow[c]{2}{*}{\texttt{<bdo>}}
+& \texttt{dir} & \texttt{ltr} & Forces text direction from left to right. \\ \cline{2-4}
+& \texttt{dir} & \texttt{rtl} & Forces text direction from right to left. \\ \tblhline
+
+\multirow[c]{4}{*}{\texttt{<script>}}
+& \texttt{--} & \texttt{--} & Adds script code inside the HTML document. \\ \cline{2-4}
+& \texttt{src} & file path or URL & Connects an external script file. \\ \cline{2-4}
+& \texttt{type} & script MIME type & Old explicit script type; usually unnecessary in HTML5. \\ \cline{2-4}
+& \texttt{defer} & \texttt{--} & Delays script execution until the document is parsed. \\ \tblhline
+\texttt{<noscript>} & \texttt{--} & \texttt{--} & Shows fallback content when scripting is unavailable. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<object>}}
+& \texttt{data} & file path or URL & Gives the embedded object source. \\ \cline{2-4}
+& \texttt{type} & MIME type & Identifies the embedded resource type. \\ \cline{2-4}
+& \texttt{width} & pixel value & Sets object width. \\ \cline{2-4}
+& \texttt{height} & pixel value & Sets object height. \\ \tblhline
+\multirow[c]{2}{*}{\texttt{<param>}}
+& \texttt{name} & parameter name & Gives the parameter name for an object. \\ \cline{2-4}
+& \texttt{value} & parameter value & Gives the value of that parameter. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<embed>}}
+& \texttt{src} & file path or URL & Embeds external media or plugin content. \\ \cline{2-4}
+& \texttt{type} & MIME type & Identifies the embedded resource type. \\ \cline{2-4}
+& \texttt{width} & pixel value & Sets embedded content width. \\ \cline{2-4}
+& \texttt{height} & pixel value & Sets embedded content height. \\ \tblhline
+\multirow[c]{4}{*}{\texttt{<applet>}}
+& \texttt{code} & class file name & Old Java applet source; exam/reference only. \\ \cline{2-4}
+& \texttt{width} & pixel value & Sets old applet width. \\ \cline{2-4}
+& \texttt{height} & pixel value & Sets old applet height. \\ \cline{2-4}
+& \texttt{alt} & text & Shows alternative text if the applet cannot run. \\ \tblhline
+
 \tblbottomrule
-\caption{Code and output related tags}
+\caption{Main tags, attributes and values for code, quote, direction, script and object content}
 \end{longtable}
+
+\subsection{Code and Computer Output Tags}
 
 \begin{lstlisting}[style=htmlide, caption={Code and Output Tags}]
 <pre>
@@ -2708,18 +2971,6 @@ Line one
 
 
 \subsection{Quote, Citation and Direction Tags}
-\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
-\longtableheader{2}{Quote and Direction Tags}{%
-\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
-\texttt{blockquote} & Shows a long quotation as a separate block. \\ \tblhline
-\texttt{q} & Shows a short inline quotation. \\ \tblhline
-\texttt{cite} & Shows the title of a cited work or reference. \\ \tblhline
-\texttt{abbr} & Marks an abbreviation. \\ \tblhline
-\texttt{acronym} & Old tag for acronyms; exam/reference only, use \texttt{abbr} in modern HTML. \\ \tblhline
-\texttt{bdo} & Overrides text direction using the \texttt{dir} attribute. \\ \tblhline
-\tblbottomrule
-\caption{Quote, citation and direction tags}
-\end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Quote and Direction Tags}]
 <blockquote>This is a long quotation.</blockquote>
@@ -2736,18 +2987,6 @@ Line one
 
 
 \subsection{Script, Noscript, Object and Applet}
-\begin{longtable}{|C{2.7cm}|L{13.2cm}|}
-\longtableheader{2}{Script and Object Tags}{%
-\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
-\texttt{script} & Adds JavaScript code or links an external script file. \\ \tblhline
-\texttt{noscript} & Shows alternative content when script support is unavailable or disabled. \\ \tblhline
-\texttt{object} & Embeds an external object or resource. \\ \tblhline
-\texttt{param} & Gives parameters to an embedded object. \\ \tblhline
-\texttt{embed} & Embeds external media or plugin content; many old uses are exam/reference only. \\ \tblhline
-\texttt{applet} & Old Java applet tag; exam/reference only, not modern practice. \\ \tblhline
-\tblbottomrule
-\caption{Script and object related tags}
-\end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Script and Object Tags}]
 <script>
@@ -2772,35 +3011,6 @@ Line one
     \item \texttt{noscript} is fallback content.
     \item \texttt{applet}, many \texttt{embed} uses and \texttt{tt} are old exam/reference items, not modern practice.
 \end{itemize}
-
-\section{Designing and Publishing a Website}
-
-\subsection{Designing a Webpage}
-Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
-
-\subsection{Steps for Better Website Design}
-\begin{enumerate}
-    \item \term{Planning}: decide the objective of the website, target users, topics to publish and quality standard.
-    \item \term{Information architecture}: organize the website structure, page relationships and navigation.
-    \item \term{Layout design}: plan header, navigation, content, sidebar and footer.
-    \item \term{Content preparation}: prepare text, images, links, tables, forms and other materials.
-    \item \term{Implementation}: write HTML and CSS, then test the pages in a browser.
-    \item \term{Publishing}: upload the website files to hosting so users can access the website online.
-\end{enumerate}
-
-\subsection{Publishing a Website}
-Publishing means making the completed website available on the internet. To publish a website, the files are uploaded to a web hosting server and connected with a domain name.
-
-\begin{itemize}
-    \item HTML, CSS, images and other files should be kept in organized folders.
-    \item File names and folder paths should be correct because links and images depend on them.
-    \item FTP or hosting control panels can be used to upload website files.
-    \item After publishing, the website should be tested from a browser using its URL.
-\end{itemize}
-
-\begin{summarybox}
-Design prepares the website plan and structure; publishing uploads the finished website so it can be accessed through the internet.
-\end{summarybox}
 
 \section{Integrated Mini Project}
 
@@ -2880,26 +3090,26 @@ This final example combines the main ideas from the HTML lessons. It uses docume
     \item The form collects data, but server-side code is required to process the submitted information.
 \end{itemize}
 
-\section{Final Summary of the Chapter}
+\section{Quick Revision Checklist}
 
-\begin{summarybox}[Chapter Overview]
 \begin{itemize}
-    \item Web design deals with creating and structuring websites.
-    \item Websites are collections of interconnected webpages.
-    \item IP address uniquely identifies devices on a network.
-    \item Domain name provides a human-readable address.
-    \item URL specifies the location of resources.
-    \item HTTP controls browser-server webpage communication.
-    \item FTP is used for uploading and downloading files.
-    \item Website structure affects navigation and usability.
-    \item Websites may be static, dynamic, local or remote.
-    \item Browsers interpret webpage code, while search engines help find webpages.
-    \item HTML is a markup language used to create webpages.
-    \item HTML uses tags, elements and attributes to organize content.
-    \item HTML documents contain head and body sections.
-    \item Headings, paragraphs, formatting tags, lists, links, images, image maps, media, tables, layout containers and forms are essential HTML topics.
-    \item CSS controls visual presentation, while semantic HTML improves page structure.
-    \item Code, quote, direction, script and object tags are important for exam/reference recognition.
-    \item Deprecated tags and attributes may appear in exams, but modern practice prefers CSS, Unicode and semantic HTML.
+    \item Do not confuse \term{Internet} and \term{World Wide Web}: the Internet is the global network infrastructure; the Web is a service that runs on it using webpages, browsers, links and web servers.
+    \item Do not confuse \term{web browser} and \term{search engine}: a browser displays webpages from a URL; a search engine finds webpages when the exact URL is unknown.
+    \item In web access, the order is usually: user enters URL, browser reads the domain, DNS finds the server IP address, HTTP/HTTPS requests the file, server responds, browser renders the webpage.
+    \item \term{IP address}, \term{domain name}, \term{DNS}, \term{URL} and \term{hosting} are different: IP identifies the server/device, domain is the readable name, DNS connects name to IP, URL gives the full resource address, hosting stores the website files.
+    \item A domain name must be unique and is registered through registrar systems coordinated under ICANN; hosting may contain one or many websites depending on the hosting plan.
+    \item In a domain such as \texttt{www.dhakaboard.gov.bd}, \texttt{www} is the host/subdomain, \texttt{dhakaboard} is the SLD, \texttt{gov} is a TLD/category part, and \texttt{bd} is a country code TLD.
+    \item Static websites show fixed prepared files; dynamic websites generate or change content using server-side scripts, user input or databases.
+    \item HTTP transfers webpages between browser and web server; FTP is mainly for uploading and downloading files, including website files before publishing.
+    \item HTML is a markup language, not a programming language: it structures content but does not perform logic, calculation, database work or server-side processing by itself.
+    \item The \texttt{head} section stores document information such as title, metadata, links, styles and scripts; the \texttt{body} section contains visible webpage content.
+    \item Paired/container tags wrap content; empty tags such as \texttt{br}, \texttt{hr}, \texttt{img}, \texttt{meta} and \texttt{link} do not require closing content.
+    \item Many old tags and attributes are exam/reference only: \texttt{font}, \texttt{center}, \texttt{marquee}, \texttt{dir}, \texttt{menu}, \texttt{frameset}, \texttt{frame}, \texttt{applet}, \texttt{basefont} and visual attributes such as \texttt{align}, \texttt{bgcolor}, \texttt{border}, \texttt{hspace}, \texttt{vspace}.
+    \item Modern practice is: semantic HTML for meaning, CSS for presentation, JavaScript for browser-side behavior, and server-side code/database for processing submitted or dynamic data.
+    \item In lists, \texttt{ol} controls ordered numbering, \texttt{ul} controls bullets, \texttt{li} creates each item, and \texttt{dl}/\texttt{dt}/\texttt{dd} are used for description lists.
+    \item In hyperlinks, \texttt{href} controls the destination, \texttt{target="\_blank"} opens a new tab/window, \texttt{mailto:} starts email, and \texttt{download} suggests saving the linked file.
+    \item In images, \texttt{src} must point to a correct file path or URL, \texttt{alt} is fallback/accessibility text, and image maps need matching \texttt{usemap}, \texttt{map name} and \texttt{area} coordinates.
+    \item In tables, \texttt{tr} creates rows, \texttt{td}/\texttt{th} create cells, \texttt{colspan} merges columns, \texttt{rowspan} merges rows, and \texttt{cellpadding} is inside-cell space while \texttt{cellspacing} is between-cell space.
+    \item In forms, HTML only creates input controls; \texttt{action}, \texttt{method}, \texttt{name} and \texttt{value} decide how submitted data is identified and sent, but another program must process it.
+    \item Boolean attributes such as \texttt{checked}, \texttt{selected}, \texttt{multiple}, \texttt{controls}, \texttt{autoplay}, \texttt{loop}, \texttt{muted}, \texttt{defer} and \texttt{disabled} work by being present; they do not need separate textbook-style values.
 \end{itemize}
-\end{summarybox}
