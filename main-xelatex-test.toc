@@ -1,0 +1,162 @@
+\contentsline {chapter}{\numberline {4}Introduction to Web Design and HTML}{2}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Core Concepts in Web Design}{2}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Basic Components of the Web}{2}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Basic Relationship}{3}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Advantages of Website}{3}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Website}{3}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Website Structure}{3}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Common Pages in a Website}{3}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Types of Website Structure}{3}{subsubsection.4.2.1.2}%
+\contentsline {paragraph}{\numberline {4.2.1.2.1}Hierarchical Structure}{4}{paragraph.4.2.1.2.1}%
+\contentsline {paragraph}{\numberline {4.2.1.2.2}Linear Structure}{4}{paragraph.4.2.1.2.2}%
+\contentsline {paragraph}{\numberline {4.2.1.2.3}Network Structure}{4}{paragraph.4.2.1.2.3}%
+\contentsline {paragraph}{\numberline {4.2.1.2.4}Hybrid Structure}{4}{paragraph.4.2.1.2.4}%
+\contentsline {subsection}{\numberline {4.2.2}Web Portal}{4}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Types of Website}{4}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Static Website}{4}{subsubsection.4.2.3.1}%
+\contentsline {paragraph}{\numberline {4.2.3.1.1}Advantages of Static Website}{5}{paragraph.4.2.3.1.1}%
+\contentsline {paragraph}{\numberline {4.2.3.1.2}Disadvantages of Static Website}{5}{paragraph.4.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Dynamic Website}{5}{subsubsection.4.2.3.2}%
+\contentsline {paragraph}{\numberline {4.2.3.2.1}Advantages of Dynamic Website}{5}{paragraph.4.2.3.2.1}%
+\contentsline {paragraph}{\numberline {4.2.3.2.2}Disadvantages of Dynamic Website}{5}{paragraph.4.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}Comparison between Static and Dynamic Website}{6}{subsubsection.4.2.3.3}%
+\contentsline {subsection}{\numberline {4.2.4}Types of Webpage Based on Location}{6}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Website Classification by Purpose}{6}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Designing and Publishing a Website}{7}{subsection.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.6.1}Designing a Webpage}{7}{subsubsection.4.2.6.1}%
+\contentsline {subsubsection}{\numberline {4.2.6.2}Steps for Better Website Design}{7}{subsubsection.4.2.6.2}%
+\contentsline {subsubsection}{\numberline {4.2.6.3}Publishing a Website}{7}{subsubsection.4.2.6.3}%
+\contentsline {section}{\numberline {4.3}Web Browser and Search Engine}{7}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Web Browser}{7}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Functions of Web Browser}{7}{subsubsection.4.3.1.1}%
+\contentsline {subsection}{\numberline {4.3.2}Web Browsing}{8}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Methods of Web Browsing}{8}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Search Engine}{8}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}Functions of Search Engine}{8}{subsubsection.4.3.3.1}%
+\contentsline {subsection}{\numberline {4.3.4}Difference Between Browser and Search Engine}{8}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}IP Address}{9}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Purpose of IP Address}{9}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Types of IP Address}{9}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Network ID and Host ID}{9}{subsubsection.4.4.2.1}%
+\contentsline {section}{\numberline {4.5}Domain Name and Domain Name System (DNS)}{10}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Some Technical Terms}{10}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Domain Registration and ICANN}{10}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Types of Domain}{11}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Common Top Level Domains / Generic TLDs}{11}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Country Code Top Level Domains}{12}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Web Hosting}{12}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Types of Web Hosting}{12}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}Based on Platform or Operating System}{12}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}Based on Facilities}{12}{subsubsection.4.6.1.2}%
+\contentsline {subsubsection}{\numberline {4.6.1.3}Email Services with Hosting}{13}{subsubsection.4.6.1.3}%
+\contentsline {subsection}{\numberline {4.6.2}Difference between Domain Name and Web Hosting}{13}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}URL (Uniform Resource Locator)}{13}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Components of URL}{13}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Protocol}{14}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Common Internet Protocols}{14}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}HTTP}{14}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}Functions of HTTP}{15}{subsubsection.4.8.2.1}%
+\contentsline {subsection}{\numberline {4.8.3}FTP}{15}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}Functions of FTP}{15}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}Types of FTP Access}{15}{subsubsection.4.8.3.2}%
+\contentsline {section}{\numberline {4.9}Web Communication}{15}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Correct Overall Idea}{15}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Client-Server System}{16}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}Website Creation Side}{16}{subsection.4.9.3}%
+\contentsline {subsection}{\numberline {4.9.4}User Access Side}{16}{subsection.4.9.4}%
+\contentsline {section}{\numberline {4.10}Difference between IP Address, Domain Name, DNS and URL}{17}{section.4.10}%
+\contentsline {section}{\numberline {4.11}HTML Fundamentals}{17}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Concept of HTML}{17}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Markup Language vs Programming Language}{18}{subsection.4.11.2}%
+\contentsline {subsection}{\numberline {4.11.3}Short History of HTML}{18}{subsection.4.11.3}%
+\contentsline {subsection}{\numberline {4.11.4}Advantages of HTML}{18}{subsection.4.11.4}%
+\contentsline {subsection}{\numberline {4.11.5}Limitations of HTML}{18}{subsection.4.11.5}%
+\contentsline {section}{\numberline {4.12}HTML Tags, Elements and Attributes}{19}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}HTML Tag}{19}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Classification of HTML Tags}{19}{subsection.4.12.2}%
+\contentsline {subsection}{\numberline {4.12.3}HTML Element}{19}{subsection.4.12.3}%
+\contentsline {subsection}{\numberline {4.12.4}HTML Attribute}{20}{subsection.4.12.4}%
+\contentsline {subsection}{\numberline {4.12.5}HTML Comments}{20}{subsection.4.12.5}%
+\contentsline {section}{\numberline {4.13}First HTML Document}{21}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Basic Skeleton}{21}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Head Section}{21}{subsection.4.13.2}%
+\contentsline {subsection}{\numberline {4.13.3}Body Section}{22}{subsection.4.13.3}%
+\contentsline {subsection}{\numberline {4.13.4}Block-Level and Inline Elements}{22}{subsection.4.13.4}%
+\contentsline {subsection}{\numberline {4.13.5}Body Tag Attributes}{22}{subsection.4.13.5}%
+\contentsline {section}{\numberline {4.14}Creating and Running HTML Files}{23}{section.4.14}%
+\contentsline {section}{\numberline {4.15}Headings, Paragraphs and Line Breaks}{23}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Heading Elements}{24}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Paragraph, Break, Horizontal Rule and Spacing}{24}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}Basic Paragraph and Line Break}{24}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}Horizontal Rule}{25}{subsubsection.4.15.2.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.3}Old Horizontal Rule Attributes}{25}{subsubsection.4.15.2.3}%
+\contentsline {subsubsection}{\numberline {4.15.2.4}Whitespace Collapsing}{25}{subsubsection.4.15.2.4}%
+\contentsline {subsubsection}{\numberline {4.15.2.5}Non-breaking Space}{26}{subsubsection.4.15.2.5}%
+\contentsline {section}{\numberline {4.16}Text Formatting in HTML}{26}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Visual vs Meaningful Formatting}{28}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Formula and Correction Formatting}{28}{subsection.4.16.2}%
+\contentsline {subsection}{\numberline {4.16.3}Old Text Tags}{29}{subsection.4.16.3}%
+\contentsline {section}{\numberline {4.17}Font, Color, Style and Bangla Text}{29}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Font Tag}{29}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Color Values}{30}{subsection.4.17.2}%
+\contentsline {subsection}{\numberline {4.17.3}Style Attribute}{30}{subsection.4.17.3}%
+\contentsline {subsection}{\numberline {4.17.4}Bangla Text in HTML}{31}{subsection.4.17.4}%
+\contentsline {section}{\numberline {4.18}Marquee}{31}{section.4.18}%
+\contentsline {section}{\numberline {4.19}HTML Lists}{32}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Ordered List}{33}{subsection.4.19.1}%
+\contentsline {subsubsection}{\numberline {4.19.1.1}Ordered List Variations}{34}{subsubsection.4.19.1.1}%
+\contentsline {subsection}{\numberline {4.19.2}Unordered List}{35}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}Unordered List Marker Variations}{35}{subsubsection.4.19.2.1}%
+\contentsline {subsection}{\numberline {4.19.3}Description List}{36}{subsection.4.19.3}%
+\contentsline {subsection}{\numberline {4.19.4}Nested List}{36}{subsection.4.19.4}%
+\contentsline {subsection}{\numberline {4.19.5}Old Exam-Style List Tags}{36}{subsection.4.19.5}%
+\contentsline {section}{\numberline {4.20}Hyperlinks in HTML}{37}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Anchor Tag}{39}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Internal and External Links}{39}{subsection.4.20.2}%
+\contentsline {subsection}{\numberline {4.20.3}Relative and Absolute Paths}{39}{subsection.4.20.3}%
+\contentsline {subsection}{\numberline {4.20.4}Advantages of Hyperlink}{39}{subsection.4.20.4}%
+\contentsline {subsection}{\numberline {4.20.5}Common Link Variations}{40}{subsection.4.20.5}%
+\contentsline {subsection}{\numberline {4.20.6}Target and Download Attributes}{40}{subsection.4.20.6}%
+\contentsline {subsection}{\numberline {4.20.7}Head Links: Link, Base and Basefont}{41}{subsection.4.20.7}%
+\contentsline {section}{\numberline {4.21}Images and Image Maps}{41}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Adding Images}{41}{subsection.4.21.1}%
+\contentsline {subsection}{\numberline {4.21.2}Advantages and Disadvantages of Web Graphics}{43}{subsection.4.21.2}%
+\contentsline {subsection}{\numberline {4.21.3}Inline and External Images}{43}{subsection.4.21.3}%
+\contentsline {subsection}{\numberline {4.21.4}Image Syntax and Attributes}{44}{subsection.4.21.4}%
+\contentsline {subsection}{\numberline {4.21.5}Image Paths and Broken Images}{44}{subsection.4.21.5}%
+\contentsline {subsection}{\numberline {4.21.6}Old Image Spacing and Border Attributes}{45}{subsection.4.21.6}%
+\contentsline {subsection}{\numberline {4.21.7}Clickable Image}{45}{subsection.4.21.7}%
+\contentsline {subsection}{\numberline {4.21.8}Image Map}{46}{subsection.4.21.8}%
+\contentsline {section}{\numberline {4.22}Media and Frames}{46}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Audio and Video}{48}{subsection.4.22.1}%
+\contentsline {subsection}{\numberline {4.22.2}Iframe}{48}{subsection.4.22.2}%
+\contentsline {subsection}{\numberline {4.22.3}Old Frame Tags}{49}{subsection.4.22.3}%
+\contentsline {section}{\numberline {4.23}HTML Tables}{49}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Parts of a Table}{49}{subsection.4.23.1}%
+\contentsline {subsection}{\numberline {4.23.2}Basic Table}{51}{subsection.4.23.2}%
+\contentsline {subsection}{\numberline {4.23.3}Unequal Number of Cells}{52}{subsection.4.23.3}%
+\contentsline {subsection}{\numberline {4.23.4}Cellspacing and Cellpadding}{52}{subsection.4.23.4}%
+\contentsline {subsection}{\numberline {4.23.5}Colspan and Rowspan}{53}{subsection.4.23.5}%
+\contentsline {subsection}{\numberline {4.23.6}Table Background Color}{54}{subsection.4.23.6}%
+\contentsline {subsection}{\numberline {4.23.7}Table Alignment and Empty Cells}{54}{subsection.4.23.7}%
+\contentsline {subsection}{\numberline {4.23.8}Table Sections}{55}{subsection.4.23.8}%
+\contentsline {section}{\numberline {4.24}Containers, Semantic HTML and CSS}{56}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Webpage Layout}{56}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.24.2}Methods of Creating Layout}{56}{subsection.4.24.2}%
+\contentsline {subsection}{\numberline {4.24.3}Div and Span}{57}{subsection.4.24.3}%
+\contentsline {subsection}{\numberline {4.24.4}Semantic Layout Tags}{58}{subsection.4.24.4}%
+\contentsline {subsection}{\numberline {4.24.5}CSS Basics}{58}{subsection.4.24.5}%
+\contentsline {section}{\numberline {4.25}HTML Forms}{59}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Form Tags, Attributes and Values}{59}{subsection.4.25.1}%
+\contentsline {subsection}{\numberline {4.25.2}Basic Form Structure}{61}{subsection.4.25.2}%
+\contentsline {subsection}{\numberline {4.25.3}Text and Password Inputs}{61}{subsection.4.25.3}%
+\contentsline {subsection}{\numberline {4.25.4}Radio Buttons and Checkboxes}{62}{subsection.4.25.4}%
+\contentsline {subsection}{\numberline {4.25.5}Select, Option and Optgroup}{62}{subsection.4.25.5}%
+\contentsline {subsection}{\numberline {4.25.6}Textarea and Buttons}{63}{subsection.4.25.6}%
+\contentsline {subsection}{\numberline {4.25.7}Form Example}{63}{subsection.4.25.7}%
+\contentsline {section}{\numberline {4.26}Code, Quote, Direction, Script and Object Tags}{65}{section.4.26}%
+\contentsline {subsection}{\numberline {4.26.1}Code and Computer Output Tags}{66}{subsection.4.26.1}%
+\contentsline {subsection}{\numberline {4.26.2}Quote, Citation and Direction Tags}{67}{subsection.4.26.2}%
+\contentsline {subsection}{\numberline {4.26.3}Script, Noscript, Object and Applet}{67}{subsection.4.26.3}%
+\contentsline {section}{\numberline {4.27}Integrated Mini Project}{68}{section.4.27}%
+\contentsline {section}{\numberline {4.28}Quick Revision Checklist}{70}{section.4.28}%
