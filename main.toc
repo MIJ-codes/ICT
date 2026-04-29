@@ -81,86 +81,86 @@
 \contentsline {subsection}{\numberline {1.13.5}Body Tag Attributes}{25}{subsection.1.13.5}%
 \contentsline {section}{\numberline {1.14}Creating and Running HTML Files}{25}{section.1.14}%
 \contentsline {section}{\numberline {1.15}Headings, Paragraphs and Line Breaks}{25}{section.1.15}%
-\contentsline {subsection}{\numberline {1.15.1}Heading Elements}{25}{subsection.1.15.1}%
-\contentsline {subsection}{\numberline {1.15.2}Paragraph, Break, Horizontal Rule and Spacing}{26}{subsection.1.15.2}%
-\contentsline {subsubsection}{\numberline {1.15.2.1}Basic Paragraph and Line Break}{26}{subsubsection.1.15.2.1}%
+\contentsline {subsection}{\numberline {1.15.1}Heading Elements}{26}{subsection.1.15.1}%
+\contentsline {subsection}{\numberline {1.15.2}Paragraph, Break, Horizontal Rule and Spacing}{27}{subsection.1.15.2}%
+\contentsline {subsubsection}{\numberline {1.15.2.1}Basic Paragraph and Line Break}{27}{subsubsection.1.15.2.1}%
 \contentsline {subsubsection}{\numberline {1.15.2.2}Horizontal Rule}{27}{subsubsection.1.15.2.2}%
-\contentsline {subsubsection}{\numberline {1.15.2.3}Old Horizontal Rule Attributes}{27}{subsubsection.1.15.2.3}%
+\contentsline {subsubsection}{\numberline {1.15.2.3}Old Horizontal Rule Attributes}{28}{subsubsection.1.15.2.3}%
 \contentsline {subsubsection}{\numberline {1.15.2.4}Whitespace Collapsing}{28}{subsubsection.1.15.2.4}%
 \contentsline {subsubsection}{\numberline {1.15.2.5}Non-breaking Space}{28}{subsubsection.1.15.2.5}%
 \contentsline {section}{\numberline {1.16}Text Formatting in HTML}{29}{section.1.16}%
 \contentsline {subsection}{\numberline {1.16.1}Visual vs Meaningful Formatting}{30}{subsection.1.16.1}%
-\contentsline {subsection}{\numberline {1.16.2}Formula and Correction Formatting}{30}{subsection.1.16.2}%
+\contentsline {subsection}{\numberline {1.16.2}Formula and Correction Formatting}{31}{subsection.1.16.2}%
 \contentsline {subsection}{\numberline {1.16.3}Old Text Tags}{31}{subsection.1.16.3}%
-\contentsline {section}{\numberline {1.17}Font, Color, Style and Bangla Text}{31}{section.1.17}%
+\contentsline {section}{\numberline {1.17}Font, Color, Style and Bangla Text}{32}{section.1.17}%
 \contentsline {subsection}{\numberline {1.17.1}Font Tag}{32}{subsection.1.17.1}%
 \contentsline {subsection}{\numberline {1.17.2}Color Values}{32}{subsection.1.17.2}%
-\contentsline {subsection}{\numberline {1.17.3}Style Attribute}{32}{subsection.1.17.3}%
+\contentsline {subsection}{\numberline {1.17.3}Style Attribute}{33}{subsection.1.17.3}%
 \contentsline {subsection}{\numberline {1.17.4}Bangla Text in HTML}{33}{subsection.1.17.4}%
-\contentsline {subsection}{\numberline {1.17.5}Marquee}{33}{subsection.1.17.5}%
-\contentsline {section}{\numberline {1.18}HTML Lists}{34}{section.1.18}%
-\contentsline {subsection}{\numberline {1.18.1}Ordered List}{34}{subsection.1.18.1}%
-\contentsline {subsubsection}{\numberline {1.18.1.1}Ordered List Variations}{35}{subsubsection.1.18.1.1}%
-\contentsline {subsection}{\numberline {1.18.2}Unordered List}{36}{subsection.1.18.2}%
-\contentsline {subsubsection}{\numberline {1.18.2.1}Unordered List Marker Variations}{36}{subsubsection.1.18.2.1}%
-\contentsline {subsection}{\numberline {1.18.3}Description List}{37}{subsection.1.18.3}%
-\contentsline {subsection}{\numberline {1.18.4}Nested List}{37}{subsection.1.18.4}%
-\contentsline {subsection}{\numberline {1.18.5}Old Exam-Style List Tags}{38}{subsection.1.18.5}%
-\contentsline {section}{\numberline {1.19}Hyperlinks in HTML}{38}{section.1.19}%
-\contentsline {subsection}{\numberline {1.19.1}Anchor Tag}{38}{subsection.1.19.1}%
-\contentsline {subsection}{\numberline {1.19.2}Internal and External Links}{39}{subsection.1.19.2}%
-\contentsline {subsection}{\numberline {1.19.3}Relative and Absolute Paths}{39}{subsection.1.19.3}%
-\contentsline {subsection}{\numberline {1.19.4}Hyperlink Attributes}{39}{subsection.1.19.4}%
-\contentsline {subsection}{\numberline {1.19.5}Advantages of Hyperlink}{40}{subsection.1.19.5}%
-\contentsline {subsection}{\numberline {1.19.6}Common Link Variations}{40}{subsection.1.19.6}%
-\contentsline {subsection}{\numberline {1.19.7}Target and Download Attributes}{41}{subsection.1.19.7}%
-\contentsline {subsection}{\numberline {1.19.8}Head Links: Link, Base and Basefont}{41}{subsection.1.19.8}%
-\contentsline {section}{\numberline {1.20}Images and Image Maps}{42}{section.1.20}%
-\contentsline {subsection}{\numberline {1.20.1}Adding Images}{42}{subsection.1.20.1}%
-\contentsline {subsection}{\numberline {1.20.2}Advantages and Disadvantages of Web Graphics}{42}{subsection.1.20.2}%
-\contentsline {subsection}{\numberline {1.20.3}Inline and External Images}{42}{subsection.1.20.3}%
-\contentsline {subsection}{\numberline {1.20.4}Image Syntax and Attributes}{42}{subsection.1.20.4}%
-\contentsline {subsection}{\numberline {1.20.5}Image Paths and Broken Images}{43}{subsection.1.20.5}%
-\contentsline {subsection}{\numberline {1.20.6}Old Image Spacing and Border Attributes}{44}{subsection.1.20.6}%
-\contentsline {subsection}{\numberline {1.20.7}Clickable Image}{44}{subsection.1.20.7}%
-\contentsline {subsection}{\numberline {1.20.8}Image Map}{44}{subsection.1.20.8}%
-\contentsline {section}{\numberline {1.21}Media and Frames}{45}{section.1.21}%
-\contentsline {subsection}{\numberline {1.21.1}Audio and Video}{45}{subsection.1.21.1}%
-\contentsline {subsection}{\numberline {1.21.2}Iframe}{46}{subsection.1.21.2}%
-\contentsline {subsection}{\numberline {1.21.3}Old Frame Tags}{46}{subsection.1.21.3}%
-\contentsline {section}{\numberline {1.22}HTML Tables}{47}{section.1.22}%
-\contentsline {subsection}{\numberline {1.22.1}Parts of a Table}{47}{subsection.1.22.1}%
-\contentsline {subsection}{\numberline {1.22.2}Table Elements}{47}{subsection.1.22.2}%
-\contentsline {subsection}{\numberline {1.22.3}Basic Table}{47}{subsection.1.22.3}%
-\contentsline {subsection}{\numberline {1.22.4}Unequal Number of Cells}{48}{subsection.1.22.4}%
-\contentsline {subsection}{\numberline {1.22.5}Table Attributes}{49}{subsection.1.22.5}%
-\contentsline {subsection}{\numberline {1.22.6}Cellspacing and Cellpadding}{49}{subsection.1.22.6}%
-\contentsline {subsection}{\numberline {1.22.7}Colspan and Rowspan}{50}{subsection.1.22.7}%
-\contentsline {subsection}{\numberline {1.22.8}Table Background Color}{51}{subsection.1.22.8}%
-\contentsline {subsection}{\numberline {1.22.9}Table Alignment and Empty Cells}{52}{subsection.1.22.9}%
-\contentsline {subsection}{\numberline {1.22.10}Table Sections}{53}{subsection.1.22.10}%
-\contentsline {section}{\numberline {1.23}Containers, Semantic HTML and CSS}{54}{section.1.23}%
-\contentsline {subsection}{\numberline {1.23.1}Webpage Layout}{54}{subsection.1.23.1}%
-\contentsline {subsection}{\numberline {1.23.2}Methods of Creating Layout}{54}{subsection.1.23.2}%
-\contentsline {subsection}{\numberline {1.23.3}Div and Span}{54}{subsection.1.23.3}%
-\contentsline {subsection}{\numberline {1.23.4}Semantic Layout Tags}{55}{subsection.1.23.4}%
-\contentsline {subsection}{\numberline {1.23.5}CSS Basics}{56}{subsection.1.23.5}%
-\contentsline {section}{\numberline {1.24}HTML Forms}{57}{section.1.24}%
-\contentsline {subsection}{\numberline {1.24.1}Form Element and Attributes}{57}{subsection.1.24.1}%
-\contentsline {subsection}{\numberline {1.24.2}Form Tags}{57}{subsection.1.24.2}%
-\contentsline {subsection}{\numberline {1.24.3}Input Types}{58}{subsection.1.24.3}%
-\contentsline {subsection}{\numberline {1.24.4}Text and Password Inputs}{58}{subsection.1.24.4}%
-\contentsline {subsection}{\numberline {1.24.5}Radio Buttons and Checkboxes}{59}{subsection.1.24.5}%
-\contentsline {subsection}{\numberline {1.24.6}Select, Option and Optgroup}{60}{subsection.1.24.6}%
-\contentsline {subsection}{\numberline {1.24.7}Textarea and Buttons}{60}{subsection.1.24.7}%
-\contentsline {subsection}{\numberline {1.24.8}Form Example}{61}{subsection.1.24.8}%
-\contentsline {section}{\numberline {1.25}Code, Quote, Direction, Script and Object Tags}{62}{section.1.25}%
-\contentsline {subsection}{\numberline {1.25.1}Code and Computer Output Tags}{63}{subsection.1.25.1}%
-\contentsline {subsection}{\numberline {1.25.2}Quote, Citation and Direction Tags}{63}{subsection.1.25.2}%
-\contentsline {subsection}{\numberline {1.25.3}Script, Noscript, Object and Applet}{64}{subsection.1.25.3}%
-\contentsline {section}{\numberline {1.26}Designing and Publishing a Website}{65}{section.1.26}%
-\contentsline {subsection}{\numberline {1.26.1}Designing a Webpage}{65}{subsection.1.26.1}%
-\contentsline {subsection}{\numberline {1.26.2}Steps for Better Website Design}{65}{subsection.1.26.2}%
-\contentsline {subsection}{\numberline {1.26.3}Publishing a Website}{65}{subsection.1.26.3}%
-\contentsline {section}{\numberline {1.27}Integrated Mini Project}{65}{section.1.27}%
-\contentsline {section}{\numberline {1.28}Final Summary of the Chapter}{68}{section.1.28}%
+\contentsline {section}{\numberline {1.18}Marquee}{34}{section.1.18}%
+\contentsline {section}{\numberline {1.19}HTML Lists}{35}{section.1.19}%
+\contentsline {subsection}{\numberline {1.19.1}Ordered List}{35}{subsection.1.19.1}%
+\contentsline {subsubsection}{\numberline {1.19.1.1}Ordered List Variations}{35}{subsubsection.1.19.1.1}%
+\contentsline {subsection}{\numberline {1.19.2}Unordered List}{36}{subsection.1.19.2}%
+\contentsline {subsubsection}{\numberline {1.19.2.1}Unordered List Marker Variations}{36}{subsubsection.1.19.2.1}%
+\contentsline {subsection}{\numberline {1.19.3}Description List}{37}{subsection.1.19.3}%
+\contentsline {subsection}{\numberline {1.19.4}Nested List}{37}{subsection.1.19.4}%
+\contentsline {subsection}{\numberline {1.19.5}Old Exam-Style List Tags}{38}{subsection.1.19.5}%
+\contentsline {section}{\numberline {1.20}Hyperlinks in HTML}{39}{section.1.20}%
+\contentsline {subsection}{\numberline {1.20.1}Anchor Tag}{39}{subsection.1.20.1}%
+\contentsline {subsection}{\numberline {1.20.2}Internal and External Links}{39}{subsection.1.20.2}%
+\contentsline {subsection}{\numberline {1.20.3}Relative and Absolute Paths}{39}{subsection.1.20.3}%
+\contentsline {subsection}{\numberline {1.20.4}Hyperlink Attributes}{40}{subsection.1.20.4}%
+\contentsline {subsection}{\numberline {1.20.5}Advantages of Hyperlink}{40}{subsection.1.20.5}%
+\contentsline {subsection}{\numberline {1.20.6}Common Link Variations}{40}{subsection.1.20.6}%
+\contentsline {subsection}{\numberline {1.20.7}Target and Download Attributes}{41}{subsection.1.20.7}%
+\contentsline {subsection}{\numberline {1.20.8}Head Links: Link, Base and Basefont}{41}{subsection.1.20.8}%
+\contentsline {section}{\numberline {1.21}Images and Image Maps}{42}{section.1.21}%
+\contentsline {subsection}{\numberline {1.21.1}Adding Images}{42}{subsection.1.21.1}%
+\contentsline {subsection}{\numberline {1.21.2}Advantages and Disadvantages of Web Graphics}{42}{subsection.1.21.2}%
+\contentsline {subsection}{\numberline {1.21.3}Inline and External Images}{42}{subsection.1.21.3}%
+\contentsline {subsection}{\numberline {1.21.4}Image Syntax and Attributes}{42}{subsection.1.21.4}%
+\contentsline {subsection}{\numberline {1.21.5}Image Paths and Broken Images}{43}{subsection.1.21.5}%
+\contentsline {subsection}{\numberline {1.21.6}Old Image Spacing and Border Attributes}{44}{subsection.1.21.6}%
+\contentsline {subsection}{\numberline {1.21.7}Clickable Image}{44}{subsection.1.21.7}%
+\contentsline {subsection}{\numberline {1.21.8}Image Map}{45}{subsection.1.21.8}%
+\contentsline {section}{\numberline {1.22}Media and Frames}{46}{section.1.22}%
+\contentsline {subsection}{\numberline {1.22.1}Audio and Video}{46}{subsection.1.22.1}%
+\contentsline {subsection}{\numberline {1.22.2}Iframe}{46}{subsection.1.22.2}%
+\contentsline {subsection}{\numberline {1.22.3}Old Frame Tags}{47}{subsection.1.22.3}%
+\contentsline {section}{\numberline {1.23}HTML Tables}{47}{section.1.23}%
+\contentsline {subsection}{\numberline {1.23.1}Parts of a Table}{47}{subsection.1.23.1}%
+\contentsline {subsection}{\numberline {1.23.2}Table Elements}{48}{subsection.1.23.2}%
+\contentsline {subsection}{\numberline {1.23.3}Basic Table}{48}{subsection.1.23.3}%
+\contentsline {subsection}{\numberline {1.23.4}Unequal Number of Cells}{49}{subsection.1.23.4}%
+\contentsline {subsection}{\numberline {1.23.5}Table Attributes}{49}{subsection.1.23.5}%
+\contentsline {subsection}{\numberline {1.23.6}Cellspacing and Cellpadding}{50}{subsection.1.23.6}%
+\contentsline {subsection}{\numberline {1.23.7}Colspan and Rowspan}{50}{subsection.1.23.7}%
+\contentsline {subsection}{\numberline {1.23.8}Table Background Color}{51}{subsection.1.23.8}%
+\contentsline {subsection}{\numberline {1.23.9}Table Alignment and Empty Cells}{51}{subsection.1.23.9}%
+\contentsline {subsection}{\numberline {1.23.10}Table Sections}{52}{subsection.1.23.10}%
+\contentsline {section}{\numberline {1.24}Containers, Semantic HTML and CSS}{53}{section.1.24}%
+\contentsline {subsection}{\numberline {1.24.1}Webpage Layout}{53}{subsection.1.24.1}%
+\contentsline {subsection}{\numberline {1.24.2}Methods of Creating Layout}{53}{subsection.1.24.2}%
+\contentsline {subsection}{\numberline {1.24.3}Div and Span}{53}{subsection.1.24.3}%
+\contentsline {subsection}{\numberline {1.24.4}Semantic Layout Tags}{54}{subsection.1.24.4}%
+\contentsline {subsection}{\numberline {1.24.5}CSS Basics}{54}{subsection.1.24.5}%
+\contentsline {section}{\numberline {1.25}HTML Forms}{55}{section.1.25}%
+\contentsline {subsection}{\numberline {1.25.1}Form Element and Attributes}{55}{subsection.1.25.1}%
+\contentsline {subsection}{\numberline {1.25.2}Form Tags}{56}{subsection.1.25.2}%
+\contentsline {subsection}{\numberline {1.25.3}Input Types}{56}{subsection.1.25.3}%
+\contentsline {subsection}{\numberline {1.25.4}Text and Password Inputs}{57}{subsection.1.25.4}%
+\contentsline {subsection}{\numberline {1.25.5}Radio Buttons and Checkboxes}{57}{subsection.1.25.5}%
+\contentsline {subsection}{\numberline {1.25.6}Select, Option and Optgroup}{58}{subsection.1.25.6}%
+\contentsline {subsection}{\numberline {1.25.7}Textarea and Buttons}{58}{subsection.1.25.7}%
+\contentsline {subsection}{\numberline {1.25.8}Form Example}{59}{subsection.1.25.8}%
+\contentsline {section}{\numberline {1.26}Code, Quote, Direction, Script and Object Tags}{60}{section.1.26}%
+\contentsline {subsection}{\numberline {1.26.1}Code and Computer Output Tags}{60}{subsection.1.26.1}%
+\contentsline {subsection}{\numberline {1.26.2}Quote, Citation and Direction Tags}{61}{subsection.1.26.2}%
+\contentsline {subsection}{\numberline {1.26.3}Script, Noscript, Object and Applet}{62}{subsection.1.26.3}%
+\contentsline {section}{\numberline {1.27}Designing and Publishing a Website}{63}{section.1.27}%
+\contentsline {subsection}{\numberline {1.27.1}Designing a Webpage}{63}{subsection.1.27.1}%
+\contentsline {subsection}{\numberline {1.27.2}Steps for Better Website Design}{63}{subsection.1.27.2}%
+\contentsline {subsection}{\numberline {1.27.3}Publishing a Website}{63}{subsection.1.27.3}%
+\contentsline {section}{\numberline {1.28}Integrated Mini Project}{63}{section.1.28}%
+\contentsline {section}{\numberline {1.29}Final Summary of the Chapter}{65}{section.1.29}%

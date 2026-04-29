@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Image Path Variations</title>
 <style>
-@page { size: 620px 106px; margin: 14px; }
+@page { size: 6in 1.80in; margin: 0.08in; }
 html, body { margin: 0; padding: 0; }
 body { font-family: "Times New Roman", serif; font-size: 18px; line-height: 1.25; color: #000; background: white; }
 h1 { font-size: 30px; margin: 0 0 10px; }
@@ -13,7 +13,7 @@ p { margin: 0 0 8px; }
 ul, ol { margin-top: 4px; margin-bottom: 8px; }
 dl { margin-top: 4px; margin-bottom: 8px; }
 table { margin: 0 0 8px; }
-img { max-width: 220px; max-height: 130px; }
+img { max-width: none; height: auto; vertical-align: middle; margin-right: 8px; }
 iframe { border: 1px solid #777; }
 header, footer, nav, main, section, article { display: block; }
 header, footer { padding: 6px; }
@@ -22,9 +22,11 @@ textarea { vertical-align: top; }
 </style>
 </head>
 <body>
-<img src="photo.jpg" alt="Same folder image">
-<img src="images/photo.jpg" alt="Image inside folder">
-<img src="../photo.jpg" alt="Image in parent folder">
-<img src="wrong-name.jpg" alt="This image path is wrong">
+<img src="assets/photo.jpg" alt="Local image" width="140">
+<img src="assets/images/photo.jpg" alt="Folder image" width="140">
+<img src="https://www.w3.org/Icons/w3c_home.png"
+     alt="Online image" width="72">
+<img src="wrong-name.jpg" alt="This image path is wrong" width="140">
+
 </body>
 </html>

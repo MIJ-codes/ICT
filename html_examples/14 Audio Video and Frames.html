@@ -17,7 +17,7 @@
 
 <!-- WHAT: background adds a page background image.
      NOTE: background attribute is old/deprecated. Modern HTML uses CSS background-image. -->
-<body background="https://theportablewife.com/wp-content/uploads/best-places-to-take-pictures-in-paris-newfeatured.jpg">
+<body background="assets/campus.jpg">
 
     <!-- WHAT: h1 creates the main heading of the page. -->
     <h1>Audio, Video, Images and Frames</h1>
@@ -35,7 +35,7 @@
          ATTRIBUTE: src stores the image path or URL.
          ATTRIBUTE: alt gives backup text if image cannot load.
          ATTRIBUTE: width and height control image size. -->
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Cottage image" width="150" height="100">
+    <img src="assets/campus.jpg" alt="College campus image" width="150" height="100">
 
     <hr>
 
@@ -52,7 +52,7 @@
         <!-- WHAT: source gives the audio file path.
              ATTRIBUTE: src stores the audio file location.
              ATTRIBUTE: type tells the browser the media format. -->
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="assets/sample-audio.wav" type="audio/wav">
 
         <!-- WHAT: This fallback text appears if the browser does not support audio. -->
         Your browser does not support the audio element.
@@ -69,10 +69,10 @@
     <!-- WHAT: video adds video to a webpage.
          ATTRIBUTE: controls shows video controls.
          ATTRIBUTE: width and height set video size. -->
-    <video width="300" height="240" controls>
+    <video width="300" height="170" controls poster="assets/video-poster.jpg">
         <!-- WHAT: source gives the video file path.
              ATTRIBUTE: type tells the browser the video format. -->
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="assets/sample-video.mp4" type="video/mp4">
 
         <!-- WHAT: This fallback text appears if the browser does not support video. -->
         Your browser does not support the video tag.
@@ -88,8 +88,8 @@
 
     <!-- WHAT: muted starts the media without sound.
          WHAT: loop repeats the media after ending. -->
-    <video width="300" controls muted loop>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <video width="300" controls muted loop poster="assets/video-poster.jpg">
+        <source src="assets/sample-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -97,8 +97,8 @@
 
     <!-- WHAT: autoplay tries to start media automatically.
          NOTE: Many browsers block autoplay unless muted is also used. -->
-    <video width="300" controls autoplay muted>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <video width="300" controls autoplay muted poster="assets/video-poster.jpg">
+        <source src="assets/sample-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
@@ -115,7 +115,7 @@
          ATTRIBUTE: autostart was used in older examples to start media automatically.
          ATTRIBUTE: width and height control display size.
          NOTE: Deprecated/exam-reference style. Modern HTML uses audio, video, iframe or object. -->
-    <embed src="video.mp4" autostart="false" width="300" height="200">
+    <embed src="assets/sample-video.mp4" autostart="false" width="300" height="200">
 
     <hr>
 
@@ -165,17 +165,17 @@
 
     <!-- WHAT: This section combines image, audio, video and iframe together. -->
     <h3>Image</h3>
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Cottage image" width="200">
+    <img src="assets/campus.jpg" alt="College campus image" width="200">
 
     <h3>Audio</h3>
     <audio controls>
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="assets/sample-audio.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio>
 
     <h3>Video</h3>
-    <video width="320" height="240" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <video width="320" height="180" controls poster="assets/video-poster.jpg">
+        <source src="assets/sample-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 

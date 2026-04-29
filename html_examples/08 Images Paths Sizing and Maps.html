@@ -24,7 +24,7 @@
          ATTRIBUTE: src stores the image file path.
          ATTRIBUTE: alt gives alternative text if the image cannot load.
          ATTRIBUTE: width and height set image size in pixels. -->
-    <img src="anime-moon-landscape.jpg" alt="Anime moon landscape image" width="750" height="332">
+    <img src="assets/campus.jpg" alt="College campus image" width="300" height="180">
 
     <hr>
 
@@ -34,11 +34,11 @@
     <!-- WHAT: width controls image width.
          WHAT: height controls image height.
          EFFECT: The image is shown using the given pixel size. -->
-    <img src="ocean.jpg" alt="Ocean image" width="415" height="332">
+    <img src="assets/photo.jpg" alt="Photo image" width="220" height="132">
 
     <!-- WHAT: style can also control image size using CSS.
          EFFECT: This image width becomes 300px and height adjusts automatically. -->
-    <img src="ocean.jpg" alt="Ocean image using CSS width" style="width:300px; height:auto;">
+    <img src="assets/photo.jpg" alt="Photo image using CSS width" style="width:160px; height:auto;">
 
     <!-- WHAT: align, hspace, vspace and border are old image attributes.
          ATTRIBUTE: align controls image position relative to nearby text.
@@ -47,8 +47,8 @@
          ATTRIBUTE: border controls the image border.
          NOTE: These are exam/reference only. Modern HTML uses CSS. -->
     <p>
-        <img src="ocean.jpg" alt="Old image attributes example"
-             width="160" align="left" hspace="20" vspace="10" border="2">
+        <img src="assets/spacing-demo.png" alt="Old image attributes example"
+             width="90" align="left" hspace="20" vspace="10" border="2">
         This text flows beside an image that uses old spacing and border attributes.
     </p>
     <br clear="all">
@@ -60,16 +60,16 @@
 
     <!-- WHAT: JPG/JPEG is commonly used for photos. -->
     <p>JPG image example:</p>
-    <img src="anime-moon-landscape.jpg" alt="JPG image example" width="300">
+    <img src="assets/campus.jpg" alt="JPG image example" width="220">
 
     <!-- WHAT: PNG is commonly used for sharp graphics or transparent images. -->
     <p>PNG image example:</p>
-    <img src="sample.png" alt="PNG image example" width="300">
+    <img src="assets/logo.png" alt="PNG image example" width="180">
 
     <!-- WHAT: GIF can contain animation.
          EFFECT: The image may move if the GIF file is animated. -->
-    <p>Moving GIF example:</p>
-    <img src="hackanm.gif" alt="Moving GIF image" width="48" height="48">
+    <p>Small PNG example:</p>
+    <img src="assets/logo.png" alt="Small PNG image" width="80">
 
     <hr>
 
@@ -87,24 +87,24 @@
     <h2>5. Image Paths</h2>
 
     <!-- WHAT: code displays file paths as code-style text. -->
-    <p>Same folder path: <code>boat.gif</code></p>
+    <p>Local path: <code>assets/photo.jpg</code></p>
 
     <!-- WHAT: Folder path means the image is inside another folder. -->
-    <p>Folder path: <code>images/boat.gif</code></p>
+    <p>Folder path: <code>assets/images/photo.jpg</code></p>
 
     <!-- WHAT: Parent folder path uses ../ to go one folder up. -->
-    <p>Parent folder path: <code>../boat.gif</code></p>
+    <p>Parent folder path: <code>../photo.jpg</code></p>
 
     <!-- WHAT: Full URL path loads image from an online address. -->
-    <p>Full URL path: <code>http://www.systechdigital.com/images/boat.gif</code></p>
+    <p>Full URL path: <code>https://www.w3.org/Icons/w3c_home.png</code></p>
 
     <!-- WHAT: Image from same folder.
          EFFECT: Browser looks for boat.gif beside this HTML file. -->
-    <img src="boat.gif" alt="Boat from same folder" width="200">
+    <img src="assets/photo.jpg" alt="Local image" width="140">
 
     <!-- WHAT: Image from folder.
          EFFECT: Browser looks inside the images folder. -->
-    <img src="images/boat.gif" alt="Boat from images folder" width="200">
+    <img src="assets/images/photo.jpg" alt="Image from folder" width="140">
 
     <hr>
 
@@ -115,7 +115,7 @@
          WHAT: img inside a makes the image clickable.
          EFFECT: Clicking the image opens the href destination. -->
     <a href="https://www.example.com" target="_blank">
-        <img src="anime-moon-landscape.jpg" alt="Clickable image" width="300" border="0">
+        <img src="assets/link-image.png" alt="Clickable image" width="180" border="0">
     </a>
 
     <hr>
@@ -125,7 +125,7 @@
 
     <!-- WHAT: usemap connects this image with a map.
          ATTRIBUTE: usemap value must match the map name with # before it. -->
-    <img src="image-map.jpg" alt="Clickable image map example" width="300" height="180" usemap="#lessonmap">
+    <img src="assets/image-map.jpg" alt="Clickable image map example" width="300" height="180" usemap="#lessonmap">
 
     <!-- WHAT: map stores clickable regions for an image.
          ATTRIBUTE: name connects the map with usemap="#lessonmap". -->

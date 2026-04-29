@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Image Map Example</title>
 <style>
-@page { size: 620px 202px; margin: 14px; }
+@page { size: 6in 2.30in; margin: 0.08in; }
 html, body { margin: 0; padding: 0; }
 body { font-family: "Times New Roman", serif; font-size: 18px; line-height: 1.25; color: #000; background: white; }
 h1 { font-size: 30px; margin: 0 0 10px; }
@@ -13,7 +13,7 @@ p { margin: 0 0 8px; }
 ul, ol { margin-top: 4px; margin-bottom: 8px; }
 dl { margin-top: 4px; margin-bottom: 8px; }
 table { margin: 0 0 8px; }
-img { max-width: 220px; max-height: 130px; }
+img { max-width: none; height: auto; }
 iframe { border: 1px solid #777; }
 header, footer, nav, main, section, article { display: block; }
 header, footer { padding: 6px; }
@@ -22,7 +22,8 @@ textarea { vertical-align: top; }
 </style>
 </head>
 <body>
-<img src="campus-map.jpg" alt="Campus Map" usemap="#campusmap">
+<img src="assets/campus-map.jpg" alt="Campus Map"
+     width="300" usemap="#campusmap">
 
 <map name="campusmap">
     <area shape="rect" coords="10,20,120,90"
@@ -30,5 +31,6 @@ textarea { vertical-align: top; }
     <area shape="circle" coords="200,80,40"
           href="lab.html" alt="ICT Lab">
 </map>
+
 </body>
 </html>

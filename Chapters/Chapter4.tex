@@ -1120,21 +1120,37 @@ HTML source code is written in a text editor, saved as an HTML file, and interpr
 
 \section{Headings, Paragraphs and Line Breaks}
 
+This lesson covers the basic tags used to organize text into headings, paragraphs, visible line breaks and simple separators. These tags are small, but they control how readable a webpage becomes.
+
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.6cm}|C{3.2cm}|C{3.2cm}|L{6.9cm}|}
+\longtableheader{4}{Tags and Attributes Used in This Lesson}{%
+\tblcolhdcell{Tag / Entity} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\texttt{<h1>}--\texttt{<h6>} & \texttt{--} & \texttt{--} & Creates heading levels. \texttt{h1} is the largest/main heading and \texttt{h6} is the smallest heading. \\ \tblhline
+\multirow[c]{5}{*}{\texttt{<p>}} & \texttt{--} & \texttt{--} & Creates a paragraph block. \\ \cline{2-4}
+ & \multirow[c]{4}{*}{\texttt{align}} & \texttt{left} & Aligns paragraph text to the left. \\ \cline{3-4}
+ &  & \texttt{center} & Aligns paragraph text to the center. \\ \cline{3-4}
+ &  & \texttt{right} & Aligns paragraph text to the right. \\ \cline{3-4}
+ &  & \texttt{justify} & Aligns paragraph text evenly on both left and right sides. \\ \tblhline
+\texttt{<br>} & \texttt{--} & \texttt{--} & Creates a manual line break inside text. \\ \tblhline
+\multirow[c]{9}{*}{\texttt{<hr>}} & \texttt{--} & \texttt{--} & Creates a horizontal line. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{align}} & \texttt{left} & Places the horizontal line on the left. \\ \cline{3-4}
+ &  & \texttt{center} & Places the horizontal line in the center. \\ \cline{3-4}
+ &  & \texttt{right} & Places the horizontal line on the right. \\ \cline{2-4}
+ & \multirow[c]{2}{*}{\texttt{width}} & pixel value & Sets a fixed line length, such as \texttt{200}. \\ \cline{3-4}
+ &  & percentage value & Sets a relative line length, such as \texttt{60\%}. \\ \cline{2-4}
+ & \texttt{size} & pixel value & Sets the line thickness. \\ \cline{2-4}
+ & \multirow[c]{2}{*}{\texttt{color}} & color name & Sets the line color using a named color, such as \texttt{blue}. \\ \cline{3-4}
+ &  & color code & Sets the line color using a code, such as \texttt{\#0000ff}. \\ \tblhline
+\texttt{\&nbsp;} & \texttt{--} & \texttt{--} & Creates one visible non-breaking space. \\ \tblhline
+\tblbottomrule
+\caption{Main tags, attributes and values for headings, paragraphs and line breaks}
+\end{longtable}
+
 \subsection{Heading Elements}
 HTML provides six heading levels from \texttt{h1} to \texttt{h6}. Headings are container elements and should be used to show document structure.
-
-\begin{longtable}{|C{2cm}|L{7cm}|}
-\longtableheader{2}{HTML Heading Tags}{%
-\tblcolhdcell{Tag} & \tblcolhdcell{Use}}
-\texttt{<h1>} & Largest and most important heading. \\ \tblhline
-\texttt{<h2>} & Second-level heading. \\ \tblhline
-\texttt{<h3>} & Third-level heading. \\ \tblhline
-\texttt{<h4>} & Fourth-level heading. \\ \tblhline
-\texttt{<h5>} & Fifth-level heading. \\ \tblhline
-\texttt{<h6>} & Smallest heading. \\ \tblhline
-\tblbottomrule
-\caption{Heading elements in HTML}
-\end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Heading Levels}]
 <h1>Dhaka Govt. College</h1>
@@ -1150,13 +1166,6 @@ HTML provides six heading levels from \texttt{h1} to \texttt{h6}. Headings are c
 
 \subsection{Paragraph, Break, Horizontal Rule and Spacing}
 Normal paragraph text in HTML does not preserve every space, tab or Enter key from the source code. The browser reads the structure from tags, then displays the content according to HTML rules.
-
-\begin{itemize}
-    \item \texttt{<p>...</p>} creates a paragraph.
-    \item \texttt{<br>} or \texttt{<br/>} creates a line break inside text.
-    \item \texttt{<hr>} or \texttt{<hr/>} creates a horizontal line.
-    \item \texttt{\&nbsp;} creates a visible non-breaking space.
-\end{itemize}
 
 \subsubsection{Basic Paragraph and Line Break}
 This example uses \texttt{p} for paragraph structure and \texttt{br} for manual line breaks. The paragraph tag creates a block of text, while \texttt{br} moves the next text to a new line without starting a new paragraph.
@@ -1393,12 +1402,20 @@ The old \texttt{font} tag was used to control font face, color and size. It is e
 \]
 \end{formulabox}
 
-\begin{longtable}{|C{2.5cm}|L{14cm}|}
-\longtableheader{2}{Old Font Tag Attributes}{%
-\tblcolhdcell{Attribute} & \tblcolhdcell{Use}}
-\texttt{face} & Sets font type or font family. Example: \texttt{face="Verdana"}. \\ \tblhline
-\texttt{color} & Sets font color using name, RGB or hexadecimal color. \\ \tblhline
-\texttt{size} & Sets font size. Old HTML size values are usually from \texttt{1} to \texttt{7}; default is \texttt{3}. Relative values such as \texttt{+1} and \texttt{-1} may also appear. \\ \tblhline
+In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
+
+\begin{longtable}{|C{2.6cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Old Font Tag Attributes and Values}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{8}{*}{\texttt{<font>}} & \texttt{--} & \texttt{--} & Displays the enclosed text using default browser style. \\ \cline{2-4}
+ & \texttt{face} & font name & Sets the font family, such as \texttt{Arial}, \texttt{Verdana} or old Bangla font names. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{color}} & color name & Sets text color using a named color, such as \texttt{red}. \\ \cline{3-4}
+ &  & RGB value & Sets text color using RGB format, such as \texttt{rgb(255,0,0)}. \\ \cline{3-4}
+ &  & hex code & Sets text color using hexadecimal format, such as \texttt{\#FF0000}. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{size}} & \texttt{1}--\texttt{7} & Sets old HTML font size; \texttt{3} is the usual default. \\ \cline{3-4}
+ &  & \texttt{+1}, \texttt{+2} & Makes text larger than the current/default size. \\ \cline{3-4}
+ &  & \texttt{-1}, \texttt{-2} & Makes text smaller than the current/default size. \\ \tblhline
 \tblbottomrule
 \caption{Attributes of the old font tag}
 \end{longtable}
@@ -1478,8 +1495,28 @@ Bangla text may appear in older books using old font names such as \texttt{Suton
 \end{browseroutputcompact}
 
 
-\subsection{Marquee}
+\section{Marquee}
 The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam/reference only, not modern practice.
+
+\begin{longtable}{|C{2.6cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\longtableheader{4}{Old Marquee Attributes and Values}{%
+\tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
+\hiderowcolors
+\multirow[c]{12}{*}{\texttt{<marquee>}} & \texttt{--} & \texttt{--} & Creates scrolling text using default movement. \\ \cline{2-4}
+ & \multirow[c]{4}{*}{\texttt{direction}} & \texttt{left} & Moves text from right to left. \\ \cline{3-4}
+ &  & \texttt{right} & Moves text from left to right. \\ \cline{3-4}
+ &  & \texttt{up} & Moves text upward. \\ \cline{3-4}
+ &  & \texttt{down} & Moves text downward. \\ \cline{2-4}
+ & \multirow[c]{3}{*}{\texttt{behavior}} & \texttt{scroll} & Keeps scrolling continuously. \\ \cline{3-4}
+ &  & \texttt{slide} & Moves once and then stops. \\ \cline{3-4}
+ &  & \texttt{alternate} & Moves back and forth between sides. \\ \cline{2-4}
+ & \texttt{scrollamount} & number & Controls movement speed; a larger number usually moves faster. \\ \cline{2-4}
+ & \texttt{scrolldelay} & number & Controls delay between movements; a larger number usually moves slower. \\ \cline{2-4}
+ & \texttt{loop} & number & Controls how many times the text scrolls. \\ \cline{2-4}
+ & \texttt{bgcolor} & color value & Sets the marquee background color. \\ \tblhline
+\tblbottomrule
+\caption{Attributes of the old marquee tag}
+\end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Marquee Variations}]
 <marquee direction="right">Moving right</marquee>
@@ -1877,13 +1914,13 @@ Can be used as graphical navigation links. & Too many images can make a page slo
 \end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Image with Size and Tooltip}]
-<img src="campus.jpg" alt="College campus"
-     width="400" height="250" title="Campus Image">
+<img src="assets/campus.jpg" alt="College campus"
+     width="300" height="180" title="Campus Image">
 \end{lstlisting}
 
 \textbf{Browser Output}
 \begin{browseroutputcompact}{Image with Size and Tooltip}{http://127.0.0.1:3000/listing-29-image-with-size-and-tooltip.html}
-    \includegraphics[width=\linewidth]{html_outputs/listing-29-image-with-size-and-tooltip.pdf}
+    \includegraphics[width=\linewidth]{html_outputs/listing-29-image-with-size-and-tooltip-local.pdf}
 \end{browseroutputcompact}
 
 
@@ -1898,10 +1935,11 @@ Can be used as graphical navigation links. & Too many images can make a page slo
 Image loading depends on the path written in \texttt{src}. If the path is wrong, the image will not load and the browser may show the alternate text.
 
 \begin{lstlisting}[style=htmlide, caption={Image Path Variations}]
-<img src="photo.jpg" alt="Same folder image">
-<img src="images/photo.jpg" alt="Image inside folder">
-<img src="../photo.jpg" alt="Image in parent folder">
-<img src="wrong-name.jpg" alt="This image path is wrong">
+<img src="assets/photo.jpg" alt="Local image" width="140">
+<img src="assets/images/photo.jpg" alt="Folder image" width="140">
+<img src="https://www.w3.org/Icons/w3c_home.png"
+     alt="Online image" width="72">
+<img src="wrong-name.jpg" alt="This image path is wrong" width="140">
 \end{lstlisting}
 
 \textbf{Browser Output}
@@ -1921,11 +1959,11 @@ Image loading depends on the path written in \texttt{src}. If the path is wrong,
 Older HTML examples may use image spacing and border attributes. These are exam/reference only; modern pages use CSS.
 
 \begin{lstlisting}[style=htmlide, caption={Old Image Attributes}]
-<img src="logo.jpg" alt="Logo" align="left"
-     hspace="20" vspace="10" border="2">
+<img src="assets/spacing-demo.png" alt="Spacing Demo"
+     width="90" align="left" hspace="20" vspace="10" border="2">
 
 <a href="home.html">
-    <img src="home.jpg" alt="Home" border="0">
+    <img src="assets/campus.jpg" alt="Home" width="120" border="0">
 </a>
 \end{lstlisting}
 
@@ -1945,7 +1983,7 @@ Older HTML examples may use image spacing and border attributes. These are exam/
 \subsection{Clickable Image}
 \begin{lstlisting}[style=htmlide, caption={Image Link}]
 <a href="https://www.educationboard.gov.bd">
-    <img src="logo.jpg" alt="Education Board" width="200">
+    <img src="assets/link-image.png" alt="Education Board" width="180">
 </a>
 \end{lstlisting}
 
@@ -1973,7 +2011,8 @@ An image map makes selected areas of one image clickable. It uses the \texttt{ma
 \end{longtable}
 
 \begin{lstlisting}[style=htmlide, caption={Image Map Example}]
-<img src="campus-map.jpg" alt="Campus Map" usemap="#campusmap">
+<img src="assets/campus-map.jpg" alt="Campus Map"
+     width="300" usemap="#campusmap">
 
 <map name="campusmap">
     <area shape="rect" coords="10,20,120,90"
@@ -2000,11 +2039,11 @@ Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add 
 
 \begin{lstlisting}[style=htmlide, caption={Audio and Video Example}]
 <audio controls>
-    <source src="lecture.mp3" type="audio/mpeg">
+    <source src="assets/sample-audio.wav" type="audio/wav">
 </audio>
 
-<video controls width="400">
-    <source src="lesson.mp4" type="video/mp4">
+<video controls width="320" height="180" poster="assets/video-poster.jpg">
+    <source src="assets/sample-video.mp4" type="video/mp4">
 </video>
 \end{lstlisting}
 
@@ -2018,7 +2057,7 @@ Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add 
 The \texttt{iframe} tag displays another webpage or resource inside the current webpage. It is commonly used for embedded maps, videos or external pages.
 
 \begin{lstlisting}[style=htmlide, caption={Iframe Example}]
-<iframe src="notice.html" width="500" height="250">
+<iframe src="01-basic-skeleton.html" width="360" height="160">
 </iframe>
 \end{lstlisting}
 
