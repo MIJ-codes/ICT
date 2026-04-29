@@ -483,6 +483,7 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm080
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0600.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
@@ -502,7 +503,6 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm050
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt0800.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt0800.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt0800.tfm
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0600.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0900.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt0900.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
@@ -520,6 +520,13 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.st
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecit1000.tfm
+INPUT .\html_outputs\01-basic-skeleton.png
+INPUT .\html_outputs\01-basic-skeleton.png
+INPUT html_outputs\01-basic-skeleton.png
+INPUT .\html_outputs\01-basic-skeleton.png
+INPUT .\html_outputs\01-basic-skeleton.png
+INPUT .\html_outputs\01-basic-skeleton.png
+INPUT .\html_outputs\01-basic-skeleton.png
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -563,6 +570,8 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\s
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1095.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfti1095.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfti1095.pfb
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt0800.pfb
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt0800.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt0900.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt0900.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sftt1000.pfb

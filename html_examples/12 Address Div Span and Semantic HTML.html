@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Div, Span, Address and Semantic HTML</title>
+
+    <!-- WHAT: style is used only to make the examples visually clear. -->
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        header, nav, main, section, article, aside, footer {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Div, Span, Address and Semantic HTML</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. DIV TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Div Tag</h2>
+
+    <!-- WHAT: div is a block-level generic container.
+         WHY: It groups larger parts of content when no special semantic tag fits.
+         EFFECT: It starts on a new line and takes full available width. -->
+    <div class="box">
+        <p>This content is inside a div.</p>
+        <p>A div can contain paragraphs, headings, images, links, and other elements.</p>
+    </div>
+
+    <hr>
+
+    <!-- =========================================================
+         2. SPAN TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Span Tag</h2>
+
+    <!-- WHAT: span is an inline generic container.
+         WHY: It is used to style or mark a small part of text.
+         EFFECT: It does not start a new line. -->
+    <p>
+        HTML creates the <span class="highlight">structure</span> of a webpage.
+    </p>
+
+    <p>
+        This sentence has a <span style="color:red;">red word</span> inside normal text.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         3. DIFFERENCE BETWEEN DIV AND SPAN
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Div vs Span</h2>
+
+    <!-- WHAT: div creates a block area. -->
+    <div class="box">
+        This is a div. It creates a separate block.
+    </div>
+
+    <!-- WHAT: span stays inside the same line. -->
+    <p>
+        This is normal text and <span class="highlight">this is a span</span> inside the same line.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         4. ADDRESS TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Address Tag</h2>
+
+    <!-- WHAT: address stores contact information.
+         WHY: It gives meaning to author, owner, company, or contact details.
+         EFFECT: Browsers usually display address text in italic style. -->
+    <address>
+        Systech Digital Ltd.<br>
+        House # 7, Road # 31, Sector # 7<br>
+        Uttara, Dhaka<br>
+        Bangladesh<br>
+        Phone: 8962636<br>
+        E-mail: admin@systechdigital.com<br>
+        Web: www.systechdigital.com
+    </address>
+
+    <hr>
+
+    <!-- =========================================================
+         5. BASIC SEMANTIC TAGS
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. Basic Semantic Tags</h2>
+
+    <!-- WHAT: header represents the top/header area of a page or section. -->
+    <header>
+        <h3>Website Header</h3>
+        <p>This area usually contains logo, title, or heading.</p>
+    </header>
+
+    <!-- WHAT: nav represents navigation links. -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- WHAT: main represents the main content of the page.
+         RULE: A page should usually have only one main element. -->
+    <main>
+        <!-- WHAT: section groups related content under a topic. -->
+        <section>
+            <h3>Section Title</h3>
+            <p>This section contains related information about one topic.</p>
+        </section>
+
+        <!-- WHAT: article represents independent content.
+             USE: Blog post, news article, notice, or standalone writing. -->
+        <article>
+            <h3>Article Title</h3>
+            <p>This article can stand independently from the rest of the page.</p>
+        </article>
+
+        <!-- WHAT: aside represents side content.
+             USE: Sidebar, extra note, related links, advertisement, or tip. -->
+        <aside>
+            <h3>Side Note</h3>
+            <p>This is extra content related to the main content.</p>
+        </aside>
+    </main>
+
+    <!-- WHAT: footer represents the bottom/footer area of a page or section. -->
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    <hr>
+
+    <!-- =========================================================
+         6. COMBINED PAGE STRUCTURE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Combined Semantic HTML Layout</h2>
+
+    <!-- WHAT: header contains website title or logo area. -->
+    <header>
+        <h1>My Website</h1>
+        <p>A simple semantic HTML page.</p>
+    </header>
+
+    <!-- WHAT: nav contains navigation links. -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- WHAT: main contains the main visible content. -->
+    <main>
+        <!-- WHAT: section groups content by topic. -->
+        <section>
+            <h2>About HTML</h2>
+
+            <!-- WHAT: div groups content for layout or styling. -->
+            <div class="box">
+                <p>
+                    HTML creates the <span class="highlight">structure</span> of a webpage.
+                </p>
+                <p>
+                    CSS controls the design, and JavaScript adds interactivity.
+                </p>
+            </div>
+        </section>
+
+        <!-- WHAT: article contains independent content. -->
+        <article>
+            <h2>Article Title</h2>
+            <p>This article is a separate piece of content inside the webpage.</p>
+        </article>
+
+        <!-- WHAT: aside contains related but extra information. -->
+        <aside>
+            <h2>Related Links</h2>
+            <p>Learn more about HTML tags, attributes, and semantic layout.</p>
+        </aside>
+
+        <!-- WHAT: address contains contact information. -->
+        <address>
+            Systech Digital Ltd.<br>
+            House # 7, Road # 31, Sector # 7<br>
+            Uttara, Dhaka<br>
+            Bangladesh<br>
+            Phone: 8962636<br>
+            E-mail: admin@systechdigital.com<br>
+            Web: www.systechdigital.com
+        </address>
+    </main>
+
+    <!-- WHAT: footer contains copyright or bottom information. -->
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    <!-- SUMMARY:
+         - <div> is a block-level generic container.
+         - <span> is an inline generic container.
+         - <address> stores contact information.
+         - Semantic tags describe the meaning of page parts.
+         - <header> is used for top/title area.
+         - <nav> is used for navigation links.
+         - <main> is used for main page content.
+         - <section> groups related content.
+         - <article> contains independent content.
+         - <aside> contains side or extra content.
+         - <footer> is used for bottom/copyright area.
+         - Use semantic tags when the content has clear meaning.
+         - Use div and span when no specific semantic tag fits. -->
+</body>
+</html>

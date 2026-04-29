@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Programming, Object and Script Tags</title>
+
+    <!-- WHAT: script can also be written inside the head.
+         WHY: JavaScript can be loaded before the body content.
+         NOTE: defer means the script waits until the HTML is loaded. -->
+    <script defer>
+        console.log("JavaScript from the head section.");
+    </script>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Programming, Object and Script Tags</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. SCRIPT TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Script Tag</h2>
+
+    <!-- WHAT: script adds JavaScript to a webpage.
+         WHY: JavaScript is used to make webpages interactive.
+         EFFECT: Browser runs the JavaScript code. -->
+    <script>
+        document.write("This text was written by JavaScript.");
+    </script>
+
+    <!-- WHAT: script can change webpage content. -->
+    <p id="message">This paragraph will be changed by JavaScript.</p>
+
+    <script>
+        document.getElementById("message").innerHTML = "This paragraph was changed by JavaScript.";
+    </script>
+
+    <hr>
+
+    <!-- =========================================================
+         2. SCRIPT WITH BUTTON
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. JavaScript with Button</h2>
+
+    <!-- WHAT: button creates a clickable button.
+         ATTRIBUTE: onclick runs JavaScript when the button is clicked. -->
+    <button onclick="document.getElementById('demo').innerHTML = 'Button was clicked.'">
+        Click Me
+    </button>
+
+    <!-- WHAT: This paragraph will show the result after button click. -->
+    <p id="demo">Result will appear here.</p>
+
+    <hr>
+
+    <!-- =========================================================
+         3. NOSCRIPT TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Noscript Tag</h2>
+
+    <!-- WHAT: noscript shows fallback content.
+         WHY: Some browsers may not support JavaScript, or JavaScript may be turned off.
+         EFFECT: This message appears only when scripts cannot run. -->
+    <noscript>
+        Your browser does not support JavaScript or JavaScript is turned off.
+    </noscript>
+
+    <hr>
+
+    <!-- =========================================================
+         4. OBJECT TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Object Tag</h2>
+
+    <!-- WHAT: object embeds an external resource inside the webpage.
+         ATTRIBUTE: data gives the resource path.
+         ATTRIBUTE: type tells the browser what kind of resource it is.
+         ATTRIBUTE: width and height set the display size.
+         EFFECT: Browser tries to show the PDF inside the page. -->
+    <object data="sample.pdf" type="application/pdf" width="400" height="250">
+        PDF file could not be displayed.
+    </object>
+
+    <hr>
+
+    <!-- =========================================================
+         5. PARAM TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. Param Tag</h2>
+
+    <!-- WHAT: param gives extra settings to an object or old applet.
+         ATTRIBUTE: name stores the setting name.
+         ATTRIBUTE: value stores the setting value.
+         NOTE: Many modern browsers do not use param much now. -->
+    <object data="sample.pdf" type="application/pdf" width="400" height="250">
+        <param name="src" value="sample.pdf">
+        <param name="autoplay" value="false">
+        PDF file could not be displayed.
+    </object>
+
+    <hr>
+
+    <!-- =========================================================
+         6. APPLET TAG
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Old Applet Tag</h2>
+
+    <!-- WHAT: pre displays code exactly as written.
+         WHY: applet is deprecated, so it is shown as reference code only. -->
+    <pre>
+&lt;applet code="Example.class" width="300" height="200"&gt;
+    &lt;param name="message" value="Hello"&gt;
+&lt;/applet&gt;
+    </pre>
+
+    <!-- WHAT: applet was used to embed old Java applets.
+         NOTE: applet is deprecated and should not be used in modern websites.
+         IMPORTANT: JavaScript and Java applets are not the same thing. -->
+
+    <hr>
+
+    <!-- =========================================================
+         7. COMBINED EXAMPLE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>7. Combined Example</h2>
+
+    <!-- WHAT: This button uses JavaScript to change text. -->
+    <button onclick="document.getElementById('combinedText').innerHTML = 'JavaScript changed this text.'">
+        Run JavaScript
+    </button>
+
+    <p id="combinedText">
+        This text will change after clicking the button.
+    </p>
+
+    <!-- WHAT: noscript gives fallback if JavaScript does not work. -->
+    <noscript>
+        JavaScript is not available, so the button example may not work.
+    </noscript>
+
+    <!-- WHAT: object embeds a PDF/resource in the page. -->
+    <object data="sample.pdf" type="application/pdf" width="400" height="250">
+        <param name="src" value="sample.pdf">
+        PDF file could not be displayed.
+    </object>
+
+    <hr>
+
+    <!-- SUMMARY:
+         - <script> runs JavaScript.
+         - JavaScript can write text, change HTML content, and respond to clicks.
+         - <noscript> shows fallback content when JavaScript cannot run.
+         - <object> embeds external resources such as PDF files.
+         - <param> gives extra settings to object or old applet content.
+         - <applet> was used for old Java applets and is now deprecated.
+         - JavaScript is not the same as Java applet. -->
+</body>
+</html>

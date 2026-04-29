@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Images, Paths, Sizing and Maps</title>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Images, Paths, Sizing and Maps</h1>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Basic Image</h2>
+
+    <!-- WHAT: img displays an image.
+         ATTRIBUTE: src stores the image file path.
+         ATTRIBUTE: alt gives alternative text if the image cannot load.
+         ATTRIBUTE: width and height set image size in pixels. -->
+    <img src="anime-moon-landscape.jpg" alt="Anime moon landscape image" width="750" height="332">
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Width and Height</h2>
+
+    <!-- WHAT: width controls image width.
+         WHAT: height controls image height.
+         EFFECT: The image is shown using the given pixel size. -->
+    <img src="ocean.jpg" alt="Ocean image" width="415" height="332">
+
+    <!-- WHAT: style can also control image size using CSS.
+         EFFECT: This image width becomes 300px and height adjusts automatically. -->
+    <img src="ocean.jpg" alt="Ocean image using CSS width" style="width:300px; height:auto;">
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Image File Types</h2>
+
+    <!-- WHAT: JPG/JPEG is commonly used for photos. -->
+    <p>JPG image example:</p>
+    <img src="anime-moon-landscape.jpg" alt="JPG image example" width="300">
+
+    <!-- WHAT: PNG is commonly used for sharp graphics or transparent images. -->
+    <p>PNG image example:</p>
+    <img src="sample.png" alt="PNG image example" width="300">
+
+    <!-- WHAT: GIF can contain animation.
+         EFFECT: The image may move if the GIF file is animated. -->
+    <p>Moving GIF example:</p>
+    <img src="hackanm.gif" alt="Moving GIF image" width="48" height="48">
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Broken Image and Alt Text</h2>
+
+    <!-- WHAT: This image path is intentionally wrong.
+         WHY: It shows what happens when src cannot find the image.
+         EFFECT: Browser shows broken image behavior and may show alt text. -->
+    <img src="missing-boat.gif" alt="Big Boat">
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. Image Paths</h2>
+
+    <!-- WHAT: code displays file paths as code-style text. -->
+    <p>Same folder path: <code>boat.gif</code></p>
+
+    <!-- WHAT: Folder path means the image is inside another folder. -->
+    <p>Folder path: <code>images/boat.gif</code></p>
+
+    <!-- WHAT: Parent folder path uses ../ to go one folder up. -->
+    <p>Parent folder path: <code>../boat.gif</code></p>
+
+    <!-- WHAT: Full URL path loads image from an online address. -->
+    <p>Full URL path: <code>http://www.systechdigital.com/images/boat.gif</code></p>
+
+    <!-- WHAT: Image from same folder.
+         EFFECT: Browser looks for boat.gif beside this HTML file. -->
+    <img src="boat.gif" alt="Boat from same folder" width="200">
+
+    <!-- WHAT: Image from folder.
+         EFFECT: Browser looks inside the images folder. -->
+    <img src="images/boat.gif" alt="Boat from images folder" width="200">
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Image as a Link</h2>
+
+    <!-- WHAT: a creates a link.
+         WHAT: img inside a makes the image clickable.
+         EFFECT: Clicking the image opens the href destination. -->
+    <a href="https://www.example.com" target="_blank">
+        <img src="anime-moon-landscape.jpg" alt="Clickable image" width="300">
+    </a>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>7. Image Map</h2>
+
+    <!-- WHAT: usemap connects this image with a map.
+         ATTRIBUTE: usemap value must match the map name with # before it. -->
+    <img src="image-map.jpg" alt="Clickable image map example" width="300" height="180" usemap="#lessonmap">
+
+    <!-- WHAT: map stores clickable regions for an image.
+         ATTRIBUTE: name connects the map with usemap="#lessonmap". -->
+    <map name="lessonmap">
+        <!-- WHAT: area defines one clickable region.
+             ATTRIBUTE: shape="rect" creates rectangular area.
+             ATTRIBUTE: coords gives x1,y1,x2,y2 positions.
+             ATTRIBUTE: href gives the link destination.
+             ATTRIBUTE: alt describes the clickable area. -->
+        <area shape="rect" coords="0,0,150,180" href="links.html" alt="Links lesson">
+
+        <!-- WHAT: This is another rectangular clickable area. -->
+        <area shape="rect" coords="151,0,300,180" href="images.html" alt="Images lesson">
+    </map>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>8. Area Shape Types</h2>
+
+    <!-- WHAT: rect means rectangular clickable area. -->
+    <p><code>shape="rect"</code> uses coordinates: <code>x1,y1,x2,y2</code></p>
+
+    <!-- WHAT: circle means circular clickable area. -->
+    <p><code>shape="circle"</code> uses coordinates: <code>x,y,radius</code></p>
+
+    <!-- WHAT: poly means polygon clickable area. -->
+    <p><code>shape="poly"</code> uses coordinates: <code>x1,y1,x2,y2,x3,y3...</code></p>
+
+    <hr>
+
+    <!-- SUMMARY:
+         - <img> displays an image.
+         - src gives the image location.
+         - alt gives backup/description text.
+         - width and height control image size.
+         - Images can use same-folder, folder, parent-folder, or full URL paths.
+         - GIF can show animation.
+         - An image can be made clickable by placing it inside <a>.
+         - usemap connects an image to a <map>.
+         - <area> creates clickable regions inside an image map.
+         - Common area shapes are rect, circle, and poly. -->
+</body>
+</html>

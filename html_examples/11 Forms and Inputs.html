@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Forms and Inputs</title>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Forms and Inputs</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. FORM BASIC STRUCTURE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Basic Form Structure</h2>
+
+    <!-- WHAT: form groups input fields.
+         WHY: Forms collect user information.
+         ATTRIBUTE: action defines where form data will be sent.
+         ATTRIBUTE: method defines how data will be sent.
+         EFFECT: Browser can submit the entered data. -->
+    <form action="submit.html" method="post">
+        <!-- WHAT: label gives a name/title to an input field.
+             ATTRIBUTE: for connects the label with input id. -->
+        <label for="basicname">Name:</label>
+
+        <!-- WHAT: input creates an input field.
+             ATTRIBUTE: type="text" creates a single-line text box.
+             ATTRIBUTE: id connects with label for.
+             ATTRIBUTE: name is the submitted field name. -->
+        <input type="text" id="basicname" name="basicname">
+
+        <!-- WHAT: submit button sends the form data. -->
+        <input type="submit" value="Send">
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         2. TEXT AND PASSWORD INPUTS
+    ========================================================== -->
+
+    <h2>2. Text and Password Inputs</h2>
+
+    <form>
+        <!-- WHAT: type="text" accepts normal text.
+             ATTRIBUTE: placeholder shows hint text inside the input.
+             ATTRIBUTE: required means the field must be filled before submit. -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required>
+        <br><br>
+
+        <!-- WHAT: type="text" can also use value.
+             ATTRIBUTE: value gives a default input value. -->
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" value="Islam">
+        <br><br>
+
+        <!-- WHAT: type="password" hides typed characters.
+             WHY: Passwords should not be visible while typing. -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         3. INPUT FIELD ATTRIBUTES
+    ========================================================== -->
+
+    <h2>3. Common Input Attributes</h2>
+
+    <form>
+        <!-- WHAT: maxlength limits how many characters can be typed. -->
+        <label for="shortname">Maxlength Example:</label>
+        <input type="text" id="shortname" name="shortname" maxlength="10" placeholder="Max 10 letters">
+        <br><br>
+
+        <!-- WHAT: size controls the visible width of the input box. -->
+        <label for="boxsize">Size Example:</label>
+        <input type="text" id="boxsize" name="boxsize" size="30" placeholder="Bigger visible box">
+        <br><br>
+
+        <!-- WHAT: readonly means the value can be seen but not changed. -->
+        <label for="readonlyfield">Readonly Example:</label>
+        <input type="text" id="readonlyfield" name="readonlyfield" value="Cannot edit this" readonly>
+        <br><br>
+
+        <!-- WHAT: disabled means the field is inactive.
+             NOTE: Disabled input is usually not submitted with the form. -->
+        <label for="disabledfield">Disabled Example:</label>
+        <input type="text" id="disabledfield" name="disabledfield" value="Disabled field" disabled>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         4. RADIO BUTTONS
+    ========================================================== -->
+
+    <h2>4. Radio Buttons</h2>
+
+    <form>
+        <!-- WHAT: radio button creates one-choice selection.
+             RULE: Radio buttons with the same name belong to one group.
+             EFFECT: Only one option can be selected from the group. -->
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="othergender" name="gender" value="other">
+        <label for="othergender">Other</label>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         5. CHECKBOXES
+    ========================================================== -->
+
+    <h2>5. Checkboxes</h2>
+
+    <form>
+        <!-- WHAT: checkbox creates an on/off option.
+             WHY: Checkboxes are used when multiple answers can be selected. -->
+        <p>IT Experience:</p>
+
+        <input type="checkbox" id="hardware" name="experience" value="Hardware Expert">
+        <label for="hardware">Hardware Expert</label>
+
+        <input type="checkbox" id="software" name="experience" value="Software Expert">
+        <label for="software">Software Expert</label>
+
+        <input type="checkbox" id="graphic" name="experience" value="Graphic Designer">
+        <label for="graphic">Graphic Designer</label>
+
+        <input type="checkbox" id="network" name="experience" value="Network Expert">
+        <label for="network">Network Expert</label>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         6. SELECT, OPTION, AND OPTGROUP
+    ========================================================== -->
+
+    <h2>6. Drop-down List</h2>
+
+    <form>
+        <!-- WHAT: select creates a drop-down list.
+             ATTRIBUTE: name is the submitted field name. -->
+        <label for="department">Department:</label>
+
+        <select id="department" name="department">
+            <!-- WHAT: optgroup groups related options.
+                 WHY: Long option lists become easier to understand. -->
+            <optgroup label="Engineering">
+                <!-- WHAT: option creates one item inside a select list.
+                     ATTRIBUTE: value is the submitted value. -->
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="Power">Power</option>
+            </optgroup>
+
+            <optgroup label="Health">
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Public Health">Public Health</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         7. TEXTAREA
+    ========================================================== -->
+
+    <h2>7. Textarea</h2>
+
+    <form>
+        <!-- WHAT: textarea creates a multi-line text box.
+             WHY: Used for comments, messages, addresses, or long answers.
+             ATTRIBUTE: rows controls height.
+             ATTRIBUTE: cols controls width. -->
+        <label for="comment">Comment:</label>
+        <br>
+        <textarea id="comment" name="comment" rows="5" cols="40" placeholder="Write your comment here"></textarea>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         8. BUTTONS
+    ========================================================== -->
+
+    <h2>8. Form Buttons</h2>
+
+    <form>
+        <!-- WHAT: submit sends form data. -->
+        <input type="submit" value="Submit">
+
+        <!-- WHAT: reset clears the form fields. -->
+        <input type="reset" value="Reset">
+
+        <!-- WHAT: button creates a normal clickable button.
+             NOTE: It does not submit unless JavaScript is added. -->
+        <input type="button" value="Normal Button">
+
+        <!-- WHAT: button tag also creates a button.
+             DIFFERENCE: It can contain text or other HTML content. -->
+        <button type="button">Button Tag</button>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         9. FIELDSET AND LEGEND
+    ========================================================== -->
+
+    <h2>9. Fieldset and Legend</h2>
+
+    <form>
+        <!-- WHAT: fieldset groups related form controls.
+             EFFECT: Browser draws a box around the group. -->
+        <fieldset>
+            <!-- WHAT: legend gives a title to the fieldset. -->
+            <legend>Login Information</legend>
+
+            <label for="loginuser">Username:</label>
+            <input type="text" id="loginuser" name="loginuser">
+            <br><br>
+
+            <label for="loginpass">Password:</label>
+            <input type="password" id="loginpass" name="loginpass">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         10. OLD EXAM-STYLE TAG
+    ========================================================== -->
+
+    <h2>10. Old Exam-style Form Tag</h2>
+
+    <form>
+        <!-- WHAT: isindex is an old single-line input tag.
+             NOTE: Deprecated. Modern HTML uses input type="search" or input type="text". -->
+        Search: <isindex prompt="Search: ">
+    </form>
+
+    <hr>
+
+    <!-- =========================================================
+         11. COMBINED FULL FORM
+    ========================================================== -->
+
+    <h2>11. Combined Student Form</h2>
+
+    <!-- WHAT: This form combines many form tags and attributes together.
+         ATTRIBUTE: align is old/deprecated. It is used here because older textbooks show it. -->
+    <form action="submit.html" method="post" align="center">
+        <fieldset>
+            <legend>Student Form</legend>
+
+            <!-- WHAT: table is used here to arrange form fields.
+                 NOTE: Older textbooks often use table layout for forms. -->
+            <table align="center" border="1" style="width:700px">
+                <tr>
+                    <td><label for="student_firstname">First Name</label></td>
+                    <td>
+                        <input type="text" id="student_firstname" name="firstname" placeholder="First name" required>
+                    </td>
+
+                    <td><label for="student_lastname">Last Name</label></td>
+                    <td>
+                        <input type="text" id="student_lastname" name="lastname" placeholder="Last name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="student_user">Username</label></td>
+                    <td>
+                        <input type="text" id="student_user" name="username" maxlength="20">
+                    </td>
+
+                    <td><label for="student_password">Password</label></td>
+                    <td>
+                        <input type="password" id="student_password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td colspan="3">
+                        <input type="radio" id="student_male" name="gender" value="male">
+                        <label for="student_male">Male</label>
+
+                        <input type="radio" id="student_female" name="gender" value="female">
+                        <label for="student_female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Religion</td>
+                    <td colspan="3">
+                        <input type="checkbox" id="student_muslim" name="religion" value="Muslim">
+                        <label for="student_muslim">Muslim</label>
+
+                        <input type="checkbox" id="student_otherreligion" name="religion" value="Others">
+                        <label for="student_otherreligion">Others</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>IT Experience</td>
+                    <td colspan="3">
+                        <input type="checkbox" id="student_hardware" name="experience" value="Hardware Expert">
+                        <label for="student_hardware">Hardware Expert</label>
+
+                        <input type="checkbox" id="student_software" name="experience" value="Software Expert">
+                        <label for="student_software">Software Expert</label>
+
+                        <input type="checkbox" id="student_graphic" name="experience" value="Graphic Designer">
+                        <label for="student_graphic">Graphic Designer</label>
+
+                        <input type="checkbox" id="student_network" name="experience" value="Network Expert">
+                        <label for="student_network">Network Expert</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="student_department">Department</label></td>
+                    <td colspan="3">
+                        <select id="student_department" name="department">
+                            <optgroup label="Engineering">
+                                <option value="CSE">CSE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="Power">Power</option>
+                            </optgroup>
+
+                            <optgroup label="Health">
+                                <option value="Pharmacy">Pharmacy</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="student_comment">Comment</label></td>
+                    <td colspan="3">
+                        <textarea id="student_comment" name="comment" rows="4" cols="40" placeholder="Write your comment"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <button type="button">Button Tag</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <!-- SUMMARY:
+         - form groups user input fields.
+         - action defines where form data is sent.
+         - method defines how form data is sent.
+         - label names input fields.
+         - input creates different input controls.
+         - type="text" accepts normal text.
+         - type="password" hides typed text.
+         - radio is used for one choice.
+         - checkbox is used for multiple choices.
+         - select, optgroup, and option create drop-down lists.
+         - textarea creates a multi-line input box.
+         - fieldset and legend group related form controls.
+         - submit sends data, reset clears data, button creates a normal button.
+         - name and value are important because form data is submitted as name=value pairs. -->
+</body>
+</html>

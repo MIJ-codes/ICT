@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding.
+         WHY: UTF-8 supports normal text, symbols, and most languages. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport makes the page fit mobile and desktop screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Final Mini Webpage</title>
+
+    <!-- WHAT: style contains internal CSS.
+         WHY: Internal CSS can style the whole page from one place. -->
+    <style>
+        /* WHAT: body styles the whole visible page. */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* WHAT: header and footer share the same dark design. */
+        header,
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 16px;
+        }
+
+        /* WHAT: nav a styles the links inside navigation. */
+        nav a {
+            color: white;
+            margin-right: 12px;
+            text-decoration: none;
+        }
+
+        /* WHAT: hover changes link appearance when mouse is placed over it. */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* WHAT: main controls the main content area. */
+        main {
+            padding: 16px;
+        }
+
+        /* WHAT: card is a reusable design box. */
+        .card {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* WHAT: table styling makes table borders clean. */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #999999;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        /* WHAT: input and textarea styling makes form fields neat. */
+        input,
+        textarea {
+            padding: 6px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: header represents the top area of the webpage.
+         WHY: It usually contains website title and navigation. -->
+    <header>
+        <!-- WHAT: h1 creates the main page heading. -->
+        <h1>My Mini Webpage</h1>
+
+        <!-- WHAT: nav contains navigation links. -->
+        <nav>
+            <!-- WHAT: href="#about" jumps to the section with id="about". -->
+            <a href="#about">About</a>
+
+            <!-- WHAT: href="#skills" jumps to the skills section. -->
+            <a href="#skills">Skills</a>
+
+            <!-- WHAT: href="#routine" jumps to the routine/table section. -->
+            <a href="#routine">Routine</a>
+
+            <!-- WHAT: href="#contact" jumps to the contact form section. -->
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- WHAT: main contains the main content of the webpage.
+         RULE: A page should usually have one main element. -->
+    <main>
+        <!-- WHAT: section groups content about one topic.
+             ATTRIBUTE: id gives a unique target for navigation.
+             ATTRIBUTE: class applies the reusable card style. -->
+        <section id="about" class="card">
+            <!-- WHAT: h2 creates a section heading. -->
+            <h2>About Me</h2>
+
+            <!-- WHAT: p creates paragraph text. -->
+            <p>
+                I am learning HTML step by step. This mini webpage combines
+                structure, links, images, lists, tables, forms and CSS.
+            </p>
+
+            <!-- WHAT: img displays an image.
+                 ATTRIBUTE: src gives the image path.
+                 ATTRIBUTE: alt gives backup/description text.
+                 ATTRIBUTE: width and height control image size. -->
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg"
+                 alt="Mini webpage image"
+                 width="240"
+                 height="160">
+        </section>
+
+        <!-- WHAT: section groups the skills content. -->
+        <section id="skills" class="card">
+            <!-- WHAT: h2 creates a section heading. -->
+            <h2>Skills</h2>
+
+            <!-- WHAT: ul creates an unordered list. -->
+            <ul>
+                <!-- WHAT: li creates one list item. -->
+                <li>HTML document structure</li>
+                <li>Headings and paragraphs</li>
+                <li>Links and images</li>
+                <li>Lists and tables</li>
+                <li>Forms and inputs</li>
+                <li>Basic CSS styling</li>
+            </ul>
+        </section>
+
+        <!-- WHAT: section groups table content. -->
+        <section id="routine" class="card">
+            <!-- WHAT: h2 creates a section heading. -->
+            <h2>Study Routine</h2>
+
+            <!-- WHAT: table displays data in rows and columns. -->
+            <table>
+                <!-- WHAT: caption gives the table a title. -->
+                <caption>Weekly HTML Practice Plan</caption>
+
+                <!-- WHAT: tr creates a table row. -->
+                <tr>
+                    <!-- WHAT: th creates header cells. -->
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice</th>
+                </tr>
+
+                <tr>
+                    <!-- WHAT: td creates normal table cells. -->
+                    <td>Day 1</td>
+                    <td>Basic Structure</td>
+                    <td>Create a simple HTML page</td>
+                </tr>
+
+                <tr>
+                    <td>Day 2</td>
+                    <td>Links and Images</td>
+                    <td>Add navigation and image paths</td>
+                </tr>
+
+                <tr>
+                    <td>Day 3</td>
+                    <td>Forms and Tables</td>
+                    <td>Create a student form</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- WHAT: section groups contact form content. -->
+        <section id="contact" class="card">
+            <!-- WHAT: h2 creates a section heading. -->
+            <h2>Contact</h2>
+
+            <!-- WHAT: form collects user input. -->
+            <form action="submit.html" method="post">
+                <!-- WHAT: label gives a name to the input field.
+                     ATTRIBUTE: for connects label with input id. -->
+                <label for="name">Name:</label>
+                <br>
+
+                <!-- WHAT: input type="text" creates a single-line text box.
+                     ATTRIBUTE: id connects with label.
+                     ATTRIBUTE: name is used when submitting data.
+                     ATTRIBUTE: placeholder gives hint text. -->
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br>
+
+                <!-- WHAT: label for message textarea. -->
+                <label for="message">Message:</label>
+                <br>
+
+                <!-- WHAT: textarea creates a multi-line input box. -->
+                <textarea id="message" name="message" rows="4" cols="35" placeholder="Write your message"></textarea>
+                <br>
+
+                <!-- WHAT: submit button sends the form data. -->
+                <input type="submit" value="Submit">
+
+                <!-- WHAT: reset button clears the form fields. -->
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+
+    <!-- WHAT: footer represents the bottom area of the webpage.
+         WHY: It usually contains copyright or extra information. -->
+    <footer>
+        <!-- WHAT: p creates paragraph text. -->
+        <p>Created with HTML and CSS</p>
+    </footer>
+
+    <!-- SUMMARY:
+         - This page combines many HTML lessons.
+         - header, nav, main, section and footer create semantic structure.
+         - a links create navigation.
+         - img displays an image.
+         - ul and li create a list.
+         - table, tr, th and td create a table.
+         - form, label, input and textarea collect user input.
+         - CSS styles the whole page using selectors, classes and properties. -->
+</body>
+</html>

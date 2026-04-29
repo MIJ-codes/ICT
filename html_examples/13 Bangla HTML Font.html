@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <!-- WHAT: meta charset sets character encoding.
+         WHY: UTF-8 is needed for Unicode Bangla text.
+         EFFECT: Modern Bangla text displays correctly in the browser. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Bangla HTML Font</title>
+
+    <!-- WHAT: style is used for modern font formatting.
+         WHY: Modern HTML uses CSS instead of the old <font> tag. -->
+    <style>
+        .unicode-bangla {
+            font-family: "Noto Sans Bengali", "SolaimanLipi", "Kalpurush", sans-serif;
+            font-size: 22px;
+        }
+
+        .bangla-highlight {
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .old-ansi-note {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Bangla HTML Font</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. OLD ANSI BANGLA FONT
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Old ANSI Bangla Font</h2>
+
+    <!-- WHAT: font is an old/deprecated tag.
+         ATTRIBUTE: face selects the font family.
+         ATTRIBUTE: size controls old HTML font size.
+         WHY: Older Bangla examples often use ANSI fonts like SutonnyMJ.
+         EFFECT: This text displays correctly only if the matching ANSI font is installed. -->
+    <font face="SutonnyMJ" size="5">
+        D”P gv a¨wg KgwcDUvi wk¶v
+    </font>
+
+    <!-- WHAT: p creates a paragraph.
+         NOTE: This explains the old ANSI font problem. -->
+    <p class="old-ansi-note">
+        This is old ANSI Bangla text. It needs the correct font, such as SutonnyMJ, to display properly.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         2. UNICODE BANGLA TEXT
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Unicode Bangla Text</h2>
+
+    <!-- WHAT: This paragraph uses Unicode Bangla.
+         WHY: Unicode Bangla works with UTF-8 and does not depend on one old ANSI font.
+         EFFECT: The Bangla text displays correctly in modern browsers. -->
+    <p>আমি বাংলা শিখছি</p>
+
+    <!-- WHAT: Another Unicode Bangla paragraph. -->
+    <p>উচ্চ মাধ্যমিক তথ্য ও যোগাযোগ প্রযুক্তি</p>
+
+    <hr>
+
+    <!-- =========================================================
+         3. MODERN CSS FONT FAMILY
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Modern CSS Bangla Font</h2>
+
+    <!-- WHAT: class applies CSS from the style section.
+         EFFECT: This Bangla text uses the font-family set in CSS. -->
+    <p class="unicode-bangla">
+        বাংলা লেখার জন্য আধুনিক HTML-এ Unicode এবং UTF-8 ব্যবহার করা উচিত।
+    </p>
+
+    <!-- WHAT: style attribute adds inline CSS.
+         EFFECT: This Bangla text becomes green and larger. -->
+    <p style="font-family: SolaimanLipi, Kalpurush, sans-serif; color: green; font-size: 24px;">
+        এটি inline CSS ব্যবহার করে লেখা বাংলা টেক্সট।
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         4. BANGLA TEXT WITH FORMATTING TAGS
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Bangla Text Formatting</h2>
+
+    <!-- WHAT: b makes text bold. -->
+    <p><b>এটি bold বাংলা টেক্সট।</b></p>
+
+    <!-- WHAT: i makes text italic. -->
+    <p><i>এটি italic বাংলা টেক্সট।</i></p>
+
+    <!-- WHAT: u underlines text. -->
+    <p><u>এটি underline বাংলা টেক্সট।</u></p>
+
+    <!-- WHAT: mark highlights text. -->
+    <p>HTML শেখা <mark>খুব গুরুত্বপূর্ণ</mark>।</p>
+
+    <!-- WHAT: span marks a small inline part of text.
+         ATTRIBUTE: class applies CSS to only that part. -->
+    <p>
+        বাংলা ওয়েবপেজে <span class="bangla-highlight">Unicode</span> ব্যবহার করা ভালো।
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         5. LANGUAGE ATTRIBUTE
+    ========================================================== -->
+
+    <!-- WHAT: lang defines the language of an element.
+         WHY: It helps browsers, search engines, and screen readers.
+         EFFECT: This paragraph is marked as Bangla content. -->
+    <p lang="bn">
+        এই paragraph-এ lang="bn" ব্যবহার করা হয়েছে।
+    </p>
+
+    <!-- WHAT: lang="en" marks English text inside a Bangla page. -->
+    <p lang="en">
+        This is English text inside a Bangla HTML page.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         6. COMBINED EXAMPLE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Combined Bangla Font Example</h2>
+
+    <!-- WHAT: div groups related content together. -->
+    <div class="unicode-bangla">
+        <!-- WHAT: h3 creates a smaller heading. -->
+        <h3>বাংলা HTML উদাহরণ</h3>
+
+        <!-- WHAT: p creates a paragraph. -->
+        <p>
+            HTML ফাইলে বাংলা লেখার জন্য প্রথমে ফাইলটি UTF-8 encoding-এ save করতে হয়।
+        </p>
+
+        <!-- WHAT: p with formatting tags shows styled Bangla text. -->
+        <p>
+            <b>Unicode Bangla</b> আধুনিক ওয়েবপেজের জন্য সবচেয়ে ভালো পদ্ধতি।
+        </p>
+
+        <!-- WHAT: span styles only a small part of the sentence. -->
+        <p>
+            পুরনো ANSI font যেমন <span class="bangla-highlight">SutonnyMJ</span> শুধু নির্দিষ্ট font থাকলে ঠিকভাবে দেখা যায়।
+        </p>
+    </div>
+
+    <!-- SUMMARY:
+         - Old ANSI Bangla text needs matching fonts like SutonnyMJ.
+         - Unicode Bangla works with UTF-8.
+         - <meta charset="UTF-8"> is important for Unicode Bangla.
+         - The <font> tag is deprecated.
+         - Modern HTML should use CSS font-family instead of <font>.
+         - lang="bn" marks Bangla text.
+         - Unicode Bangla is better for modern websites. -->
+</body>
+</html>

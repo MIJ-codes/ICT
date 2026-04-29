@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Links and Head Links</title>
+
+    <!-- WHAT: base sets a common starting URL for relative links.
+         EFFECT: Relative links like about.html will be resolved from this base URL. -->
+    <base href="https://www.example.com/">
+
+    <!-- WHAT: link connects an external resource to the HTML document.
+         ATTRIBUTE: rel="stylesheet" means the linked file is a CSS stylesheet. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- WHAT: basefont sets old default font settings.
+         NOTE: Deprecated. Modern HTML uses CSS instead. -->
+    <basefont face="Arial" size="4">
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading. -->
+    <h1>Links and Head Links</h1>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2 id="top">Basic Link Types</h2>
+
+    <!-- WHAT: a creates a clickable hyperlink.
+         ATTRIBUTE: href stores the link destination.
+         TYPE: External absolute link. -->
+    <p>
+        <a href="https://www.example.com">
+            External absolute link
+        </a>
+    </p>
+
+    <!-- WHAT: Relative link points to a file using local file path.
+         TYPE: Internal relative link. -->
+    <p>
+        <a href="01 Basic HTML Structure.html">
+            Internal relative link
+        </a>
+    </p>
+
+    <!-- WHAT: Same-folder link points to a file in the same folder. -->
+    <p>
+        <a href="basic.html">
+            Internal link in the same folder
+        </a>
+    </p>
+
+    <!-- WHAT: Folder path link points to a file inside another folder. -->
+    <p>
+        <a href="salary/basic.html">
+            Internal link inside a folder
+        </a>
+    </p>
+
+    <!-- WHAT: Parent-folder link moves one folder up using ../ -->
+    <p>
+        <a href="../index.html">
+            Internal link to parent folder
+        </a>
+    </p>
+
+    <!-- WHAT: Absolute path link uses a full web address. -->
+    <p>
+        <a href="http://www.abccompany.com/salary/basic.html">
+            External absolute path link
+        </a>
+    </p>
+
+    <!-- WHAT: Another normal external website link. -->
+    <p>
+        <a href="http://www.systechdigital.com">
+            This is a link
+        </a>
+    </p>
+
+    <!-- WHAT: mailto link opens the user's email application. -->
+    <p>
+        <a href="mailto:mail@mail.com">
+            Email link
+        </a>
+    </p>
+
+    <!-- WHAT: tel link starts a phone call on supported devices. -->
+    <p>
+        <a href="tel:+8801234567890">
+            Phone link
+        </a>
+    </p>
+
+    <!-- WHAT: Relative link using the base URL from the head section.
+         EFFECT: Because base is set, about.html becomes https://www.example.com/about.html -->
+    <p>
+        <a href="about.html">
+            Relative link using base
+        </a>
+    </p>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>Target Attribute</h2>
+
+    <!-- WHAT: target controls where the link opens.
+         VALUE: _self opens in the same tab. -->
+    <p>
+        <a href="https://www.example.com" target="_self">
+            Open in same tab using target="_self"
+        </a>
+    </p>
+
+    <!-- WHAT: target="_blank" opens the link in a new tab.
+         ATTRIBUTE: rel="noopener noreferrer" improves safety for new-tab links. -->
+    <p>
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+            Open in new tab using target="_blank"
+        </a>
+    </p>
+
+    <!-- WHAT: target="_parent" opens link in the parent frame.
+         USE: Mainly used with frames or iframes. -->
+    <p>
+        <a href="https://www.example.com" target="_parent">
+            Open in parent frame using target="_parent"
+        </a>
+    </p>
+
+    <!-- WHAT: target="_top" opens link in the full browser window.
+         USE: Mainly used to break out of frames. -->
+    <p>
+        <a href="https://www.example.com" target="_top">
+            Open in full window using target="_top"
+        </a>
+    </p>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>Other Useful Link Attributes</h2>
+
+    <!-- WHAT: title attribute shows tooltip text on hover. -->
+    <p>
+        <a href="https://www.example.com" title="Go to Example website">
+            Link with title tooltip
+        </a>
+    </p>
+
+    <!-- WHAT: download attribute asks browser to download the file.
+         NOTE: Works best for local files or same-origin files. -->
+    <p>
+        <a href="files/sample.pdf" download>
+            Download PDF file
+        </a>
+    </p>
+
+    <!-- WHAT: download can also suggest a file name. -->
+    <p>
+        <a href="files/sample.pdf" download="my-file.pdf">
+            Download PDF with custom file name
+        </a>
+    </p>
+
+    <!-- WHAT: id creates a target point inside the same page.
+         EFFECT: href="#top" jumps to the element with id="top". -->
+    <p>
+        <a href="#top">
+            Jump to top section
+        </a>
+    </p>
+
+    <!-- WHAT: href="#" creates a dummy link.
+         USE: Sometimes used temporarily before adding real destination. -->
+    <p>
+        <a href="#">
+            Dummy link
+        </a>
+    </p>
+
+    <!-- SUMMARY:
+         - <a> creates hyperlinks.
+         - href stores the destination.
+         - Absolute links use full URLs.
+         - Relative links use local file paths.
+         - mailto: creates email links.
+         - tel: creates phone links.
+         - target controls where the link opens.
+         - title shows tooltip text.
+         - download downloads a file.
+         - rel is important for safe new-tab links.
+         - <link>, <base>, and <basefont> are head-section tags. -->
+</body>
+</html>

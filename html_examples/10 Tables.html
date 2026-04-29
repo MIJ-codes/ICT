@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: X-UA-Compatible was used for old Internet Explorer compatibility.
+         NOTE: It is old, but included because some textbooks show it. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>HTML Tables</title>
+
+    <!-- WHAT: style is used here only to make modern table examples clear. -->
+    <style>
+        .modern-table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        .modern-table th,
+        .modern-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .modern-table th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>HTML Tables</h1>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Basic Table Structure</h2>
+
+    <!-- WHAT: table creates a table.
+         ATTRIBUTE: border shows table borders.
+         NOTE: border is old-style HTML. Modern HTML uses CSS. -->
+    <table border="3">
+        <!-- WHAT: tr creates one table row. -->
+        <tr>
+            <!-- WHAT: th creates table header cells.
+                 EFFECT: Header text is usually bold and centered. -->
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <!-- WHAT: This row contains normal table data. -->
+        <tr>
+            <!-- WHAT: td creates normal table data cells. -->
+            <td>John</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- COMMON MISTAKE:
+         Do not add extra <td> cells randomly.
+         Every row should usually match the number of columns in the table. -->
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Caption, Width and Height</h2>
+
+    <!-- WHAT: width controls table width.
+         NOTE: width as an attribute is old. CSS is preferred in modern HTML. -->
+    <table border="3" width="400">
+        <!-- WHAT: caption gives a title to the table. -->
+        <caption>Student Information</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Result</th>
+        </tr>
+
+        <!-- WHAT: height controls row height.
+             NOTE: height as an attribute is old. CSS is preferred. -->
+        <tr height="50">
+            <td>John</td>
+            <td>25</td>
+            <!-- WHAT: br inside td keeps an empty cell visible. -->
+            <td><br></td>
+        </tr>
+
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td><br></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Cell Padding and Cell Spacing</h2>
+
+    <!-- WHAT: cellpadding adds space inside each cell.
+         WHAT: cellspacing adds space between cells.
+         NOTE: Both are old table attributes. Modern HTML uses CSS padding and border-spacing. -->
+    <table border="3" cellpadding="20" cellspacing="10">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Colspan</h2>
+
+    <!-- WHAT: colspan makes one cell cover multiple columns. -->
+    <table border="3">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Result</th>
+            <th>Remarks</th>
+        </tr>
+
+        <tr>
+            <!-- WHAT: colspan="3" makes this cell cover 3 columns. -->
+            <td colspan="3">John</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <!-- WHAT: colspan="2" makes this cell cover 2 columns. -->
+            <td colspan="2">Jane</td>
+            <td>Fail</td>
+            <td>Needs improvement</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. Rowspan</h2>
+
+    <!-- WHAT: rowspan makes one cell cover multiple rows. -->
+    <table border="3">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <!-- WHAT: rowspan="2" makes this cell cover 2 rows. -->
+            <td rowspan="2">John</td>
+            <td>25</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>30</td>
+            <td>Fail</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Alignment and Background Color</h2>
+
+    <!-- WHAT: align="center" centers the whole table.
+         WHAT: width="50%" makes table width half of the page.
+         WHAT: cellpadding and cellspacing control cell spacing.
+         NOTE: These are old-style table attributes. -->
+    <table border="3" align="center" width="50%" cellpadding="10" cellspacing="5">
+        <!-- WHAT: bgcolor changes row background color.
+             NOTE: Old attribute. Modern HTML uses CSS background-color. -->
+        <tr bgcolor="lightblue">
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <!-- WHAT: align="center" aligns all cell content in this row. -->
+        <tr align="center">
+            <!-- WHAT: bgcolor changes this cell background color. -->
+            <td bgcolor="red">John</td>
+
+            <!-- WHAT: align="right" aligns only this cell content to the right. -->
+            <td align="right">25</td>
+        </tr>
+
+        <tr>
+            <!-- WHAT: valign controls vertical alignment inside the cell.
+                 VALUES: top, middle, bottom. -->
+            <td valign="top">Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>7. Thead, Tbody and Tfoot</h2>
+
+    <!-- WHAT: thead, tbody and tfoot organize larger tables into sections. -->
+    <table border="3">
+        <!-- WHAT: caption gives the table title. -->
+        <caption>Marks Table</caption>
+
+        <!-- WHAT: thead contains heading rows. -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <!-- WHAT: tbody contains main data rows. -->
+        <tbody>
+            <tr>
+                <td>Asha</td>
+                <td>90</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>Rafi</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+
+        <!-- WHAT: tfoot contains footer or summary rows. -->
+        <tfoot>
+            <tr>
+                <td>Total Students</td>
+                <td colspan="2">2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>8. Colgroup and Col</h2>
+
+    <!-- WHAT: colgroup and col apply settings to whole columns. -->
+    <table border="3">
+        <!-- WHAT: colgroup groups table columns.
+             WHAT: col represents one column.
+             EFFECT: The first column becomes lightyellow and the second column becomes lightgreen. -->
+        <colgroup>
+            <col style="background-color: lightyellow;">
+            <col style="background-color: lightgreen;">
+            <col style="background-color: lightpink;">
+        </colgroup>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Fail</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>9. Modern CSS Table</h2>
+
+    <!-- WHAT: This table uses CSS instead of old attributes.
+         WHY: Modern websites should use CSS for border, padding, width and alignment. -->
+    <table class="modern-table">
+        <caption>Modern Styled Table</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+            <td>Fail</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- SUMMARY:
+         - <table> creates a table.
+         - <tr> creates a row.
+         - <th> creates header cells.
+         - <td> creates normal data cells.
+         - <caption> gives a table title.
+         - border, width, height, cellpadding, cellspacing, align, bgcolor and valign are old-style table attributes.
+         - colspan merges columns.
+         - rowspan merges rows.
+         - thead, tbody and tfoot organize large tables.
+         - colgroup and col style whole columns.
+         - Modern websites use CSS for table styling. -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!-- Everything inside these symbols is called a comment.
+     Comments are ignored by the browser.
+     They are used to explain code for humans. -->
+
+<!DOCTYPE html>
+<!-- WHAT: <!DOCTYPE html> -> declares this file as an HTML5 document
+     WHY: Browser needs to know which HTML version/rules to use
+     EFFECT: Browser renders the page in modern standards mode -->
+
+<html lang="en">
+<!-- WHAT: <html> -> root element of the whole webpage
+            lang -> attribute that defines the page language
+            "en" -> English
+     WHY: All HTML page content must be inside <html>
+     EFFECT: Browser, search engines, and screen readers understand the page language -->
+
+<head>
+<!-- WHAT: <head> -> c
+     ontains page information/settings, not visible content
+     WHY: Browser reads setup information from here
+     EFFECT: Controls title, encoding, responsiveness, styles, scripts -->
+
+    <meta charset="UTF-8">
+    <!-- WHAT: charset="UTF-8" -> sets character encoding
+         WHY: Browser must know how to read letters, symbols, and other languages
+         EFFECT: Prevents broken text like broken symbols or ??? -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- WHAT: viewport -> visible screen area of the webpage
+              width=device-width -> page width equals device screen width
+              initial-scale=1.0 -> page starts at normal 100% zoom
+         WHY: Mobile screens and desktop screens have different widths
+         EFFECT: Page becomes readable and responsive on different devices -->
+
+    <title>Hello World</title>
+    <!-- WHAT: <title> -> title of the webpage
+         WHY: Browser needs a name for the tab
+         EFFECT: Shows "Hello World" on browser tab -->
+</head>
+
+<body>
+<!-- WHAT: <body> -> contains visible webpage content
+     WHY: Anything users see must be inside body
+     EFFECT: Browser displays this content on the screen -->
+
+    <h1>Hello, World!</h1>
+    <!-- WHAT: <h1> -> main heading
+         WHY: Used for the most important title on the page
+         EFFECT: Displays large bold heading text -->
+
+    <!-- TRY THIS:
+         1. Change <h1> text
+         2. Change the title text
+         3. Remove the viewport meta tag and test on a narrow screen -->
+
+    <!-- COMMON MISTAKE:
+         Forgetting the body closing tag or html closing tag
+         Page may behave unexpectedly -->
+
+    <!-- SUMMARY:
+         - <!DOCTYPE html> tells the browser this is HTML5
+         - <head> stores page settings
+         - <body> stores visible content -->
+</body>
+</html>

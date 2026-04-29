@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1777388607.33272 "d:/Tution/Inter 1st Year/ICT/ICT/main.tex" "main.pdf" "main" 1777388612.38243 0
+["pdflatex"] 1777422967.41533 "d:/Tution/Inter 1st Year/ICT/ICT/main.tex" "main.pdf" "main" 1777422978.32044 0
   "C:/Users/miadu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1777090771 360345 23a268fd1f1912941079ed91cb32411e ""
   "C:/Users/miadu/AppData/Local/MiKTeX/fonts/tfm/public/calligra/callig15.tfm" 1774796727 1764 b825de14b77999deb4f4ada360048a54 ""
   "C:/Users/miadu/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1777033626 13350291 b8876db5e27e5d6ea3af85ebac718df1 ""
@@ -73,6 +73,7 @@
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb" 1215618300 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb" 1215618300 145929 5c9aebea9ba6e33fc93158c04a3bdcd8 ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb" 1215618300 196446 823e77efd89b89faab342901e22eb237 ""
+  "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb" 1215618300 175641 e37e2df5b70b76a1b78bfb3b804197c7 ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0900.pfb" 1215618300 170827 b1cb46f82d978af2aeb6bf26777fa82d ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb" 1215618300 169201 651a6333c3213b38091f54d2ab2d2cd6 ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb" 1215618300 169670 061d76bd536389c258413384f964e74a ""
@@ -301,13 +302,14 @@
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1750428951 2269 2de6c7a5fd634dfef00a960544463a38 ""
   "C:/Users/miadu/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
-  "Chapters/Chapter4.tex" 1777384965 56862 83c80b38305e32159057261a32e1f8f5 ""
-  "d:/Tution/Inter 1st Year/ICT/ICT/main.tex" 1777283231 3263 ed30f50d415949d029970b969ce43642 ""
-  "main.aux" 1777388611 20686 83d4c802363f8123d3b6a2e047bc19cf "pdflatex"
-  "main.out" 1777388611 19606 3d60fd45b6025f1050fb2aafdae7286f "pdflatex"
-  "main.tex" 1777283231 3263 ed30f50d415949d029970b969ce43642 ""
-  "main.toc" 1777388611 9542 9122d3354028b6cc9c5c438bc57f4b0c "pdflatex"
-  "preamble.tex" 1777388466 37372 b9035f22bcfa395d1424a5de2a09e2b2 ""
+  "Chapters/Chapter4.tex" 1777419667 77985 d1c3427d3e8ca9ab7b666bc8e2097bff ""
+  "d:/Tution/Inter 1st Year/ICT/ICT/main.tex" 1777422957 3302 747d3f0ffffde16c91e0fdfddf6b9738 ""
+  "html_outputs/01-basic-skeleton.png" 1777419651 9210 7758db6afe8c6d64540d7bf680d00f69 ""
+  "main.aux" 1777422977 30572 b850f305f3409e06f4e34e78e6846470 "pdflatex"
+  "main.out" 1777422977 25919 4f8f131878f0c30a19fab09203c25dc7 "pdflatex"
+  "main.tex" 1777422957 3302 747d3f0ffffde16c91e0fdfddf6b9738 ""
+  "main.toc" 1777422977 12216 b9b21e2278771514d6f221dc01456d11 "pdflatex"
+  "preamble.tex" 1777397835 38839 a7c5b7c2e68b611f33486912c98bd39d ""
   (generated)
   "main.aux"
   "main.log"

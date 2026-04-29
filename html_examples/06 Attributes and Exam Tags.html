@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Attributes and Attribute Values</title>
+</head>
+
+<body>
+    <!-- WHAT: title attribute gives extra information on hover.
+         EFFECT: Move the mouse over the heading to see the tooltip. -->
+    <h1 title="This text appears when you hover over the heading">
+        HTML Attributes and Attribute Values
+    </h1>
+
+    <!-- WHAT: id gives a unique identity to one element.
+         WHY: It can be used later by CSS, JavaScript, or links.
+         RULE: One id should be used only once on a page. -->
+    <p id="intro">
+        This paragraph has an id attribute.
+    </p>
+
+    <!-- WHAT: class gives a reusable group name.
+         WHY: Many elements can share the same class.
+         USE: Useful for applying the same CSS style to many elements. -->
+    <p class="note">
+        This paragraph has a class attribute.
+    </p>
+
+    <p class="note">
+        This paragraph uses the same class again.
+    </p>
+
+    <!-- WHAT: style adds inline CSS directly inside an element.
+         EFFECT: This paragraph becomes red. -->
+    <p style="color:red;">
+        This paragraph uses style="color:red;".
+    </p>
+
+    <!-- WHAT: style can contain multiple CSS declarations.
+         EFFECT: This paragraph gets color, size, and background color. -->
+    <p style="color:blue; font-size:22px; background-color:yellow;">
+        This paragraph uses multiple style values.
+    </p>
+
+    <!-- WHAT: text-align controls text alignment using CSS.
+         EFFECT: This paragraph is centered. -->
+    <p style="text-align:center;">
+        This paragraph is centered using CSS.
+    </p>
+
+    <!-- WHAT: align is an old HTML attribute for alignment.
+         NOTE: Deprecated. Modern HTML uses CSS text-align instead. -->
+    <p align="center">
+        This paragraph uses old align="center".
+    </p>
+
+    <!-- WHAT: lang defines the language of the element content.
+         WHY: It helps browsers, search engines, and screen readers. -->
+    <p lang="en">
+        This paragraph is marked as English text.
+    </p>
+
+    <!-- WHAT: dir controls text direction.
+         VALUES: ltr means left-to-right, rtl means right-to-left. -->
+    <p dir="ltr">
+        This paragraph uses left-to-right direction.
+    </p>
+
+    <p dir="rtl">
+        This paragraph uses right-to-left direction.
+    </p>
+
+    <!-- WHAT: contenteditable allows the user to edit text in the browser.
+         EFFECT: Click this paragraph and type inside it. -->
+    <p contenteditable="true">
+        This paragraph is editable in the browser.
+    </p>
+
+    <!-- WHAT: spellcheck controls browser spelling check.
+         EFFECT: Browser may underline spelling mistakes. -->
+    <p spellcheck="true">
+        Ths paragraph has spellcheck enabled. Try typing a missspelled word to see the effect.
+    </p>
+
+    <!-- WHAT: hidden hides an element from the webpage.
+         EFFECT: This paragraph will not be shown. -->
+    <p hidden>
+        This paragraph is hidden.
+    </p>
+
+    <!-- WHAT: data-* creates custom data attributes.
+         WHY: Developers use it to store extra information for JavaScript. -->
+    <p data-topic="html" data-level="basic">
+        This paragraph has custom data attributes.
+    </p>
+
+    <!-- WHAT: font is an old tag with old attributes.
+         ATTRIBUTES: face, size, and color.
+         NOTE: Deprecated. Modern HTML uses CSS instead. -->
+    <p>
+        <font face="Arial" size="5" color="blue">
+            This text uses the old font tag with face, size, and color.
+        </font>
+    </p>
+
+    <!-- WHAT: center is an old tag for centering content.
+         NOTE: Deprecated. Use CSS text-align:center instead. -->
+    <center>
+        This text uses the old center tag.
+    </center>
+
+    <!-- WHAT: strike is an old tag for strikethrough text.
+         NOTE: Deprecated. Modern HTML uses <s> or CSS. -->
+    <p>
+        <strike>This text uses the old strike tag.</strike>
+    </p>
+
+    <!-- SUMMARY:
+         - Attributes give extra information to HTML elements.
+         - Attribute format is name="value".
+         - id is unique.
+         - class is reusable.
+         - style adds inline CSS.
+         - title shows tooltip text.
+         - lang defines language.
+         - dir controls text direction.
+         - contenteditable, spellcheck, hidden, and data-* are useful common attributes.
+         - align, font, center, and strike are old exam-style tags/attributes. -->
+</body>
+</html>

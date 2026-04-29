@@ -18,8 +18,8 @@
 % !TEX root = main.tex
 \providecommand{\NotesAuthor}  {Mohammad Miadul Islam Jasim}
 \providecommand{\NotesAffil}   {CUET ETE 21}
-\providecommand{\NotesCourse}  {Your Course Name}
-\providecommand{\NotesSubject} {Your Subject}
+\providecommand{\NotesCourse}  {Intermediate-Higher Secondary Examination}
+\providecommand{\NotesSubject} {Information and Communication Technology-ICT}
 \providecommand{\NotesYear}    {\the\year}
 
 % If this include file is compiled directly, compile main.tex instead.
@@ -51,12 +51,12 @@
 
 \usepackage[
     top=2.0cm,
-    bottom=1.5cm,
+    bottom=1cm,
     left=1.5cm,
     right=1.5cm,
     headheight=24pt,
     headsep=10pt,
-    footskip=1.15cm
+    footskip=0.75cm
 ]{geometry}
 
 % ─── Page breaking behaviour ─────────────────────────────────────────────────
@@ -120,6 +120,17 @@
         pre,code,kbd,var,dfn,samp,tt,abbr,acronym,blockquote,q,cite,bdo,
         object,param,applet
     },
+    morekeywords=[2]{
+        charset,name,content,http-equiv,lang,dir,class,id,style,title,
+        href,src,alt,target,width,height,border,align,valign,bgcolor,
+        color,face,size,background,text,link,vlink,alink,type,value,
+        action,method,for,placeholder,checked,selected,disabled,readonly,
+        rows,cols,colspan,rowspan,cellspacing,cellpadding,controls,autoplay,
+        loop,muted,poster,rel,media
+    },
+    morekeywords=[3]{
+        font,center,big,tt,strike,s,basefont,marquee,frameset,frame,noframes,applet
+    },
     morecomment=[s]{<!--}{-->},
     morestring=[b]",
 }
@@ -128,6 +139,8 @@
     language=HTML5,
     basicstyle=\ttfamily\small,
     keywordstyle=\color{defcolor}\bfseries,
+    keywordstyle=[2]\color{defcolor},
+    keywordstyle=[3]\color{defcolor}\bfseries,
     commentstyle=\color{infocolor!80!black}\itshape,
     stringstyle=\color{formulacolor},
     backgroundcolor=\color{lightgray},
@@ -302,6 +315,24 @@
 \definecolor{tablerail}      {RGB}{0,0,128}
 \definecolor{tablezebrarow}  {RGB}{239, 237, 255}
 \definecolor{tablegrid}      {RGB}{0,0,128}
+
+% ─── Color swatch for HTML color tables ──────────────────────────────────────
+\newcommand{\colorswatch}[1]{%
+    \begingroup
+    \definecolor{tempswatch}{HTML}{#1}%
+    \fcolorbox{tablegrid}{tempswatch}{\rule{0pt}{0.1cm}\rule{0.1cm}{0pt}}%
+    \endgroup
+}
+
+% HTML code listing colors
+\definecolor{htmltagcolor}       {RGB}{0, 92, 197}
+\definecolor{htmlattrcolor}      {RGB}{145, 80, 0}
+\definecolor{htmlstringcolor}    {RGB}{180, 35, 70}
+\definecolor{htmlcommentcolor}   {RGB}{30, 130, 75}
+\definecolor{htmlsymbolcolor}    {RGB}{95, 45, 160}
+\definecolor{htmloperatorcolor}  {RGB}{80, 80, 95}
+\definecolor{htmltextcolor}      {RGB}{35, 35, 55}
+\definecolor{htmldeprecatedcolor}{RGB}{190, 80, 0}
 
 % ═══ THEME B — Pastel Ink (uncomment to activate) ════════════════════════════
 %\definecolor{chaptercolor}     {HTML}{2F6FA3}
@@ -498,7 +529,7 @@
 }
 
 \fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
-\fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- 2108053}}}
+\fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
 
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\headrule}{%
@@ -508,7 +539,7 @@
 \fancypagestyle{plain}{%
     \fancyhf{}
     \fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
-    \fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- 2108053}}}
+    \fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
     \renewcommand{\headrulewidth}{0pt}
 }
 

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>CSS Basics</title>
+
+    <!-- WHAT: link connects an external CSS file.
+         WHY: External CSS is useful when many webpages use the same design.
+         NOTE: style.css must exist for this to work. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- WHAT: style tag contains internal CSS.
+         WHY: Internal CSS styles many elements on the same page. -->
+    <style>
+        /* WHAT: body selector styles the whole page body. */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* WHAT: element selector styles all h1 elements. */
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        /* WHAT: element selector styles all h2 elements. */
+        h2 {
+            color: navy;
+            border-bottom: 2px solid navy;
+        }
+
+        /* WHAT: class selector starts with a dot.
+           EFFECT: It styles every element with class="note". */
+        .note {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid orange;
+        }
+
+        /* WHAT: id selector starts with #.
+           RULE: id should be unique on a page. */
+        #special {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* WHAT: This class shows margin, padding, and border. */
+        .box {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        /* WHAT: This class changes text appearance. */
+        .text-style {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* WHAT: This class changes width and alignment. */
+        .center-box {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* WHAT: hover is a pseudo-class.
+           EFFECT: Style changes when mouse moves over the link. */
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading.
+         STYLE SOURCE: h1 is styled by internal CSS. -->
+    <h1>CSS Basics</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. INLINE CSS
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Inline CSS</h2>
+
+    <!-- WHAT: Inline CSS is written inside the style attribute.
+         WHY: It styles only one specific element.
+         EFFECT: This paragraph becomes green and larger. -->
+    <p style="font-size: 20px; color: green;">
+        This paragraph uses inline CSS.
+    </p>
+
+    <!-- WHAT: Multiple CSS properties can be written inside one style attribute. -->
+    <p style="color: blue; background-color: lightgray; padding: 10px;">
+        This paragraph uses multiple inline CSS properties.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         2. INTERNAL CSS
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Internal CSS</h2>
+
+    <!-- WHAT: class="note" connects this paragraph with .note in the style section.
+         EFFECT: Background, padding, and border are applied. -->
+    <p class="note">
+        This paragraph is styled using internal CSS class selector.
+    </p>
+
+    <!-- WHAT: The same class can be reused on another element. -->
+    <p class="note">
+        This paragraph also uses the same note class.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         3. CSS SELECTORS
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. CSS Selectors</h2>
+
+    <!-- WHAT: Element selector styles tags directly, such as h1, h2, p, body. -->
+    <p>
+        Element selectors style all elements with the same tag name.
+    </p>
+
+    <!-- WHAT: Class selector styles all elements with the same class name. -->
+    <p class="note">
+        This uses a class selector: .note
+    </p>
+
+    <!-- WHAT: ID selector styles one unique element. -->
+    <p id="special">
+        This uses an ID selector: #special
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         4. COLOR AND TEXT STYLE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Color and Text Style</h2>
+
+    <!-- WHAT: class applies color, font-size, font-weight, and text-decoration. -->
+    <p class="text-style">
+        This text is styled using CSS.
+    </p>
+
+    <!-- WHAT: span is used to style a small part of text. -->
+    <p>
+        CSS can style only <span style="color:red; font-weight:bold;">one part</span> of a sentence.
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         5. BOX MODEL
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. CSS Box Model</h2>
+
+    <!-- WHAT: div groups content.
+         CSS: margin creates outside space.
+         CSS: border creates edge line.
+         CSS: padding creates inside space. -->
+    <div class="box">
+        This box shows margin, border, and padding.
+    </div>
+
+    <!-- WHAT: width controls element width.
+         WHAT: margin:auto centers the box horizontally. -->
+    <div class="center-box">
+        This box is centered using CSS.
+    </div>
+
+    <hr>
+
+    <!-- =========================================================
+         6. LINK STYLE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Link Style</h2>
+
+    <!-- WHAT: a creates a link.
+         CSS: a:hover changes the link style when mouse is placed over it. -->
+    <p>
+        <a href="https://www.example.com">Hover over this link</a>
+    </p>
+
+    <hr>
+
+    <!-- =========================================================
+         7. COMBINED CSS EXAMPLE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>7. Combined CSS Example</h2>
+
+    <!-- WHAT: This section combines class, inline CSS, text styling, and box styling. -->
+    <div class="box">
+        <h3 style="color: darkgreen;">Styled Content Box</h3>
+
+        <p class="note">
+            This paragraph uses a reusable CSS class.
+        </p>
+
+        <p>
+            This sentence has a <span style="background-color: yellow;">highlighted part</span> using inline CSS.
+        </p>
+
+        <p id="special">
+            This line uses an ID selector.
+        </p>
+    </div>
+
+    <!-- SUMMARY:
+         - CSS controls the design of HTML elements.
+         - Inline CSS is written inside style="".
+         - Internal CSS is written inside the <style> tag.
+         - External CSS is connected using <link rel="stylesheet" href="style.css">.
+         - CSS format is property: value;
+         - Element selector styles tag names.
+         - Class selector uses .className.
+         - ID selector uses #idName.
+         - Common CSS properties: color, background-color, font-size, text-align, margin, padding, border, width.
+         - Modern websites use CSS instead of old HTML styling tags. -->
+</body>
+</html>

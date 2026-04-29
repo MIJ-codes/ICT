@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>HTML Lists</title>
+
+    <!-- WHAT: style stores internal CSS.
+         WHY: Modern HTML uses CSS for list marker styling. -->
+    <style>
+        /* WHAT: This changes normal bullet points into diamond bullets. */
+        ul.diamond {
+            list-style-type: "◆ ";
+        }
+
+        /* WHAT: This changes list bullets into square bullets. */
+        ul.square {
+            list-style-type: square;
+        }
+
+        /* WHAT: This removes list bullets. */
+        ul.no-marker {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- WHAT: h1 creates the main heading. -->
+    <h1>HTML Lists</h1>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Unordered List</h2>
+
+    <!-- WHAT: ul creates an unordered list.
+         WHY: Used when item order is not important.
+         ATTRIBUTE: class applies CSS style.
+         EFFECT: Items appear with diamond bullets because of class="diamond". -->
+    <ul class="diamond">
+        <!-- WHAT: li creates one list item. -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- WHAT: ul can use CSS list-style-type.
+         EFFECT: Items appear with square bullets. -->
+    <ul class="square">
+        <li>Home Page</li>
+        <li>About Page</li>
+        <li>Contact Page</li>
+    </ul>
+
+    <!-- WHAT: list-style-type:none removes bullets. -->
+    <ul class="no-marker">
+        <li>No marker item 1</li>
+        <li>No marker item 2</li>
+    </ul>
+
+    <!-- WHAT: type is an old attribute for ul.
+         VALUES: disc, circle, square.
+         NOTE: Deprecated. Modern HTML uses CSS. -->
+    <ul type="circle">
+        <li>Old circle bullet</li>
+        <li>Old circle bullet</li>
+    </ul>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>2. Ordered List</h2>
+
+    <!-- WHAT: ol creates an ordered list.
+         WHY: Used when item order is important.
+         EFFECT: Browser numbers the items automatically. -->
+    <ol>
+        <li>Open editor</li>
+        <li>Write code</li>
+        <li>Save file</li>
+    </ol>
+
+    <!-- WHAT: type changes numbering style.
+         VALUES: 1, A, a, I, i. -->
+    <ol type="A">
+        <li>Uppercase letter item</li>
+        <li>Uppercase letter item</li>
+    </ol>
+
+    <ol type="a">
+        <li>Lowercase letter item</li>
+        <li>Lowercase letter item</li>
+    </ol>
+
+    <ol type="I">
+        <li>Roman number item</li>
+        <li>Roman number item</li>
+    </ol>
+
+    <!-- WHAT: start changes the starting number. -->
+    <ol start="5">
+        <li>This starts from 5</li>
+        <li>This becomes 6</li>
+    </ol>
+
+    <!-- WHAT: reversed counts the list backward. -->
+    <ol reversed>
+        <li>Third step</li>
+        <li>Second step</li>
+        <li>First step</li>
+    </ol>
+
+    <!-- WHAT: value changes the number of a specific li item inside ol. -->
+    <ol>
+        <li>Normal item 1</li>
+        <li value="10">This item number becomes 10</li>
+        <li>This item continues from 11</li>
+    </ol>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>3. Description List</h2>
+
+    <!-- WHAT: dl creates a description list.
+         WHY: Used for terms and meanings. -->
+    <dl>
+        <!-- WHAT: dt defines the term. -->
+        <dt>HTML</dt>
+
+        <!-- WHAT: dd defines the description of the term. -->
+        <dd>HyperText Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>4. Nested List</h2>
+
+    <!-- WHAT: A nested list means a list inside another list. -->
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+
+        <li>Backend
+            <ul>
+                <li>PHP</li>
+                <li>Database</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>5. Old Exam-Style List Tags</h2>
+
+    <!-- WHAT: dir was used for directory lists.
+         NOTE: Deprecated. Use ul instead. -->
+    <dir>
+        <li>Old directory item</li>
+        <li>Old directory item</li>
+    </dir>
+
+    <!-- WHAT: menu was used for menu/list items in older HTML examples.
+         NOTE: Older textbooks may show it. Modern pages usually use ul/nav/CSS. -->
+    <menu>
+        <li>Old menu item</li>
+        <li>Old menu item</li>
+    </menu>
+
+    <hr>
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>6. Common Global Attributes on Lists</h2>
+
+    <!-- WHAT: id gives a unique identity.
+         WHAT: class gives a reusable group name.
+         WHAT: title shows tooltip text.
+         WHAT: style adds inline CSS. -->
+    <ul id="topics" class="diamond" title="Main web topics" style="color:blue;">
+        <li title="Markup language">HTML</li>
+        <li title="Styling language">CSS</li>
+        <li title="Scripting language">JavaScript</li>
+    </ul>
+
+    <!-- SUMMARY:
+         - <ul> creates unordered/bullet lists.
+         - <ol> creates ordered/numbered lists.
+         - <li> creates each list item.
+         - <dl>, <dt>, and <dd> create description lists.
+         - ol attributes: type, start, reversed.
+         - li can use value inside ordered lists.
+         - ul type is old/deprecated; use CSS list-style-type instead.
+         - <dir> and <menu> are old exam-style list tags. -->
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- WHAT: meta charset sets character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- WHAT: X-UA-Compatible was used for old Internet Explorer compatibility.
+         NOTE: It is old, but some textbooks include it. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- WHAT: viewport helps the page fit different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WHAT: title sets the browser tab title. -->
+    <title>Audio, Video, Images and Frames</title>
+</head>
+
+<!-- WHAT: background adds a page background image.
+     NOTE: background attribute is old/deprecated. Modern HTML uses CSS background-image. -->
+<body background="https://theportablewife.com/wp-content/uploads/best-places-to-take-pictures-in-paris-newfeatured.jpg">
+
+    <!-- WHAT: h1 creates the main heading of the page. -->
+    <h1>Audio, Video, Images and Frames</h1>
+
+    <hr>
+
+    <!-- =========================================================
+         1. IMAGE
+    ========================================================== -->
+
+    <!-- WHAT: h2 creates a section heading. -->
+    <h2>1. Image</h2>
+
+    <!-- WHAT: img displays an image.
+         ATTRIBUTE: src stores the image path or URL.
+         ATTRIBUTE: alt gives backup text if image cannot load.
+         ATTRIBUTE: width and height control image size. -->
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Cottage image" width="150" height="100">
+
+    <hr>
+
+    <!-- =========================================================
+         2. AUDIO
+    ========================================================== -->
+
+    <h2>2. Audio</h2>
+
+    <!-- WHAT: audio adds sound to a webpage.
+         ATTRIBUTE: controls shows play, pause, volume and timeline controls.
+         EFFECT: Browser shows an audio player. -->
+    <audio controls>
+        <!-- WHAT: source gives the audio file path.
+             ATTRIBUTE: src stores the audio file location.
+             ATTRIBUTE: type tells the browser the media format. -->
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+
+        <!-- WHAT: This fallback text appears if the browser does not support audio. -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- =========================================================
+         3. VIDEO
+    ========================================================== -->
+
+    <h2>3. Video</h2>
+
+    <!-- WHAT: video adds video to a webpage.
+         ATTRIBUTE: controls shows video controls.
+         ATTRIBUTE: width and height set video size. -->
+    <video width="300" height="240" controls>
+        <!-- WHAT: source gives the video file path.
+             ATTRIBUTE: type tells the browser the video format. -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+        <!-- WHAT: This fallback text appears if the browser does not support video. -->
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <!-- =========================================================
+         4. COMMON AUDIO AND VIDEO ATTRIBUTES
+    ========================================================== -->
+
+    <h2>4. Common Media Attributes</h2>
+
+    <!-- WHAT: muted starts the media without sound.
+         WHAT: loop repeats the media after ending. -->
+    <video width="300" controls muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <!-- WHAT: autoplay tries to start media automatically.
+         NOTE: Many browsers block autoplay unless muted is also used. -->
+    <video width="300" controls autoplay muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <!-- =========================================================
+         5. IFRAME
+    ========================================================== -->
+
+    <h2>5. Iframe</h2>
+
+    <!-- WHAT: iframe embeds another webpage inside the current webpage.
+         ATTRIBUTE: src gives the page/file to show.
+         ATTRIBUTE: width and height control iframe size. -->
+    <iframe src="01 Basic HTML Structure.html" width="500" height="250">
+        Your browser does not support iframe.
+    </iframe>
+
+    <hr>
+
+    <!-- =========================================================
+         6. OLD FRAME TAGS
+    ========================================================== -->
+
+    <h2>6. Old Frame Tags</h2>
+
+    <!-- WHAT: pre displays code while preserving spaces and line breaks.
+         WHY: frameset/frame code cannot be used normally inside body in modern HTML. -->
+    <pre>
+&lt;frameset cols="50%,50%"&gt;
+    &lt;frame src="left.html"&gt;
+    &lt;frame src="right.html"&gt;
+    &lt;noframes&gt;Your browser does not support frames.&lt;/noframes&gt;
+&lt;/frameset&gt;
+    </pre>
+
+    <!-- WHAT: frameset divides browser window into frames.
+         WHAT: frame loads one page inside one frame.
+         WHAT: noframes gives fallback text for unsupported browsers.
+         NOTE: frame, frameset and noframes are deprecated in HTML5. Use iframe or CSS layout instead. -->
+
+    <hr>
+
+    <!-- =========================================================
+         7. COMBINED MEDIA EXAMPLE
+    ========================================================== -->
+
+    <h2>7. Combined Media Example</h2>
+
+    <!-- WHAT: This section combines image, audio, video and iframe together. -->
+    <h3>Image</h3>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Cottage image" width="200">
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Iframe</h3>
+    <iframe src="01 Basic HTML Structure.html" width="500" height="250">
+        Your browser does not support iframe.
+    </iframe>
+
+    <!-- SUMMARY:
+         - <img> displays images.
+         - <audio> plays sound files.
+         - <video> plays video files.
+         - <source> provides media file path and type.
+         - controls shows media controls.
+         - autoplay, muted and loop control media behavior.
+         - <iframe> embeds another webpage inside the current page.
+         - background attribute is old/deprecated.
+         - <frame>, <frameset> and <noframes> are old/deprecated frame tags.
+         - Modern websites use CSS layout and iframe instead of old frameset. -->
+</body>
+</html>
