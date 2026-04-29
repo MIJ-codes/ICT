@@ -157,7 +157,8 @@
     breakatwhitespace=false,
     columns=fullflexible,
     keepspaces=true,
-    xleftmargin=1.2em,
+    xleftmargin=8mm,
+    xrightmargin=8mm,
     framexleftmargin=1em,
     captionpos=b
 }
@@ -636,7 +637,7 @@
 }
 
 \fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
-\fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
+\fancyfoot[R]{\tiny{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
 
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\headrule}{%
@@ -646,7 +647,7 @@
 \fancypagestyle{plain}{%
     \fancyhf{}
     \fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
-    \fancyfoot[R]{\tiny\textcalligra{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
+    \fancyfoot[R]{\tiny{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
     \renewcommand{\headrulewidth}{0pt}
 }
 
@@ -700,6 +701,8 @@
         enhanced,
         breakable,
         sharp corners,
+        width           = \dimexpr\linewidth-2mm\relax,
+        center,
         boxfill         = #1,
         colframe        = white,
         boxrule         = 0pt,
@@ -713,15 +716,15 @@
                 (frame.north west) rectangle ([yshift=-2pt]frame.north east);
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.south west) rectangle ([yshift=2pt]frame.south east);
-            \draw[#1!45, line width=0.55pt]
+            \draw[#1!100, line width=0.55pt]
                 ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
-            \draw[#1!45, line width=0.55pt]
+            \draw[#1!100, line width=0.55pt]
                 ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
         },
         overlay first={
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.north west) rectangle ([yshift=-2pt]frame.north east);
-            \draw[#1!45, line width=0.55pt]
+            \draw[#1!100, line width=0.55pt]
                 ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
         },
         overlay middle={
@@ -733,7 +736,7 @@
         overlay last={
             \path[shade, left color=#1, middle color=#1!28, right color=white]
                 (frame.south west) rectangle ([yshift=2pt]frame.south east);
-            \draw[#1!45, line width=0.55pt]
+            \draw[#1!100, line width=0.55pt]
                 ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
         },
     }

@@ -464,7 +464,6 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
-INPUT C:\Users\miadu\AppData\Local\MiKTeX\fonts\tfm\public\calligra\callig15.tfm
 INPUT C:\Users\miadu\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-t1.enc
 OUTPUT main.toc
@@ -866,8 +865,6 @@ INPUT .\html_outputs\listing-56-mini-webpage-project.pdf
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\calligra-type1\callig15.pfb
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\calligra-type1\callig15.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb

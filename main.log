@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  29 APR 2026 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  29 APR 2026 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,9 +991,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip155
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 971.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 971.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 971.
+Package hyperref Info: Option `colorlinks' set `true' on input line 974.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 974.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 974.
 ) (main.aux)
 \openout1 = `main.aux'.
 
@@ -1102,10 +1102,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 8.64001pt on input line 53.
- [1{C:/Users/miadu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+) [1{C:/Users/miadu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 
 ] [2] [3])
@@ -1113,7 +1110,7 @@ LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 \openout5 = `main.toc'.
 
  [4] (Chapters/Chapter4.tex
-Chapter 1.
+Chapter 4.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Internet}}' on input line 7.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries World Wide Web}}' on input line 11.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Hypertext document file}}' on input line 29.
@@ -1146,7 +1143,7 @@ Chapters/Chapter4.tex:421: ignored error: Infinite glue shrinkage found in box b
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 424.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries IP Address}}' on input line 429.
 [12]
-contour: Using real outline for `\textcolor {examplecolor}{\textsc {\normalsize \bfseries Example~1.1}}' on input line 468.
+contour: Using real outline for `\textcolor {examplecolor}{\textsc {\normalsize \bfseries Example~4.1}}' on input line 468.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries Domain Name}}' on input line 483.
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries DNS}}' on input line 489.
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries The Bridge}}' on input line 493.
@@ -1205,24 +1202,24 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1026.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1027.
-<html_outputs/listing-01-element-and-attribute-parts.pdf, id=1008, 433.62pt x 19.79094pt>
+<html_outputs/listing-01-element-and-attribute-parts.pdf, id=1007, 433.62pt x 19.79094pt>
 File: html_outputs/listing-01-element-and-attribute-parts.pdf Graphic file (type pdf)
 <use html_outputs/listing-01-element-and-attribute-parts.pdf>
 Package pdftex.def Info: html_outputs/listing-01-element-and-attribute-parts.pdf  used on input line 1032.
 (pdftex.def)             Requested size: 398.07608pt x 18.16951pt.
-<html_outputs/listing-02-html-comment.pdf, id=1009, 433.62pt x 45.2892pt>
+<html_outputs/listing-02-html-comment.pdf, id=1008, 433.62pt x 45.2892pt>
 File: html_outputs/listing-02-html-comment.pdf Graphic file (type pdf)
 <use html_outputs/listing-02-html-comment.pdf>
 Package pdftex.def Info: html_outputs/listing-02-html-comment.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 398.07608pt x 41.57878pt.
  [23 <./html_outputs/listing-01-element-and-attribute-parts.pdf>]
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML Document Structure}}' on input line 1058.
-<html_outputs/listing-03-basic-html-document-structure.pdf, id=1030, 433.62pt x 25.5896pt>
+<html_outputs/listing-03-basic-html-document-structure.pdf, id=1029, 433.62pt x 25.5896pt>
 File: html_outputs/listing-03-basic-html-document-structure.pdf Graphic file (type pdf)
 <use html_outputs/listing-03-basic-html-document-structure.pdf>
 Package pdftex.def Info: html_outputs/listing-03-basic-html-document-structure.pdf  used on input line 1079.
 (pdftex.def)             Requested size: 398.07608pt x 23.4931pt.
-<html_outputs/01-basic-skeleton.png, id=1031, 605.26125pt x 203.76125pt>
+<html_outputs/01-basic-skeleton.png, id=1030, 605.26125pt x 203.76125pt>
 File: html_outputs/01-basic-skeleton.png Graphic file (type png)
 <use html_outputs/01-basic-skeleton.png>
 Package pdftex.def Info: html_outputs/01-basic-skeleton.png  used on input line 1085.
@@ -1236,58 +1233,58 @@ Overfull \hbox (8.94557pt too wide) in paragraph at lines 1089--1090
 Chapters/Chapter4.tex:1135: ignored error: Infinite glue shrinkage found in box being split [25]
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 1147.
 Chapters/Chapter4.tex:1179: ignored error: Infinite glue shrinkage found in box being split [26]
-<html_outputs/listing-04-heading-levels.pdf, id=1073, 433.62pt x 56.18993pt>
+<html_outputs/listing-04-heading-levels.pdf, id=1072, 433.62pt x 56.18993pt>
 File: html_outputs/listing-04-heading-levels.pdf Graphic file (type pdf)
 <use html_outputs/listing-04-heading-levels.pdf>
 Package pdftex.def Info: html_outputs/listing-04-heading-levels.pdf  used on input line 1192.
 (pdftex.def)             Requested size: 398.07608pt x 51.58646pt.
-<html_outputs/paragraph-line-break-output.pdf, id=1074, 572.1375pt x 60.4659pt>
+<html_outputs/paragraph-line-break-output.pdf, id=1073, 572.1375pt x 60.4659pt>
 File: html_outputs/paragraph-line-break-output.pdf Graphic file (type pdf)
 <use html_outputs/paragraph-line-break-output.pdf>
 Package pdftex.def Info: html_outputs/paragraph-line-break-output.pdf  used on input line 1209.
 (pdftex.def)             Requested size: 398.07608pt x 42.07025pt.
  [27 <./html_outputs/listing-04-heading-levels.pdf> <./html_outputs/paragraph-line-break-output.pdf>]
-<html_outputs/horizontal-rule-output.pdf, id=1105, 572.1375pt x 53.9616pt>
+<html_outputs/horizontal-rule-output.pdf, id=1104, 572.1375pt x 53.9616pt>
 File: html_outputs/horizontal-rule-output.pdf Graphic file (type pdf)
 <use html_outputs/horizontal-rule-output.pdf>
 Package pdftex.def Info: html_outputs/horizontal-rule-output.pdf  used on input line 1230.
 (pdftex.def)             Requested size: 398.07608pt x 37.54477pt.
-<html_outputs/listing-07-old-hr-attributes.pdf, id=1106, 433.62pt x 15.22789pt>
+<html_outputs/listing-07-old-hr-attributes.pdf, id=1105, 433.62pt x 15.22789pt>
 File: html_outputs/listing-07-old-hr-attributes.pdf Graphic file (type pdf)
 <use html_outputs/listing-07-old-hr-attributes.pdf>
 Package pdftex.def Info: html_outputs/listing-07-old-hr-attributes.pdf  used on input line 1249.
 (pdftex.def)             Requested size: 398.07608pt x 13.9803pt.
  [28 <./html_outputs/horizontal-rule-output.pdf> <./html_outputs/listing-07-old-hr-attributes.pdf>]
-<html_outputs/whitespace-collapsing-output.pdf, id=1127, 572.1375pt x 27.9444pt>
+<html_outputs/whitespace-collapsing-output.pdf, id=1126, 572.1375pt x 27.9444pt>
 File: html_outputs/whitespace-collapsing-output.pdf Graphic file (type pdf)
 <use html_outputs/whitespace-collapsing-output.pdf>
 Package pdftex.def Info: html_outputs/whitespace-collapsing-output.pdf  used on input line 1275.
 (pdftex.def)             Requested size: 398.07608pt x 19.44281pt.
-<html_outputs/nonbreaking-space-output.pdf, id=1128, 572.1375pt x 24.60794pt>
+<html_outputs/nonbreaking-space-output.pdf, id=1127, 572.1375pt x 24.60794pt>
 File: html_outputs/nonbreaking-space-output.pdf Graphic file (type pdf)
 <use html_outputs/nonbreaking-space-output.pdf>
 Package pdftex.def Info: html_outputs/nonbreaking-space-output.pdf  used on input line 1294.
 (pdftex.def)             Requested size: 398.07608pt x 17.12143pt.
 
 Chapters/Chapter4.tex:1328: ignored error: Infinite glue shrinkage found in box being split [29 <./html_outputs/whitespace-collapsing-output.pdf> <./html_outputs/nonbreaking-space-output.pdf>]
-<html_outputs/listing-10-text-formatting-example.pdf, id=1156, 433.62pt x 122.69438pt>
+<html_outputs/listing-10-text-formatting-example.pdf, id=1155, 433.62pt x 122.69438pt>
 File: html_outputs/listing-10-text-formatting-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-10-text-formatting-example.pdf>
 Package pdftex.def Info: html_outputs/listing-10-text-formatting-example.pdf  used on input line 1342.
 (pdftex.def)             Requested size: 398.07608pt x 112.64241pt.
  [30 <./html_outputs/listing-10-text-formatting-example.pdf>]
-<html_outputs/listing-11-visual-and-meaningful-formatting.pdf, id=1191, 433.62pt x 89.45721pt>
+<html_outputs/listing-11-visual-and-meaningful-formatting.pdf, id=1190, 433.62pt x 89.45721pt>
 File: html_outputs/listing-11-visual-and-meaningful-formatting.pdf Graphic file (type pdf)
 <use html_outputs/listing-11-visual-and-meaningful-formatting.pdf>
 Package pdftex.def Info: html_outputs/listing-11-visual-and-meaningful-formatting.pdf  used on input line 1366.
 (pdftex.def)             Requested size: 398.07608pt x 82.12825pt.
-<html_outputs/listing-12-formula-and-correction-tags.pdf, id=1192, 433.62pt x 96.9211pt>
+<html_outputs/listing-12-formula-and-correction-tags.pdf, id=1191, 433.62pt x 96.9211pt>
 File: html_outputs/listing-12-formula-and-correction-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-12-formula-and-correction-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-12-formula-and-correction-tags.pdf  used on input line 1389.
 (pdftex.def)             Requested size: 398.07608pt x 88.98065pt.
  [31 <./html_outputs/listing-11-visual-and-meaningful-formatting.pdf> <./html_outputs/listing-12-formula-and-correction-tags.pdf>]
-<html_outputs/listing-13-old-text-tags.pdf, id=1227, 433.62pt x 70.94304pt>
+<html_outputs/listing-13-old-text-tags.pdf, id=1226, 433.62pt x 70.94304pt>
 File: html_outputs/listing-13-old-text-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-13-old-text-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-13-old-text-tags.pdf  used on input line 1413.
@@ -1300,58 +1297,58 @@ Overfull \hbox (19.35986pt too wide) in paragraph at lines 1455--1456
  []
 
 [33]
-<html_outputs/listing-14-font-styling-with-css.pdf, id=1254, 433.62pt x 19.31918pt>
+<html_outputs/listing-14-font-styling-with-css.pdf, id=1253, 433.62pt x 19.31918pt>
 File: html_outputs/listing-14-font-styling-with-css.pdf Graphic file (type pdf)
 <use html_outputs/listing-14-font-styling-with-css.pdf>
 Package pdftex.def Info: html_outputs/listing-14-font-styling-with-css.pdf  used on input line 1494.
 (pdftex.def)             Requested size: 398.07608pt x 17.7364pt.
-<html_outputs/listing-15-utf-8-and-unicode-bangla.pdf, id=1255, 433.62pt x 18.8976pt>
+<html_outputs/listing-15-utf-8-and-unicode-bangla.pdf, id=1254, 433.62pt x 18.8976pt>
 File: html_outputs/listing-15-utf-8-and-unicode-bangla.pdf Graphic file (type pdf)
 <use html_outputs/listing-15-utf-8-and-unicode-bangla.pdf>
 Package pdftex.def Info: html_outputs/listing-15-utf-8-and-unicode-bangla.pdf  used on input line 1523.
 (pdftex.def)             Requested size: 398.07608pt x 17.34937pt.
 
 Chapters/Chapter4.tex:1548: ignored error: Infinite glue shrinkage found in box being split [34 <./html_outputs/listing-14-font-styling-with-css.pdf> <./html_outputs/listing-15-utf-8-and-unicode-bangla.pdf>]
-<html_outputs/listing-16-marquee-variations.pdf, id=1286, 433.62pt x 63.47113pt>
+<html_outputs/listing-16-marquee-variations.pdf, id=1285, 433.62pt x 63.47113pt>
 File: html_outputs/listing-16-marquee-variations.pdf Graphic file (type pdf)
 <use html_outputs/listing-16-marquee-variations.pdf>
 Package pdftex.def Info: html_outputs/listing-16-marquee-variations.pdf  used on input line 1562.
 (pdftex.def)             Requested size: 398.07608pt x 58.27113pt.
  [35 <./html_outputs/listing-16-marquee-variations.pdf>] [36]
-<html_outputs/listing-17-ordered-list.pdf, id=1313, 433.62pt x 55.76132pt>
+<html_outputs/listing-17-ordered-list.pdf, id=1312, 433.62pt x 55.76132pt>
 File: html_outputs/listing-17-ordered-list.pdf Graphic file (type pdf)
 <use html_outputs/listing-17-ordered-list.pdf>
 Package pdftex.def Info: html_outputs/listing-17-ordered-list.pdf  used on input line 1619.
 (pdftex.def)             Requested size: 398.07608pt x 51.19296pt.
-<html_outputs/listing-18-ordered-list-type-and-start.pdf, id=1314, 433.62pt x 134.07991pt>
+<html_outputs/listing-18-ordered-list-type-and-start.pdf, id=1313, 433.62pt x 134.07991pt>
 File: html_outputs/listing-18-ordered-list-type-and-start.pdf Graphic file (type pdf)
 <use html_outputs/listing-18-ordered-list-type-and-start.pdf>
 Package pdftex.def Info: html_outputs/listing-18-ordered-list-type-and-start.pdf  used on input line 1646.
 (pdftex.def)             Requested size: 398.07608pt x 123.09517pt.
  [37 <./html_outputs/listing-17-ordered-list.pdf> <./html_outputs/listing-18-ordered-list-type-and-start.pdf>]
-<html_outputs/listing-19-unordered-list.pdf, id=1354, 433.62pt x 55.7834pt>
+<html_outputs/listing-19-unordered-list.pdf, id=1353, 433.62pt x 55.7834pt>
 File: html_outputs/listing-19-unordered-list.pdf Graphic file (type pdf)
 <use html_outputs/listing-19-unordered-list.pdf>
 Package pdftex.def Info: html_outputs/listing-19-unordered-list.pdf  used on input line 1670.
 (pdftex.def)             Requested size: 398.07608pt x 51.21324pt.
-<html_outputs/listing-20-unordered-list-marker-types.pdf, id=1355, 433.62pt x 67.61862pt>
+<html_outputs/listing-20-unordered-list-marker-types.pdf, id=1354, 433.62pt x 67.61862pt>
 File: html_outputs/listing-20-unordered-list-marker-types.pdf Graphic file (type pdf)
 <use html_outputs/listing-20-unordered-list-marker-types.pdf>
 Package pdftex.def Info: html_outputs/listing-20-unordered-list-marker-types.pdf  used on input line 1693.
 (pdftex.def)             Requested size: 398.07608pt x 62.07883pt.
  [38 <./html_outputs/listing-19-unordered-list.pdf> <./html_outputs/listing-20-unordered-list-marker-types.pdf>]
-<html_outputs/listing-21-description-list.pdf, id=1393, 433.62pt x 70.23138pt>
+<html_outputs/listing-21-description-list.pdf, id=1392, 433.62pt x 70.23138pt>
 File: html_outputs/listing-21-description-list.pdf Graphic file (type pdf)
 <use html_outputs/listing-21-description-list.pdf>
 Package pdftex.def Info: html_outputs/listing-21-description-list.pdf  used on input line 1717.
 (pdftex.def)             Requested size: 398.07608pt x 64.47754pt.
-<html_outputs/listing-22-nested-list.pdf, id=1394, 433.62pt x 82.26836pt>
+<html_outputs/listing-22-nested-list.pdf, id=1393, 433.62pt x 82.26836pt>
 File: html_outputs/listing-22-nested-list.pdf Graphic file (type pdf)
 <use html_outputs/listing-22-nested-list.pdf>
 Package pdftex.def Info: html_outputs/listing-22-nested-list.pdf  used on input line 1738.
 (pdftex.def)             Requested size: 398.07608pt x 75.52837pt.
  [39 <./html_outputs/listing-21-description-list.pdf> <./html_outputs/listing-22-nested-list.pdf>]
-<html_outputs/listing-23-old-list-tags.pdf, id=1434, 433.62pt x 52.52524pt>
+<html_outputs/listing-23-old-list-tags.pdf, id=1433, 433.62pt x 52.52524pt>
 File: html_outputs/listing-23-old-list-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-23-old-list-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-23-old-list-tags.pdf  used on input line 1757.
@@ -1362,29 +1359,29 @@ contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfs
 Chapters/Chapter4.tex:1814: ignored error: Infinite glue shrinkage found in box being split [40 <./html_outputs/listing-23-old-list-tags.pdf>]
 contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Hyperlink Syntax}}' on input line 1817.
 [41]
-<html_outputs/listing-24-basic-anchor-link.pdf, id=1456, 433.62pt x 20.28076pt>
+<html_outputs/listing-24-basic-anchor-link.pdf, id=1455, 433.62pt x 20.28076pt>
 File: html_outputs/listing-24-basic-anchor-link.pdf Graphic file (type pdf)
 <use html_outputs/listing-24-basic-anchor-link.pdf>
 Package pdftex.def Info: html_outputs/listing-24-basic-anchor-link.pdf  used on input line 1830.
 (pdftex.def)             Requested size: 398.07608pt x 18.6192pt.
  [42 <./html_outputs/listing-24-basic-anchor-link.pdf>]
-<html_outputs/listing-25-internal-and-external-links.pdf, id=1473, 433.62pt x 67.01738pt>
+<html_outputs/listing-25-internal-and-external-links.pdf, id=1472, 433.62pt x 67.01738pt>
 File: html_outputs/listing-25-internal-and-external-links.pdf Graphic file (type pdf)
 <use html_outputs/listing-25-internal-and-external-links.pdf>
 Package pdftex.def Info: html_outputs/listing-25-internal-and-external-links.pdf  used on input line 1873.
 (pdftex.def)             Requested size: 398.07608pt x 61.52684pt.
-<html_outputs/listing-26-common-link-variations.pdf, id=1474, 433.62pt x 38.65039pt>
+<html_outputs/listing-26-common-link-variations.pdf, id=1473, 433.62pt x 38.65039pt>
 File: html_outputs/listing-26-common-link-variations.pdf Graphic file (type pdf)
 <use html_outputs/listing-26-common-link-variations.pdf>
 Package pdftex.def Info: html_outputs/listing-26-common-link-variations.pdf  used on input line 1891.
 (pdftex.def)             Requested size: 398.07608pt x 35.48387pt.
  [43 <./html_outputs/listing-25-internal-and-external-links.pdf> <./html_outputs/listing-26-common-link-variations.pdf>]
-<html_outputs/listing-27-target-and-download-links.pdf, id=1511, 433.62pt x 21.0386pt>
+<html_outputs/listing-27-target-and-download-links.pdf, id=1510, 433.62pt x 21.0386pt>
 File: html_outputs/listing-27-target-and-download-links.pdf Graphic file (type pdf)
 <use html_outputs/listing-27-target-and-download-links.pdf>
 Package pdftex.def Info: html_outputs/listing-27-target-and-download-links.pdf  used on input line 1916.
 (pdftex.def)             Requested size: 398.07608pt x 19.31497pt.
-<html_outputs/listing-28-head-link-tags.pdf, id=1512, 433.62pt x 48.18pt>
+<html_outputs/listing-28-head-link-tags.pdf, id=1511, 433.62pt x 48.18pt>
 File: html_outputs/listing-28-head-link-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-28-head-link-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-28-head-link-tags.pdf  used on input line 1940.
@@ -1395,29 +1392,29 @@ contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfs
 Chapters/Chapter4.tex:1996: ignored error: Infinite glue shrinkage found in box being split [45]
 contour: Using real outline for `\textcolor {formulacolor}{\textsc {\normalsize \bfseries Image Syntax}}' on input line 2016.
 [46]
-<html_outputs/listing-29-image-with-size-and-tooltip-local.pdf, id=1545, 433.62pt x 149.1171pt>
+<html_outputs/listing-29-image-with-size-and-tooltip-local.pdf, id=1544, 433.62pt x 149.1171pt>
 File: html_outputs/listing-29-image-with-size-and-tooltip-local.pdf Graphic file (type pdf)
 <use html_outputs/listing-29-image-with-size-and-tooltip-local.pdf>
 Package pdftex.def Info: html_outputs/listing-29-image-with-size-and-tooltip-local.pdf  used on input line 2029.
 (pdftex.def)             Requested size: 398.07608pt x 136.90042pt.
-<html_outputs/listing-30-image-path-variations.pdf, id=1546, 433.62pt x 94.4328pt>
+<html_outputs/listing-30-image-path-variations.pdf, id=1545, 433.62pt x 94.4328pt>
 File: html_outputs/listing-30-image-path-variations.pdf Graphic file (type pdf)
 <use html_outputs/listing-30-image-path-variations.pdf>
 Package pdftex.def Info: html_outputs/listing-30-image-path-variations.pdf  used on input line 2053.
 (pdftex.def)             Requested size: 398.07608pt x 86.69621pt.
  [47 <./html_outputs/listing-29-image-with-size-and-tooltip-local.pdf> <./html_outputs/listing-30-image-path-variations.pdf>]
-<html_outputs/listing-31-old-image-attributes.pdf, id=1574, 433.62pt x 69.6201pt>
+<html_outputs/listing-31-old-image-attributes.pdf, id=1573, 433.62pt x 69.6201pt>
 File: html_outputs/listing-31-old-image-attributes.pdf Graphic file (type pdf)
 <use html_outputs/listing-31-old-image-attributes.pdf>
 Package pdftex.def Info: html_outputs/listing-31-old-image-attributes.pdf  used on input line 2078.
 (pdftex.def)             Requested size: 398.07608pt x 63.91634pt.
-<html_outputs/listing-32-image-link.pdf, id=1575, 433.62pt x 87.9285pt>
+<html_outputs/listing-32-image-link.pdf, id=1574, 433.62pt x 87.9285pt>
 File: html_outputs/listing-32-image-link.pdf Graphic file (type pdf)
 <use html_outputs/listing-32-image-link.pdf>
 Package pdftex.def Info: html_outputs/listing-32-image-link.pdf  used on input line 2098.
 (pdftex.def)             Requested size: 398.07608pt x 80.7248pt.
  [48 <./html_outputs/listing-31-old-image-attributes.pdf> <./html_outputs/listing-32-image-link.pdf>]
-<html_outputs/listing-33-image-map-example.pdf, id=1605, 433.62pt x 142.13101pt>
+<html_outputs/listing-33-image-map-example.pdf, id=1604, 433.62pt x 142.13101pt>
 File: html_outputs/listing-33-image-map-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-33-image-map-example.pdf>
 Package pdftex.def Info: html_outputs/listing-33-image-map-example.pdf  used on input line 2119.
@@ -1425,17 +1422,17 @@ Package pdftex.def Info: html_outputs/listing-33-image-map-example.pdf  used on 
 
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 2124.
 Chapters/Chapter4.tex:2168: ignored error: Infinite glue shrinkage found in box being split [49 <./html_outputs/listing-33-image-map-example.pdf>] [50]
-<html_outputs/listing-34-audio-and-video-example.pdf, id=1634, 433.62pt x 52.998pt>
+<html_outputs/listing-34-audio-and-video-example.pdf, id=1633, 433.62pt x 52.998pt>
 File: html_outputs/listing-34-audio-and-video-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-34-audio-and-video-example.pdf>
 Package pdftex.def Info: html_outputs/listing-34-audio-and-video-example.pdf  used on input line 2185.
 (pdftex.def)             Requested size: 398.07608pt x 48.65604pt.
-<html_outputs/listing-35-iframe-example.pdf, id=1635, 433.62pt x 133.9404pt>
+<html_outputs/listing-35-iframe-example.pdf, id=1634, 433.62pt x 133.9404pt>
 File: html_outputs/listing-35-iframe-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-35-iframe-example.pdf>
 Package pdftex.def Info: html_outputs/listing-35-iframe-example.pdf  used on input line 2199.
 (pdftex.def)             Requested size: 398.07608pt x 122.96709pt.
-<html_outputs/listing-36-old-frameset-example.pdf, id=1636, 433.62pt x 123.5817pt>
+<html_outputs/listing-36-old-frameset-example.pdf, id=1635, 433.62pt x 123.5817pt>
 File: html_outputs/listing-36-old-frameset-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-36-old-frameset-example.pdf>
 Package pdftex.def Info: html_outputs/listing-36-old-frameset-example.pdf  used on input line 2216.
@@ -1444,41 +1441,41 @@ Package pdftex.def Info: html_outputs/listing-36-old-frameset-example.pdf  used 
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML Table}}' on input line 2229.
 Chapters/Chapter4.tex:2287: ignored error: Infinite glue shrinkage found in box being split [52 <./html_outputs/listing-36-old-frameset-example.pdf>]
 Chapters/Chapter4.tex:2287: ignored error: Infinite glue shrinkage found in box being split [53]
-<html_outputs/listing-37-basic-html-table.pdf, id=1699, 433.62pt x 71.83638pt>
+<html_outputs/listing-37-basic-html-table.pdf, id=1698, 433.62pt x 71.83638pt>
 File: html_outputs/listing-37-basic-html-table.pdf Graphic file (type pdf)
 <use html_outputs/listing-37-basic-html-table.pdf>
 Package pdftex.def Info: html_outputs/listing-37-basic-html-table.pdf  used on input line 2306.
 (pdftex.def)             Requested size: 398.07608pt x 65.95105pt.
  [54 <./html_outputs/listing-37-basic-html-table.pdf>]
-<html_outputs/listing-38-unequal-table-cells.pdf, id=1728, 433.62pt x 58.5387pt>
+<html_outputs/listing-38-unequal-table-cells.pdf, id=1727, 433.62pt x 58.5387pt>
 File: html_outputs/listing-38-unequal-table-cells.pdf Graphic file (type pdf)
 <use html_outputs/listing-38-unequal-table-cells.pdf>
 Package pdftex.def Info: html_outputs/listing-38-unequal-table-cells.pdf  used on input line 2336.
 (pdftex.def)             Requested size: 398.07608pt x 53.7428pt.
-<html_outputs/listing-39-cellspacing-and-cellpadding.pdf, id=1729, 433.62pt x 97.5645pt>
+<html_outputs/listing-39-cellspacing-and-cellpadding.pdf, id=1728, 433.62pt x 97.5645pt>
 File: html_outputs/listing-39-cellspacing-and-cellpadding.pdf Graphic file (type pdf)
 <use html_outputs/listing-39-cellspacing-and-cellpadding.pdf>
 Package pdftex.def Info: html_outputs/listing-39-cellspacing-and-cellpadding.pdf  used on input line 2363.
 (pdftex.def)             Requested size: 398.07608pt x 89.57133pt.
  [55 <./html_outputs/listing-38-unequal-table-cells.pdf> <./html_outputs/listing-39-cellspacing-and-cellpadding.pdf>]
-<html_outputs/listing-40-colspan-and-rowspan.pdf, id=1771, 433.62pt x 80.9424pt>
+<html_outputs/listing-40-colspan-and-rowspan.pdf, id=1770, 433.62pt x 80.9424pt>
 File: html_outputs/listing-40-colspan-and-rowspan.pdf Graphic file (type pdf)
 <use html_outputs/listing-40-colspan-and-rowspan.pdf>
 Package pdftex.def Info: html_outputs/listing-40-colspan-and-rowspan.pdf  used on input line 2392.
 (pdftex.def)             Requested size: 398.07608pt x 74.31105pt.
  [56 <./html_outputs/listing-40-colspan-and-rowspan.pdf>]
-<html_outputs/listing-41-table-background-color.pdf, id=1814, 433.62pt x 59.2614pt>
+<html_outputs/listing-41-table-background-color.pdf, id=1813, 433.62pt x 59.2614pt>
 File: html_outputs/listing-41-table-background-color.pdf Graphic file (type pdf)
 <use html_outputs/listing-41-table-background-color.pdf>
 Package pdftex.def Info: html_outputs/listing-41-table-background-color.pdf  used on input line 2421.
 (pdftex.def)             Requested size: 398.07608pt x 54.40628pt.
-<html_outputs/listing-42-alignment-and-empty-cells.pdf, id=1815, 433.62pt x 78.7743pt>
+<html_outputs/listing-42-alignment-and-empty-cells.pdf, id=1814, 433.62pt x 78.7743pt>
 File: html_outputs/listing-42-alignment-and-empty-cells.pdf Graphic file (type pdf)
 <use html_outputs/listing-42-alignment-and-empty-cells.pdf>
 Package pdftex.def Info: html_outputs/listing-42-alignment-and-empty-cells.pdf  used on input line 2443.
 (pdftex.def)             Requested size: 398.07608pt x 72.32057pt.
  [57 <./html_outputs/listing-41-table-background-color.pdf> <./html_outputs/listing-42-alignment-and-empty-cells.pdf>]
-<html_outputs/listing-43-table-head-body-and-foot.pdf, id=1859, 433.62pt x 115.16927pt>
+<html_outputs/listing-43-table-head-body-and-foot.pdf, id=1858, 433.62pt x 115.16927pt>
 File: html_outputs/listing-43-table-head-body-and-foot.pdf Graphic file (type pdf)
 <use html_outputs/listing-43-table-head-body-and-foot.pdf>
 Package pdftex.def Info: html_outputs/listing-43-table-head-body-and-foot.pdf  used on input line 2476.
@@ -1487,18 +1484,18 @@ Package pdftex.def Info: html_outputs/listing-43-table-head-body-and-foot.pdf  u
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 2488.
 Chapters/Chapter4.tex:2506: ignored error: Infinite glue shrinkage found in box being split [58 <./html_outputs/listing-43-table-head-body-and-foot.pdf>]
 Chapters/Chapter4.tex:2558: ignored error: Infinite glue shrinkage found in box being split [59]
-<html_outputs/listing-44-simple-div-layout.pdf, id=1892, 433.62pt x 80.4606pt>
+<html_outputs/listing-44-simple-div-layout.pdf, id=1891, 433.62pt x 80.4606pt>
 File: html_outputs/listing-44-simple-div-layout.pdf Graphic file (type pdf)
 <use html_outputs/listing-44-simple-div-layout.pdf>
 Package pdftex.def Info: html_outputs/listing-44-simple-div-layout.pdf  used on input line 2585.
 (pdftex.def)             Requested size: 398.07608pt x 73.86873pt.
  [60 <./html_outputs/listing-44-simple-div-layout.pdf>]
-<html_outputs/listing-45-semantic-layout.pdf, id=1930, 433.62pt x 85.42516pt>
+<html_outputs/listing-45-semantic-layout.pdf, id=1929, 433.62pt x 85.42516pt>
 File: html_outputs/listing-45-semantic-layout.pdf Graphic file (type pdf)
 <use html_outputs/listing-45-semantic-layout.pdf>
 Package pdftex.def Info: html_outputs/listing-45-semantic-layout.pdf  used on input line 2603.
 (pdftex.def)             Requested size: 398.07608pt x 78.42653pt.
-<html_outputs/listing-46-internal-css-and-class-selector.pdf, id=1931, 433.62pt x 30.8352pt>
+<html_outputs/listing-46-internal-css-and-class-selector.pdf, id=1930, 433.62pt x 30.8352pt>
 File: html_outputs/listing-46-internal-css-and-class-selector.pdf Graphic file (type pdf)
 <use html_outputs/listing-46-internal-css-and-class-selector.pdf>
 Package pdftex.def Info: html_outputs/listing-46-internal-css-and-class-selector.pdf  used on input line 2634.
@@ -1508,35 +1505,35 @@ contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize 
 contour: Using real outline for `\textcolor {defcolor}{\textsc {\normalsize \bfseries HTML Form}}' on input line 2644.
 [61 <./html_outputs/listing-45-semantic-layout.pdf> <./html_outputs/listing-46-internal-css-and-class-selector.pdf>]
 Chapters/Chapter4.tex:2718: ignored error: Infinite glue shrinkage found in box being split [62]
-<html_outputs/listing-47-basic-form-structure.pdf, id=1971, 433.62pt x 30.5943pt>
+<html_outputs/listing-47-basic-form-structure.pdf, id=1970, 433.62pt x 30.5943pt>
 File: html_outputs/listing-47-basic-form-structure.pdf Graphic file (type pdf)
 <use html_outputs/listing-47-basic-form-structure.pdf>
 Package pdftex.def Info: html_outputs/listing-47-basic-form-structure.pdf  used on input line 2732.
 (pdftex.def)             Requested size: 398.07608pt x 28.08778pt.
  [63 <./html_outputs/listing-47-basic-form-structure.pdf>]
-<html_outputs/listing-48-text-and-password-fields.pdf, id=1996, 433.62pt x 30.5943pt>
+<html_outputs/listing-48-text-and-password-fields.pdf, id=1995, 433.62pt x 30.5943pt>
 File: html_outputs/listing-48-text-and-password-fields.pdf Graphic file (type pdf)
 <use html_outputs/listing-48-text-and-password-fields.pdf>
 Package pdftex.def Info: html_outputs/listing-48-text-and-password-fields.pdf  used on input line 2757.
 (pdftex.def)             Requested size: 398.07608pt x 28.08778pt.
-<html_outputs/listing-49-radio-and-checkbox-inputs.pdf, id=1997, 433.62pt x 94.9146pt>
+<html_outputs/listing-49-radio-and-checkbox-inputs.pdf, id=1996, 433.62pt x 94.9146pt>
 File: html_outputs/listing-49-radio-and-checkbox-inputs.pdf Graphic file (type pdf)
 <use html_outputs/listing-49-radio-and-checkbox-inputs.pdf>
 Package pdftex.def Info: html_outputs/listing-49-radio-and-checkbox-inputs.pdf  used on input line 2783.
 (pdftex.def)             Requested size: 398.07608pt x 87.13853pt.
  [64 <./html_outputs/listing-48-text-and-password-fields.pdf> <./html_outputs/listing-49-radio-and-checkbox-inputs.pdf>]
-<html_outputs/listing-50-drop-down-and-option-group.pdf, id=2038, 433.62pt x 65.2839pt>
+<html_outputs/listing-50-drop-down-and-option-group.pdf, id=2037, 433.62pt x 65.2839pt>
 File: html_outputs/listing-50-drop-down-and-option-group.pdf Graphic file (type pdf)
 <use html_outputs/listing-50-drop-down-and-option-group.pdf>
 Package pdftex.def Info: html_outputs/listing-50-drop-down-and-option-group.pdf  used on input line 2812.
 (pdftex.def)             Requested size: 398.07608pt x 59.9354pt.
-<html_outputs/listing-51-textarea-and-buttons.pdf, id=2039, 433.62pt x 63.1158pt>
+<html_outputs/listing-51-textarea-and-buttons.pdf, id=2038, 433.62pt x 63.1158pt>
 File: html_outputs/listing-51-textarea-and-buttons.pdf Graphic file (type pdf)
 <use html_outputs/listing-51-textarea-and-buttons.pdf>
 Package pdftex.def Info: html_outputs/listing-51-textarea-and-buttons.pdf  used on input line 2839.
 (pdftex.def)             Requested size: 398.07608pt x 57.94492pt.
  [65 <./html_outputs/listing-50-drop-down-and-option-group.pdf>]
-<html_outputs/listing-52-complete-form-example.pdf, id=2081, 433.62pt x 204.0423pt>
+<html_outputs/listing-52-complete-form-example.pdf, id=2080, 433.62pt x 204.0423pt>
 File: html_outputs/listing-52-complete-form-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-52-complete-form-example.pdf>
 Package pdftex.def Info: html_outputs/listing-52-complete-form-example.pdf  used on input line 2889.
@@ -1544,24 +1541,24 @@ Package pdftex.def Info: html_outputs/listing-52-complete-form-example.pdf  used
  [66 <./html_outputs/listing-51-textarea-and-buttons.pdf>]
 contour: Using real outline for `\textcolor {summarycolor}{\textsc {\normalsize \bfseries Summary}}' on input line 2894.
 Chapters/Chapter4.tex:2952: ignored error: Infinite glue shrinkage found in box being split [67 <./html_outputs/listing-52-complete-form-example.pdf>] [68]
-<html_outputs/listing-53-code-and-output-tags.pdf, id=2173, 433.62pt x 114.57706pt>
+<html_outputs/listing-53-code-and-output-tags.pdf, id=2172, 433.62pt x 114.57706pt>
 File: html_outputs/listing-53-code-and-output-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-53-code-and-output-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-53-code-and-output-tags.pdf  used on input line 2969.
 (pdftex.def)             Requested size: 398.07608pt x 105.19012pt.
-<html_outputs/listing-54-quote-and-direction-tags.pdf, id=2174, 433.62pt x 78.12587pt>
+<html_outputs/listing-54-quote-and-direction-tags.pdf, id=2173, 433.62pt x 78.12587pt>
 File: html_outputs/listing-54-quote-and-direction-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-54-quote-and-direction-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-54-quote-and-direction-tags.pdf  used on input line 2985.
 (pdftex.def)             Requested size: 398.07608pt x 71.72527pt.
  [69 <./html_outputs/listing-53-code-and-output-tags.pdf> <./html_outputs/listing-54-quote-and-direction-tags.pdf>]
-<html_outputs/listing-55-script-and-object-tags.pdf, id=2225, 433.62pt x 22.92062pt>
+<html_outputs/listing-55-script-and-object-tags.pdf, id=2224, 433.62pt x 22.92062pt>
 File: html_outputs/listing-55-script-and-object-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-55-script-and-object-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-55-script-and-object-tags.pdf  used on input line 3004.
 (pdftex.def)             Requested size: 398.07608pt x 21.04279pt.
  [70 <./html_outputs/listing-55-script-and-object-tags.pdf>]
-<html_outputs/listing-56-mini-webpage-project.pdf, id=2271, 433.62pt x 359.1819pt>
+<html_outputs/listing-56-mini-webpage-project.pdf, id=2270, 433.62pt x 359.1819pt>
 File: html_outputs/listing-56-mini-webpage-project.pdf Graphic file (type pdf)
 <use html_outputs/listing-56-mini-webpage-project.pdf>
 Package pdftex.def Info: html_outputs/listing-56-mini-webpage-project.pdf  used on input line 3081.
@@ -1572,20 +1569,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3EDF1CFE1F07F7B95B65C80B66DF445B;33265.
+(rerunfilecheck)             Checksum: 546BF0DD11E2F9201B0086149027EE9F;33265.
  ) 
 Here is how much of TeX's memory you used:
- 39024 strings out of 467690
- 818683 string characters out of 5414972
- 1742452 words of memory out of 5000000
- 66513 multiletter control sequences out of 15000+600000
- 655262 words of font info for 103 fonts, out of 8000000 for 9000
+ 39022 strings out of 467690
+ 818668 string characters out of 5414972
+ 1742540 words of memory out of 5000000
+ 66512 multiletter control sequences out of 15000+600000
+ 654828 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,16n,145p,576b,3690s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/calligra-type1/callig15.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on main.pdf (73 pages, 2857587 bytes).
+ 91i,16n,145p,576b,3692s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1095.pfb>
+Output written on main.pdf (73 pages, 2838887 bytes).
 PDF statistics:
- 2624 PDF objects out of 2984 (max. 8388607)
+ 2619 PDF objects out of 2984 (max. 8388607)
  788 named destinations out of 1000 (max. 500000)
  1782 words of extra memory for PDF output out of 10000 (max. 10000000)
 
