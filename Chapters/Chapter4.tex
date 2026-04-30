@@ -728,17 +728,17 @@ Hosting providers may also provide domain-based email accounts, such as \texttt{
 
 \subsection{Difference between Domain Name and Web Hosting}
 
-\begin{longtable}{|L{8cm}|L{8cm}|}
-\longtableheader{2}{Domain Name vs Web Hosting}{%
-\tblcolhdcell{Domain Name} & \tblcolhdcell{Web Hosting}}
+\begin{longtable}{|C{3cm}|L{6.25cm}|L{6.25cm}|}
+\longtableheader{3}{Domain Name vs Web Hosting}{%
+\tblcolhdcell{Aspect} & \tblcolhdcell{Domain Name} & \tblcolhdcell{Web Hosting}}
 
-The unique readable name of a website. & The server space where website files are stored. \\ \tblhline
-Must be registered with a domain registrar. & Must be rented or configured from a hosting provider. \\ \tblhline
-One domain name identifies one main web address. & One hosting account may contain one or many websites, depending on the plan. \\ \tblhline
-Users cannot easily reach a website without a domain name or URL. & A website cannot be publicly available without hosting. \\ \tblhline
-Domain registration does not require server configuration. & Hosting requires server configuration, storage, bandwidth and control panel settings. \\ \tblhline
-Bandwidth is not the main issue in domain registration. & Bandwidth is an important issue in hosting. \\ \tblhline
-The quality of the domain registrar is less visible to normal visitors. & The quality of the hosting provider affects speed, uptime, security and support. \\ \tblhline
+Meaning & The unique readable name of a website. & The server space where website files are stored. \\ \tblhline
+Provider & Must be registered with a domain registrar. & Must be rented or configured from a hosting provider. \\ \tblhline
+Capacity & One domain name identifies one main web address. & One hosting account may contain one or many websites, depending on the plan. \\ \tblhline
+Public access & Users cannot easily reach a website without a domain name or URL. & A website cannot be publicly available without hosting. \\ \tblhline
+Setup & Domain registration does not require server configuration. & Hosting requires server configuration, storage, bandwidth and control panel settings. \\ \tblhline
+Bandwidth & Bandwidth is not the main issue in domain registration. & Bandwidth is an important issue in hosting. \\ \tblhline
+Quality effect & The quality of the domain registrar is less visible to normal visitors. & The quality of the hosting provider affects speed, uptime, security and support. \\ \tblhline
 
 \tblbottomrule
 \caption{Difference between Domain Name and Web Hosting}
@@ -917,7 +917,7 @@ Example
 
 \section{Complete Website Working Process}
 
-This section connects the earlier ideas together. A website is first designed and published by a creator, then it is accessed by users through a browser using domain name, DNS, IP address, URL and protocol.
+A website is first designed and published by a creator, then it is accessed by users through a browser using domain name, DNS, IP address, URL and protocol.
 
 \subsection{Designing a Website}
 Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
@@ -982,7 +982,7 @@ Design the website $\rightarrow$ create webpage files $\rightarrow$ upload files
 HTML (HyperText Markup Language) is a markup language used to create webpages and web applications by describing how text, images, links, tables, forms and other contents should be organized and displayed in a browser.
 \end{definitionbox}
 
-HTML is not a programming language. It cannot process data, make decisions, or create a dynamic website by itself. It marks content with tags so that a browser can present that content as a webpage.
+\Note HTML is not a programming language. It cannot process data, make decisions, or create a dynamic website by itself. It marks content with tags so that a browser can present that content as a webpage.
 
 \subsection{Concept of HTML}
 \begin{itemize}
@@ -994,13 +994,13 @@ HTML is not a programming language. It cannot process data, make decisions, or c
 \end{itemize}
 
 \subsection{Markup Language vs Programming Language}
-\begin{longtable}{|L{8.25cm}|L{8.25cm}|}
-\longtableheader{2}{Markup Language vs Programming Language}{%
-\tblcolhdcell{Markup Language} & \tblcolhdcell{Programming Language}}
-Uses tags to describe how content should be displayed. & Uses logic, variables, conditions and instructions to process data. \\ \tblhline
-Cannot process data by itself. & Can process data and produce calculated results. \\ \tblhline
-Cannot take and handle user input by itself. & Can take input, process it and produce output. \\ \tblhline
-Example: HTML. & Example: C, JavaScript, Python, PHP. \\ \tblhline
+\begin{longtable}{|C{3cm}|L{6.5cm}|L{6.5cm}|}
+\longtableheader{3}{Markup Language vs Programming Language}{%
+\tblcolhdcell{Aspect} & \tblcolhdcell{Markup Language} & \tblcolhdcell{Programming Language}}
+Purpose & Uses tags to describe how content should be displayed. & Uses logic, variables, conditions and instructions to process data. \\ \tblhline
+Data processing & Cannot process data by itself. & Can process data and produce calculated results. \\ \tblhline
+User input & Cannot take and handle user input by itself. & Can take input, process it and produce output. \\ \tblhline
+Example & Example: HTML. & Example: C, JavaScript, Python, PHP. \\ \tblhline
 \tblbottomrule
 \caption{Difference between markup language and programming language}
 \end{longtable}
@@ -1036,7 +1036,7 @@ Example: HTML. & Example: C, JavaScript, Python, PHP. \\ \tblhline
 \end{itemize}
 
 \begin{summarybox}
-HTML defines webpage structure. CSS controls presentation, JavaScript controls browser-side behavior, and server-side languages handle dynamic processing.
+HTML defines webpage structure. CSS controls presentation, JavaScript controls browser-side behavior, and server-side languages like PHP or Python handle dynamic processing.
 \end{summarybox}
 
 \section{HTML Tags, Elements and Attributes}
@@ -1082,7 +1082,13 @@ An HTML element is the complete unit formed by a start tag, element content and 
 \]
 \end{formulabox}
 
-For example, in \texttt{<p align="left">This is HTML class</p>}, the start tag is \texttt{<p align="left">}, the content is \texttt{This is HTML class}, and the end tag is \texttt{</p>}.
+\begin{infobox}[Element Example]
+\[
+\underbrace{\texttt{<p align="left">}}_{\text{start tag}}
+\underbrace{\texttt{This is HTML class}}_{\text{content}}
+\underbrace{\texttt{</p>}}_{\text{end tag}}
+\]
+\end{infobox}
 
 \subsection{HTML Attribute}
 \begin{definitionbox}[Attribute]
@@ -1098,7 +1104,7 @@ An attribute is a special word written inside the start tag to give extra inform
 \begin{itemize}
     \item An attribute has two parts: attribute name and attribute value.
     \item Attributes are written in the start tag, not in the end tag.
-    \item Multiple attributes can be used in one tag.
+    \item Multiple attributes can be used in one tag divided by spaces.
     \item Lowercase attribute names are preferred.
     \item Attribute values are usually written inside double quotation marks.
     \item If an attribute value contains spaces, quotation marks are required.

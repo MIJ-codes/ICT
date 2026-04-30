@@ -410,36 +410,53 @@
 %     To switch: comment Theme A block, uncomment Theme B/C/D
 % ═══════════════════════════════════════════════════════════════════════════════
 
-% ═══ THEME A — Electric Academic ═════════════════════════════════════════════
+% ═══ ACTIVE PALETTE — Electric Academic + Green Table Variant ═══════════════
+% This is the only active color block. Older experiments are archived below.
+
+% Headings
 \definecolor{chaptercolor}     {RGB}{10,  20,  60}
 \definecolor{sectioncolor}     {RGB}{157,0,255}
 \definecolor{subsectioncolor}  {RGB}{255,0,144}
-\definecolor{subsubcolor}      {RGB}{166,0,103}
+\definecolor{subsubcolor}      {HTML}{6A0F49}
 \definecolor{paragraphcolor}   {RGB}{255, 60, 0}
 \definecolor{subparagraphcolor}{RGB}{0,187,119}
 
-\definecolor{defcolor}    {RGB}{0,0,205}
-\definecolor{formulacolor}{RGB}{255, 0,  56}
-\definecolor{infocolor}   {RGB}{50,  200, 120}
-\definecolor{examplecolor}{RGB}{138,0,196}
-\definecolor{derivcolor}  {RGB}{30,  70,  130}
-\definecolor{summarycolor}  {RGB}{255, 200, 80}
-\definecolor{warningcolor}  {RGB}{127, 26, 92}
-\definecolor{notecolor}  {RGB}{0,255,127}
+% Note/card boxes and inline semantic text
+\definecolor{defcolor}         {RGB}{0,0,205}
+\definecolor{termcolor}        {HTML}{EF626C}
+\definecolor{formulacolor}     {RGB}{255, 0,  56}
+\definecolor{infocolor}        {HTML}{069E2D}
+\definecolor{examplecolor}     {RGB}{138,0,196}
+\definecolor{derivcolor}       {RGB}{30,  70,  130}
+\definecolor{summarycolor}     {RGB}{255, 200, 80}
+\definecolor{warningcolor}     {RGB}{127, 26, 92}
+\definecolor{notecolor}        {HTML}{00A6A6}
 
-\definecolor{primaryblue}  {RGB}{0,   0,   205}
-\definecolor{secondaryblue}{RGB}{0,   127, 255}
-\definecolor{darkgray}     {RGB}{64,  64,  64}
-\definecolor{lightgray}    {RGB}{248, 248, 248}
-\definecolor{dangerred}    {RGB}{255, 7,   58}
-\definecolor{headerline}   {RGB}{70,  100, 150}
+% List labels
+\definecolor{itemizeonecolor}  {HTML}{B744B8}
+\definecolor{itemizetwocolor}  {HTML}{138A36}
+\definecolor{itemizethreecolor}{HTML}{E05263}
+\definecolor{itemizefourcolor} {HTML}{B18FCF}
+\definecolor{enumonecolor}     {HTML}{607196}
+\definecolor{enumtwocolor}     {HTML}{CE8147}
+\definecolor{enumthreecolor}   {HTML}{904E55}
 
-% V2 table colors
-\definecolor{tablecolhdbg}   {RGB}{220, 218, 250}
-\definecolor{tablecolhdtext} {RGB}{60,  40,  180}
-\definecolor{tablerail}      {RGB}{0,0,128}
-\definecolor{tablezebrarow}  {RGB}{239, 237, 255}
-\definecolor{tablegrid}      {RGB}{0,0,128}
+% Page structure and general UI colors
+\definecolor{primaryblue}      {RGB}{0,   0,   205}
+\definecolor{secondaryblue}    {RGB}{0,   127, 255}
+\definecolor{darkgray}         {RGB}{64,  64,  64}
+\definecolor{lightgray}        {RGB}{248, 248, 248}
+\definecolor{dangerred}        {RGB}{255, 7,   58}
+\definecolor{headerline}       {RGB}{70,  100, 150}
+
+% Tables
+\definecolor{tablebannerbg}    {HTML}{19647E}
+\definecolor{tablecolhdbg}     {HTML}{A8DADC}
+\definecolor{tablecolhdtext}   {HTML}{18314F}
+\definecolor{tablebannertext}  {HTML}{E0EFDA}
+\definecolor{tablerail}        {HTML}{19647E}
+\definecolor{tablezebrarow}    {HTML}{ECFEF4}
+\definecolor{tablegrid}        {HTML}{19647E}
 
 % ─── Color swatch for HTML color tables ──────────────────────────────────────
 \newcommand{\colorswatch}[1]{%
@@ -449,15 +466,15 @@
     \endgroup
 }
 
-% HTML code listing colors
-\definecolor{htmltagcolor}       {RGB}{0, 92, 197}
-\definecolor{htmlattrcolor}      {RGB}{145, 80, 0}
-\definecolor{htmlstringcolor}    {RGB}{180, 35, 70}
-\definecolor{htmlcommentcolor}   {RGB}{30, 130, 75}
-\definecolor{htmlsymbolcolor}    {RGB}{95, 45, 160}
-\definecolor{htmloperatorcolor}  {RGB}{80, 80, 95}
-\definecolor{htmltextcolor}      {RGB}{35, 35, 55}
-\definecolor{htmldeprecatedcolor}{RGB}{190, 80, 0}
+% HTML code listings
+\definecolor{htmltagcolor}       {HTML}{19647E}
+\definecolor{htmlattrcolor}      {HTML}{EE964B}
+\definecolor{htmlstringcolor}    {HTML}{D81E5B}
+\definecolor{htmlcommentcolor}   {HTML}{138A36}
+\definecolor{htmlsymbolcolor}    {HTML}{B18FCF}
+\definecolor{htmloperatorcolor}  {HTML}{494850}
+\definecolor{htmltextcolor}      {HTML}{161B33}
+\definecolor{htmldeprecatedcolor}{HTML}{F95738}
 
 % ═══ THEME B — Pastel Ink (uncomment to activate) ════════════════════════════
 %\definecolor{chaptercolor}     {HTML}{2F6FA3}
@@ -528,6 +545,7 @@
 %\definecolor{defcolor}         {RGB}{60,  40,  120}
 %\definecolor{formulacolor}     {RGB}{200, 40,  40}
 %\definecolor{infocolor}        {RGB}{50,  200, 120}
+%\definecolor{infocolor}        {RGB}{50,  200, 120}
 %\definecolor{examplecolor}     {RGB}{140, 80,  200}
 %\definecolor{derivcolor}       {RGB}{5,   10,  30}
 %\definecolor{primaryblue}      {RGB}{70,  100, 150}
@@ -543,6 +561,96 @@
 %\definecolor{tablerail}        {RGB}{83,  74,  183}
 %\definecolor{tablezebrarow}    {RGB}{243, 241, 255}
 %\definecolor{tablegrid}        {RGB}{190, 183, 230}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% ARCHIVE: EYE-COMFORT EXPERIMENT PALETTE — inactive
+% Date: 2026-04-30
+%
+% Safe rollback:
+%   Comment this whole block only. The original active palette above is untouched.
+%   Do not delete this block until the experiment is accepted.
+% ═══════════════════════════════════════════════════════════════════════════════
+
+%\definecolor{chaptercolor}     {RGB}{10,  20,  60}
+%\definecolor{sectioncolor}     {RGB}{157,0,255}
+%\definecolor{subsectioncolor}  {RGB}{255,0,144}
+%\definecolor{subsectioncolor}  {HTML}{7D1D3F}
+%\definecolor{subsubcolor}      {RGB}{166,0,103}
+%\definecolor{paragraphcolor}   {RGB}{255, 60, 0}
+%\definecolor{subparagraphcolor}{RGB}{0,187,119}
+
+%\definecolor{defcolor}         {RGB}{0,0,205}
+%\definecolor{termcolor}        {RGB}{0,0,205}
+%\definecolor{formulacolor}     {RGB}{255, 0,  56}
+%\definecolor{infocolor}        {RGB}{50,  200, 120}
+%\definecolor{examplecolor}     {RGB}{138,0,196}
+%\definecolor{derivcolor}       {RGB}{30,  70,  130}
+%\definecolor{summarycolor}     {RGB}{255, 200, 80}
+%\definecolor{warningcolor}     {RGB}{127, 26, 92}
+%\definecolor{notecolor}        {RGB}{0,255,127}
+%\definecolor{notecolor}        {RGB}{0,255,127}
+
+%\definecolor{primaryblue}      {RGB}{0,   0,   205}
+%\definecolor{secondaryblue}    {RGB}{0,   127, 255}
+%\definecolor{darkgray}         {RGB}{64,  64,  64}
+%\definecolor{lightgray}        {RGB}{248, 248, 248}
+%\definecolor{dangerred}        {RGB}{255, 7,   58}
+%\definecolor{headerline}       {RGB}{70,  100, 150}
+
+%\definecolor{tablebannerbg}    {HTML}{19647E}
+%\definecolor{tablecolhdbg}     {HTML}{A8DADC}
+%\definecolor{tablecolhdtext}   {HTML}{18314F}
+%\definecolor{tablebannertext}  {HTML}{E0EFDA}
+%\definecolor{tablerail}        {HTML}{18314F}
+%\definecolor{tablezebrarow}    {HTML}{E0EFDA}
+%\definecolor{tablegrid}        {HTML}{19647E}
+
+%\definecolor{htmltagcolor}       {HTML}{19647E}
+%\definecolor{htmlattrcolor}      {HTML}{EE964B}
+%\definecolor{htmlstringcolor}    {HTML}{D81E5B}
+%\definecolor{htmlcommentcolor}   {HTML}{138A36}
+%\definecolor{htmlsymbolcolor}    {HTML}{B18FCF}
+%\definecolor{htmloperatorcolor}  {HTML}{494850}
+%\definecolor{htmltextcolor}      {HTML}{161B33}
+%\definecolor{htmldeprecatedcolor}{HTML}{F95738}
+%\definecolor{enumonecolor}     {HTML}{62929E}
+
+% Reserve swatches from your selected palette. These are intentionally
+% commented out so they are not active unless you promote one manually.
+%\definecolor{reserve-peach}          {HTML}{F39B6D}
+%\definecolor{reserve-soft-pink}      {HTML}{F6C0D0}
+%\definecolor{reserve-lavender-pink}  {HTML}{D4AFCD}
+%\definecolor{reserve-pale-peach}     {HTML}{FFCAB1}
+%\definecolor{reserve-yellow-green}   {HTML}{DDD92A}
+%\definecolor{reserve-warm-stone}     {HTML}{CEB5A7}
+%\definecolor{reserve-neon-green}     {HTML}{18FF6D}
+%\definecolor{itemizeonecolor}  {HTML}{E26D5C}
+%\definecolor{reserve-bright-green}   {HTML}{04E824}
+%\definecolor{reserve-dark-green}     {HTML}{285238}
+%\definecolor{reserve-mint}           {HTML}{73E2A7}
+%\definecolor{reserve-cool-mint}      {HTML}{84DCCF}
+%\definecolor{subsubcolor}      {HTML}{531253}
+%\definecolor{reserve-pale-cyan}      {HTML}{A8DADC}
+%\definecolor{reserve-light-lavender} {HTML}{D8D8F6}
+%\definecolor{reserve-muted-mauve}    {HTML}{978897}
+%\definecolor{enumonecolor}     {HTML}{62929E}
+%\definecolor{reserve-light-purple}   {HTML}{F2BEFC}
+%\definecolor{reserve-purple}         {HTML}{CA9CE1}
+%\definecolor{reserve-purple}         {HTML}{97D8B2}
+%\definecolor{reserve-teal}           {HTML}{4CB5AE}
+%\definecolor{reserve-magenta}        {HTML}{E18AD4}
+%\definecolor{reserve-soft-magenta}   {HTML}{EEB1D5}
+%\definecolor{reserve-soft-magenta}   {HTML}{44AF69}
+%\definecolor{termcolor}        {HTML}{FF7B9C}
+%\definecolor{reserve-pale-pink}      {HTML}{EFC7E5}
+%\definecolor{reserve-brown-red}      {HTML}{904E55}
+%\definecolor{reserve-rose}           {HTML}{F786AA}
+%\definecolor{reserve-light-coral}    {HTML}{FFA8A9}
+%\definecolor{reserve-blue-gray}      {HTML}{BF98A0}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% END ARCHIVE: EYE-COMFORT EXPERIMENT PALETTE
+% ═══════════════════════════════════════════════════════════════════════════════
 
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -862,14 +970,14 @@
 \setlist[itemize]  {topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
 \setlist[enumerate]{topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
  
-\setlist[itemize,1]{label=\textcolor{sectioncolor}{$\triangleright$},  leftmargin=*}
-\setlist[itemize,2]{label=\textcolor{subsubcolor}{$\rightarrow$},      leftmargin=*}
-\setlist[itemize,3]{label=\textcolor{paragraphcolor}{\textendash},     leftmargin=*}
-\setlist[itemize,4]{label=\textcolor{subparagraphcolor}{$\circ$},      leftmargin=*}
+\setlist[itemize,1]{label=\textcolor{itemizeonecolor}{$\triangleright$},  leftmargin=*}
+\setlist[itemize,2]{label=\textcolor{itemizetwocolor}{$\rightarrow$},      leftmargin=*}
+\setlist[itemize,3]{label=\textcolor{itemizethreecolor}{\textendash},      leftmargin=*}
+\setlist[itemize,4]{label=\textcolor{itemizefourcolor}{$\circ$},           leftmargin=*}
  
-\setlist[enumerate,1]{label=\textcolor{sectioncolor}{\arabic*.},       leftmargin=*}
-\setlist[enumerate,2]{label=\textcolor{subsubcolor}{(\alph*)},         leftmargin=*}
-\setlist[enumerate,3]{label=\textcolor{paragraphcolor}{\roman*.},      leftmargin=*}
+\setlist[enumerate,1]{label=\textcolor{enumonecolor}{\arabic*.},       leftmargin=*}
+\setlist[enumerate,2]{label=\textcolor{enumtwocolor}{(\alph*)},        leftmargin=*}
+\setlist[enumerate,3]{label=\textcolor{enumthreecolor}{\roman*.},      leftmargin=*}
 
 % ═══════════════════════════════════════════════════════════════════════════════
 % [G-2] LONGTABLE SYSTEM
@@ -997,7 +1105,7 @@
 
 \newcommand{\Note}{\noindent\textcolor{notecolor}{\textbf{Note:\enspace}}}
 \newcommand{\Imp} {\noindent\textcolor{formulacolor}{\textbf{Important:\enspace}}}
-\newcommand{\term}[1]{\textcolor{defcolor}{\textbf{#1}}}
+\newcommand{\term}[1]{\textcolor{termcolor}{\textbf{#1}}}
 \newcommand{\TODO}[1]{\textcolor{paragraphcolor}{\textbf{[TODO: #1]}}}
 
 \newcommand{\vv}  [1]{\vec{\mathbf{#1}}}
