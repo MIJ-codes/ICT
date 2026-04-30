@@ -39,7 +39,7 @@ The web works through the combined use of three main components:
 \end{definitionbox}
 
 \begin{definitionbox}[Website]
-    A website is a collection of related webpages stored under a common domain name and connected through hyperlinks.
+    A website is a collection of related webpages stored under a common domain name or put in the same folder and connected through hyperlinks.
 \end{definitionbox}
 
 \begin{definitionbox}[Web design]
@@ -60,20 +60,6 @@ The web works through the combined use of three main components:
     HTML $\rightarrow$ Hypertext document files $\rightarrow$ Webpage $\xrightarrow{\text{Web Design}}$ Website $\rightarrow$ World Wide Web $\rightarrow$ Internet
 \end{summarybox}
 
-
-\subsection{Advantages of Website}
-
-\begin{itemize}
-    \item Information can be published and accessed easily.
-    \item A website can be accessed from anywhere in the world.
-    \item It is available twenty-four hours a day.
-    \item It reduces the need for physical communication.
-    \item It supports text, images, audio, video and links.
-    \item Information can be updated more easily than printed documents.
-    \item It is useful for education, business, news, communication and entertainment.
-\end{itemize}
-
-
 \section{Website}
 
 \subsection{Website Structure}
@@ -86,10 +72,31 @@ Website structure refers to the way webpages are organized, designed and interco
 
 \begin{itemize}
     \item \term{Home Page}: The first page displayed after entering a website. It works as the entry page or index page of the website and gives the main idea, purpose and links to important sections.
+
+    \begin{figure}[H]
+        \centering
+        \safeincludegraphics[width=0.5\linewidth]{Figures/website-homepage.png}
+        \caption{Example of a website homepage}
+        \label{fig:website-homepage}
+    \end{figure}
     
     \item \term{Main Section Page}: A page that represents a major topic or section of the website. It works like a menu or site index and links users to related subsection pages.
+
+    \begin{figure}[H]
+        \centering
+        \safeincludegraphics[width=0.5\linewidth]{Figures/website-main-section-page.png}
+        \caption{Example of a main section page in a website}
+        \label{fig:website-main-section-page}
+    \end{figure}
     
     \item \term{Subsection Page}: A page placed under a main section to present specific information. It should contain relevant content and navigation links to move through the website.
+
+    \begin{figure}[H]
+        \centering
+        \safeincludegraphics[width=0.5\linewidth]{Figures/website-subsection-page.png}
+        \caption{Example of a subsection page in a website}
+        \label{fig:website-subsection-page}
+    \end{figure}
 \end{itemize}
 
 \subsubsection{Types of Website Structure}
@@ -103,6 +110,13 @@ Website structure refers to the way webpages are organized, designed and interco
     \item Users can easily understand their current position in the website.
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/website-structure-hierarchical.png}
+    \caption{Hierarchical website structure}
+    \label{fig:website-structure-hierarchical}
+\end{figure}
+
 \paragraph{Linear Structure}
 
 \begin{itemize}
@@ -110,6 +124,13 @@ Website structure refers to the way webpages are organized, designed and interco
     \item Users move step-by-step using links such as Next, Previous or Last.
     \item Suitable for tutorials, forms, sign-up pages or small documents.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/website-structure-linear.png}
+    \caption{Linear website structure}
+    \label{fig:website-structure-linear}
+\end{figure}
 
 \paragraph{Network Structure}
 
@@ -119,15 +140,70 @@ Website structure refers to the way webpages are organized, designed and interco
     \item It gives flexibility, but may confuse users if navigation is not clear.
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/website-structure-network.png}
+    \caption{Network website structure}
+    \label{fig:website-structure-network}
+\end{figure}
+
 \paragraph{Hybrid Structure}
 
 \begin{itemize}
-    \item Combination of multiple structures.
-    \item Usually combines hierarchical and linear or network structure.
+    \item Combination of multiple structures, usually hierarchical and linear or network structure.
     \item Most modern websites follow this model.
     \item Navigation tools such as menu, button and links should be clear and consistent.
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/website-structure-hybrid.pdf}
+    \caption{Hybrid website structure}
+    \label{fig:website-structure-hybrid}
+\end{figure}
+
+
+\subsection{Elements of Webpage}
+
+\begin{itemize}
+    \item \term{Text / Hypertext}: Written information on a webpage. Text is usually stored inside HTML files.
+    \item \term{Images and Graphics}: Visual elements. Common image formats include \texttt{.jpg}, \texttt{.jpeg}, \texttt{.png}, \texttt{.gif} and \texttt{.bmp}. Too many large images can make a webpage load slowly.
+    \item \term{Audio and Video}: Media elements. Common audio and video formats include \texttt{.mp3}, \texttt{.wav}, \texttt{.ogg}, \texttt{.mp4}, \texttt{.avi}, \texttt{.wmv}, \texttt{.mov} and \texttt{.flv}.
+    \item \term{Animation}: Moving visual content used to attract attention or explain a process. Animation can make page distracting or slow. 
+    \item \term{Data and Document Files}: Files such as \texttt{.pdf}, \texttt{.doc}, \texttt{.docx}, \texttt{.ppt} and \texttt{.txt} may be linked or shared through webpages.
+    \item \term{Program Files}: Files or code used to build, style or control webpages. Examples-
+        \begin{itemize}
+            \item \term{HTML} for structure
+            \item \term{CSS} for design
+            \item \term{JavaScript} for browser-side interactivity
+            \item Server-side technologies such as \term{PHP} or \term{ASP/ASP.NET} for dynamic processing
+        \end{itemize}
+\end{itemize}
+
+\begin{definitionbox}[Hypertext]
+Text information with links is called \term{hypertext}.
+\end{definitionbox}
+
+\begin{definitionbox}[Hypermedia]
+Non-text media such as images, animation, audio and video are called \term{hypermedia}.
+\end{definitionbox}
+
+\subsection{Client-Server Model of a Website}
+
+\begin{itemize}
+    \item A website works using two main parts: \term{client} and \term{server}.
+    \item \term{Client}: The user's computer or browser that requests a webpage.
+    \item \term{Server}: The computer where webpages or website files are stored and protected.
+    \item The client needs an internet connection and a web browser to request webpages.
+    \item The web server uses HTTP/HTTPS to respond to the client's request and supply webpages.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/client-server-model.png}
+    \caption{Client-server model of a website}
+    \label{fig:client-server-model}
+\end{figure}
 
 \subsection{Web Portal}
 
@@ -164,15 +240,21 @@ A static website displays fixed content that does not change unless the source f
     \item Users cannot directly input or update information.
     \item No database connection is normally required.
     \item Communication is mainly one-way: server to client.
-    \item Loads quickly because pages are already prepared.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/static-website.png}
+    \caption{Example of a static website}
+    \label{fig:static-website}
+\end{figure}
 
 \paragraph{Advantages of Static Website}
 
 \begin{itemize}
     \item Low development and hosting cost.
     \item Easy to develop, test and maintain.
-    \item Loads quickly, even on slower connections.
+    \item Loads quickly, even on slower connections because pages are already prepared.
     \item More secure because there is usually no database or server-side processing.
     \item Easier for search engines to index.
 \end{itemize}
@@ -201,6 +283,13 @@ A dynamic website generates or changes content at runtime based on user input, r
     \item Users can provide input and update information.
     \item Suitable for interactive services such as login, search, comment, online exam or e-commerce.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \safeincludegraphics[width=0.5\linewidth]{Figures/dynamic-website.png}
+    \caption{Example of a dynamic website}
+    \label{fig:dynamic-website}
+\end{figure}
 
 \paragraph{Advantages of Dynamic Website}
 
@@ -299,38 +388,21 @@ Example Use
     \item \term{News Site}: Publishes current news and updates.
 \end{itemize}
 
-\subsection{Designing and Publishing a Website}
-
-\subsubsection{Designing a Webpage}
-Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
-
-\subsubsection{Steps for Better Website Design}
-\begin{enumerate}
-    \item \term{Planning}: decide the objective of the website, target users, topics to publish and quality standard.
-    \item \term{Information architecture}: organize the website structure, page relationships and navigation.
-    \item \term{Layout design}: plan header, navigation, content, sidebar and footer.
-    \item \term{Content preparation}: prepare text, images, links, tables, forms and other materials.
-    \item \term{Implementation}: write HTML and CSS, then test the pages in a browser.
-    \item \term{Publishing}: upload the website files to hosting so users can access the website online.
-\end{enumerate}
-
-\subsubsection{Publishing a Website}
-Publishing means making the completed website available on the internet. To publish a website, the files are uploaded to a web hosting server and connected with a domain name.
-
-\begin{itemize}
-    \item HTML, CSS, images and other files should be kept in organized folders.
-    \item File names and folder paths should be correct because links and images depend on them.
-    \item FTP or hosting control panels can be used to upload website files.
-    \item After publishing, the website should be tested from a browser using its URL.
-\end{itemize}
-
-\begin{summarybox}
-Design prepares the website plan and structure; publishing uploads the finished website so it can be accessed through the internet.
-\end{summarybox}
-
 \begin{summarybox}
 Static websites are simple and fast, whereas dynamic websites are flexible and interactive.
 \end{summarybox}
+
+\subsection{Advantages of Website}
+
+\begin{itemize}
+    \item Information can be published and accessed easily.
+    \item A website can be accessed from anywhere in the world.
+    \item It is available twenty-four hours a day.
+    \item It reduces the need for physical communication.
+    \item It supports text, images, audio, video and links.
+    \item Information can be updated more easily than printed documents.
+    \item It is useful for education, business, news, communication and entertainment.
+\end{itemize}
 
 % ─────────────────────────────────────────
 \section{Web Browser and Search Engine}
@@ -342,7 +414,7 @@ Static websites are simple and fast, whereas dynamic websites are flexible and i
 A web browser is application software used to access, retrieve, interpret and display webpages.
 \end{definitionbox}
 
-A browser works like an interpreter. It receives webpage code from the web server, converts it into visual output and shows the webpage on the screen.
+\Note A browser works like an interpreter. It receives webpage code from the web server, converts it into visual output and shows the webpage on the screen.
 
 \subsubsection{Functions of Web Browser}
 
@@ -427,7 +499,7 @@ A web browser opens and displays webpages, while a search engine helps find webp
 \section{IP Address}
 
 \begin{definitionbox}[IP Address]
-IP Address stands for Internet Protocol Address. It is a unique numerical address used to identify a device connected to a network on the internet.
+IP Address stands for Internet Protocol Address. It is a unique numerical address used to identify a device connected to a network or a sub-network on the internet.
 \end{definitionbox}
 
 \Note An IP address works like the digital address of a device. When sender sends data to a receiver, the receiver's IP address is used to ensure that the data reaches the correct destination.
@@ -435,7 +507,7 @@ IP Address stands for Internet Protocol Address. It is a unique numerical addres
 \subsection{Purpose of IP Address}
 
 \begin{itemize}
-    \item It identifies a device in a network.
+    \item It identifies a device in a network or sub-network.
     \item It helps send data to the correct destination.
     \item It allows communication between client and server.
     \item It is necessary for internet-based communication.
@@ -454,7 +526,7 @@ There are two main types of IP addresses:
 \subsubsection{Network ID and Host ID}
 \begin{itemize}
     \item The internet is a network of many networks.
-    \item Each network has many hosts (computers, mobiles, servers etc.) in it.
+    \item Each smaller network has many hosts (computers, mobiles, servers etc.) in it.
     \item So each network and each device needs an unique identifier for communication.
     \item This is done by dividing the IP address into two parts: Network ID and Host ID.
         \begin{itemize}
@@ -499,16 +571,26 @@ Without IP addresses, devices on the internet could not communicate properly.
 \end{summarybox}
 
 \subsection{Some Technical Terms}
-\begin{itemize}
-    \item \term{FQDN} (Fully Qualified Domain Name): The complete domain name that identifies a specific host on the internet.
-    \item \term{Subdomain}: An additional name placed before the main domain name, such as \texttt{www}.
-    \item \term{Web Hosting}: The server space where website files are stored so users can access them through the internet.
-    \item \term{Difference}: The \textit{Domain} is your address; \textit{Hosting} is the house where your data lives.
-\end{itemize}
+
+\begin{definitionbox}[FQDN]
+    \term{FQDN} (Fully Qualified Domain Name) is the complete domain name that identifies a specific host on the internet.
+\end{definitionbox}
+
+\begin{definitionbox}[Subdomain]
+    \term{Subdomain} is an additional name placed before the main domain name, such as \texttt{www}. It is used to identify a specific section or service of the website.
+\end{definitionbox}
 
 \subsection{Domain Registration and ICANN}
+
+\begin{definitionbox}[Domain Registration]
+    \term{Domain Registration} is the process of reserving a domain name for use on the internet. It involves choosing a unique name and registering it with a domain registrar.
+\end{definitionbox}
+
+\begin{definitionbox}[Domain Registrar]
+    A \term{Domain Registrar} is a company that manages the reservation of domain names. They are accredited by ICANN to register domain names on behalf of users. Example: GoDaddy, Namecheap, Bluehost, HostGator.
+\end{definitionbox}
+
 \begin{itemize}
-    \item \term{Domain Registration} is the process of reserving a domain name for use on the internet. It involves choosing a unique name and registering it with a domain registrar.
     \item Every registered domain name must be unique. If the same name could be registered by many people, users would not know which website to visit. 
     \item For this reason, domain names are controlled through registration authorities.
     \item \term{ICANN} stands for "Internet Corporation for Assigned Names and Numbers".
@@ -546,7 +628,7 @@ Without IP addresses, devices on the internet could not communicate properly.
 \underbrace{\text{\texttt{www}}}_{\substack{\text{Subdomain}\\\text{/ Host Name}}}
 \text{\texttt{.}}
 \underbrace{\text{\texttt{bbc}}}_{\substack{\text{Main Domain}\\\text{/ SLD}}}
-\underbrace{\text{\texttt{.co}}}_{\substack{\text{Commercial}\\\text{category}}}
+\underbrace{\text{\texttt{.com}}}_{\substack{\text{Commercial}\\\text{gTLD}}}
 \underbrace{\text{\texttt{.uk}}}_{\substack{\text{TLD}\\\text{ccTLD}}}
 \]
 
@@ -593,8 +675,12 @@ Without IP addresses, devices on the internet could not communicate properly.
 \section{Web Hosting}
 
 \begin{definitionbox}[Web Hosting]
-Web hosting means storing website files on an internet-connected server so that the website can be uploaded and accessed online.
+    \term{Web Hosting} means storing website files on an internet-connected server so that the website can be uploaded and accessed online.
 \end{definitionbox}
+
+\begin{itemize}
+    \item \term{Difference}: The \textit{Domain} is your address; \textit{Hosting} is the house where your data lives.
+\end{itemize}
 
 \begin{itemize}
     \item Hosting space is usually provided by an ISP or hosting company.
@@ -783,70 +869,6 @@ FTP stands for File Transfer Protocol. It is a protocol used to exchange files b
 HTTP is used to transfer hypertext/webpage files between browser and web server. FTP is used to transfer normal files such as documents, images, software and website files between computers.
 \end{summarybox}
 
-% ─────────────────────────────────────────
-\section{Web Communication}
-% ─────────────────────────────────────────
-
-\begin{definitionbox}[Web Communication]
-Web communication is the process of exchanging data between a client browser and a web server through the internet.
-\end{definitionbox}
-
-\Note The World Wide Web works on top of the internet using a client-server system. The browser works as the client, and the web server stores and sends the requested webpage or resource.
-
-\subsection{Correct Overall Idea}
-
-\begin{itemize}
-    \item \term{Internet}: The global network infrastructure that connects computers and servers.
-    \item \term{World Wide Web}: A service that runs on the internet and uses webpages, hyperlinks, browsers and web servers.
-    \item \term{Website Developer}: Creates website files using HTML, CSS, images, scripts and other resources.
-    \item \term{Web Hosting}: Stores the website files on an internet-connected server.
-    \item \term{IP Address}: The numerical address of the hosting server.
-    \item \term{Domain Name}: The human-readable name registered through a domain registrar.
-    \item \term{DNS}: Connects the domain name with the hosting server's IP address.
-    \item \term{URL}: The complete address used by the browser to request a specific webpage or file.
-    \item \term{Protocol}: The rule used for communication, such as HTTP or HTTPS.
-\end{itemize}
-
-\subsection{Client-Server System}
-
-\begin{itemize}
-    \item A website works using two main parts: \term{client} and \term{server}.
-    \item \term{Client}: The user's computer or browser that requests a webpage.
-    \item \term{Server}: The computer where webpages or website files are stored and protected.
-    \item The client needs an internet connection and a web browser to request webpages.
-    \item The web server uses HTTP/HTTPS to respond to the client's request and supply webpages.
-\end{itemize}
-
-\subsection{Website Creation Side}
-
-\begin{enumerate}
-    \item The developer creates hypertext documents using \term{HTML}.
-    \item Other files such as CSS, images, audio, video and scripts may also be added.
-    \item These files are organized together as a website project or website folder.
-    \item The website folder is uploaded to a web hosting server.
-    \item The hosting server has an IP address.
-    \item A domain name is registered through a domain registrar.
-    \item DNS records connect the domain name with the hosting server's IP address.
-\end{enumerate}
-
-\subsection{User Access Side}
-
-\begin{enumerate}
-    \item The user enters a URL in the web browser.
-    \item The browser reads the protocol, domain name and path from the URL.
-    \item DNS converts the domain name into the server's IP address.
-    \item The browser connects to the correct web server using HTTP or HTTPS.
-    \item The browser sends an HTTP request for the specific webpage or file.
-    \item The server searches for the requested HTML document or resource.
-    \item The server sends the requested data back as an HTTP response.
-    \item The browser interprets the HTML and related files.
-    \item The webpage is displayed on the screen.
-\end{enumerate}
-
-\begin{summarybox}[Web Working Flow]
-Developer creates website files $\rightarrow$ files are uploaded to hosting server $\rightarrow$ domain name is connected to server IP through DNS $\rightarrow$ user enters URL $\rightarrow$ browser requests the file $\rightarrow$ server responds $\rightarrow$ browser displays the webpage.
-\end{summarybox}
-
 \section{Difference between IP Address, Domain Name, DNS and URL}
 \begin{longtable}{|C{2cm}|L{3.4cm}|L{3.4cm}|L{3.4cm}|L{3.4cm}|}
 \longtableheader{5}{IP Address vs Domain Name vs DNS vs URL}{%
@@ -892,6 +914,66 @@ Example
 \caption{Difference between IP Address, Domain Name, DNS and URL}
 \label{tab:ip-domain-dns-url}
 \end{longtable}
+
+\section{Complete Website Working Process}
+
+This section connects the earlier ideas together. A website is first designed and published by a creator, then it is accessed by users through a browser using domain name, DNS, IP address, URL and protocol.
+
+\subsection{Designing a Website}
+Web design is the creation of the external structure and front-end presentation of a website. A good website depends on layout, useful information, interface, linking, and up-to-date correct content.
+
+\subsubsection{Steps for Better Website Design}
+\begin{enumerate}
+    \item \term{Planning}: decide the objective of the website, target users, topics to publish and quality standard.
+    \item \term{Information architecture}: organize the website structure, page relationships and navigation.
+    \item \term{Layout design}: plan header, navigation, content, sidebar and footer.
+    \item \term{Content preparation}: prepare text, images, links, tables, forms and other materials.
+    \item \term{Implementation}: write HTML and CSS, then test the pages in a browser.
+\end{enumerate}
+
+\subsection{Publishing a Website}
+Publishing means making the completed website available on the internet. To publish a website, the files are uploaded to a web hosting server and connected with a domain name.
+
+\begin{enumerate}
+    \item The developer creates hypertext documents using \term{HTML}.
+    \item Other files such as CSS, images, audio, video and scripts may also be added.
+    \item These files are organized together as a website project or website folder.
+    \item The website folder is uploaded to a web hosting server.
+    \item The hosting server has an IP address.
+    \item A domain name is registered through a domain registrar.
+    \item DNS records connect the domain name with the hosting server's IP address.
+\end{enumerate}
+
+\begin{itemize}
+    \item HTML, CSS, images and other files should be kept in organized folders.
+    \item File names and folder paths should be correct because links and images depend on them.
+    \item FTP or hosting control panels can be used to upload website files.
+    \item After publishing, the website should be tested from a browser using its URL.
+\end{itemize}
+
+\subsection{Accessing a Website}
+
+\begin{definitionbox}[Web Communication]
+Web communication is the process of exchanging data between a client browser and a web server through the internet.
+\end{definitionbox}
+
+\Note The World Wide Web works on top of the internet using a client-server system. The browser works as the client, and the web server stores and sends the requested webpage or resource.
+
+\begin{enumerate}
+    \item The user enters a URL in the web browser.
+    \item The browser reads the protocol, domain name and path from the URL.
+    \item DNS converts the domain name into the server's IP address.
+    \item The browser connects to the correct web server using HTTP or HTTPS.
+    \item The browser sends an HTTP request for the specific webpage or file.
+    \item The server searches for the requested HTML document or resource.
+    \item The server sends the requested data back as an HTTP response.
+    \item The browser interprets the HTML and related files.
+    \item The webpage is displayed on the screen.
+\end{enumerate}
+
+\begin{summarybox}[Complete Flow]
+Design the website $\rightarrow$ create webpage files $\rightarrow$ upload files to hosting server $\rightarrow$ connect domain name with server IP through DNS $\rightarrow$ user enters URL $\rightarrow$ browser requests the file using HTTP/HTTPS $\rightarrow$ server responds $\rightarrow$ browser displays the webpage.
+\end{summarybox}
 
 % ─────────────────────────────────────────
 \section{HTML Fundamentals}
