@@ -23,6 +23,7 @@
 
 % ─── Load the full preamble ──────────────────────────────────────────────────
 \input{preamble}
+\usepackage{pdfpages}
 
 % ─── Course metadata (change per course) ─────────────────────────────────────
 \renewcommand{\NotesCourse}  {Intermediate-Higher Secondary Examination}
@@ -32,6 +33,10 @@
 \begin{document}
 % ═══════════════════════════════════════════════════════════════════════════════
 
+\pagenumbering{Alph}
+\includepdf[pages=1,fitpaper=true,pagecommand={\thispagestyle{empty}}]{Cover Pages.pdf}
+
+\pagenumbering{arabic}
 \setcounter{page}{1}
 \pagestyle{fancy}
 

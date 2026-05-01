@@ -414,6 +414,17 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\reru
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
@@ -435,11 +446,26 @@ INPUT main.out
 INPUT .\main.out
 INPUT .\main.out
 OUTPUT main.out
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT .\Cover Pages.pdf
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -463,7 +489,6 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT .\assets\emojis\emoji-smirk.png
 INPUT .\assets\emojis\emoji-smirk.png
 INPUT .\assets\emojis\emoji-smirk.png
@@ -527,8 +552,50 @@ INPUT .\assets\emojis\emoji-goodluck.png
 INPUT .\assets\emojis\emoji-goodluck.png
 INPUT .\assets\emojis\emoji-goodluck.png
 INPUT .\assets\emojis\emoji-goodluck.png
+INPUT .\Cover Pages.pdf
 INPUT C:\Users\miadu\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-t1.enc
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
+INPUT .\assets\emojis\emoji-smirk.png
+INPUT .\assets\emojis\emoji-smirk.png
+INPUT .\assets\emojis\emoji-smirk.png
+INPUT .\assets\emojis\emoji-smirk.png
+INPUT .\assets\emojis\emoji-police.png
+INPUT .\assets\emojis\emoji-police.png
+INPUT .\assets\emojis\emoji-police.png
+INPUT .\assets\emojis\emoji-police.png
+INPUT .\assets\emojis\emoji-anas.png
+INPUT .\assets\emojis\emoji-anas.png
+INPUT .\assets\emojis\emoji-anas.png
+INPUT .\assets\emojis\emoji-anas.png
+INPUT .\assets\emojis\emoji-dissapointed.png
+INPUT .\assets\emojis\emoji-dissapointed.png
+INPUT .\assets\emojis\emoji-dissapointed.png
+INPUT .\assets\emojis\emoji-dissapointed.png
+INPUT .\assets\emojis\emoji-bruh.png
+INPUT .\assets\emojis\emoji-bruh.png
+INPUT .\assets\emojis\emoji-bruh.png
+INPUT .\assets\emojis\emoji-bruh.png
+INPUT .\assets\emojis\emoji-eww.png
+INPUT .\assets\emojis\emoji-eww.png
+INPUT .\assets\emojis\emoji-eww.png
+INPUT .\assets\emojis\emoji-eww.png
+INPUT .\assets\emojis\emoji-sad.png
+INPUT .\assets\emojis\emoji-sad.png
+INPUT .\assets\emojis\emoji-sad.png
+INPUT .\assets\emojis\emoji-sad.png
+INPUT .\assets\emojis\emoji-sideeye.png
+INPUT .\assets\emojis\emoji-sideeye.png
+INPUT .\assets\emojis\emoji-sideeye.png
+INPUT .\assets\emojis\emoji-sideeye.png
+INPUT .\assets\emojis\emoji-goodluck.png
+INPUT .\assets\emojis\emoji-goodluck.png
+INPUT .\assets\emojis\emoji-goodluck.png
+INPUT .\assets\emojis\emoji-goodluck.png
 INPUT .\assets\emojis\emoji-smirk.png
 INPUT .\assets\emojis\emoji-smirk.png
 INPUT .\assets\emojis\emoji-smirk.png
@@ -4007,6 +4074,8 @@ INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\miadu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam7.pfb

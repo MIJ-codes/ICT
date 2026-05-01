@@ -1,0 +1,413 @@
+\documentclass[11pt,a4paper]{book}
+
+% =========================================================
+% PACKAGES
+% =========================================================
+\usepackage[top=1.12cm,bottom=1.08cm,left=1.35cm,right=1.35cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\usetikzlibrary{
+    calc,
+    positioning,
+    shapes.geometric,
+    shadows,
+    backgrounds,
+    patterns,
+    decorations.pathmorphing
+}
+
+% =========================================================
+% LANGUAGE SETUP
+% =========================================================
+\setdefaultlanguage{english}
+\setotherlanguage{arabic}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.12]{Arial}
+
+% =========================================================
+% COLOR PALETTE
+% =========================================================
+\definecolor{coverbg}{HTML}{EEF8FA}
+\definecolor{panelbg}{HTML}{FFFFFF}
+\definecolor{softband}{HTML}{D8F1F4}
+
+\definecolor{deepnavy}{HTML}{102A43}
+\definecolor{teal}{HTML}{007C89}
+\definecolor{cyan}{HTML}{00A8C6}
+\definecolor{green}{HTML}{2F9E44}
+\definecolor{amber}{HTML}{F59F00}
+\definecolor{orange}{HTML}{F76707}
+\definecolor{redaccent}{HTML}{E03131}
+\definecolor{muted}{HTML}{607080}
+\definecolor{palegreen}{HTML}{E7F8EF}
+\definecolor{palecyan}{HTML}{E5F9FD}
+\definecolor{paleamber}{HTML}{FFF4D6}
+
+% =========================================================
+% GLOBAL CONTROLS
+% =========================================================
+\newcommand{\QuranScale}{1.00}
+\newcommand{\TitleScale}{0.93}
+\newcommand{\HeroScale}{0.70}
+\newcommand{\TopicScale}{0.98}
+\newcommand{\InfoScale}{1.00}
+\newcommand{\FooterScale}{1.00}
+\newcommand{\BottomArtScale}{0.96}
+\newcommand{\InfoBoxWidth}{0.74\textwidth}
+
+% =========================================================
+% ORNAMENTS
+% =========================================================
+\newcommand{\circuitcorner}[2]{%
+  \begin{scope}[shift={#1}, rotate=#2]
+    \draw[teal,line width=2.0pt] (0,0) -- (2.55,0) -- (2.55,-0.45) -- (3.25,-0.45);
+    \draw[cyan,line width=1.1pt] (0,-0.38) -- (1.62,-0.38) -- (1.62,-1.18) -- (2.55,-1.18);
+    \draw[green,line width=1.0pt] (0,0.33) -- (1.1,0.33) -- (1.1,-0.92) -- (1.72,-0.92);
+    \draw[amber,line width=0.9pt] (0,-0.75) -- (0.72,-0.75) -- (0.72,-1.55);
+    \foreach \p/\c in {(2.55,0)/teal,(3.25,-0.45)/cyan,(2.55,-1.18)/green,(1.72,-0.92)/amber,(0.72,-1.55)/orange}{
+      \draw[\c,line width=0.75pt] \p circle (0.11);
+      \fill[\c!70] \p circle (0.038);
+    }
+    \node[regular polygon,regular polygon sides=6,draw=teal!55,line width=0.6pt,
+      minimum size=0.42cm,inner sep=0pt] at (2.2,-1.75) {};
+  \end{scope}%
+}
+
+\newcommand{\ictdivider}[1]{%
+\begin{tikzpicture}[scale=#1,every node/.style={transform shape}]
+  \draw[teal!55,line width=1.15pt] (-6.0,0) -- (-0.9,0);
+  \draw[teal!55,line width=1.15pt] (0.9,0) -- (6.0,0);
+  \draw[cyan!70,line width=0.65pt] (-4.6,-0.16) -- (-0.65,-0.16);
+  \draw[cyan!70,line width=0.65pt] (0.65,-0.16) -- (4.6,-0.16);
+  \draw[amber,line width=0.75pt] (-0.62,0.0) -- (-0.22,0.18) -- (0.22,0.18) -- (0.62,0.0)
+    -- (0.22,-0.18) -- (-0.22,-0.18) -- cycle;
+  \fill[deepnavy] (0,0) circle (0.06);
+  \foreach \x in {-5.1,-3.8,-2.5,-1.25,1.25,2.5,3.8,5.1}{
+    \draw[green!70,line width=0.55pt] (\x,0) circle (0.055);
+    \fill[green!70] (\x,0) circle (0.025);
+  }
+  \foreach \x in {-3.6,-2.1,2.1,3.6}{
+    \fill[orange!75] (\x,-0.16) -- ++(0.08,0.06) -- ++(0.08,-0.06) -- ++(-0.08,-0.06) -- cycle;
+  }
+\end{tikzpicture}%
+}
+
+\newcommand{\minibox}[4]{%
+  \begin{scope}[shift={(#1)}, scale=#2]
+    \draw[#3,fill=panelbg,line width=0.75pt,rounded corners=2pt] (-1.18,-0.82) rectangle (1.18,0.82);
+    #4
+  \end{scope}%
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+
+% =========================================================
+% BACKGROUND LAYER
+% =========================================================
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[coverbg] (current page.south west) rectangle (current page.north east);
+
+  \fill[softband!75]
+    ($(current page.north west)+(0,-5.2)$)
+    -- ($(current page.north east)+(0,-4.25)$)
+    -- ($(current page.north east)+(0,-5.38)$)
+    -- ($(current page.north west)+(0,-6.45)$)
+    -- cycle;
+
+  \fill[palegreen!82]
+    ($(current page.south west)+(0,4.8)$)
+    -- ($(current page.south east)+(0,6.05)$)
+    -- ($(current page.south east)+(0,4.68)$)
+    -- ($(current page.south west)+(0,3.36)$)
+    -- cycle;
+
+  % Subtle ICT watermark texture.
+  \begin{scope}[opacity=0.075,shift={(current page.center)}]
+    \foreach \x in {-8.2,-7.0,...,8.2}{
+      \foreach \y in {-12.4,-11.2,...,12.4}{
+        \fill[teal] (\x,\y) circle (0.022);
+      }
+    }
+    \foreach \x/\y/\s in {-6/8/1.4, 6/8.7/1.2, -7/-8.4/1.25, 6.8/-8.0/1.55, 0/10.5/1.05, 0/-10.5/1.25}{
+      \node[regular polygon,regular polygon sides=6,draw=deepnavy,line width=1.2pt,
+        minimum size=\s cm,inner sep=0pt] at (\x,\y) {};
+    }
+    \node[text=deepnavy,font=\ttfamily\bfseries\fontsize{16}{18}\selectfont,rotate=16] at (-5.7,1.2) {1010 0110};
+    \node[text=deepnavy,font=\ttfamily\bfseries\fontsize{14}{16}\selectfont,rotate=-15] at (5.7,-1.1) {DATA | CODE | WEB};
+  \end{scope}
+
+  % Corner and edge ornaments.
+  \circuitcorner{($(current page.north west)+(0.75,-0.72)$)}{0}
+  \circuitcorner{($(current page.north east)+(-0.75,-0.72)$)}{90}
+  \circuitcorner{($(current page.south west)+(0.75,0.72)$)}{-90}
+  \circuitcorner{($(current page.south east)+(-0.75,0.72)$)}{180}
+
+  \begin{scope}[opacity=0.18]
+    \draw[teal,line width=3.2pt] ($(current page.west)+(0.40,-11.9)$) -- ($(current page.west)+(0.40,11.9)$);
+    \draw[cyan,line width=1.1pt] ($(current page.west)+(0.72,-11.9)$) -- ($(current page.west)+(0.72,11.9)$);
+    \draw[teal,line width=3.2pt] ($(current page.east)+(-0.40,-11.9)$) -- ($(current page.east)+(-0.40,11.9)$);
+    \draw[cyan,line width=1.1pt] ($(current page.east)+(-0.72,-11.9)$) -- ($(current page.east)+(-0.72,11.9)$);
+    \foreach \y in {-10,-7,-4,-1,2,5,8,11}{
+      \fill[teal] ($(current page.west)+(0.40,\y)$) circle (0.075);
+      \draw[green,line width=0.55pt] ($(current page.west)+(0.50,\y)$) -- ($(current page.west)+(1.05,\y)$);
+      \fill[teal] ($(current page.east)+(-0.40,\y)$) circle (0.075);
+      \draw[green,line width=0.55pt] ($(current page.east)+(-0.50,\y)$) -- ($(current page.east)+(-1.05,\y)$);
+    }
+  \end{scope}
+\end{tikzpicture}
+
+\centering
+
+% =========================================================
+% BLOCK 1: QURAN QUOTATION
+% =========================================================
+{\scalebox{\QuranScale}{%
+\begin{minipage}{0.95\textwidth}
+\centering
+
+{\Large\textcolor{teal}{\textarabic{وَقُل رَّبِّ زِدْنِي عِلْمًا}}}\\[2pt]
+
+{\small\textcolor{deepnavy}{\textit{And say, ``My Lord, increase me in knowledge.''}}}\\[2pt]
+
+{\tiny\textcolor{muted}{[Taha -- 20:114]}}\\[-2pt]
+
+\ictdivider{0.86}
+
+\end{minipage}
+}}
+
+\vfill
+
+% =========================================================
+% BLOCK 2: TITLE
+% =========================================================
+{\scalebox{\TitleScale}{%
+\begin{minipage}{0.96\textwidth}
+\centering
+
+{\fontsize{35}{42}\selectfont\bfseries\textcolor{deepnavy}{INFORMATION AND}}\\[0.24cm]
+{\fontsize{36}{43}\selectfont\bfseries\textcolor{teal}{COMMUNICATION}}\\[0.24cm]
+{\fontsize{35}{42}\selectfont\bfseries\textcolor{orange}{TECHNOLOGY}}
+
+\end{minipage}
+}}
+
+\vfill
+
+% =========================================================
+% TITLE TO HERO DIVIDER
+% =========================================================
+\raisebox{0.12cm}{\ictdivider{0.98}}
+
+\vfill
+
+% =========================================================
+% BLOCK 3: HERO FIGURE
+% =========================================================
+{\scalebox{\HeroScale}{%
+\begin{tikzpicture}[x=1cm,y=1cm,every node/.style={transform shape}]
+
+  % Central board and chip.
+  \draw[deepnavy,fill=panelbg,line width=1.2pt,rounded corners=6pt,
+    drop shadow={shadow xshift=1.5mm,shadow yshift=-1.5mm,opacity=0.18}]
+    (-4.45,-2.15) rectangle (4.45,2.15);
+
+  \draw[teal,fill=deepnavy,line width=1.1pt,rounded corners=4pt] (-1.35,-1.05) rectangle (1.35,1.05);
+  \node[text=panelbg,font=\Large\bfseries] at (0,0.24) {ICT};
+  \node[text=cyan!85,font=\scriptsize\bfseries] at (0,-0.34) {SYSTEM};
+
+  \foreach \x in {-0.9,-0.45,0,0.45,0.9}{
+    \draw[amber,line width=0.8pt] (\x,1.05) -- (\x,1.42);
+    \draw[amber,line width=0.8pt] (\x,-1.05) -- (\x,-1.42);
+  }
+  \foreach \y in {-0.65,-0.25,0.15,0.55}{
+    \draw[amber,line width=0.8pt] (-1.35,\y) -- (-1.72,\y);
+    \draw[amber,line width=0.8pt] (1.35,\y) -- (1.72,\y);
+  }
+
+  % Network traces from central chip to chapter icons.
+  \foreach \p in {(-6.25,2.75),(0,3.15),(6.25,2.75),(-6.25,-2.75),(0,-3.15),(6.25,-2.75)}{
+    \draw[teal!50,line width=0.9pt] (0,0) -- \p;
+    \fill[cyan] \p circle (0.055);
+  }
+
+  % Chapter 1: ICT perspective.
+  \minibox{-6.25,2.75}{1.0}{teal}{%
+    \draw[teal,fill=palecyan,line width=0.7pt] (0,0.10) circle (0.42);
+    \draw[teal,line width=0.45pt] (-0.42,0.10) -- (0.42,0.10);
+    \draw[teal,line width=0.45pt] (0,-0.32) -- (0,0.52);
+    \draw[teal,line width=0.45pt] (-0.28,-0.20) arc[start angle=220,end angle=320,radius=0.45];
+    \draw[orange,fill=orange!22,line width=0.55pt] (0.16,-0.08) -- (0.44,-0.04) -- (0.36,-0.32) -- (0.12,-0.22) -- cycle;
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {ICT\\PERSPECTIVE};
+  }
+
+  % Chapter 2: Communication and networking.
+  \minibox{0,3.15}{1.0}{cyan}{%
+    \foreach \p/\c in {(-0.55,0.2)/teal,(0.55,0.2)/green,(0,-0.42)/orange,(0,0.58)/cyan}{
+      \fill[\c!25] \p circle (0.18);
+      \draw[\c,line width=0.8pt] \p circle (0.18);
+    }
+    \draw[deepnavy!70,line width=0.65pt] (-0.55,0.2) -- (0.55,0.2) -- (0,-0.42) -- (-0.55,0.2) -- (0,0.58) -- (0.55,0.2);
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {NETWORKING};
+  }
+
+  % Chapter 3: Number systems and digital devices.
+  \minibox{6.25,2.75}{1.0}{green}{%
+    \draw[green,fill=palegreen,line width=0.85pt] (-0.78,-0.28) rectangle (0.06,0.42);
+    \node[text=deepnavy,font=\tiny\bfseries] at (-0.36,0.15) {1010};
+    \node[text=teal,font=\tiny\bfseries] at (-0.36,-0.12) {2A};
+    \draw[orange,line width=0.9pt,fill=paleamber] (0.25,-0.32) -- (0.68,-0.32)
+      .. controls (1.12,-0.32) and (1.12,0.40) .. (0.68,0.40) -- (0.25,0.40)
+      .. controls (0.46,0.04) and (0.46,0.04) .. (0.25,-0.32);
+    \draw[deepnavy,line width=0.55pt] (0.02,0.23) -- (0.32,0.23);
+    \draw[deepnavy,line width=0.55pt] (0.02,-0.12) -- (0.32,-0.12);
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {DIGITAL\\DEVICES};
+  }
+
+  % Chapter 4: Web design and HTML.
+  \minibox{-6.25,-2.75}{1.0}{orange}{%
+    \draw[teal,fill=palecyan,line width=0.7pt,rounded corners=1pt] (-0.74,-0.32) rectangle (0.74,0.46);
+    \fill[deepnavy] (-0.74,0.20) rectangle (0.74,0.46);
+    \fill[redaccent] (-0.58,0.33) circle (0.035);
+    \fill[amber] (-0.43,0.33) circle (0.035);
+    \fill[green] (-0.28,0.33) circle (0.035);
+    \node[text=deepnavy,font=\scriptsize\bfseries] at (0,-0.02) {\texttt{<HTML>}};
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {WEB DESIGN};
+  }
+
+  % Chapter 5: C programming.
+  \minibox{0,-3.15}{1.0}{deepnavy}{%
+    \draw[deepnavy,fill=deepnavy,line width=0.8pt,rounded corners=2pt] (-0.78,-0.44) rectangle (0.78,0.48);
+    \node[text=green!80,font=\scriptsize\bfseries\ttfamily] at (0,0.18) {int main()};
+    \node[text=cyan!85,font=\scriptsize\bfseries\ttfamily] at (0,-0.14) {\{ C \}};
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {C PROGRAM};
+  }
+
+  % Chapter 6: DBMS.
+  \minibox{6.25,-2.75}{1.0}{teal}{%
+    \draw[cyan,fill=palecyan,line width=0.8pt] (-0.58,-0.38) -- (-0.58,0.42)
+      arc[start angle=180,end angle=360,x radius=0.58,y radius=0.17] -- (0.58,-0.38)
+      arc[start angle=0,end angle=180,x radius=0.58,y radius=0.17];
+    \draw[cyan,line width=0.8pt,fill=panelbg] (0,0.42) ellipse (0.58 and 0.17);
+    \draw[cyan,line width=0.55pt] (-0.58,0.03) arc[start angle=180,end angle=360,x radius=0.58,y radius=0.17];
+    \node[text=deepnavy,font=\scriptsize\bfseries] at (0,0.10) {DB};
+    \node[text=deepnavy,font=\tiny\bfseries,align=center] at (0,-1.08) {DBMS};
+  }
+
+  % Board labels and micro detail.
+  \draw[deepnavy!18,line width=0.6pt] (-3.75,-1.55) -- (3.75,-1.55);
+  \node[text=muted,font=\scriptsize\ttfamily] at (-2.45,-1.82) {0101};
+  \node[text=muted,font=\scriptsize\ttfamily] at (0,-1.82) {HTTP};
+  \node[text=muted,font=\scriptsize\ttfamily] at (2.45,-1.82) {SQL};
+\end{tikzpicture}
+}}
+
+\vfill
+
+% =========================================================
+% BLOCK 4: TOPIC STRIP
+% =========================================================
+{\scalebox{\TopicScale}{%
+\begin{minipage}{0.95\textwidth}
+\centering
+
+{\large\bfseries\textcolor{deepnavy}{HSC Student Notes}}\\[0.16cm]
+{\footnotesize\textcolor{muted}{
+ICT Perspective \(\bullet\) Communication \& Networking \(\bullet\) Number Systems \& Digital Devices \(\bullet\) Web Design \& HTML \(\bullet\) C Programming \(\bullet\) DBMS
+}}
+
+\end{minipage}
+}}
+
+\vfill
+
+% =========================================================
+% TOPIC TO INFO DIVIDER
+% =========================================================
+\raisebox{0.16cm}{\ictdivider{0.88}}
+
+\vfill
+
+% =========================================================
+% BLOCK 5: NOTE INFORMATION
+% =========================================================
+{\scalebox{\InfoScale}{%
+\begin{tcolorbox}[
+    enhanced,
+    width=\InfoBoxWidth,
+    colback=panelbg,
+    colframe=teal,
+    boxrule=1.6pt,
+    sharp corners,
+    left=15pt,
+    right=15pt,
+    top=10pt,
+    bottom=10pt,
+    drop shadow={shadow xshift=1.4mm,shadow yshift=-1.4mm,opacity=0.16}
+]
+\centering
+{\large\bfseries\textcolor{deepnavy}{Note Information}}\\[0.26cm]
+
+\begin{tabular}{rl}
+  \textcolor{orange}{\bfseries Subject:} & \textcolor{deepnavy}{Information and Communication Technology} \\[0.14cm]
+  \textcolor{orange}{\bfseries Tutor:} & \textcolor{deepnavy}{Mohammad Miadul Islam Jasim} \\[0.14cm]
+  \textcolor{orange}{\bfseries Class:} & \textcolor{deepnavy}{Intermediate Class 11--12}
+\end{tabular}
+
+\end{tcolorbox}
+}}
+
+\vfill
+
+% =========================================================
+% BLOCK 6: FOOTER
+% =========================================================
+{\scalebox{\FooterScale}{%
+\begin{minipage}{0.95\textwidth}
+\centering
+
+{\normalsize\textcolor{teal}{\bfseries Produced by:} \textcolor{deepnavy}{Mohammad Miadul Islam Jasim}}\\[0.10cm]
+{\small\textcolor{muted}{Date: \today}}
+
+\end{minipage}
+}}
+
+\vfill
+
+% =========================================================
+% BLOCK 7: BOTTOM ORNAMENT
+% =========================================================
+{\scalebox{\BottomArtScale}{%
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \draw[teal,line width=2.0pt] (-7.6,0) -- (7.6,0);
+  \draw[cyan,line width=0.95pt] (-6.5,0.20) -- (6.5,0.20);
+  \draw[green,line width=0.75pt] (-5.2,-0.20) -- (5.2,-0.20);
+
+  \foreach \x in {-7,-6.2,...,7}{
+    \fill[amber] (\x,0) -- ++(0.07,0.08) -- ++(0.07,-0.08) -- ++(-0.07,-0.08) -- cycle;
+  }
+  \foreach \x in {-4.8,-3.2,-1.6,0,1.6,3.2,4.8}{
+    \draw[teal,line width=0.65pt] (\x,0.20) circle (0.09);
+    \fill[cyan] (\x,0.20) circle (0.035);
+    \draw[orange,line width=0.55pt] (\x,-0.20) -- ++(0.28,-0.22) -- ++(0.38,0);
+    \fill[orange] (\x+0.66,-0.42) circle (0.035);
+  }
+
+  \node[regular polygon,regular polygon sides=6,draw=deepnavy,line width=0.8pt,
+    minimum size=0.48cm,inner sep=0pt] at (0,0) {};
+  \fill[green] (0,0) circle (0.05);
+\end{tikzpicture}
+}}
+
+\end{titlepage}
+\end{document}
