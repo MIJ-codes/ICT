@@ -3,55 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>College ICT Club</title>
-    <style>
-        body { font-family: Arial; }
-        header, footer { background-color: navy; color: white; }
-        nav a { color: blue; margin-right: 10px; }
-        .notice { background-color: lightyellow; padding: 8px; }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>College ICT Club</h1>
-    </header>
+    <center>
+        <header>
+            <h1>College ICT Club</h1>
+            <p><strong>Learning ICT through practice and teamwork</strong></p>
+            <img src="assets/banner.jpg" alt="ICT Club Banner" width="520">
+        </header>
+    </center>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <hr>
+
+    <center>
+        <nav>
+            <a href="index.html">Home</a>
+            |
+            <a href="gallery.html">Gallery</a>
+            |
+            <a href="#activities">Activities</a>
+            |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </center>
+
+    <hr>
 
     <main>
         <section>
             <h2>About the Club</h2>
-            <p class="notice">We learn web design, programming and ICT.</p>
-            <img src="assets/club.jpg" alt="ICT Club" width="100%" s>
+            <p>
+                The College ICT Club helps students practise HTML, web design,
+                programming basics and project presentation.
+            </p>
+            <p><em>Members work together, share ideas and build small projects.</em></p>
         </section>
 
-        <section>
+        <section id="activities">
             <h2>Activities</h2>
             <ul>
                 <li>HTML practice</li>
                 <li>Website design</li>
+                <li>Image and hyperlink practice</li>
                 <li>Project presentation</li>
             </ul>
         </section>
 
         <section>
+            <h2>Weekly Plan</h2>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Task</th>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>HTML Structure</td>
+                    <td>Create a webpage skeleton</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Links and Images</td>
+                    <td>Build a gallery page</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Forms</td>
+                    <td>Collect member information</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
             <h2>Join Us</h2>
             <form action="join.php" method="post">
-                <label>Name:</label>
-                <input type="text" name="student_name"><br>
-                <label>Group:</label>
-                <input type="radio" name="group" value="science"> Science
-                <input type="radio" name="group" value="business"> Business<br>
-                <input type="submit" value="Send">
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label>Name:</label>
+                    <input type="text" name="student_name"><br><br>
+
+                    <label>Group:</label>
+                    <input type="radio" name="group" value="science"> Science
+                    <input type="radio" name="group" value="business"> Business
+                    <input type="radio" name="group" value="humanities"> Humanities
+                    <br><br>
+
+                    <label>Interest:</label>
+                    <select name="interest">
+                        <option>Web design</option>
+                        <option>Programming</option>
+                        <option>Presentation</option>
+                    </select>
+                    <br><br>
+
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>Copyright College ICT Club</p>
-    </footer>
+    <hr>
+
+    <center>
+        <footer>
+            <p>Copyright College ICT Club</p>
+            <address>Email: ictclub@example.com</address>
+        </footer>
+    </center>
 </body>
 </html>

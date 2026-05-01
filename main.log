@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  1 MAY 2026 07:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.24)  1 MAY 2026 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3641,7 +3641,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2583.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [59]
-<html_outputs/listing-37-basic-html-table.pdf, id=1777, 433.62pt x 71.83638pt>
+<html_outputs/listing-37-basic-html-table.pdf, id=1776, 433.62pt x 71.83638pt>
 File: html_outputs/listing-37-basic-html-table.pdf Graphic file (type pdf)
 <use html_outputs/listing-37-basic-html-table.pdf>
 Package pdftex.def Info: html_outputs/listing-37-basic-html-table.pdf  used on input line 2599.
@@ -3683,12 +3683,12 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2632.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [60 <./html_outputs/listing-37-basic-html-table.pdf>]
-<html_outputs/listing-38-unequal-table-cells.pdf, id=1817, 433.62pt x 58.5387pt>
+<html_outputs/listing-38-unequal-table-cells.pdf, id=1816, 433.62pt x 58.5387pt>
 File: html_outputs/listing-38-unequal-table-cells.pdf Graphic file (type pdf)
 <use html_outputs/listing-38-unequal-table-cells.pdf>
 Package pdftex.def Info: html_outputs/listing-38-unequal-table-cells.pdf  used on input line 2633.
 (pdftex.def)             Requested size: 398.07608pt x 53.7428pt.
-<html_outputs/listing-39-cellspacing-and-cellpadding.pdf, id=1818, 433.62pt x 97.5645pt>
+<html_outputs/listing-39-cellspacing-and-cellpadding.pdf, id=1817, 433.62pt x 97.5645pt>
 File: html_outputs/listing-39-cellspacing-and-cellpadding.pdf Graphic file (type pdf)
 <use html_outputs/listing-39-cellspacing-and-cellpadding.pdf>
 Package pdftex.def Info: html_outputs/listing-39-cellspacing-and-cellpadding.pdf  used on input line 2661.
@@ -3730,7 +3730,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2674.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [61 <./html_outputs/listing-38-unequal-table-cells.pdf> <./html_outputs/listing-39-cellspacing-and-cellpadding.pdf>]
-<html_outputs/listing-40-colspan-and-rowspan.pdf, id=1849, 433.62pt x 80.9424pt>
+<html_outputs/listing-40-colspan-and-rowspan.pdf, id=1848, 433.62pt x 80.9424pt>
 File: html_outputs/listing-40-colspan-and-rowspan.pdf Graphic file (type pdf)
 <use html_outputs/listing-40-colspan-and-rowspan.pdf>
 Package pdftex.def Info: html_outputs/listing-40-colspan-and-rowspan.pdf  used on input line 2691.
@@ -3772,12 +3772,12 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2720.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [62 <./html_outputs/listing-40-colspan-and-rowspan.pdf>]
-<html_outputs/listing-41-table-background-color.pdf, id=1892, 433.62pt x 59.2614pt>
+<html_outputs/listing-41-table-background-color.pdf, id=1891, 433.62pt x 59.2614pt>
 File: html_outputs/listing-41-table-background-color.pdf Graphic file (type pdf)
 <use html_outputs/listing-41-table-background-color.pdf>
 Package pdftex.def Info: html_outputs/listing-41-table-background-color.pdf  used on input line 2721.
 (pdftex.def)             Requested size: 398.07608pt x 54.40628pt.
-<html_outputs/listing-42-alignment-and-empty-cells.pdf, id=1893, 433.62pt x 78.7743pt>
+<html_outputs/listing-42-alignment-and-empty-cells.pdf, id=1892, 433.62pt x 78.7743pt>
 File: html_outputs/listing-42-alignment-and-empty-cells.pdf Graphic file (type pdf)
 <use html_outputs/listing-42-alignment-and-empty-cells.pdf>
 Package pdftex.def Info: html_outputs/listing-42-alignment-and-empty-cells.pdf  used on input line 2753.
@@ -3819,7 +3819,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2768.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [63 <./html_outputs/listing-41-table-background-color.pdf> <./html_outputs/listing-42-alignment-and-empty-cells.pdf>]
-<html_outputs/listing-43-table-head-body-and-foot.pdf, id=1933, 433.62pt x 115.16927pt>
+<html_outputs/listing-43-table-head-body-and-foot.pdf, id=1932, 433.62pt x 115.16927pt>
 File: html_outputs/listing-43-table-head-body-and-foot.pdf Graphic file (type pdf)
 <use html_outputs/listing-43-table-head-body-and-foot.pdf>
 Package pdftex.def Info: html_outputs/listing-43-table-head-body-and-foot.pdf  used on input line 2790.
@@ -3901,7 +3901,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2875.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [65]
-<html_outputs/listing-44-simple-div-layout.pdf, id=1970, 433.62pt x 80.4606pt>
+<html_outputs/listing-44-simple-div-layout.pdf, id=1969, 433.62pt x 80.4606pt>
 File: html_outputs/listing-44-simple-div-layout.pdf Graphic file (type pdf)
 <use html_outputs/listing-44-simple-div-layout.pdf>
 Package pdftex.def Info: html_outputs/listing-44-simple-div-layout.pdf  used on input line 2902.
@@ -3943,7 +3943,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2903.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [66]
-<html_outputs/listing-45-semantic-layout.pdf, id=1990, 433.62pt x 85.42516pt>
+<html_outputs/listing-45-semantic-layout.pdf, id=1989, 433.62pt x 85.42516pt>
 File: html_outputs/listing-45-semantic-layout.pdf Graphic file (type pdf)
 <use html_outputs/listing-45-semantic-layout.pdf>
 Package pdftex.def Info: html_outputs/listing-45-semantic-layout.pdf  used on input line 2927.
@@ -3985,7 +3985,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 2948.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [67 <./html_outputs/listing-44-simple-div-layout.pdf> <./html_outputs/listing-45-semantic-layout.pdf>]
-<html_outputs/listing-46-internal-css-and-class-selector.pdf, id=2024, 433.62pt x 30.8352pt>
+<html_outputs/listing-46-internal-css-and-class-selector.pdf, id=2023, 433.62pt x 30.8352pt>
 File: html_outputs/listing-46-internal-css-and-class-selector.pdf Graphic file (type pdf)
 <use html_outputs/listing-46-internal-css-and-class-selector.pdf>
 Package pdftex.def Info: html_outputs/listing-46-internal-css-and-class-selector.pdf  used on input line 2968.
@@ -4068,7 +4068,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3058.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [69]
-<html_outputs/listing-47-basic-form-structure.pdf, id=2053, 433.62pt x 30.5943pt>
+<html_outputs/listing-47-basic-form-structure.pdf, id=2052, 433.62pt x 30.5943pt>
 File: html_outputs/listing-47-basic-form-structure.pdf Graphic file (type pdf)
 <use html_outputs/listing-47-basic-form-structure.pdf>
 Package pdftex.def Info: html_outputs/listing-47-basic-form-structure.pdf  used on input line 3073.
@@ -4110,12 +4110,12 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3097.
 (pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
  [70 <./html_outputs/listing-47-basic-form-structure.pdf>]
-<html_outputs/listing-48-text-and-password-fields.pdf, id=2082, 433.62pt x 30.5943pt>
+<html_outputs/listing-48-text-and-password-fields.pdf, id=2081, 433.62pt x 30.5943pt>
 File: html_outputs/listing-48-text-and-password-fields.pdf Graphic file (type pdf)
 <use html_outputs/listing-48-text-and-password-fields.pdf>
 Package pdftex.def Info: html_outputs/listing-48-text-and-password-fields.pdf  used on input line 3101.
 (pdftex.def)             Requested size: 398.07608pt x 28.08778pt.
-<html_outputs/listing-49-radio-and-checkbox-inputs.pdf, id=2083, 433.62pt x 94.9146pt>
+<html_outputs/listing-49-radio-and-checkbox-inputs.pdf, id=2082, 433.62pt x 94.9146pt>
 File: html_outputs/listing-49-radio-and-checkbox-inputs.pdf Graphic file (type pdf)
 <use html_outputs/listing-49-radio-and-checkbox-inputs.pdf>
 Package pdftex.def Info: html_outputs/listing-49-radio-and-checkbox-inputs.pdf  used on input line 3131.
@@ -4157,12 +4157,12 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3146.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [71 <./html_outputs/listing-48-text-and-password-fields.pdf> <./html_outputs/listing-49-radio-and-checkbox-inputs.pdf>]
-<html_outputs/listing-50-drop-down-and-option-group.pdf, id=2120, 433.62pt x 65.2839pt>
+<html_outputs/listing-50-drop-down-and-option-group.pdf, id=2119, 433.62pt x 65.2839pt>
 File: html_outputs/listing-50-drop-down-and-option-group.pdf Graphic file (type pdf)
 <use html_outputs/listing-50-drop-down-and-option-group.pdf>
 Package pdftex.def Info: html_outputs/listing-50-drop-down-and-option-group.pdf  used on input line 3163.
 (pdftex.def)             Requested size: 398.07608pt x 59.9354pt.
-<html_outputs/listing-51-textarea-and-buttons.pdf, id=2121, 433.62pt x 63.1158pt>
+<html_outputs/listing-51-textarea-and-buttons.pdf, id=2120, 433.62pt x 63.1158pt>
 File: html_outputs/listing-51-textarea-and-buttons.pdf Graphic file (type pdf)
 <use html_outputs/listing-51-textarea-and-buttons.pdf>
 Package pdftex.def Info: html_outputs/listing-51-textarea-and-buttons.pdf  used on input line 3191.
@@ -4204,7 +4204,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3192.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [72 <./html_outputs/listing-50-drop-down-and-option-group.pdf>]
-<html_outputs/listing-52-complete-form-example.pdf, id=2163, 433.62pt x 204.0423pt>
+<html_outputs/listing-52-complete-form-example.pdf, id=2162, 433.62pt x 204.0423pt>
 File: html_outputs/listing-52-complete-form-example.pdf Graphic file (type pdf)
 <use html_outputs/listing-52-complete-form-example.pdf>
 Package pdftex.def Info: html_outputs/listing-52-complete-form-example.pdf  used on input line 3242.
@@ -4323,12 +4323,12 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3314.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [75]
-<html_outputs/listing-53-code-and-output-tags.pdf, id=2254, 433.62pt x 114.57706pt>
+<html_outputs/listing-53-code-and-output-tags.pdf, id=2253, 433.62pt x 114.57706pt>
 File: html_outputs/listing-53-code-and-output-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-53-code-and-output-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-53-code-and-output-tags.pdf  used on input line 3332.
 (pdftex.def)             Requested size: 398.07608pt x 105.19012pt.
-<html_outputs/listing-54-quote-and-direction-tags.pdf, id=2255, 433.62pt x 78.12587pt>
+<html_outputs/listing-54-quote-and-direction-tags.pdf, id=2254, 433.62pt x 78.12587pt>
 File: html_outputs/listing-54-quote-and-direction-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-54-quote-and-direction-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-54-quote-and-direction-tags.pdf  used on input line 3355.
@@ -4370,7 +4370,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3356.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [76 <./html_outputs/listing-53-code-and-output-tags.pdf>]
-<html_outputs/listing-55-script-and-object-tags.pdf, id=2292, 433.62pt x 22.92062pt>
+<html_outputs/listing-55-script-and-object-tags.pdf, id=2291, 433.62pt x 22.92062pt>
 File: html_outputs/listing-55-script-and-object-tags.pdf Graphic file (type pdf)
 <use html_outputs/listing-55-script-and-object-tags.pdf>
 Package pdftex.def Info: html_outputs/listing-55-script-and-object-tags.pdf  used on input line 3381.
@@ -4449,88 +4449,167 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3456.
 (pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
  [78]
-<html_outputs/listing-56-mini-webpage-project.pdf, id=2379, 564.74991pt x 591.87726pt>
-File: html_outputs/listing-56-mini-webpage-project.pdf Graphic file (type pdf)
-<use html_outputs/listing-56-mini-webpage-project.pdf>
-Package pdftex.def Info: html_outputs/listing-56-mini-webpage-project.pdf  used on input line 3462.
-(pdftex.def)             Requested size: 510.54962pt x 535.09596pt.
 File: assets/emojis/emoji-smirk.png Graphic file (type png)
 <use assets/emojis/emoji-smirk.png>
-Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3509.
+(pdftex.def)             Requested size: 46.61935pt x 26.24359pt.
+File: assets/emojis/emoji-police.png Graphic file (type png)
+<use assets/emojis/emoji-police.png>
+Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3509.
+(pdftex.def)             Requested size: 42.34387pt x 36.74103pt.
+File: assets/emojis/emoji-anas.png Graphic file (type png)
+<use assets/emojis/emoji-anas.png>
+Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3509.
+(pdftex.def)             Requested size: 65.14403pt x 36.74103pt.
+File: assets/emojis/emoji-dissapointed.png Graphic file (type png)
+<use assets/emojis/emoji-dissapointed.png>
+Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3509.
+(pdftex.def)             Requested size: 40.84187pt x 36.74103pt.
+File: assets/emojis/emoji-bruh.png Graphic file (type png)
+<use assets/emojis/emoji-bruh.png>
+Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3509.
+(pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
+File: assets/emojis/emoji-eww.png Graphic file (type png)
+<use assets/emojis/emoji-eww.png>
+Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3509.
+(pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
+File: assets/emojis/emoji-sad.png Graphic file (type png)
+<use assets/emojis/emoji-sad.png>
+Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3509.
+(pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
+File: assets/emojis/emoji-sideeye.png Graphic file (type png)
+<use assets/emojis/emoji-sideeye.png>
+Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3509.
+(pdftex.def)             Requested size: 36.73535pt x 36.74103pt.
+File: assets/emojis/emoji-goodluck.png Graphic file (type png)
+<use assets/emojis/emoji-goodluck.png>
+Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3509.
+(pdftex.def)             Requested size: 36.72769pt x 36.74103pt.
+ [79]
+<html_outputs/listing-56-mini-webpage-project-html-only.pdf, id=2435, page=1, 614.29494pt x 715.15282pt>
+File: html_outputs/listing-56-mini-webpage-project-html-only.pdf Graphic file (type pdf)
+<use html_outputs/listing-56-mini-webpage-project-html-only.pdf, page 1>
+Package pdftex.def Info: html_outputs/listing-56-mini-webpage-project-html-only.pdf , page1 used on input line 3522.
+(pdftex.def)             Requested size: 510.54962pt x 594.3842pt.
+<html_outputs/listing-56-mini-webpage-project-html-only.pdf, id=2436, page=2, 614.295pt x 120.93181pt>
+File: html_outputs/listing-56-mini-webpage-project-html-only.pdf Graphic file (type pdf)
+<use html_outputs/listing-56-mini-webpage-project-html-only.pdf, page 2>
+Package pdftex.def Info: html_outputs/listing-56-mini-webpage-project-html-only.pdf , page2 used on input line 3524.
+(pdftex.def)             Requested size: 510.54962pt x 100.50992pt.
+File: assets/emojis/emoji-smirk.png Graphic file (type png)
+<use assets/emojis/emoji-smirk.png>
+Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3526.
 (pdftex.def)             Requested size: 48.38376pt x 27.2197pt.
 File: assets/emojis/emoji-police.png Graphic file (type png)
 <use assets/emojis/emoji-police.png>
-Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3526.
 (pdftex.def)             Requested size: 43.92007pt x 38.10757pt.
 File: assets/emojis/emoji-anas.png Graphic file (type png)
 <use assets/emojis/emoji-anas.png>
-Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3526.
 (pdftex.def)             Requested size: 67.56808pt x 38.10757pt.
 File: assets/emojis/emoji-dissapointed.png Graphic file (type png)
 <use assets/emojis/emoji-dissapointed.png>
-Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3526.
 (pdftex.def)             Requested size: 42.35931pt x 38.10757pt.
 File: assets/emojis/emoji-bruh.png Graphic file (type png)
 <use assets/emojis/emoji-bruh.png>
-Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3526.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
 File: assets/emojis/emoji-eww.png Graphic file (type png)
 <use assets/emojis/emoji-eww.png>
-Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3526.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
 File: assets/emojis/emoji-sad.png Graphic file (type png)
 <use assets/emojis/emoji-sad.png>
-Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3526.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
 File: assets/emojis/emoji-sideeye.png Graphic file (type png)
 <use assets/emojis/emoji-sideeye.png>
-Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3470.
+Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3526.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
 File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 <use assets/emojis/emoji-goodluck.png>
-Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3470.
-(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
- [79 <./html_outputs/listing-56-mini-webpage-project.pdf>]
-File: assets/emojis/emoji-smirk.png Graphic file (type png)
-<use assets/emojis/emoji-smirk.png>
-Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3496.
-(pdftex.def)             Requested size: 48.38376pt x 27.2197pt.
-File: assets/emojis/emoji-police.png Graphic file (type png)
-<use assets/emojis/emoji-police.png>
-Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3496.
-(pdftex.def)             Requested size: 43.92007pt x 38.10757pt.
-File: assets/emojis/emoji-anas.png Graphic file (type png)
-<use assets/emojis/emoji-anas.png>
-Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3496.
-(pdftex.def)             Requested size: 67.56808pt x 38.10757pt.
-File: assets/emojis/emoji-dissapointed.png Graphic file (type png)
-<use assets/emojis/emoji-dissapointed.png>
-Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3496.
-(pdftex.def)             Requested size: 42.35931pt x 38.10757pt.
-File: assets/emojis/emoji-bruh.png Graphic file (type png)
-<use assets/emojis/emoji-bruh.png>
-Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3496.
-(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
-File: assets/emojis/emoji-eww.png Graphic file (type png)
-<use assets/emojis/emoji-eww.png>
-Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3496.
-(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
-File: assets/emojis/emoji-sad.png Graphic file (type png)
-<use assets/emojis/emoji-sad.png>
-Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3496.
-(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
-File: assets/emojis/emoji-sideeye.png Graphic file (type png)
-<use assets/emojis/emoji-sideeye.png>
-Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3496.
-(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
-File: assets/emojis/emoji-goodluck.png Graphic file (type png)
-<use assets/emojis/emoji-goodluck.png>
-Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3496.
+Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3526.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
  [80]
+File: assets/emojis/emoji-smirk.png Graphic file (type png)
+<use assets/emojis/emoji-smirk.png>
+Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3530.
+(pdftex.def)             Requested size: 48.38376pt x 27.2197pt.
 File: assets/emojis/emoji-police.png Graphic file (type png)
 <use assets/emojis/emoji-police.png>
-Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3502.
+Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3530.
+(pdftex.def)             Requested size: 43.92007pt x 38.10757pt.
+File: assets/emojis/emoji-anas.png Graphic file (type png)
+<use assets/emojis/emoji-anas.png>
+Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3530.
+(pdftex.def)             Requested size: 67.56808pt x 38.10757pt.
+File: assets/emojis/emoji-dissapointed.png Graphic file (type png)
+<use assets/emojis/emoji-dissapointed.png>
+Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3530.
+(pdftex.def)             Requested size: 42.35931pt x 38.10757pt.
+File: assets/emojis/emoji-bruh.png Graphic file (type png)
+<use assets/emojis/emoji-bruh.png>
+Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3530.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-eww.png Graphic file (type png)
+<use assets/emojis/emoji-eww.png>
+Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3530.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-sad.png Graphic file (type png)
+<use assets/emojis/emoji-sad.png>
+Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3530.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-sideeye.png Graphic file (type png)
+<use assets/emojis/emoji-sideeye.png>
+Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3530.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-goodluck.png Graphic file (type png)
+<use assets/emojis/emoji-goodluck.png>
+Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3530.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+ [81 <./html_outputs/listing-56-mini-webpage-project-html-only.pdf> <./html_outputs/listing-56-mini-webpage-project-html-only.pdf>]
+File: assets/emojis/emoji-smirk.png Graphic file (type png)
+<use assets/emojis/emoji-smirk.png>
+Package pdftex.def Info: assets/emojis/emoji-smirk.png  used on input line 3557.
+(pdftex.def)             Requested size: 48.38376pt x 27.2197pt.
+File: assets/emojis/emoji-police.png Graphic file (type png)
+<use assets/emojis/emoji-police.png>
+Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3557.
+(pdftex.def)             Requested size: 43.92007pt x 38.10757pt.
+File: assets/emojis/emoji-anas.png Graphic file (type png)
+<use assets/emojis/emoji-anas.png>
+Package pdftex.def Info: assets/emojis/emoji-anas.png  used on input line 3557.
+(pdftex.def)             Requested size: 67.56808pt x 38.10757pt.
+File: assets/emojis/emoji-dissapointed.png Graphic file (type png)
+<use assets/emojis/emoji-dissapointed.png>
+Package pdftex.def Info: assets/emojis/emoji-dissapointed.png  used on input line 3557.
+(pdftex.def)             Requested size: 42.35931pt x 38.10757pt.
+File: assets/emojis/emoji-bruh.png Graphic file (type png)
+<use assets/emojis/emoji-bruh.png>
+Package pdftex.def Info: assets/emojis/emoji-bruh.png  used on input line 3557.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-eww.png Graphic file (type png)
+<use assets/emojis/emoji-eww.png>
+Package pdftex.def Info: assets/emojis/emoji-eww.png  used on input line 3557.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-sad.png Graphic file (type png)
+<use assets/emojis/emoji-sad.png>
+Package pdftex.def Info: assets/emojis/emoji-sad.png  used on input line 3557.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-sideeye.png Graphic file (type png)
+<use assets/emojis/emoji-sideeye.png>
+Package pdftex.def Info: assets/emojis/emoji-sideeye.png  used on input line 3557.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+File: assets/emojis/emoji-goodluck.png Graphic file (type png)
+<use assets/emojis/emoji-goodluck.png>
+Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 3557.
+(pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
+ [82]
+File: assets/emojis/emoji-police.png Graphic file (type png)
+<use assets/emojis/emoji-police.png>
+Package pdftex.def Info: assets/emojis/emoji-police.png  used on input line 3564.
 (pdftex.def)             Requested size: 125.49649pt x 108.87878pt.
 )
 File: assets/emojis/emoji-smirk.png Graphic file (type png)
@@ -4569,7 +4648,7 @@ File: assets/emojis/emoji-goodluck.png Graphic file (type png)
 <use assets/emojis/emoji-goodluck.png>
 Package pdftex.def Info: assets/emojis/emoji-goodluck.png  used on input line 49.
 (pdftex.def)             Requested size: 38.10612pt x 38.10757pt.
- [81] (main.aux)
+ [83] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -4578,17 +4657,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 988037F48ADE6F84861F59618E7E02A6;32968.
  ) 
 Here is how much of TeX's memory you used:
- 39256 strings out of 467690
- 825495 string characters out of 5414972
- 2003547 words of memory out of 5000000
- 66705 multiletter control sequences out of 15000+600000
+ 39324 strings out of 467690
+ 826934 string characters out of 5414972
+ 2213638 words of memory out of 5000000
+ 66712 multiletter control sequences out of 15000+600000
  660151 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,21n,145p,576b,3925s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2074.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfit1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1728.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt0900.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sftt1095.pfb><C:/Users/miadu/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1095.pfb>
-Output written on main.pdf (81 pages, 38057881 bytes).
+Output written on main.pdf (83 pages, 38049869 bytes).
 PDF statistics:
- 2707 PDF objects out of 2984 (max. 8388607)
- 803 named destinations out of 1000 (max. 500000)
- 1856 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2796 PDF objects out of 2984 (max. 8388607)
+ 864 named destinations out of 1000 (max. 500000)
+ 1861 words of extra memory for PDF output out of 10000 (max. 10000000)
 

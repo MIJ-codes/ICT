@@ -157,4 +157,4 @@
 \contentsline {subsection}{\numberline {4.25.2}Quote, Citation and Direction Tags}{76}{subsection.4.25.2}%
 \contentsline {subsection}{\numberline {4.25.3}Script, Noscript, Object and Applet}{77}{subsection.4.25.3}%
 \contentsline {section}{\numberline {4.26}Integrated Mini Project}{77}{section.4.26}%
-\contentsline {section}{\numberline {4.27}Quick Revision Checklist}{80}{section.4.27}%
+\contentsline {section}{\numberline {4.27}Quick Revision Checklist}{82}{section.4.27}%
