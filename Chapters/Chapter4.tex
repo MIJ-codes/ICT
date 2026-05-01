@@ -1090,6 +1090,17 @@ An HTML element is the complete unit formed by a start tag, element content and 
 \]
 \end{infobox}
 
+
+\subsection{Block-Level and Inline Elements}
+\begin{longtable}{|C{4cm}|L{8cm}|C{4cm}|}
+\longtableheader{3}{Block-Level vs Inline Elements}{%
+\tblcolhdcell{Element Type} & \tblcolhdcell{Behavior} & \tblcolhdcell{Examples}}
+Block-level element & Starts on a new line and usually takes the full available width. & \texttt{div}, \texttt{p}, \texttt{h1}, \texttt{ul}, \texttt{li} \\ \tblhline
+Inline element & Does not start a new line; it stays inside the flow of text. & \texttt{a}, \texttt{b}, \texttt{span}, \texttt{strong} \\ \tblhline
+\tblbottomrule
+\caption{Block-level and inline HTML elements}
+\end{longtable}
+
 \subsection{HTML Attribute}
 \begin{definitionbox}[Attribute]
 An attribute is a special word written inside the start tag to give extra information or control the behavior, appearance or value of an HTML element.
@@ -1111,17 +1122,18 @@ An attribute is a special word written inside the start tag to give extra inform
     \item Single quotation marks can also be used when needed.
 \end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Element and Attribute Parts}]
 <p align="left">This is HTML class</p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Element and Attribute Parts}{http://127.0.0.1:3000/listing-01-element-and-attribute-parts.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-01-element-and-attribute-parts.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{align} is the attribute name.
     \item \texttt{left} is the attribute value.
@@ -1131,14 +1143,21 @@ An attribute is a special word written inside the start tag to give extra inform
 \subsection{HTML Comments}
 Comments are written for explanation inside source code. Browsers ignore comments, so they are not displayed on the webpage.
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={HTML Comment}]
 <!-- This is a comment -->
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{HTML Comment}{http://127.0.0.1:3000/listing-02-html-comment.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-02-html-comment.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Comments are not printed in the browser output.
+    \item They are useful for explaining source code without changing the visible webpage.
+\end{itemize}
+
 
 
 \section{First HTML Document}
@@ -1150,6 +1169,7 @@ An HTML document is mainly formed with two sections inside the \texttt{html} ele
 \subsection{Basic Skeleton}
 This example shows the minimum structure of a valid HTML page. The \texttt{head} section stores information about the page, while the \texttt{body} section stores visible content.
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Basic HTML Document Structure}]
 <!DOCTYPE html>
 <html>
@@ -1162,19 +1182,36 @@ This example shows the minimum structure of a valid HTML page. The \texttt{head}
 </html>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Basic HTML Document Structure}{http://127.0.0.1:3000/listing-03-basic-html-document-structure.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-03-basic-html-document-structure.pdf}
 \end{browseroutputcompact}
 
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The browser displays the content written inside the body section.
+    \item The head section controls document information, but it is not shown as normal page content.
+\end{itemize}
 
-\textbf{Rendered output}
-\begin{center}
-    \fbox{\includegraphics[width=4cm]{html_outputs/01-basic-skeleton.png}}
-\end{center}
+\subsection{Creating and Running HTML Files}
+\begin{enumerate}
+    \item Open a simple text editor such as Notepad.
+    \item Write the HTML code.
+    \item Save the file using the \texttt{.html} or \texttt{.htm} extension.
+    \item Open the saved file in a web browser.
+    \item Edit the source file again when changes are needed, then refresh the browser.
+\end{enumerate}
+
+\begin{summarybox}
+HTML source code is written in a text editor, saved as an HTML file, and interpreted by a browser to display the webpage.
+\end{summarybox}
 
 \subsection{Head Section}
-The head section contains document-related information such as document title, metadata, keywords, stylesheet links and scripts. This information is important for the browser and search engines, but most of it is not displayed as body content.
+
+\begin{itemize}
+    \item The head section contains document-related information such as document title, metadata, keywords, stylesheet links and scripts.
+    \item This information is important for the browser and search engines, but most of it is not displayed as body content.
+\end{itemize}
 
 \begin{longtable}{|C{2.5cm}|C{2.5cm}|L{11.5cm}|}
 \longtableheader{3}{Common Head Section Elements}{%
@@ -1196,17 +1233,8 @@ The head section contains document-related information such as document title, m
     \item Browsers display the visible content written inside the body section.
 \end{itemize}
 
-\subsection{Block-Level and Inline Elements}
-\begin{longtable}{|C{4cm}|L{8cm}|C{4cm}|}
-\longtableheader{3}{Block-Level vs Inline Elements}{%
-\tblcolhdcell{Element Type} & \tblcolhdcell{Behavior} & \tblcolhdcell{Examples}}
-Block-level element & Starts on a new line and usually takes the full available width. & \texttt{div}, \texttt{p}, \texttt{h1}, \texttt{ul}, \texttt{li} \\ \tblhline
-Inline element & Does not start a new line; it stays inside the flow of text. & \texttt{a}, \texttt{b}, \texttt{span}, \texttt{strong} \\ \tblhline
-\tblbottomrule
-\caption{Block-level and inline HTML elements}
-\end{longtable}
 
-\subsection{Body Tag Attributes}
+\subsubsection{Body Tag Attributes}
 The following old body attributes are important for exam/reference recognition. Modern webpages should use CSS instead.
 
 \begin{longtable}{|C{2.5cm}|L{12cm}|}
@@ -1222,26 +1250,12 @@ The following old body attributes are important for exam/reference recognition. 
 \caption{Old body attributes used in HTML}
 \end{longtable}
 
-\section{Creating and Running HTML Files}
-\begin{enumerate}
-    \item Open a simple text editor such as Notepad.
-    \item Write the HTML code.
-    \item Save the file using the \texttt{.html} or \texttt{.htm} extension.
-    \item Open the saved file in a web browser.
-    \item Edit the source file again when changes are needed, then refresh the browser.
-\end{enumerate}
-
-\begin{summarybox}
-HTML source code is written in a text editor, saved as an HTML file, and interpreted by a browser to display the webpage.
-\end{summarybox}
 
 \section{Headings, Paragraphs and Line Breaks}
 
-This lesson covers the basic tags used to organize text into headings, paragraphs, visible line breaks and simple separators. These tags are small, but they control how readable a webpage becomes.
+\Note These tags are small, but they control how readable a webpage becomes.
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
-
-\begin{longtable}{|C{2.6cm}|C{3.2cm}|C{3.2cm}|L{6.9cm}|}
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag / Entity} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -1267,37 +1281,52 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{longtable}
 
 \subsection{Heading Elements}
-HTML provides six heading levels from \texttt{h1} to \texttt{h6}. Headings are container elements and should be used to show document structure.
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Heading Levels}]
 <h1>Dhaka Govt. College</h1>
 <p>This is normal text</p>
 <h6>Dhaka, Bangladesh</h6>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Heading Levels}{http://127.0.0.1:3000/listing-04-heading-levels.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-04-heading-levels.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The browser gives each heading level a different default size.
+    \item Headings are block elements, so each heading starts on a new line.
+\end{itemize}
+
 
 
 \subsection{Paragraph, Break, Horizontal Rule and Spacing}
-Normal paragraph text in HTML does not preserve every space, tab or Enter key from the source code. The browser reads the structure from tags, then displays the content according to HTML rules.
+
+\begin{itemize}
+    \item Normal paragraph text in HTML does not preserve every space, tab or Enter key from the source code.
+    \item The browser reads the structure from tags, then displays the content according to HTML rules.
+\end{itemize}
 
 \subsubsection{Basic Paragraph and Line Break}
-This example uses \texttt{p} for paragraph structure and \texttt{br} for manual line breaks. The paragraph tag creates a block of text, while \texttt{br} moves the next text to a new line without starting a new paragraph.
 
+\begin{itemize}
+    \item The \texttt{p} tag creates a paragraph block. The browser adds some vertical space before and after each paragraph by default.
+    \item The \texttt{br} moves the next text to a new line without starting a new paragraph.
+\end{itemize}
+
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Paragraph and Line Break}]
 <p>This is the first paragraph.</p>
 <p>This line has<br>two lines inside one paragraph.</p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Paragraph and Line Break}{http://127.0.0.1:3000/paragraph-line-break-output.html}
     \includegraphics[width=\linewidth]{html_outputs/paragraph-line-break-output.pdf}
 \end{browseroutputcompact}
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item A paragraph creates a separate block of text.
     \item \texttt{br} breaks the line at the exact position where it is written.
@@ -1305,20 +1334,24 @@ This example uses \texttt{p} for paragraph structure and \texttt{br} for manual 
 \end{itemize}
 
 \subsubsection{Horizontal Rule}
-The \texttt{hr} tag creates a horizontal line across the page. It is an empty tag, so it does not wrap any content.
 
+\begin{itemize}
+    \item \texttt{hr} is an empty tag, so it does not wrap any content.
+\end{itemize}
+
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Horizontal Rule}]
 <p>Section One</p>
 <hr>
 <p>Section Two</p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Horizontal Rule}{http://127.0.0.1:3000/horizontal-rule-output.html}
     \includegraphics[width=\linewidth]{html_outputs/horizontal-rule-output.pdf}
 \end{browseroutputcompact}
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{hr} visually separates two parts of a page.
     \item It is not used for writing text.
@@ -1326,19 +1359,24 @@ The \texttt{hr} tag creates a horizontal line across the page. It is an empty ta
 \end{itemize}
 
 \subsubsection{Old Horizontal Rule Attributes}
-Older HTML examples may use attributes inside \texttt{hr} to control alignment, width, thickness and color. These are exam/reference only, not modern practice.
 
+\begin{itemize}
+    \item Older HTML examples may use attributes inside \texttt{hr} to control alignment, width, thickness and color.
+    \item These are exam/reference only, not modern practice.
+\end{itemize}
+
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Old HR Attributes}]
 <hr align="center" width="60%" size="4" color="blue">
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Old HR Attributes}{http://127.0.0.1:3000/listing-07-old-hr-attributes.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-07-old-hr-attributes.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{align} controls the position of the line.
     \item \texttt{width} controls how long the line is.
@@ -1348,8 +1386,13 @@ Older HTML examples may use attributes inside \texttt{hr} to control alignment, 
 \end{itemize}
 
 \subsubsection{Whitespace Collapsing}
-Browsers collapse multiple normal spaces, tabs and source-code line breaks into a single space in normal paragraph text. Pressing Enter in the source file does not automatically create a visible new line in the browser.
+ 
+\begin{itemize}
+    \item Browsers collapse multiple normal spaces, tabs and source-code line breaks into a single space in normal paragraph text.
+    \item Pressing Enter in the source file does not automatically create a visible new line in the browser.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Whitespace Collapsing}]
 <p>
 This       paragraph
@@ -1358,12 +1401,12 @@ and line breaks in source code.
 </p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Whitespace Collapsing}{http://127.0.0.1:3000/whitespace-collapsing-output.html}
     \includegraphics[width=\linewidth]{html_outputs/whitespace-collapsing-output.pdf}
 \end{browseroutputcompact}
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item Extra normal spaces usually display as one space.
     \item Source-code line breaks do not behave like \texttt{br}.
@@ -1371,18 +1414,22 @@ and line breaks in source code.
 \end{itemize}
 
 \subsubsection{Non-breaking Space}
-The entity \texttt{\&nbsp;} creates a visible space that the browser does not collapse. It is useful for small special spacing cases, but it should not be used as the main method for page layout.
+\begin{itemize}
+    \item The entity \texttt{\&nbsp;} creates a visible space that the browser does not collapse.
+    \item It is useful for small special spacing cases, but it should not be used as the main method for page layout.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Using Non-breaking Space}]
 <p>This&nbsp;&nbsp;&nbsp;paragraph&nbsp;&nbsp;has extra spaces.</p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Non-breaking Space}{http://127.0.0.1:3000/nonbreaking-space-output.html}
     \includegraphics[width=\linewidth]{html_outputs/nonbreaking-space-output.pdf}
 \end{browseroutputcompact}
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{\&nbsp;} is an HTML entity, not a tag.
     \item Each \texttt{\&nbsp;} adds one visible non-breaking space.
@@ -1390,7 +1437,10 @@ The entity \texttt{\&nbsp;} creates a visible space that the browser does not co
 \end{itemize}
 
 \section{Text Formatting in HTML}
-Formatting means giving proper shape and appearance to text on a webpage. Text formatting includes bold, italic, underline, big/small text, subscript, superscript, deleted text, inserted text, quotation and preformatted text.
+\begin{itemize}
+    \item Text formatting should be used to make important content clearer, not only to decorate the page.
+    \item Some formatting tags change only appearance, while some also add meaning.
+\end{itemize}
 
 \begin{longtable}{|C{2.5cm}|C{9cm}|C{5cm}|}
 \longtableheader{3}{HTML Text Formatting Tags}{%
@@ -1415,6 +1465,7 @@ Formatting means giving proper shape and appearance to text on a webpage. Text f
 \caption{Common text formatting tags}
 \end{longtable}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Text Formatting Example}]
 <p><b>Bold</b> and <i>italic</i> text</p>
 <p>H<sub>2</sub>O and x<sup>2</sup></p>
@@ -1425,13 +1476,13 @@ spaces and line breaks.
 </pre>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Text Formatting Example}{http://127.0.0.1:3000/listing-10-text-formatting-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-10-text-formatting-example.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{b}, \texttt{i} and \texttt{u} mainly change visual appearance.
     \item \texttt{strong} and \texttt{em} also add meaning to the text.
@@ -1440,8 +1491,12 @@ spaces and line breaks.
 \end{itemize}
 
 \subsection{Visual vs Meaningful Formatting}
-Some tags only make text look different, while some tags also give meaning. For example, \texttt{b} and \texttt{strong} usually look similar, but \texttt{strong} means important text.
+\begin{itemize}
+    \item Some tags only make text look different, while some tags also give meaning.
+    \item For example, \texttt{b} and \texttt{strong} usually look similar, but \texttt{strong} means important text.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Visual and Meaningful Formatting}]
 <p><b>Bold text</b></p>
 <p><strong>Important text</strong></p>
@@ -1449,13 +1504,13 @@ Some tags only make text look different, while some tags also give meaning. For 
 <p><em>Emphasized text</em></p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Visual and Meaningful Formatting}{http://127.0.0.1:3000/listing-11-visual-and-meaningful-formatting.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-11-visual-and-meaningful-formatting.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{b} and \texttt{i} are visual formatting tags.
     \item \texttt{strong} and \texttt{em} are semantic formatting tags.
@@ -1463,8 +1518,11 @@ Some tags only make text look different, while some tags also give meaning. For 
 \end{itemize}
 
 \subsection{Formula and Correction Formatting}
-Subscript and superscript are important for science notation. Deleted and inserted text are useful when showing correction or update.
+\begin{itemize}
+    \item This example shows formatting that is common in formulas, corrections and highlighted text.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Formula and Correction Tags}]
 <p>Water formula: H<sub>2</sub>O</p>
 <p>Area formula: x<sup>2</sup></p>
@@ -1472,13 +1530,13 @@ Subscript and superscript are important for science notation. Deleted and insert
 <p>This is <mark>important</mark> text.</p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Formula and Correction Tags}{http://127.0.0.1:3000/listing-12-formula-and-correction-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-12-formula-and-correction-tags.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{sub} lowers text below the normal line.
     \item \texttt{sup} raises text above the normal line.
@@ -1487,8 +1545,12 @@ Subscript and superscript are important for science notation. Deleted and insert
 \end{itemize}
 
 \subsection{Old Text Tags}
-Some old tags may appear in textbooks or exam questions, but they are not modern practice. Modern HTML uses CSS for most visual text styling.
+\begin{itemize}
+    \item Some old tags may appear in textbooks or exam questions, but they are not modern practice.
+    \item Modern HTML uses CSS for most visual text styling.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Old Text Tags}]
 <p><big>Big text</big></p>
 <p><strike>Old strikethrough text</strike></p>
@@ -1496,13 +1558,13 @@ Some old tags may appear in textbooks or exam questions, but they are not modern
 <center>This text is centered.</center>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Old Text Tags}{http://127.0.0.1:3000/listing-13-old-text-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-13-old-text-tags.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{big}, \texttt{strike} and \texttt{center} are exam/reference only.
     \item Use CSS for modern font size, text alignment and decoration.
@@ -1511,7 +1573,11 @@ Some old tags may appear in textbooks or exam questions, but they are not modern
 \section{Font, Color, Style and Bangla Text}
 
 \subsection{Font Tag}
-The old \texttt{font} tag was used to control font face, color and size. It is exam/reference only, not modern practice. Modern webpages should use CSS.
+\begin{itemize}
+    \item The old \texttt{font} tag was used to control font face, color and size.
+    \item It is exam/reference only, not modern practice.
+    \item Modern webpages should use CSS.
+\end{itemize}
 
 \begin{formulabox}[Old Font Tag Syntax]
 \[
@@ -1519,9 +1585,9 @@ The old \texttt{font} tag was used to control font face, color and size. It is e
 \]
 \end{formulabox}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.6cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Old Font Tag Attributes and Values}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -1569,22 +1635,35 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \endgroup
 
 \subsection{Style Attribute}
-The \texttt{style} attribute is used for inline CSS. It can control exact font family, font size, font style and color.
+\begin{itemize}
+    \item Inline CSS affects only the element where the \texttt{style} attribute is written.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Font Styling with CSS}]
 <p style="font-family: Arial; font-size: 18px; color: red;">
     This is styled text.
 </p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Font Styling with CSS}{http://127.0.0.1:3000/listing-14-font-styling-with-css.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-14-font-styling-with-css.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The style attribute changes only the element where it is written.
+    \item CSS can control font family, size, color and many other visual properties.
+\end{itemize}
+
 
 
 \subsection{Bangla Text in HTML}
-Bangla text may appear in older books using old font names such as \texttt{SutonnyMJ}. This is exam/reference only. The modern method is Unicode with UTF-8 encoding.
+\begin{itemize}
+    \item Bangla text may appear in older books using old font names such as \texttt{SutonnyMJ}.
+    \item This is exam/reference only.
+    \item The modern method is Unicode with UTF-8 encoding.
+\end{itemize}
 
 \begin{itemize}
     \item Bangla can be written using old \texttt{font face} values, but this is not portable.
@@ -1593,6 +1672,7 @@ Bangla text may appear in older books using old font names such as \texttt{Suton
     \item File names, image paths and link paths should be written in English characters for better compatibility.
 \end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={UTF-8 and Unicode Bangla}]
 <!DOCTYPE html>
 <html>
@@ -1606,16 +1686,24 @@ Bangla text may appear in older books using old font names such as \texttt{Suton
 </html>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{UTF-8 and Unicode Bangla}{http://127.0.0.1:3000/listing-15-utf-8-and-unicode-bangla.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-15-utf-8-and-unicode-bangla.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The charset declaration helps the browser display Unicode text correctly.
+    \item Bangla text should be saved and rendered with UTF-8 encoding.
+\end{itemize}
+
 
 
 \section{Marquee}
-The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam/reference only, not modern practice.
+\begin{itemize}
+    \item \texttt{marquee} is exam/reference only; modern pages should use CSS animation instead.
+\end{itemize}
 
-\begin{longtable}{|C{2.6cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Old Marquee Attributes and Values}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -1635,6 +1723,7 @@ The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam
 \caption{Attributes of the old marquee tag}
 \end{longtable}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Marquee Variations}]
 <marquee direction="right">Moving right</marquee>
 <marquee behavior="alternate" scrollamount="8">
@@ -1645,13 +1734,13 @@ The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam
 </marquee>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Marquee Variations}{http://127.0.0.1:3000/listing-16-marquee-variations.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-16-marquee-variations.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{direction} controls movement direction.
     \item \texttt{behavior="alternate"} makes the text bounce between sides.
@@ -1660,11 +1749,13 @@ The \texttt{marquee} tag creates scrolling text in old HTML examples. It is exam
 \end{itemize}
 
 \section{HTML Lists}
-HTML lists organize related items. The main list types are ordered list, unordered list and description list.
+\begin{itemize}
+    \item HTML lists organize related items.
+    \item The main list types are ordered list, unordered list and description list.
+\end{itemize}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.4cm}|C{3cm}|C{3.2cm}|L{7.2cm}|}
+\begin{longtable}{|C{2.4cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -1692,8 +1783,11 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{longtable}
 
 \subsection{Ordered List}
-An ordered list is used when the order of items matters. The browser automatically numbers the \texttt{li} elements.
+\begin{itemize}
+    \item An ordered list is used when the order of items matters.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Ordered List}]
 <ol>
     <li>Bangla</li>
@@ -1702,15 +1796,24 @@ An ordered list is used when the order of items matters. The browser automatical
 </ol>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Ordered List}{http://127.0.0.1:3000/listing-17-ordered-list.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-17-ordered-list.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The browser numbers ordered-list items automatically.
+    \item Each li element creates one list item.
+\end{itemize}
+
 
 
 \subsubsection{Ordered List Variations}
-The \texttt{type} attribute changes the numbering style. The \texttt{start} attribute changes the starting number, and \texttt{value} can force the number of a specific list item.
+\begin{itemize}
+    \item This example shows three different controls: marker style, starting number and forced item number.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Ordered List Type and Start}]
 <ol type="A">
     <li>HTML</li>
@@ -1729,13 +1832,13 @@ The \texttt{type} attribute changes the numbering style. The \texttt{start} attr
 </ol>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Ordered List Type and Start}{http://127.0.0.1:3000/listing-18-ordered-list-type-and-start.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-18-ordered-list-type-and-start.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item Common \texttt{type} values are \texttt{1}, \texttt{A}, \texttt{a}, \texttt{I} and \texttt{i}.
     \item \texttt{start="4"} changes the first list number.
@@ -1743,8 +1846,11 @@ The \texttt{type} attribute changes the numbering style. The \texttt{start} attr
 \end{itemize}
 
 \subsection{Unordered List}
-An unordered list is used when item order is not important. The browser normally displays bullet markers.
+\begin{itemize}
+    \item An unordered list is used when item order is not important.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Unordered List}]
 <ul>
     <li>Physics</li>
@@ -1753,15 +1859,25 @@ An unordered list is used when item order is not important. The browser normally
 </ul>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Unordered List}{http://127.0.0.1:3000/listing-19-unordered-list.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-19-unordered-list.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Unordered lists use bullet markers by default.
+    \item Use this type when item order is not important.
+\end{itemize}
+
 
 
 \subsubsection{Unordered List Marker Variations}
-Older HTML examples may use \texttt{type} values such as \texttt{disc}, \texttt{circle} and \texttt{square}. Modern HTML should use CSS \texttt{list-style-type}.
+\begin{itemize}
+    \item Older HTML examples may use \texttt{type} values such as \texttt{disc}, \texttt{circle} and \texttt{square}.
+    \item Modern HTML should use CSS \texttt{list-style-type}.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Unordered List Marker Types}]
 <ul type="disc">
     <li>Disc marker</li>
@@ -1776,21 +1892,24 @@ Older HTML examples may use \texttt{type} values such as \texttt{disc}, \texttt{
 </ul>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Unordered List Marker Types}{http://127.0.0.1:3000/listing-20-unordered-list-marker-types.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-20-unordered-list-marker-types.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{type} on \texttt{ul} is old exam/reference style.
     \item CSS is the modern way to change list markers.
 \end{itemize}
 
 \subsection{Description List}
-A description list is used for terms and their meanings. It uses \texttt{dl}, \texttt{dt} and \texttt{dd}.
+\begin{itemize}
+    \item A description list is used for terms and their meanings.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Description List}]
 <dl>
     <dt>HTML</dt>
@@ -1800,15 +1919,25 @@ A description list is used for terms and their meanings. It uses \texttt{dl}, \t
 </dl>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Description List}{http://127.0.0.1:3000/listing-21-description-list.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-21-description-list.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The dt element contains the term.
+    \item The dd element contains the explanation of that term.
+\end{itemize}
+
 
 
 \subsection{Nested List}
-A nested list means a list inside another list. It is useful for showing categories and subcategories.
+\begin{itemize}
+    \item A nested list means a list inside another list.
+    \item It is useful for showing categories and subcategories.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Nested List}]
 <ol>
     <li>Science
@@ -1821,15 +1950,25 @@ A nested list means a list inside another list. It is useful for showing categor
 </ol>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Nested List}{http://127.0.0.1:3000/listing-22-nested-list.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-22-nested-list.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item A list can be placed inside another list item.
+    \item Indentation shows the parent-child relationship between list levels.
+\end{itemize}
+
 
 
 \subsection{Old Exam-Style List Tags}
-The old \texttt{dir} and \texttt{menu} tags may appear in old books. They are exam/reference only; use \texttt{ul}, \texttt{ol}, semantic navigation and CSS in modern pages.
+\begin{itemize}
+    \item The old \texttt{dir} and \texttt{menu} tags may appear in old books.
+    \item They are exam/reference only; use \texttt{ul}, \texttt{ol}, semantic navigation and CSS in modern pages.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Old List Tags}]
 <dir>
     <li>Old directory item</li>
@@ -1840,13 +1979,13 @@ The old \texttt{dir} and \texttt{menu} tags may appear in old books. They are ex
 </menu>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Old List Tags}{http://127.0.0.1:3000/listing-23-old-list-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-23-old-list-tags.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{dir} and old \texttt{menu} examples are not modern list practice.
     \item Use \texttt{ol} for sequence, \texttt{ul} for bullets and \texttt{dl} for term-description pairs.
@@ -1864,9 +2003,9 @@ A hyperlink is a connection that allows a user to move from one webpage, file or
 
 Hyperlinks create bridges between pages. A website homepage can connect to other pages through hyperlinks. HTML pages, images, sound files, videos and documents can be referenced by hyperlinks.
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -1909,17 +2048,18 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{formulabox}
 Two things are necessary to create a link: the destination address and the visible clickable text or object.
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Basic Anchor Link}]
 <a href="https://www.example.com">Visit Website</a>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Basic Anchor Link}{http://127.0.0.1:3000/listing-24-basic-anchor-link.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-24-basic-anchor-link.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{a} creates the hyperlink.
     \item \texttt{href} stores the destination address.
@@ -1950,21 +2090,31 @@ Absolute path & Gives the complete address or fixed location. Example: \texttt{h
     \item Saves time by allowing direct navigation.
 \end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Internal and External Links}]
 <p><a href="address.html">Our Address</a></p>
 <p><a href="https://www.example.com" target="_blank">External Site</a></p>
 <p><a href="#top">Go to Top</a></p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Internal and External Links}{http://127.0.0.1:3000/listing-25-internal-and-external-links.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-25-internal-and-external-links.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item External links point to another website or full URL.
+    \item Internal links point to another page or place inside the same website.
+\end{itemize}
+
 
 
 \subsection{Common Link Variations}
-Links can point to web addresses, local files, folders, email addresses, phone numbers or a specific place inside the same page.
+\begin{itemize}
+    \item This example compares link destinations that look similar in code but behave differently in real use.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Common Link Variations}]
 <a href="index.html">Same folder page</a>
 <a href="pages/about.html">Page inside folder</a>
@@ -1974,13 +2124,13 @@ Links can point to web addresses, local files, folders, email addresses, phone n
 <a href="tel:+8801234567890">Call phone number</a>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Common Link Variations}{http://127.0.0.1:3000/listing-26-common-link-variations.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-26-common-link-variations.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item Relative links depend on the current file location.
     \item Absolute links use the full address.
@@ -1989,8 +2139,11 @@ Links can point to web addresses, local files, folders, email addresses, phone n
 \end{itemize}
 
 \subsection{Target and Download Attributes}
-The \texttt{target} attribute controls where a link opens. The \texttt{download} attribute tells the browser to download a file instead of opening it normally when supported.
+\begin{itemize}
+    \item These attributes affect browser behavior after the user clicks the link.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Target and Download Links}]
 <a href="notice.html" target="_self">Open here</a>
 <a href="https://www.example.com" target="_blank">
@@ -1999,13 +2152,13 @@ The \texttt{target} attribute controls where a link opens. The \texttt{download}
 <a href="files/sample.pdf" download>Download PDF</a>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Target and Download Links}{http://127.0.0.1:3000/listing-27-target-and-download-links.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-27-target-and-download-links.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{\_self} opens in the same tab.
     \item \texttt{\_blank} opens in a new tab or window.
@@ -2013,8 +2166,12 @@ The \texttt{target} attribute controls where a link opens. The \texttt{download}
 \end{itemize}
 
 \subsection{Head Links: Link, Base and Basefont}
-The \texttt{link}, \texttt{base} and \texttt{basefont} tags are written in the \texttt{head} section. \texttt{basefont} is exam/reference only, not modern practice.
+\begin{itemize}
+    \item These tags belong in the \texttt{head} section and affect the document rather than showing normal body content.
+    \item \texttt{basefont} is exam/reference only, not modern practice.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Head Link Tags}]
 <head>
     <base href="https://www.example.com/">
@@ -2023,13 +2180,13 @@ The \texttt{link}, \texttt{base} and \texttt{basefont} tags are written in the \
 </head>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Head Link Tags}{http://127.0.0.1:3000/listing-28-head-link-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-28-head-link-tags.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{link} connects external resources such as CSS files.
     \item \texttt{base} changes how relative links are resolved.
@@ -2044,9 +2201,9 @@ The \texttt{img} tag is an empty element used to add an image to a webpage.
 \end{definitionbox}
 Images, diagrams, charts, maps and graphics make webpages more attractive and can reduce the amount of text needed for explanation.
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -2107,18 +2264,19 @@ Can be used as graphical navigation links. & Too many images can make a page slo
 \]
 \end{formulabox}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Image with Size and Tooltip}]
 <img src="assets/campus.jpg" alt="College campus"
      width="300" height="180" title="Campus Image">
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Image with Size and Tooltip}{http://127.0.0.1:3000/listing-29-image-with-size-and-tooltip.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-29-image-with-size-and-tooltip-local.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{src} must point to the correct image path.
     \item \texttt{alt} appears when an image cannot load and helps accessibility.
@@ -2126,8 +2284,11 @@ Can be used as graphical navigation links. & Too many images can make a page slo
 \end{itemize}
 
 \subsection{Image Paths and Broken Images}
-Image loading depends on the path written in \texttt{src}. If the path is wrong, the image will not load and the browser may show the alternate text.
+\begin{itemize}
+    \item Image examples are useful only when students can compare working paths with a broken path.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Image Path Variations}]
 <img src="assets/photo.jpg" alt="Local image" width="140">
 <img src="assets/images/photo.jpg" alt="Folder image" width="140">
@@ -2136,13 +2297,13 @@ Image loading depends on the path written in \texttt{src}. If the path is wrong,
 <img src="wrong-name.jpg" alt="This image path is wrong" width="140">
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Image Path Variations}{http://127.0.0.1:3000/listing-30-image-path-variations.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-30-image-path-variations.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item File names and folder names must match exactly.
     \item A wrong \texttt{src} creates a broken image.
@@ -2150,8 +2311,12 @@ Image loading depends on the path written in \texttt{src}. If the path is wrong,
 \end{itemize}
 
 \subsection{Old Image Spacing and Border Attributes}
-Older HTML examples may use image spacing and border attributes. These are exam/reference only; modern pages use CSS.
+\begin{itemize}
+    \item Older HTML examples may use image spacing and border attributes.
+    \item These are exam/reference only; modern pages use CSS.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Old Image Attributes}]
 <img src="assets/spacing-demo.png" alt="Spacing Demo"
      width="90" align="left" hspace="20" vspace="10" border="2">
@@ -2161,13 +2326,13 @@ Older HTML examples may use image spacing and border attributes. These are exam/
 </a>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Old Image Attributes}{http://127.0.0.1:3000/listing-31-old-image-attributes.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-31-old-image-attributes.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{hspace} and \texttt{vspace} add space around the image.
     \item \texttt{border="0"} was often used to remove link image borders.
@@ -2175,21 +2340,32 @@ Older HTML examples may use image spacing and border attributes. These are exam/
 \end{itemize}
 
 \subsection{Clickable Image}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Image Link}]
 <a href="https://www.educationboard.gov.bd">
     <img src="assets/link-image.png" alt="Education Board" width="180">
 </a>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Image Link}{http://127.0.0.1:3000/listing-32-image-link.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-32-image-link.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Wrapping an img element with an a element makes the image clickable.
+    \item The alt text still describes the image if it cannot load.
+\end{itemize}
+
 
 
 \subsection{Image Map}
-An image map makes selected areas of one image clickable. It uses the \texttt{map} and \texttt{area} tags with coordinates.
+\begin{itemize}
+    \item An image map makes selected areas of one image clickable.
+    \item It uses the \texttt{map} and \texttt{area} tags with coordinates.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Image Map Example}]
 <img src="assets/campus-map.jpg" alt="Campus Map"
      width="300" usemap="#campusmap">
@@ -2202,10 +2378,16 @@ An image map makes selected areas of one image clickable. It uses the \texttt{ma
 </map>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Image Map Example}{http://127.0.0.1:3000/listing-33-image-map-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-33-image-map-example.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The usemap attribute connects the image to a map definition.
+    \item Each area element defines one clickable region on the image.
+\end{itemize}
+
 
 
 \begin{summarybox}
@@ -2214,9 +2396,9 @@ Use \texttt{img} for normal images, image attributes for basic control, and \tex
 
 \section{Media and Frames}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -2256,8 +2438,11 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{longtable}
 
 \subsection{Audio and Video}
-Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add media.
+\begin{itemize}
+    \item The PDF can show the media player interface, but it cannot play the audio or video itself.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Audio and Video Example}]
 <audio controls>
     <source src="assets/sample-audio.wav" type="audio/wav">
@@ -2268,29 +2453,48 @@ Modern HTML uses \texttt{audio}, \texttt{video} and \texttt{source} tags to add 
 </video>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Audio and Video Example}{http://127.0.0.1:3000/listing-34-audio-and-video-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-34-audio-and-video-example.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The controls attribute shows the browser media controls.
+    \item The source element tells the browser where the media file is located.
+\end{itemize}
+
 
 
 \subsection{Iframe}
-The \texttt{iframe} tag displays another webpage or resource inside the current webpage. It is commonly used for embedded maps, videos or external pages.
+\begin{itemize}
+    \item An iframe is useful when one page needs to display another page inside a fixed area.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Iframe Example}]
 <iframe src="01-basic-skeleton.html" width="360" height="160">
 </iframe>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Iframe Example}{http://127.0.0.1:3000/listing-35-iframe-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-35-iframe-example.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item An iframe displays another webpage inside the current webpage.
+    \item Width and height control the visible frame size.
+\end{itemize}
+
 
 
 \subsection{Old Frame Tags}
-Older HTML used \texttt{frameset}, \texttt{frame} and \texttt{noframes} to divide the browser window into separate frames. These are exam/reference only, not modern practice.
+\begin{itemize}
+    \item Older HTML used \texttt{frameset}, \texttt{frame} and \texttt{noframes} to divide the browser window into separate frames.
+    \item These are exam/reference only, not modern practice.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Old Frameset Example}]
 <frameset cols="30%,70%">
     <frame src="menu.html">
@@ -2299,13 +2503,13 @@ Older HTML used \texttt{frameset}, \texttt{frame} and \texttt{noframes} to divid
 </frameset>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Old Frameset Example}{http://127.0.0.1:3000/listing-36-old-frameset-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-36-old-frameset-example.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{audio} and \texttt{video} need \texttt{controls} if users should play or pause media.
     \item \texttt{source} can provide the media file and type.
@@ -2327,9 +2531,9 @@ An HTML table presents information in rows and columns using the \texttt{table} 
     \item \term{Heading}: row or column title, usually shown in bold and centered.
 \end{itemize}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.5cm}|C{3cm}|C{3.4cm}|L{7cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -2375,6 +2579,7 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{longtable}
 
 \subsection{Basic Table}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Basic HTML Table}]
 <table border="1">
     <caption>Student Info</caption>
@@ -2389,13 +2594,13 @@ In the table below, \texttt{--} means no special attribute or value is required 
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Basic HTML Table}{http://127.0.0.1:3000/listing-37-basic-html-table.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-37-basic-html-table.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{table} contains the whole table.
     \item \texttt{tr} creates one row.
@@ -2404,8 +2609,12 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{itemize}
 
 \subsection{Unequal Number of Cells}
-If one row has more or fewer cells than another row, the browser still tries to draw the table. This can create an uneven table, so each row should usually follow the planned column count.
+\begin{itemize}
+    \item If one row has more or fewer cells than another row, the browser still tries to draw the table.
+    \item This can create an uneven table, so each row should usually follow the planned column count.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Unequal Table Cells}]
 <table border="1">
     <tr>
@@ -2419,13 +2628,13 @@ If one row has more or fewer cells than another row, the browser still tries to 
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Unequal Table Cells}{http://127.0.0.1:3000/listing-38-unequal-table-cells.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-38-unequal-table-cells.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item The first row has three cells.
     \item The second row has only one cell.
@@ -2433,6 +2642,7 @@ If one row has more or fewer cells than another row, the browser still tries to 
 \end{itemize}
 
 \subsection{Cellspacing and Cellpadding}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Cellspacing and Cellpadding}]
 <table border="1" cellspacing="7" cellpadding="10">
     <tr>
@@ -2446,13 +2656,13 @@ If one row has more or fewer cells than another row, the browser still tries to 
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Cellspacing and Cellpadding}{http://127.0.0.1:3000/listing-39-cellspacing-and-cellpadding.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-39-cellspacing-and-cellpadding.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{cellspacing} controls the gap between cells.
     \item \texttt{cellpadding} controls the gap inside each cell.
@@ -2460,6 +2670,7 @@ If one row has more or fewer cells than another row, the browser still tries to 
 \end{itemize}
 
 \subsection{Colspan and Rowspan}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Colspan and Rowspan}]
 <table border="1">
     <tr>
@@ -2475,13 +2686,13 @@ If one row has more or fewer cells than another row, the browser still tries to 
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Colspan and Rowspan}{http://127.0.0.1:3000/listing-40-colspan-and-rowspan.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-40-colspan-and-rowspan.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{colspan="2"} makes one cell cover two columns.
     \item \texttt{rowspan="2"} makes one cell cover two rows.
@@ -2489,6 +2700,7 @@ If one row has more or fewer cells than another row, the browser still tries to 
 \end{itemize}
 
 \subsection{Table Background Color}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Table Background Color}]
 <table border="1" width="300">
     <tr bgcolor="green">
@@ -2504,15 +2716,25 @@ If one row has more or fewer cells than another row, the browser still tries to 
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Table Background Color}{http://127.0.0.1:3000/listing-41-table-background-color.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-41-table-background-color.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Background color can be applied to a table, row or cell.
+    \item Modern webpages usually use CSS for table colors.
+\end{itemize}
+
 
 
 \subsection{Table Alignment and Empty Cells}
-Old HTML examples may use \texttt{align}, \texttt{valign}, \texttt{bgcolor}, \texttt{width}, \texttt{height} and \texttt{\&nbsp;} inside tables. These are important for exam recognition, but CSS is preferred in modern webpages.
+\begin{itemize}
+    \item Old HTML examples may use \texttt{align}, \texttt{valign}, \texttt{bgcolor}, \texttt{width}, \texttt{height} and \texttt{\&nbsp;} inside tables.
+    \item These are important for exam recognition, but CSS is preferred in modern webpages.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Alignment and Empty Cells}]
 <table border="1" width="400" align="center">
     <tr bgcolor="lightblue">
@@ -2526,13 +2748,13 @@ Old HTML examples may use \texttt{align}, \texttt{valign}, \texttt{bgcolor}, \te
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Alignment and Empty Cells}{http://127.0.0.1:3000/listing-42-alignment-and-empty-cells.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-42-alignment-and-empty-cells.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{align} controls horizontal alignment.
     \item \texttt{valign} controls vertical alignment inside a cell.
@@ -2541,8 +2763,12 @@ Old HTML examples may use \texttt{align}, \texttt{valign}, \texttt{bgcolor}, \te
 \end{itemize}
 
 \subsection{Table Sections}
-Large tables can be divided into \texttt{thead}, \texttt{tbody} and \texttt{tfoot}. This makes the structure clearer.
+\begin{itemize}
+    \item Large tables can be divided into \texttt{thead}, \texttt{tbody} and \texttt{tfoot}.
+    \item This makes the structure clearer.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Table Head, Body and Foot}]
 <table border="1">
     <caption>Marks Table</caption>
@@ -2559,13 +2785,13 @@ Large tables can be divided into \texttt{thead}, \texttt{tbody} and \texttt{tfoo
 </table>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Table Head, Body and Foot}{http://127.0.0.1:3000/listing-43-table-head-body-and-foot.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-43-table-head-body-and-foot.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{thead} contains heading rows.
     \item \texttt{tbody} contains the main table data.
@@ -2579,7 +2805,10 @@ For exams, know \texttt{table}, \texttt{tr}, \texttt{td}, \texttt{th}, \texttt{c
 \section{Containers, Semantic HTML and CSS}
 
 \subsection{Webpage Layout}
-Layout means the planned arrangement of webpage parts such as header, navigation, main content, sidebar and footer. A good layout should be planned before making the website.
+\begin{itemize}
+    \item Layout means the planned arrangement of webpage parts such as header, navigation, main content, sidebar and footer.
+    \item A good layout should be planned before making the website.
+\end{itemize}
 
 \begin{longtable}{|C{3cm}|L{13cm}|}
 \longtableheader{2}{Common Webpage Layout Parts}{%
@@ -2601,9 +2830,9 @@ Footer & Contains footer information such as copyright, contact or lower navigat
     \item \term{Using semantic HTML}: Modern method using tags such as \texttt{header}, \texttt{nav}, \texttt{main}, \texttt{section}, \texttt{article} and \texttt{footer}.
 \end{itemize}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -2647,10 +2876,10 @@ In the table below, \texttt{--} means no special attribute or value is required 
 
 \subsection{Div and Span}
 \begin{itemize}
-    \item \texttt{div} is a block-level container used to divide a webpage into sections.
-    \item \texttt{span} is an inline container used to mark a small part of text.
+    \item This example uses generic containers, so the structure works but the section names do not carry meaning by themselves.
 \end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Simple Div Layout}]
 <div class="container" style="width:100%;">
     <div class="header" style="background-color:gray;">
@@ -2668,13 +2897,20 @@ In the table below, \texttt{--} means no special attribute or value is required 
 </div>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Simple Div Layout}{http://127.0.0.1:3000/listing-44-simple-div-layout.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-44-simple-div-layout.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item The div element groups related content into block sections.
+    \item Div-based layout is generic; it does not describe the meaning of the section.
+\end{itemize}
+
 
 
 \subsection{Semantic Layout Tags}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Semantic Layout}]
 <header>Site Title</header>
 <nav>Navigation Links</nav>
@@ -2686,14 +2922,23 @@ In the table below, \texttt{--} means no special attribute or value is required 
 <footer>Footer Information</footer>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Semantic Layout}{http://127.0.0.1:3000/listing-45-semantic-layout.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-45-semantic-layout.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Semantic tags describe the role of each page region.
+    \item They make the webpage structure clearer for readers, browsers and search engines.
+\end{itemize}
+
 
 
 \subsection{CSS Basics}
-CSS means Cascading Style Sheets. HTML creates the structure of a page, and CSS controls the presentation such as color, font, spacing, border and layout.
+\begin{itemize}
+    \item CSS means Cascading Style Sheets.
+    \item HTML creates the structure of a page, and CSS controls the presentation such as color, font, spacing, border and layout.
+\end{itemize}
 
 \begin{itemize}
     \item \term{Inline CSS}: written inside the \texttt{style} attribute of a tag.
@@ -2703,6 +2948,7 @@ CSS means Cascading Style Sheets. HTML creates the structure of a page, and CSS 
     \item ID selectors begin with a hash sign, such as \texttt{\#main}.
 \end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Internal CSS and Class Selector}]
 <head>
     <style>
@@ -2717,10 +2963,16 @@ CSS means Cascading Style Sheets. HTML creates the structure of a page, and CSS 
 </body>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Internal CSS and Class Selector}{http://127.0.0.1:3000/listing-46-internal-css-and-class-selector.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-46-internal-css-and-class-selector.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Internal CSS is written inside the head section.
+    \item A class selector can style many elements that share the same class name.
+\end{itemize}
+
 
 
 \begin{summarybox}
@@ -2737,9 +2989,9 @@ Forms are useful for understanding dynamic websites because users submit data th
 
 \subsection{Form Tags, Attributes and Values}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -2807,6 +3059,7 @@ In the table below, \texttt{--} means no special attribute or value is required 
 
 \subsection{Basic Form Structure}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Basic Form Structure}]
 <form action="submit.html" method="post">
     <label>Name:</label>
@@ -2815,13 +3068,13 @@ In the table below, \texttt{--} means no special attribute or value is required 
 </form>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Basic Form Structure}{http://127.0.0.1:3000/listing-47-basic-form-structure.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-47-basic-form-structure.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{form} groups the input controls.
     \item \texttt{action} gives the destination that receives submitted data.
@@ -2830,8 +3083,11 @@ In the table below, \texttt{--} means no special attribute or value is required 
 \end{itemize}
 
 \subsection{Text and Password Inputs}
-Text input accepts one line of normal text. Password input hides the typed characters on the screen.
+\begin{itemize}
+    \item Compare these fields by what the user sees while typing, not only by their code.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Text and Password Fields}]
 <label>Username:</label>
 <input type="text" name="username" placeholder="Enter name">
@@ -2840,13 +3096,13 @@ Text input accepts one line of normal text. Password input hides the typed chara
 <input type="password" name="password">
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Text and Password Fields}{http://127.0.0.1:3000/listing-48-text-and-password-fields.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-48-text-and-password-fields.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{type="text"} creates a normal text box.
     \item \texttt{type="password"} hides typed characters.
@@ -2854,8 +3110,12 @@ Text input accepts one line of normal text. Password input hides the typed chara
 \end{itemize}
 
 \subsection{Radio Buttons and Checkboxes}
-Radio buttons are used when only one option should be selected from a group. Checkboxes are used when one or more options may be selected.
+\begin{itemize}
+    \item Radio buttons are used when only one option should be selected from a group.
+    \item Checkboxes are used when one or more options may be selected.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Radio and Checkbox Inputs}]
 <p>Group:</p>
 <input type="radio" name="group" value="science" checked> Science
@@ -2866,13 +3126,13 @@ Radio buttons are used when only one option should be selected from a group. Che
 <input type="checkbox" name="subject" value="english"> English
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Radio and Checkbox Inputs}{http://127.0.0.1:3000/listing-49-radio-and-checkbox-inputs.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-49-radio-and-checkbox-inputs.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item Radio buttons with the same \texttt{name} form one group.
     \item Only one radio button in the same group can be selected.
@@ -2881,8 +3141,11 @@ Radio buttons are used when only one option should be selected from a group. Che
 \end{itemize}
 
 \subsection{Select, Option and Optgroup}
-A \texttt{select} element creates a drop-down list. \texttt{option} defines each choice, and \texttt{optgroup} groups related choices.
+\begin{itemize}
+    \item This example shows a list where choices can be grouped and more than one option can be selected.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Drop-down and Option Group}]
 <select name="department" size="4" multiple>
     <optgroup label="Engineering">
@@ -2895,13 +3158,13 @@ A \texttt{select} element creates a drop-down list. \texttt{option} defines each
 </select>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Drop-down and Option Group}{http://127.0.0.1:3000/listing-50-drop-down-and-option-group.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-50-drop-down-and-option-group.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{selected} chooses an option by default.
     \item \texttt{multiple} allows more than one option to be selected.
@@ -2911,6 +3174,7 @@ A \texttt{select} element creates a drop-down list. \texttt{option} defines each
 \subsection{Textarea and Buttons}
 \texttt{textarea} is used for multi-line input. Buttons are used to submit, reset or trigger commands.
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Textarea and Buttons}]
 <textarea name="comment" rows="4" cols="30">
 Write your comment here.
@@ -2922,13 +3186,13 @@ Write your comment here.
 <button type="button">Button Tag</button>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Textarea and Buttons}{http://127.0.0.1:3000/listing-51-textarea-and-buttons.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-51-textarea-and-buttons.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item \texttt{rows} controls textarea height.
     \item \texttt{cols} controls textarea width.
@@ -2937,6 +3201,7 @@ Write your comment here.
 \end{itemize}
 
 \subsection{Form Example}
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Complete Form Example}]
 <form action="form_action.asp" method="get">
     <fieldset>
@@ -2972,10 +3237,16 @@ Write your comment here.
 </form>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutput}{Complete Form Example}{http://127.0.0.1:3000/listing-52-complete-form-example.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-52-complete-form-example.pdf}
 \end{browseroutput}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item A form groups related input controls together.
+    \item The action and method attributes control where and how form data is submitted.
+\end{itemize}
+
 
 
 \begin{summarybox}
@@ -2984,11 +3255,14 @@ Forms collect user input. HTML creates the form controls, but server-side proces
 
 \section{Code, Quote, Direction, Script and Object Tags}
 
-Some HTML tags are not used for ordinary paragraphs, links or tables. They are used to show code, keyboard input, quotations, text direction, scripts or embedded objects.
+\begin{itemize}
+    \item Some HTML tags are not used for ordinary paragraphs, links or tables.
+    \item They are used to show code, keyboard input, quotations, text direction, scripts or embedded objects.
+\end{itemize}
 
-In the table below, \texttt{--} means no special attribute or value is required for the basic use of that tag.
 
-\begin{longtable}{|C{2.7cm}|C{3cm}|C{3.5cm}|L{6.8cm}|}
+
+\begin{longtable}{|C{2.6cm}|C{2.5cm}|C{3.2cm}|L{7.5cm}|}
 \longtableheader{4}{Tags and Attributes Used in This Lesson}{%
 \tblcolhdcell{Tag} & \tblcolhdcell{Attribute} & \tblcolhdcell{Value} & \tblcolhdcell{Meaning / Effect}}
 \hiderowcolors
@@ -3041,6 +3315,7 @@ In the table below, \texttt{--} means no special attribute or value is required 
 
 \subsection{Code and Computer Output Tags}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Code and Output Tags}]
 <pre>
 Line one
@@ -3052,14 +3327,21 @@ Line one
 <p><samp>Hello World</samp></p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Code and Output Tags}{http://127.0.0.1:3000/listing-53-code-and-output-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-53-code-and-output-tags.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item These tags give meaning to technical text such as code, keyboard input and program output.
+    \item Browsers may style these elements differently from normal paragraph text.
+\end{itemize}
+
 
 
 \subsection{Quote, Citation and Direction Tags}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Quote and Direction Tags}]
 <blockquote>This is a long quotation.</blockquote>
 <p>HTML means <q>HyperText Markup Language</q>.</p>
@@ -3068,14 +3350,21 @@ Line one
 <p><bdo dir="rtl">This text is shown right to left.</bdo></p>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Quote and Direction Tags}{http://127.0.0.1:3000/listing-54-quote-and-direction-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-54-quote-and-direction-tags.pdf}
 \end{browseroutputcompact}
+\htmlblocktitle{What to notice}
+\begin{itemize}
+    \item Quote tags mark quoted text semantically.
+    \item Direction tags can change text direction for special language or formatting cases.
+\end{itemize}
+
 
 
 \subsection{Script, Noscript, Object and Applet}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Script and Object Tags}]
 <script>
     document.write("Hello from JavaScript");
@@ -3087,13 +3376,13 @@ Line one
 </object>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutputcompact}{Script and Object Tags}{http://127.0.0.1:3000/listing-55-script-and-object-tags.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-55-script-and-object-tags.pdf}
 \end{browseroutputcompact}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item HTML can connect JavaScript, but JavaScript does the programming work.
     \item \texttt{noscript} is fallback content.
@@ -3102,8 +3391,12 @@ Line one
 
 \section{Integrated Mini Project}
 
-This final example combines the main ideas from the HTML lessons. It uses document structure, semantic layout, navigation links, an image, a list, a form and simple CSS in one small webpage.
+\begin{itemize}
+    \item This final example combines the main ideas from the HTML lessons.
+    \item It uses document structure, semantic layout, navigation links, an image, a list, a form and simple CSS in one small webpage.
+\end{itemize}
 
+\htmlblocktitle{HTML Code}
 \begin{lstlisting}[style=htmlide, caption={Mini Webpage Project}]
 <!DOCTYPE html>
 <html lang="en">
@@ -3164,13 +3457,13 @@ This final example combines the main ideas from the HTML lessons. It uses docume
 </html>
 \end{lstlisting}
 
-\textbf{Browser Output}
+\htmlblocktitle{Browser Output}
 \begin{browseroutput}{Mini Webpage Project}{http://127.0.0.1:3000/listing-56-mini-webpage-project.html}
     \includegraphics[width=\linewidth]{html_outputs/listing-56-mini-webpage-project.pdf}
 \end{browseroutput}
 
 
-\textbf{What to notice}
+\htmlblocktitle{What to notice}
 \begin{itemize}
     \item The page has a correct HTML document skeleton.
     \item Semantic tags organize the page into header, navigation, main content, sections and footer.
@@ -3202,8 +3495,11 @@ This final example combines the main ideas from the HTML lessons. It uses docume
     \item Boolean attributes such as \texttt{checked}, \texttt{selected}, \texttt{multiple}, \texttt{controls}, \texttt{autoplay}, \texttt{loop}, \texttt{muted}, \texttt{defer} and \texttt{disabled} work by being present; they do not need separate textbook-style values.
 \end{itemize}
 
+\vfill
 \begin{center}
-    \vspace{0.5\baselineskip}
-    \textit{Leave the phone and start studying, lil' bro}
-    \raisebox{-2em}{\includegraphics[height=5.0em]{assets/emojis/emoji-police.png}}
+    \textit{\LARGE{Leave the phone and start studying, lil' bro}}
+    \hspace{-3em}
+    \raisebox{-4em}{\includegraphics[height=10em]{assets/emojis/emoji-police.png}}
 \end{center}
+\vfill
+

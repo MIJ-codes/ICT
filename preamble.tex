@@ -145,7 +145,7 @@
     stringstyle=\color{formulacolor},
     backgroundcolor=\color{lightgray},
     frame=single,
-    rulecolor=\color{tablegrid},
+    rulecolor=\color{black},
     framerule=0.6pt,
     numbers=left,
     numberstyle=\tiny\color{darkgray},
@@ -274,7 +274,7 @@
         enhanced,
         width=0.78\linewidth,
         colback=white,
-        colframe=tablegrid,
+        colframe=black,
         boxrule=0.7pt,
         arc=1pt,
         left=0pt,
@@ -417,7 +417,7 @@
 \definecolor{chaptercolor}     {RGB}{10,  20,  60}
 \definecolor{sectioncolor}     {RGB}{157,0,255}
 \definecolor{subsectioncolor}  {RGB}{255,0,144}
-\definecolor{subsubcolor}      {HTML}{6A0F49}
+\definecolor{subsubcolor}      {HTML}{A4036F}
 \definecolor{paragraphcolor}   {RGB}{255, 60, 0}
 \definecolor{subparagraphcolor}{RGB}{0,187,119}
 
@@ -450,13 +450,13 @@
 \definecolor{headerline}       {RGB}{70,  100, 150}
 
 % Tables
-\definecolor{tablebannerbg}    {HTML}{19647E}
+\definecolor{tablebannerbg}    {HTML}{81523F}
 \definecolor{tablecolhdbg}     {HTML}{A8DADC}
 \definecolor{tablecolhdtext}   {HTML}{18314F}
 \definecolor{tablebannertext}  {HTML}{E0EFDA}
-\definecolor{tablerail}        {HTML}{19647E}
+\definecolor{tablerail}        {HTML}{004346}
 \definecolor{tablezebrarow}    {HTML}{ECFEF4}
-\definecolor{tablegrid}        {HTML}{19647E}
+\definecolor{tablegrid}        {HTML}{004346}
 
 % ─── Color swatch for HTML color tables ──────────────────────────────────────
 \newcommand{\colorswatch}[1]{%
@@ -467,7 +467,7 @@
 }
 
 % HTML code listings
-\definecolor{htmltagcolor}       {HTML}{19647E}
+\definecolor{htmltagcolor}       {HTML}{81523F}
 \definecolor{htmlattrcolor}      {HTML}{EE964B}
 \definecolor{htmlstringcolor}    {HTML}{D81E5B}
 \definecolor{htmlcommentcolor}   {HTML}{138A36}
@@ -1107,6 +1107,11 @@
 \newcommand{\Imp} {\noindent\textcolor{formulacolor}{\textbf{Important:\enspace}}}
 \newcommand{\term}[1]{\textcolor{termcolor}{\textbf{#1}}}
 \newcommand{\TODO}[1]{\textcolor{paragraphcolor}{\textbf{[TODO: #1]}}}
+\newcommand{\htmlblocktitle}[1]{%
+    \par\medskip
+    \noindent{\textcolor{htmltagcolor}{$\leadsto$}\enspace\textcolor{htmltagcolor}{\bfseries\textsc{#1}}}%
+    \par\smallskip
+}
 
 \newcommand{\vv}  [1]{\vec{\mathbf{#1}}}
 \newcommand{\mat} [1]{\mathbf{#1}}
