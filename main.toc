@@ -132,29 +132,29 @@
 \contentsline {section}{\numberline {4.22}HTML Tables}{58}{section.4.22}%
 \contentsline {subsection}{\numberline {4.22.1}Parts of a Table}{58}{subsection.4.22.1}%
 \contentsline {subsection}{\numberline {4.22.2}Basic Table}{60}{subsection.4.22.2}%
-\contentsline {subsection}{\numberline {4.22.3}Unequal Number of Cells}{61}{subsection.4.22.3}%
+\contentsline {subsection}{\numberline {4.22.3}Unequal Number of Cells}{60}{subsection.4.22.3}%
 \contentsline {subsection}{\numberline {4.22.4}Cellspacing and Cellpadding}{61}{subsection.4.22.4}%
 \contentsline {subsection}{\numberline {4.22.5}Colspan and Rowspan}{62}{subsection.4.22.5}%
-\contentsline {subsection}{\numberline {4.22.6}Table Background Color}{63}{subsection.4.22.6}%
+\contentsline {subsection}{\numberline {4.22.6}Table Background Color}{62}{subsection.4.22.6}%
 \contentsline {subsection}{\numberline {4.22.7}Table Alignment and Empty Cells}{63}{subsection.4.22.7}%
 \contentsline {subsection}{\numberline {4.22.8}Table Sections}{64}{subsection.4.22.8}%
-\contentsline {section}{\numberline {4.23}Containers, Semantic HTML and CSS}{65}{section.4.23}%
-\contentsline {subsection}{\numberline {4.23.1}Webpage Layout}{65}{subsection.4.23.1}%
+\contentsline {section}{\numberline {4.23}Containers, Semantic HTML and CSS}{64}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Webpage Layout}{64}{subsection.4.23.1}%
 \contentsline {subsection}{\numberline {4.23.2}Methods of Creating Layout}{65}{subsection.4.23.2}%
 \contentsline {subsection}{\numberline {4.23.3}Div and Span}{66}{subsection.4.23.3}%
 \contentsline {subsection}{\numberline {4.23.4}Semantic Layout Tags}{67}{subsection.4.23.4}%
-\contentsline {subsection}{\numberline {4.23.5}CSS Basics}{68}{subsection.4.23.5}%
-\contentsline {section}{\numberline {4.24}HTML Forms}{69}{section.4.24}%
-\contentsline {subsection}{\numberline {4.24.1}Form Tags, Attributes and Values}{69}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.23.5}CSS Basics}{67}{subsection.4.23.5}%
+\contentsline {section}{\numberline {4.24}HTML Forms}{68}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Form Tags, Attributes and Values}{68}{subsection.4.24.1}%
 \contentsline {subsection}{\numberline {4.24.2}Basic Form Structure}{70}{subsection.4.24.2}%
-\contentsline {subsection}{\numberline {4.24.3}Text and Password Inputs}{71}{subsection.4.24.3}%
+\contentsline {subsection}{\numberline {4.24.3}Text and Password Inputs}{70}{subsection.4.24.3}%
 \contentsline {subsection}{\numberline {4.24.4}Radio Buttons and Checkboxes}{71}{subsection.4.24.4}%
 \contentsline {subsection}{\numberline {4.24.5}Select, Option and Optgroup}{72}{subsection.4.24.5}%
-\contentsline {subsection}{\numberline {4.24.6}Textarea and Buttons}{73}{subsection.4.24.6}%
+\contentsline {subsection}{\numberline {4.24.6}Textarea and Buttons}{72}{subsection.4.24.6}%
 \contentsline {subsection}{\numberline {4.24.7}Form Example}{73}{subsection.4.24.7}%
-\contentsline {section}{\numberline {4.25}Code, Quote, Direction, Script and Object Tags}{75}{section.4.25}%
+\contentsline {section}{\numberline {4.25}Code, Quote, Direction, Script and Object Tags}{74}{section.4.25}%
 \contentsline {subsection}{\numberline {4.25.1}Code and Computer Output Tags}{76}{subsection.4.25.1}%
-\contentsline {subsection}{\numberline {4.25.2}Quote, Citation and Direction Tags}{77}{subsection.4.25.2}%
+\contentsline {subsection}{\numberline {4.25.2}Quote, Citation and Direction Tags}{76}{subsection.4.25.2}%
 \contentsline {subsection}{\numberline {4.25.3}Script, Noscript, Object and Applet}{77}{subsection.4.25.3}%
-\contentsline {section}{\numberline {4.26}Integrated Mini Project}{78}{section.4.26}%
+\contentsline {section}{\numberline {4.26}Integrated Mini Project}{77}{section.4.26}%
 \contentsline {section}{\numberline {4.27}Quick Revision Checklist}{80}{section.4.27}%
