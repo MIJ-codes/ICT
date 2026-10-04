@@ -1,0 +1,1136 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║              MASTER NOTES PREAMBLE — Mohammad Miadul Islam Jasim             ║
+% ║                     CUET ETE 21 — Unified Template  v2                      ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+%
+%   THIS FILE: preamble.tex
+%   PURPOSE:   All packages, settings, colors, boxes, commands.
+%              No \documentclass. No \begin{document}.
+%              Include it in main.tex via: \input{preamble}
+%
+%   COMPILE:   Always compile main.tex (never preamble or chapter files directly)
+%   ENGINE:    XeLaTeX (twice for TOC/references)
+%
+% ═══════════════════════════════════════════════════════════════════════════════
+%                      ► FILL THIS IN BEFORE EVERY NEW NOTE ◄
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% !TEX root = main.tex
+\providecommand{\NotesAuthor}  {Mohammad Miadul Islam Jasim}
+\providecommand{\NotesAffil}   {CUET ETE 21}
+\providecommand{\NotesCourse}  {Course Name}
+\providecommand{\NotesSubject} {Subject Name}
+\providecommand{\NotesYear}    {\the\year}
+
+% If this include file is compiled directly, compile main.tex instead.
+\makeatletter
+\@ifundefined{ver@book.cls}{%
+  \input{main.tex}%
+  \expandafter\endinput
+}{}
+\makeatother
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [A] CORE PACKAGES
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \DeclareUnicodeCharacter{2212}{-}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+\fi
+
+\linespread{1.2}
+
+\usepackage[
+    top=2.0cm,
+    bottom=1cm,
+    left=1.5cm,
+    right=1.5cm,
+    headheight=24pt,
+    headsep=10pt,
+    footskip=0.75cm
+]{geometry}
+
+% ─── Page breaking behaviour ─────────────────────────────────────────────────
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+
+% ─── Math ────────────────────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\allowdisplaybreaks
+\usepackage{gensymb}
+\usepackage{cancel}
+
+% ─── Graphics ────────────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{
+    shapes, arrows, positioning,
+    decorations.pathmorphing, decorations.markings,
+    patterns, shadows, fadings, backgrounds, calc
+}
+\tikzfading[
+    name=boxlabel wash fade,
+    left color=transparent!0,
+    right color=transparent!100
+]
+
+% ─── Color ───────────────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+% ─── Tables ──────────────────────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{makecell}
+
+% ─── Lists ───────────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+
+% ─── Code ────────────────────────────────────────────────────────────────────
+\usepackage{listings}
+\usepackage{verbatim}
+
+\lstdefinelanguage{HTML5}{
+    language=HTML,
+    sensitive=true,
+    morekeywords={
+        html,head,body,title,meta,link,style,script,noscript,
+        h1,h2,h3,h4,h5,h6,p,br,hr,b,i,u,strong,em,small,big,mark,
+        del,ins,sub,sup,font,center,a,img,map,area,ul,ol,li,dl,dt,dd,
+        table,tr,td,th,caption,colgroup,col,thead,tbody,tfoot,
+        form,input,label,fieldset,legend,select,optgroup,option,textarea,button,
+        div,span,header,nav,main,section,article,footer,address,
+        audio,video,source,iframe,frameset,frame,noframes,
+        pre,code,kbd,var,dfn,samp,tt,abbr,acronym,blockquote,q,cite,bdo,
+        object,param,applet,menu
+    },
+    morekeywords=[2]{
+        charset,name,content,http-equiv,lang,dir,class,id,style,title,
+        href,src,alt,target,width,height,border,align,valign,bgcolor,
+        color,face,size,background,text,link,vlink,alink,type,value,
+        action,method,for,placeholder,checked,selected,disabled,readonly,
+        rows,cols,colspan,rowspan,cellspacing,cellpadding,controls,autoplay,
+        loop,muted,poster,rel,media
+    },
+    morekeywords=[3]{
+        font,center,big,tt,strike,s,basefont,marquee,frameset,frame,noframes,applet
+    },
+    morecomment=[s]{<!--}{-->},
+    morestring=[b]",
+}
+
+\lstdefinestyle{htmlide}{
+    language=HTML5,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{defcolor}\bfseries,
+    keywordstyle=[2]\color{defcolor},
+    keywordstyle=[3]\color{defcolor}\bfseries,
+    commentstyle=\color{infocolor!80!black}\itshape,
+    stringstyle=\color{formulacolor},
+    backgroundcolor=\color{lightgray},
+    frame=single,
+    rulecolor=\color{black},
+    framerule=0.6pt,
+    numbers=left,
+    numberstyle=\tiny\color{darkgray},
+    stepnumber=1,
+    numbersep=8pt,
+    tabsize=4,
+    showstringspaces=false,
+    breaklines=true,
+    breakatwhitespace=false,
+    columns=fullflexible,
+    keepspaces=true,
+    xleftmargin=8mm,
+    xrightmargin=8mm,
+    framexleftmargin=1.5em,
+    captionpos=b
+}
+
+\newenvironment{htmlcode}[1][HTML Example]{%
+    \lstset{style=htmlide, caption={#1}}%
+}{}
+
+\lstdefinelanguage{asm}{
+    morekeywords={MOV,DEC,CMP,JNZ,LOOP,ADD,SUB,MUL,DIV,JMP,CALL,RET,PUSH,POP},
+    sensitive=false,
+    morecomment=[l]{;},
+    morestring=[b]"
+}
+
+% ─── Captions ────────────────────────────────────────────────────────────────
+\usepackage[font=small, labelfont=bf]{caption}
+
+\captionsetup[longtable]{
+    width         = \textwidth,
+    justification = centering,
+    position      = bottom,
+    labelfont     = bf,
+    font          = small
+}
+\setlength{\LTcapwidth}{\textwidth}
+
+% ─── Miscellaneous ───────────────────────────────────────────────────────────
+\usepackage{mdframed}
+\usepackage{calligra}
+\usepackage{subfiles}
+\usepackage{titlesec}
+\usepackage[outline]{contour}
+\contourlength{1pt}
+
+% ─── tcolorbox ───────────────────────────────────────────────────────────────
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable, skins, theorems}
+
+% ─── Graphics paths ──────────────────────────────────────────────────────────
+\graphicspath{{Figures/}{../Figures/}{../../Figures/}}
+
+% ─── Safe includegraphics ────────────────────────────────────────────────────
+\newcommand{\safeimg}[2][width=0.8\textwidth]{%
+    \IfFileExists{#2}{%
+        \includegraphics[#1]{#2}%
+    }{%
+        \fbox{%
+            \begin{minipage}{0.6\linewidth}\centering
+                \textbf{[Missing image]}\\[4pt]
+                \ttfamily\small\detokenize{#2}
+            \end{minipage}%
+        }%
+    }%
+}
+\let\safeincludegraphics\safeimg
+
+\newenvironment{browseroutput}[2]{%
+    \begin{tcolorbox}[
+        enhanced,
+        colback=white,
+        colframe=black,
+        boxrule=0.8pt,
+        arc=1pt,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        boxsep=0pt,
+        breakable=false
+    ]%
+    \begingroup
+    \setlength{\fboxsep}{0pt}%
+    \colorbox{black!92}{%
+        \parbox{\linewidth}{%
+            \vspace{3pt}%
+            \hspace{6pt}%
+            \colorbox{black!82}{%
+                \parbox[c][22pt][c]{0.32\linewidth}{%
+                    \hspace{6pt}{\color{white}\scriptsize #1}%
+                    \hfill{\color{white}\scriptsize $\times$}\hspace{6pt}%
+                }%
+            }%
+            \hfill{\color{white}\scriptsize $\triangleright$}\hspace{8pt}%
+            \vspace{3pt}%
+        }%
+    }%
+    \par
+    \colorbox{black!86}{%
+        \parbox{\linewidth}{%
+            \vspace{4pt}%
+            \hspace{7pt}{\color{white!70}\scriptsize $\leftarrow$}%
+            \hspace{9pt}{\color{white!70}\scriptsize $\rightarrow$}%
+            \hspace{9pt}{\color{white!85}\scriptsize $\circlearrowright$}%
+            \hspace{8pt}%
+            \colorbox{black!68}{%
+                \parbox[c][20pt][c]{0.74\linewidth}{%
+                    \hspace{7pt}{\color{white!82}\scriptsize\ttfamily #2}%
+                }%
+            }%
+            \vspace{4pt}%
+        }%
+    }%
+    \par\vspace{0pt}%
+    \endgroup
+}{%
+    \end{tcolorbox}%
+}
+
+\newenvironment{browseroutputcompact}[2]{%
+    \begin{center}%
+    \begin{tcolorbox}[
+        enhanced,
+        width=0.78\linewidth,
+        colback=white,
+        colframe=black,
+        boxrule=0.7pt,
+        arc=1pt,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        boxsep=0pt,
+        breakable=false
+    ]%
+    \begingroup
+    \setlength{\fboxsep}{0pt}%
+    \colorbox{black!92}{%
+        \parbox{\linewidth}{%
+            \vspace{1.5pt}%
+            \hspace{4pt}%
+            \colorbox{black!82}{%
+                \parbox[c][15pt][c]{0.36\linewidth}{%
+                    \hspace{4pt}{\color{white}\tiny #1}%
+                    \hfill{\color{white}\tiny $\times$}\hspace{4pt}%
+                }%
+            }%
+            \hfill{\color{white}\tiny $\triangleright$}\hspace{5pt}%
+            \vspace{1.5pt}%
+        }%
+    }%
+    \par
+    \colorbox{black!86}{%
+        \parbox{\linewidth}{%
+            \vspace{2pt}%
+            \hspace{5pt}{\color{white!70}\tiny $\leftarrow$}%
+            \hspace{6pt}{\color{white!70}\tiny $\rightarrow$}%
+            \hspace{6pt}{\color{white!85}\tiny $\circlearrowright$}%
+            \hspace{5pt}%
+            \colorbox{black!68}{%
+                \parbox[c][14pt][c]{0.70\linewidth}{%
+                    \hspace{5pt}{\color{white!82}\tiny\ttfamily #2}%
+                }%
+            }%
+            \vspace{2pt}%
+        }%
+    }%
+    \par\vspace{0pt}%
+    \endgroup
+}{%
+    \end{tcolorbox}%
+    \end{center}%
+}
+
+\setlength{\headheight}{24pt}
+
+% ─── Compatibility shims ─────────────────────────────────────────────────────
+\makeatletter
+\@ifundefined{insert@pcolumn}{%
+    \def\insert@pcolumn{\ignorespaces\@sharp\unskip}%
+}{}
+\makeatother
+
+\ExplSyntaxOn
+\cs_if_exist:NF \tag_mc_end:          { \cs_new_protected:Npn \tag_mc_end:          {} }
+\cs_if_exist:NF \tbl_gdecr_row_count: { \cs_new_protected:Npn \tbl_gdecr_row_count: {} }
+\ExplSyntaxOff
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [B] AUTHORSHIP PROTECTION
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\makeatletter
+\@ifundefined{IfPDFManagementActiveF}{%
+    \newcommand{\IfPDFManagementActiveF}[1]{#1}%
+}{}
+\makeatother
+
+\usepackage{transparent}
+\providecommand{\transparent}[1]{}
+\providecommand{\texttransparent}[2]{#2}
+\makeatletter
+\providecommand{\transparent@use}[1]{}
+\makeatother
+
+\newcommand{\InvisibleWatermark}{%
+    \transparent{0}{\tiny%
+        \NotesAuthor\ --- \NotesCourse\ --- \NotesYear%
+    }%
+}
+
+\usepackage{atbegshi}
+\AtBeginShipout{%
+    \AtBeginShipoutUpperLeft{%
+        \raisebox{-\paperheight}{\hspace{1cm}\InvisibleWatermark}%
+    }%
+}
+
+\usepackage{background}
+\backgroundsetup{
+    scale    = 1.5,
+    angle    = 0,
+    opacity  = 0.02,
+    color    = black,
+    contents = {%
+        \begin{tabular}{c}
+            Made by - \NotesAuthor -- CUET ETE 21\\
+            \NotesCourse\ -- \NotesSubject\ -- \NotesYear \\
+            Ami Tomago Boro Vai Lagi, Salam Dao \raisebox{-1.0em}{\includegraphics[height=2.5em]{assets/emojis/emoji-smirk.png}}\\
+            Don't Steal My Notes Nigga \raisebox{-1.5em}{\includegraphics[height=3.5em]{assets/emojis/emoji-police.png}}\\
+            Just Read the Notes Lil' Bro \\
+            Ei tor syllabus shesh hoise?? \raisebox{-0.5em}{\includegraphics[height=3.5em]{assets/emojis/emoji-anas.png}}\\
+            Syllabus shesh korar nam nai abar aiche note churi korte \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-dissapointed.png}}\\
+            Magna e to diya disi taile abar eto chulkani ken?? \\
+            PORTE BOSH GADHA \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-bruh.png}}\\
+            Eishob korle fail korbi fail \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-eww.png}}\\
+            Pore to WaterMilon er dosh dibi \\
+            Friend er loge kanda kati korbi \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-sad.png}}\\
+            POR POR EKHONO SHOMOY ACHE POR, VALO HOIYA JA \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-sideeye.png}}\\
+            Porikkhar Jonno Best of Luck \raisebox{-1.0em}{\includegraphics[height=3.5em]{assets/emojis/emoji-goodluck.png}}
+        \end{tabular}
+    }
+}
+
+\makeatletter
+\AtBeginShipout{%
+    \special{pdf:literal direct 0.001 w 0 0 m 0.001 0.001 l S}%
+}
+\makeatother
+
+\newcommand{\AuthorSignature}{\relax}
+\newcommand{\FingerSymbol}   {\psi}
+\newcommand{\AuthorPhrase}   {Here\textendash}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [C] COLOR PALETTE — THEME A: Electric Academic (ACTIVE)
+%     To switch: comment Theme A block, uncomment Theme B/C/D
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% ═══ ACTIVE PALETTE — Electric Academic + Green Table Variant ═══════════════
+% This is the only active color block. Older experiments are archived below.
+
+% Headings
+\definecolor{chaptercolor}     {RGB}{10,  20,  60}
+\definecolor{sectioncolor}     {RGB}{157,0,255}
+\definecolor{subsectioncolor}  {RGB}{255,0,144}
+\definecolor{subsubcolor}      {HTML}{A4036F}
+\definecolor{paragraphcolor}   {RGB}{255, 60, 0}
+\definecolor{subparagraphcolor}{RGB}{0,187,119}
+
+% Note/card boxes and inline semantic text
+\definecolor{defcolor}         {RGB}{0,0,205}
+\definecolor{termcolor}        {HTML}{EF626C}
+\definecolor{formulacolor}     {RGB}{255, 0,  56}
+\definecolor{infocolor}        {HTML}{069E2D}
+\definecolor{examplecolor}     {RGB}{138,0,196}
+\definecolor{derivcolor}       {RGB}{30,  70,  130}
+\definecolor{summarycolor}     {RGB}{255, 200, 80}
+\definecolor{warningcolor}     {RGB}{127, 26, 92}
+\definecolor{notecolor}        {HTML}{00A6A6}
+
+% List labels
+\definecolor{itemizeonecolor}  {HTML}{B744B8}
+\definecolor{itemizetwocolor}  {HTML}{138A36}
+\definecolor{itemizethreecolor}{HTML}{E05263}
+\definecolor{itemizefourcolor} {HTML}{B18FCF}
+\definecolor{enumonecolor}     {HTML}{607196}
+\definecolor{enumtwocolor}     {HTML}{CE8147}
+\definecolor{enumthreecolor}   {HTML}{904E55}
+
+% Page structure and general UI colors
+\definecolor{primaryblue}      {RGB}{0,   0,   205}
+\definecolor{secondaryblue}    {RGB}{0,   127, 255}
+\definecolor{darkgray}         {RGB}{64,  64,  64}
+\definecolor{lightgray}        {RGB}{248, 248, 248}
+\definecolor{dangerred}        {RGB}{255, 7,   58}
+\definecolor{headerline}       {RGB}{70,  100, 150}
+
+% Tables
+\definecolor{tablebannerbg}    {HTML}{81523F}
+\definecolor{tablecolhdbg}     {HTML}{A8DADC}
+\definecolor{tablecolhdtext}   {HTML}{18314F}
+\definecolor{tablebannertext}  {HTML}{E0EFDA}
+\definecolor{tablerail}        {HTML}{004346}
+\definecolor{tablezebrarow}    {HTML}{ECFEF4}
+\definecolor{tablegrid}        {HTML}{004346}
+
+% ─── Color swatch for HTML color tables ──────────────────────────────────────
+\newcommand{\colorswatch}[1]{%
+    \begingroup
+    \definecolor{tempswatch}{HTML}{#1}%
+    \fcolorbox{tablegrid}{tempswatch}{\rule{0pt}{0.1cm}\rule{0.1cm}{0pt}}%
+    \endgroup
+}
+
+% HTML code listings
+\definecolor{htmltagcolor}       {HTML}{81523F}
+\definecolor{htmlattrcolor}      {HTML}{EE964B}
+\definecolor{htmlstringcolor}    {HTML}{D81E5B}
+\definecolor{htmlcommentcolor}   {HTML}{138A36}
+\definecolor{htmlsymbolcolor}    {HTML}{B18FCF}
+\definecolor{htmloperatorcolor}  {HTML}{494850}
+\definecolor{htmltextcolor}      {HTML}{161B33}
+\definecolor{htmldeprecatedcolor}{HTML}{F95738}
+
+% ═══ THEME B — Pastel Ink (uncomment to activate) ════════════════════════════
+%\definecolor{chaptercolor}     {HTML}{2F6FA3}
+%\definecolor{sectioncolor}     {HTML}{5C524F}
+%\definecolor{subsectioncolor}  {HTML}{C46A75}
+%\definecolor{subsubcolor}      {HTML}{7C68A6}
+%\definecolor{paragraphcolor}   {HTML}{5C524F}
+%\definecolor{subparagraphcolor}{HTML}{3D3D3D}
+%\definecolor{defcolor}         {HTML}{6BA3C8}
+%\definecolor{formulacolor}     {HTML}{F5A5A8}
+%\definecolor{infocolor}        {HTML}{A8D5BA}
+%\definecolor{examplecolor}     {HTML}{D4C5E8}
+%\definecolor{derivcolor}       {HTML}{F4C2A3}
+%\definecolor{primaryblue}      {HTML}{6BA3C8}
+%\definecolor{secondaryblue}    {HTML}{A8D8E8}
+%\definecolor{darkgray}         {HTML}{3D3D3D}
+%\definecolor{lightgray}        {HTML}{F5F5F0}
+%\definecolor{dangerred}        {HTML}{E8B4B8}
+%\definecolor{headerline}       {HTML}{6BA3C8}
+%\definecolor{tablebannerbg}    {HTML}{D4C5E8}
+%\definecolor{tablecolhdbg}     {HTML}{EDE8F5}
+%\definecolor{tablecolhdtext}   {HTML}{6BA3C8}
+%\definecolor{tablebannertext}  {HTML}{F5F5F0}
+%\definecolor{tablerail}        {HTML}{7C68A6}
+%\definecolor{tablezebrarow}    {HTML}{F5F2FA}
+%\definecolor{tablegrid}        {HTML}{D4C5E8}
+
+% ═══ THEME C — Ocean Deep (uncomment to activate) ════════════════════════════
+%\definecolor{defcolor}         {RGB}{60,  40,  180}
+%\definecolor{subsubcolor}      {RGB}{35,35,255}
+%\definecolor{examplecolor}     {RGB}{140, 80,  200}
+%\definecolor{paragraphcolor}   {RGB}{255, 140, 60}
+%\definecolor{chaptercolor}     {RGB}{15,  35,  45}
+%\definecolor{sectioncolor}     {RGB}{160, 80,  255}
+%\definecolor{subsubcolor}      {RGB}{100, 150, 255}
+%\definecolor{subparagraphcolor}{RGB}{90,  190, 160}
+%\definecolor{subsectioncolor}  {RGB}{185, 145, 75}
+%\definecolor{subsubcolor}      {RGB}{165, 55,  50}
+%\definecolor{paragraphcolor}   {RGB}{195, 155, 110}
+%\definecolor{subparagraphcolor}{RGB}{120, 155, 165}
+%\definecolor{defcolor}         {RGB}{75,  125, 95}
+%\definecolor{formulacolor}     {RGB}{180, 70,  85}
+%\definecolor{infocolor}        {RGB}{65,  140, 130}
+%\definecolor{examplecolor}     {RGB}{140, 100, 160}
+%\definecolor{derivcolor}       {RGB}{55,  75,  95}
+%\definecolor{primaryblue}      {RGB}{44,  82,  92}
+%\definecolor{secondaryblue}    {RGB}{102, 142, 152}
+%\definecolor{darkgray}         {RGB}{45,  55,  60}
+%\definecolor{lightgray}        {RGB}{245, 245, 240}
+%\definecolor{dangerred}        {RGB}{184, 157, 120}
+%\definecolor{headerline}       {RGB}{44,  82,  92}
+%\definecolor{tablebannerbg}    {RGB}{44,  82,  92}
+%\definecolor{tablecolhdbg}     {RGB}{210, 225, 228}
+%\definecolor{tablecolhdtext}   {RGB}{15,  35,  45}
+%\definecolor{tablebannertext}  {RGB}{245, 245, 240}
+%\definecolor{tablerail}        {RGB}{58,  118, 135}
+%\definecolor{tablezebrarow}    {RGB}{235, 242, 243}
+%\definecolor{tablegrid}        {RGB}{170, 195, 200}
+
+% ═══ THEME D — Moonlight (uncomment to activate) ═════════════════════════════
+%\definecolor{chaptercolor}     {RGB}{10,  20,  60}
+%\definecolor{sectioncolor}     {RGB}{160, 80,  255}
+%\definecolor{subsectioncolor}  {RGB}{255, 220, 100}
+%\definecolor{subsectioncolor}  {RGB}{255,0,144}
+%\definecolor{subsubcolor}      {RGB}{100, 150, 255}
+%\definecolor{paragraphcolor}   {RGB}{255, 140, 60}
+%\definecolor{subparagraphcolor}{RGB}{90,  190, 160}
+%\definecolor{defcolor}         {RGB}{60,  40,  120}
+%\definecolor{formulacolor}     {RGB}{200, 40,  40}
+%\definecolor{infocolor}        {RGB}{50,  200, 120}
+%\definecolor{infocolor}        {RGB}{50,  200, 120}
+%\definecolor{examplecolor}     {RGB}{140, 80,  200}
+%\definecolor{derivcolor}       {RGB}{5,   10,  30}
+%\definecolor{primaryblue}      {RGB}{70,  100, 150}
+%\definecolor{secondaryblue}    {RGB}{100, 150, 255}
+%\definecolor{darkgray}         {RGB}{30,  30,  50}
+%\definecolor{lightgray}        {RGB}{240, 240, 255}
+%\definecolor{dangerred}        {RGB}{255, 200, 80}
+%\definecolor{headerline}       {RGB}{70,  100, 150}
+%\definecolor{tablebannerbg}    {RGB}{60,  40,  120}
+%\definecolor{tablecolhdbg}     {RGB}{220, 215, 245}
+%\definecolor{tablecolhdtext}   {RGB}{60,  40,  120}
+%\definecolor{tablebannertext}  {RGB}{240, 238, 255}
+%\definecolor{tablerail}        {RGB}{83,  74,  183}
+%\definecolor{tablezebrarow}    {RGB}{243, 241, 255}
+%\definecolor{tablegrid}        {RGB}{190, 183, 230}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% ARCHIVE: EYE-COMFORT EXPERIMENT PALETTE — inactive
+% Date: 2026-04-30
+%
+% Safe rollback:
+%   Comment this whole block only. The original active palette above is untouched.
+%   Do not delete this block until the experiment is accepted.
+% ═══════════════════════════════════════════════════════════════════════════════
+
+%\definecolor{chaptercolor}     {RGB}{10,  20,  60}
+%\definecolor{sectioncolor}     {RGB}{157,0,255}
+%\definecolor{subsectioncolor}  {RGB}{255,0,144}
+%\definecolor{subsectioncolor}  {HTML}{7D1D3F}
+%\definecolor{subsubcolor}      {RGB}{166,0,103}
+%\definecolor{paragraphcolor}   {RGB}{255, 60, 0}
+%\definecolor{subparagraphcolor}{RGB}{0,187,119}
+
+%\definecolor{defcolor}         {RGB}{0,0,205}
+%\definecolor{termcolor}        {RGB}{0,0,205}
+%\definecolor{formulacolor}     {RGB}{255, 0,  56}
+%\definecolor{infocolor}        {RGB}{50,  200, 120}
+%\definecolor{examplecolor}     {RGB}{138,0,196}
+%\definecolor{derivcolor}       {RGB}{30,  70,  130}
+%\definecolor{summarycolor}     {RGB}{255, 200, 80}
+%\definecolor{warningcolor}     {RGB}{127, 26, 92}
+%\definecolor{notecolor}        {RGB}{0,255,127}
+%\definecolor{notecolor}        {RGB}{0,255,127}
+
+%\definecolor{primaryblue}      {RGB}{0,   0,   205}
+%\definecolor{secondaryblue}    {RGB}{0,   127, 255}
+%\definecolor{darkgray}         {RGB}{64,  64,  64}
+%\definecolor{lightgray}        {RGB}{248, 248, 248}
+%\definecolor{dangerred}        {RGB}{255, 7,   58}
+%\definecolor{headerline}       {RGB}{70,  100, 150}
+
+%\definecolor{tablebannerbg}    {HTML}{19647E}
+%\definecolor{tablecolhdbg}     {HTML}{A8DADC}
+%\definecolor{tablecolhdtext}   {HTML}{18314F}
+%\definecolor{tablebannertext}  {HTML}{E0EFDA}
+%\definecolor{tablerail}        {HTML}{18314F}
+%\definecolor{tablezebrarow}    {HTML}{E0EFDA}
+%\definecolor{tablegrid}        {HTML}{19647E}
+
+%\definecolor{htmltagcolor}       {HTML}{19647E}
+%\definecolor{htmlattrcolor}      {HTML}{EE964B}
+%\definecolor{htmlstringcolor}    {HTML}{D81E5B}
+%\definecolor{htmlcommentcolor}   {HTML}{138A36}
+%\definecolor{htmlsymbolcolor}    {HTML}{B18FCF}
+%\definecolor{htmloperatorcolor}  {HTML}{494850}
+%\definecolor{htmltextcolor}      {HTML}{161B33}
+%\definecolor{htmldeprecatedcolor}{HTML}{F95738}
+%\definecolor{enumonecolor}     {HTML}{62929E}
+
+% Reserve swatches from your selected palette. These are intentionally
+% commented out so they are not active unless you promote one manually.
+%\definecolor{reserve-peach}          {HTML}{F39B6D}
+%\definecolor{reserve-soft-pink}      {HTML}{F6C0D0}
+%\definecolor{reserve-lavender-pink}  {HTML}{D4AFCD}
+%\definecolor{reserve-pale-peach}     {HTML}{FFCAB1}
+%\definecolor{reserve-yellow-green}   {HTML}{DDD92A}
+%\definecolor{reserve-warm-stone}     {HTML}{CEB5A7}
+%\definecolor{reserve-neon-green}     {HTML}{18FF6D}
+%\definecolor{itemizeonecolor}  {HTML}{E26D5C}
+%\definecolor{reserve-bright-green}   {HTML}{04E824}
+%\definecolor{reserve-dark-green}     {HTML}{285238}
+%\definecolor{reserve-mint}           {HTML}{73E2A7}
+%\definecolor{reserve-cool-mint}      {HTML}{84DCCF}
+%\definecolor{subsubcolor}      {HTML}{531253}
+%\definecolor{reserve-pale-cyan}      {HTML}{A8DADC}
+%\definecolor{reserve-light-lavender} {HTML}{D8D8F6}
+%\definecolor{reserve-muted-mauve}    {HTML}{978897}
+%\definecolor{enumonecolor}     {HTML}{62929E}
+%\definecolor{reserve-light-purple}   {HTML}{F2BEFC}
+%\definecolor{reserve-purple}         {HTML}{CA9CE1}
+%\definecolor{reserve-purple}         {HTML}{97D8B2}
+%\definecolor{reserve-teal}           {HTML}{4CB5AE}
+%\definecolor{reserve-magenta}        {HTML}{E18AD4}
+%\definecolor{reserve-soft-magenta}   {HTML}{EEB1D5}
+%\definecolor{reserve-soft-magenta}   {HTML}{44AF69}
+%\definecolor{termcolor}        {HTML}{FF7B9C}
+%\definecolor{reserve-pale-pink}      {HTML}{EFC7E5}
+%\definecolor{reserve-brown-red}      {HTML}{904E55}
+%\definecolor{reserve-rose}           {HTML}{F786AA}
+%\definecolor{reserve-light-coral}    {HTML}{FFA8A9}
+%\definecolor{reserve-blue-gray}      {HTML}{BF98A0}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% END ARCHIVE: EYE-COMFORT EXPERIMENT PALETTE
+% ═══════════════════════════════════════════════════════════════════════════════
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [D] TYPOGRAPHY & SECTION FORMATTING  (full replacement)
+% ═══════════════════════════════════════════════════════════════════════════════
+ 
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+ 
+% Chapter heading controls
+\newlength{\ChapterBeforeSkip}
+\newlength{\ChapterNumTitleGap}
+\newlength{\ChapterTitleRuleGap}
+\newlength{\ChapterAfterSkip}
+\setlength{\ChapterBeforeSkip}{-30pt}   % was -55pt; safer across all page situations
+\setlength{\ChapterNumTitleGap}{0.45em}
+\setlength{\ChapterTitleRuleGap}{0.5cm}
+\setlength{\ChapterAfterSkip}{2.5ex}    % was 3.2ex
+ 
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{\ChapterBeforeSkip}%
+  {\parindent\z@\centering\normalfont\bfseries\color{chaptercolor}%
+    \ifnum\c@secnumdepth>\m@ne
+      \Large Chapter -- \thechapter\par
+      \vskip \ChapterNumTitleGap
+    \fi
+    \Huge #1\par
+    \vskip \ChapterTitleRuleGap
+    {\color{chaptercolor}\hrule height 2.5pt\relax}%
+    \par\nobreak
+    \vskip \ChapterAfterSkip
+  }%
+}
+\def\@makeschapterhead#1{%
+  \vspace*{\ChapterBeforeSkip}%
+  {\parindent\z@\centering\normalfont\bfseries\color{chaptercolor}%
+    \Huge #1\par
+    \vskip \ChapterTitleRuleGap
+    {\color{chaptercolor}\hrule height 2.5pt\relax}%
+    \par\nobreak
+    \vskip \ChapterAfterSkip
+  }%
+}
+\makeatother
+ 
+\usepackage{needspace}
+
+\titleformat{\section}
+    {\normalfont\huge\bfseries\color{sectioncolor}}
+    {\thesection}{1em}{}
+\titlespacing*{\section}
+    {0pt}{2.2ex plus 0.4ex minus .2ex}{1.1ex plus .2ex}
+
+\titleformat{\subsection}
+    {\normalfont\LARGE\bfseries\color{subsectioncolor}}
+    {\thesubsection}{1em}{}
+\titlespacing*{\subsection}
+    {0pt}{1.8ex plus 0.3ex minus .2ex}{0.8ex plus .2ex}
+
+\titleformat{\subsubsection}
+    {\normalfont\Large\bfseries\color{subsubcolor}}
+    {\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}
+    {0pt}{1.5ex plus 0.25ex minus .15ex}{0.6ex plus .15ex}
+
+\titleformat{\paragraph}
+    {\normalfont\large\bfseries\color{paragraphcolor}}
+    {\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+    {0pt}{1.2ex plus 0.2ex minus .1ex}{0.8em}
+
+\titleformat{\subparagraph}
+    {\normalfont\normalsize\bfseries\color{subparagraphcolor}}
+    {\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+    {0pt}{0.9ex plus 0.15ex minus .1ex}{0.7em}
+
+% Heading page-break protection is intentionally not forced globally.
+% Large \needspace values before every heading can push headings and following
+% content to the next page, collecting blank space at page bottoms.
+ 
+\renewcommand{\theparagraph}   {\thesubsubsection.\arabic{paragraph}}
+\renewcommand{\thesubparagraph}{\theparagraph.\arabic{subparagraph}}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [E] HEADERS & FOOTERS
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\usepackage{fancyhdr}
+
+\renewcommand{\chaptermark}[1]{\markboth{Chapter \thechapter: #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{Section \thesection: #1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{%
+    \begin{minipage}[t]{0.48\textwidth}
+        \raggedright
+        \adjustbox{max width=\linewidth}{\textcolor{darkgray}{\textbf{\leftmark}}}
+    \end{minipage}%
+}
+\fancyhead[R]{%
+    \begin{minipage}[t]{0.48\textwidth}
+        \raggedleft
+        \adjustbox{max width=\linewidth}{\textcolor{darkgray}{\textbf{\rightmark}}}
+    \end{minipage}%
+}
+
+\fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
+\fancyfoot[R]{\tiny{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\headrule}{%
+    \hbox to\headwidth{\color{headerline}\leaders\hrule height \headrulewidth\hfill}%
+}
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[C]{\textcolor{chaptercolor}{\thepage}}
+    \fancyfoot[R]{\tiny{\textcolor{dangerred}{Mohammad Miadul Islam Jasim -- CUET ETE 21}}}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [F] CUSTOM BOX ENVIRONMENTS — "Ruled Card" design
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% Set \boxspectrumfalse to return to the previous flat-tint box backgrounds.
+\newif\ifboxspectrum
+\boxspectrumtrue
+
+\ifboxspectrum
+    \tcbset{
+        boxfill/.style={
+            interior style={
+                left color  = #1!4,
+                middle color= #1!2,
+                right color = white,
+            },
+        },
+    }
+\else
+    \tcbset{
+        boxfill/.style={colback=#1!5},
+    }
+\fi
+
+% Set \boxlabelbadgefalse to return to the previous plain colored box titles.
+\newif\ifboxlabelbadge
+\boxlabelbadgefalse
+
+% Set \boxlabelaccentfalse to use plain colored title text.
+\newif\ifboxlabelaccent
+\boxlabelaccenttrue
+
+% Set \boxlabeloutlinefalse to remove the thin white title outline.
+\newif\ifboxlabeloutline
+\boxlabeloutlinetrue
+
+\newcommand{\boxlabeltext}[2]{%
+    \ifboxlabeloutline
+        \contour{white}{\textcolor{#2}{\textsc{\normalsize\bfseries #1}}}%
+    \else
+        \textcolor{#2}{\textsc{\normalsize\bfseries #1}}%
+    \fi
+}
+
+\tcbset{
+    notescard/.style={
+        enhanced,
+        breakable,
+        sharp corners,
+        width           = \dimexpr\linewidth-2mm\relax,
+        center,
+        boxfill         = #1,
+        colframe        = white,
+        boxrule         = 0pt,
+        top             = 4pt,
+        bottom          = 8pt,
+        left            = 16pt,
+        right           = 10pt,
+        borderline west = {4pt}  {0pt}{#1},
+        overlay unbroken={
+            \path[shade, left color=#1, middle color=#1!28, right color=white]
+                (frame.north west) rectangle ([yshift=-2pt]frame.north east);
+            \path[shade, left color=#1, middle color=#1!28, right color=white]
+                (frame.south west) rectangle ([yshift=2pt]frame.south east);
+            \draw[#1!100, line width=0.55pt]
+                ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
+            \draw[#1!100, line width=0.55pt]
+                ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
+        },
+        overlay first={
+            \path[shade, left color=#1, middle color=#1!28, right color=white]
+                (frame.north west) rectangle ([yshift=-2pt]frame.north east);
+            \draw[#1!100, line width=0.55pt]
+                ([yshift=-2pt]frame.north east) -- ([yshift=-10pt]frame.north east);
+        },
+        overlay middle={
+            \path[shade, left color=#1!75, middle color=#1!22, right color=white]
+                (frame.north west) rectangle ([yshift=-1pt]frame.north east);
+            \path[shade, left color=#1!75, middle color=#1!22, right color=white]
+                (frame.south west) rectangle ([yshift=1pt]frame.south east);
+        },
+        overlay last={
+            \path[shade, left color=#1, middle color=#1!28, right color=white]
+                (frame.south west) rectangle ([yshift=2pt]frame.south east);
+            \draw[#1!100, line width=0.55pt]
+                ([yshift=2pt]frame.south east) -- ([yshift=10pt]frame.south east);
+        },
+    }
+}
+
+\newcommand{\cardlabel}[2]{%
+    \noindent
+    \ifboxlabelbadge
+        \tcbox[
+            enhanced,
+            nobeforeafter,
+            on line,
+            sharp corners,
+            boxrule=0pt,
+            colback=#2,
+            colframe=#2,
+            left=5pt,
+            right=5pt,
+            top=1.5pt,
+            bottom=1.5pt,
+        ]{\textcolor{white}{\textsc{\normalsize\bfseries #1}}}%
+    \else
+        \ifboxlabelaccent
+            \tikz[baseline=(boxlabel.base)]{
+                \node[
+                    anchor=base west,
+                    inner xsep=4pt,
+                    inner ysep=1.2pt,
+                    text=#2,
+                ] (boxlabel) at (0,0) {\boxlabeltext{#1}{#2}};
+                \begin{scope}[on background layer]
+                    \path[
+                        shade,
+                        left color=#2!30,
+                        middle color=#2!15,
+                        right color=#2!2,
+                        path fading=boxlabel wash fade
+                    ]
+                        ([xshift=-2.2pt,yshift=-1.6pt]boxlabel.south west)
+                        rectangle
+                        ([xshift=18pt,yshift=1.6pt]boxlabel.north east);
+                \end{scope}
+                \draw[#2, line width=1.6pt]
+                    ([xshift=-3pt,yshift=-1.6pt]boxlabel.south west) --
+                    ([xshift=-3pt,yshift=1.6pt]boxlabel.north west);
+            }%
+        \else
+            \boxlabeltext{#1}{#2}%
+        \fi
+    \fi
+    \hspace{0.5em}%
+    {\color{#2!35}\leaders\hrule height 0.45pt\hfill}\kern0pt%
+    \vspace{3pt}\par
+}
+
+\newenvironment{definitionbox}[1][Definition]{%
+    \begin{tcolorbox}[notescard=defcolor]
+    \cardlabel{#1}{defcolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{formulabox}[1][Formula]{%
+    \begin{tcolorbox}[notescard=formulacolor]
+    \cardlabel{#1}{formulacolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{infobox}[1][Note]{%
+    \begin{tcolorbox}[notescard=infocolor]
+    \cardlabel{#1}{infocolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{derivationbox}[1][Derivation]{%
+    \begin{tcolorbox}[notescard=derivcolor]
+    \cardlabel{#1}{derivcolor}%
+}{\end{tcolorbox}}
+
+\newcounter{qna}[chapter]
+\renewcommand{\theqna}{\thechapter.\arabic{qna}}
+
+\newenvironment{questionanswerbox}{%
+    \refstepcounter{qna}%
+    \begin{tcolorbox}[notescard=examplecolor]
+    \cardlabel{Example~\theqna}{examplecolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{alertbox}[1][Warning]{%
+    \begin{tcolorbox}[notescard=warningcolor]
+    \cardlabel{#1}{warningcolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{summarybox}[1][Summary]{%
+    \begin{tcolorbox}[notescard=summarycolor]
+    \cardlabel{#1}{summarycolor}%
+}{\end{tcolorbox}}
+
+\newenvironment{theorembox}[1][Theorem]{%
+    \begin{tcolorbox}[notescard=chaptercolor]
+    \cardlabel{#1}{chaptercolor}%
+    \itshape
+}{\end{tcolorbox}}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [G-1] LISTS
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\setlist[itemize]  {topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{topsep=4pt, itemsep=3pt, parsep=0pt, partopsep=0pt}
+ 
+\setlist[itemize,1]{label=\textcolor{itemizeonecolor}{$\triangleright$},  leftmargin=*}
+\setlist[itemize,2]{label=\textcolor{itemizetwocolor}{$\rightarrow$},      leftmargin=*}
+\setlist[itemize,3]{label=\textcolor{itemizethreecolor}{\textendash},      leftmargin=*}
+\setlist[itemize,4]{label=\textcolor{itemizefourcolor}{$\circ$},           leftmargin=*}
+ 
+\setlist[enumerate,1]{label=\textcolor{enumonecolor}{\arabic*.},       leftmargin=*}
+\setlist[enumerate,2]{label=\textcolor{enumtwocolor}{(\alph*)},        leftmargin=*}
+\setlist[enumerate,3]{label=\textcolor{enumthreecolor}{\roman*.},      leftmargin=*}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [G-2] LONGTABLE SYSTEM
+%
+%   USAGE:
+%   ──────
+%   \begin{longtable}{|L{6cm}|C{3cm}|L{7.5cm}|}
+%     \longtableheader{3}{Table Title}{%
+%       \tblcolhdcell{Col A} & \tblcolhdcell{Col B} & \tblcolhdcell{Col C}}
+%
+%     Row 1  &  Data  &  Data  \\ \tblhline
+%     \evenrow
+%     Row 2  &  Data  &  Data  \\ \tblhline
+%     \tblbottomrule
+%     \caption{Caption}\label{tab:ref}
+%   \end{longtable}
+%
+%   SPACING (call before \begin{longtable}):
+%     \tablerowstretch{1.8}   — only row height
+%     \tablecolpadding{10pt}  — only cell left/right padding
+%     \tblrowheight{1.2cm}    — force height on ONE specific row
+% ═══════════════════════════════════════════════════════════════════════════════
+
+% ─── Global defaults ──────────────────────────────────────────────────────────
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\setlength{\arrayrulewidth}{0.5pt}
+\setlength{\extrarowheight}{0pt}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{2pt}
+\setlength{\LTleft}{\fill}
+\setlength{\LTright}{\fill}
+
+\AtBeginEnvironment{longtable}{%
+    \arrayrulecolor{tablegrid}%
+    \rowcolors{2}{white}{tablezebrarow}%
+}
+\AtEndEnvironment{longtable}{\rowcolors{2}{}{}}
+
+% ─── Column types — use any width you want: L{6cm}, C{3cm}, R{2cm} ───────────
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
+
+% ─── Rules ────────────────────────────────────────────────────────────────────
+\newcommand{\tblhline}      {\arrayrulecolor{tablegrid}\hline}
+\newcommand{\tblbottomrule}{%
+    \arrayrulecolor{tablerail}\hline
+    \arrayrulecolor{tablegrid}%
+    \rowcolor{white}%
+}
+
+% ─── Column header cell ───────────────────────────────────────────────────────
+\newcommand{\tblhead}[1]{%
+    \cellcolor{tablecolhdbg}%
+    \centering\arraybackslash%
+    \textcolor{tablecolhdtext}{\bfseries #1}%
+}
+\let\tblcolhdcell\tblhead
+
+% ─── Header macro ─────────────────────────────────────────────────────────────
+%   #1 = column count   #2 = unused title kept for old tables   #3 = header cells
+\newcommand{\longtableheader}[3]{%
+    \arrayrulecolor{tablerail}\hline
+    #3 \\
+    \arrayrulecolor{tablegrid}\hline
+    \endfirsthead
+    \arrayrulecolor{tablerail}\hline
+    #3 \\
+    \arrayrulecolor{tablegrid}\hline
+    \endhead
+    \endfoot
+}
+
+% ─── Zebra rows ───────────────────────────────────────────────────────────────
+\newcommand{\evenrow}{}
+
+% ─── Spacing controls ─────────────────────────────────────────────────────────
+\newcommand{\tablerowstretch}[1]{\renewcommand{\arraystretch}{#1}}
+\newcommand{\tablecolpadding}[1]{\setlength{\tabcolsep}{#1}}
+\newcommand{\tblrowheight}[1]{\rule{0pt}{#1}}
+
+% ─── Convenience: \theadcell for multi-line header cells ─────────────────────
+\newcommand{\theadcell}[1]{\makecell[c]{\bfseries #1}}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [G-3] FIGURES
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\setlength{\abovecaptionskip}{8pt}
+\setlength{\belowcaptionskip}{4pt}
+
+\captionsetup{
+    font      = small,
+    labelfont = bf,
+    width     = 0.9\linewidth
+}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [H] HYPERLINKS & PDF SETTINGS
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks         = true,
+    linkcolor          = defcolor,
+    urlcolor           = formulacolor,
+    citecolor          = infocolor,
+    pdfauthor          = {\NotesAuthor},
+    pdftitle           = {\NotesCourse\ --- \NotesSubject},
+    pdfsubject         = {Academic Notes},
+    pdfkeywords        = {\NotesCourse, \NotesSubject, \NotesAuthor, \NotesAffil},
+    bookmarksopen      = true,
+    bookmarksnumbered  = true,
+    pdfstartview       = FitH
+}
+
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% [I] CONVENIENCE COMMANDS & MATH SHORTCUTS
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\newcommand{\Note}{\noindent\textcolor{notecolor}{\textbf{Note:\enspace}}}
+\newcommand{\Imp} {\noindent\textcolor{formulacolor}{\textbf{Important:\enspace}}}
+\newcommand{\term}[1]{\textcolor{termcolor}{\textbf{#1}}}
+\newcommand{\TODO}[1]{\textcolor{paragraphcolor}{\textbf{[TODO: #1]}}}
+\newcommand{\htmlblocktitle}[1]{%
+    \par\medskip
+    \noindent{\textcolor{htmltagcolor}{$\leadsto$}\enspace\textcolor{htmltagcolor}{\bfseries\textsc{#1}}}%
+    \par\smallskip
+}
+
+\newcommand{\vv}  [1]{\vec{\mathbf{#1}}}
+\newcommand{\mat} [1]{\mathbf{#1}}
+\newcommand{\dd}     {\,\mathrm{d}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\der} [2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dder}[2]{\frac{\mathrm{d}^2 #1}{\mathrm{d}#2^2}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\AtBeginDocument{\renewcommand{\mag}[1]{\left|#1\right|}}
+\providecommand{\abs}[1]{\mag{#1}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\eval}[3]{\left.#1\right|_{#2}^{#3}}
+
+% ─── Add your own shortcuts here ─────────────────────────────────────────────
+% \newcommand{\eps}{\varepsilon}
+% \newcommand{\lam}{\lambda}
+% \newcommand{\sig}{\sigma}
+
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║                        END OF preamble.tex                                  ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+% !TeX root = main.tex

@@ -1,0 +1,29 @@
+% Main driver file for a new notes project.
+% Compile this file with XeLaTeX. Do not compile chapter files directly.
+
+\documentclass[11pt, a4paper, openany]{book}
+
+% Edit these values for each new note.
+\newcommand{\NotesAuthor}  {Mohammad Miadul Islam Jasim}
+\newcommand{\NotesAffil}   {CUET ETE 21}
+\newcommand{\NotesCourse}  {Course Name}
+\newcommand{\NotesSubject} {Subject Name}
+\newcommand{\NotesYear}    {\the\year}
+
+\input{preamble}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+\hypersetup{linkcolor=black}
+\tableofcontents
+\hypersetup{linkcolor=defcolor}
+\newpage
+
+% Add or remove chapter files here.
+\subfile{Chapters/Chapter1.tex}
+
+\end{document}

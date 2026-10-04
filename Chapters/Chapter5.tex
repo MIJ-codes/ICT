@@ -1,0 +1,47 @@
+% !TEX root = ../main.tex
+
+\chapter{C Programming}
+
+\section{How a Computer Runs a Program}
+
+Before writing C code, students should understand what a program does inside a computer. A program receives data when necessary, gives instructions for processing it, and produces a result.
+
+\begin{definitionbox}[Program]
+    A \term{program} is an ordered set of instructions written to make a computer perform a specific task or solve a problem.
+\end{definitionbox}
+
+\begin{definitionbox}[Programming Language]
+    A \term{programming language} is a formal language used to write the instructions of a program in a form that can be translated and executed by a computer.
+\end{definitionbox}
+
+\subsection{Input, Processing and Output}
+
+Every useful program follows an information-processing path: it receives input, processes it according to the program, and produces output. Input can come from a keyboard, file, sensor or another device; output can appear on a screen, printer, file or another device.
+
+\begin{formulabox}[Information-Processing Path]
+    \centering
+    \term{Input} \(\longrightarrow\) \term{Processing by CPU} \(\longrightarrow\) \term{Output}
+\end{formulabox}
+
+For example, when a student enters two numbers through a keyboard, a program can instruct the computer to add them. The entered numbers are the input, addition is the processing, and the displayed sum is the output.
+
+\subsection{Role of the CPU While a Program Runs}
+
+The \term{Central Processing Unit (CPU)}, or processor, executes program instructions and processes data. Its main parts work together as follows:
+
+\begin{itemize}
+    \item \term{Control Unit (CU)}: selects instructions in order and directs the required operation.
+    \item \term{Arithmetic and Logic Unit (ALU)}: performs calculations and logical tests such as comparisons.
+    \item \term{Registers / working memory}: temporarily hold instructions, data and intermediate results.
+\end{itemize}
+
+The execution path can therefore be understood as follows:
+
+\begin{enumerate}
+    \item Input data and the required instructions are made available to the CPU.
+    \item The control unit selects the next instruction and directs the required operation.
+    \item The ALU performs a calculation or logical test when the instruction requires one.
+    \item Intermediate and final results are held temporarily while processing continues.
+    \item The final result is sent to an output device or stored for later use.
+\end{enumerate}
+
